@@ -1,6 +1,7 @@
+#pragma once
 #include "hierarchy.h"
+
 namespace Constants
 {
-    static const char hierarchial_classes[] = "DBFACEG"; 
+    static const char hierarchial_classes[] = "DBFACEG";
 } // namespace Constants
-
