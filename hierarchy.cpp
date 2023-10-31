@@ -2,8 +2,6 @@
 
 Hierarchy::Hierarchy()
 {
-    Person data;
-    add_chunk(this->root,data);
     this->left=this->right=nullptr;
     this->root=nullptr;
 }
