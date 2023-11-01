@@ -16,9 +16,9 @@ public:
     ~Person();
 
     //comparison operator overload
-    bool operator<(Person &data);
-    bool operator>(Person &data);
-    bool operator==(Person &data);
+    bool operator < (Person &data);
+    bool operator > (Person &data);
+    bool operator== (Person &data);
 
     //stream operators overload
     friend ostream &operator << (ostream &out, Person &data);
@@ -40,13 +40,16 @@ public:
 
 // friend classes
     friend class Hierarchy;
+
+//friend functions
+    friend Prisoners* operator%(Prisoners* &chunk, string data);
 };
 
-// class Prisoners_tree
-// {
-// private:
-//     Prisoners *root;
-// public:
-//     Prisoners_tree(/* args */);
-//     ~Prisoners_tree();
-// };
+//// class Prisoners_tree
+//// {
+//// private:
+////     Prisoners *root;
+//// public:
+////     Prisoners_tree(/* args */);
+////     ~Prisoners_tree();
+//// };

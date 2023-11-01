@@ -39,3 +39,4 @@ istream &operator >> (istream &in, Person &data)
     in >> data.ID;
     return in;
 }
+

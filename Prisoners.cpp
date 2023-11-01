@@ -33,3 +33,13 @@ Person::Person(string ID, string name)
     this->ID=ID;
     this->name=name;
 }
+
+Prisoners* operator%(Prisoners* &chunk, string data)
+{
+    if(data<chunk->data.ID)
+        return chunk->left%data;
+    else if(data>chunk->data.ID)
+        return chunk->right%data;
+    else
+        return chunk;
+}
