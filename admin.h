@@ -1,16 +1,16 @@
-class admin
+class Admin
 {
 private:
     /* data */
 public:
-    admin(/* args */);
-    ~admin();
+    Admin(/* args */);
+    ~Admin();
 };
 
-admin::admin(/* args */)
+Admin::Admin(/* args */)
 {
 }
 
-admin::~admin()
+Admin::~Admin()
 {
 }

@@ -1,0 +1,299 @@
+ID: B0001
+Name: Daniel "The Bulldozer" Turner
+Age: 40
+Height: 6'2"
+Weight: 210 lbs
+Sentence: 50 years
+Time Remaining: 25 years
+Time Spent: 25 years
+Crime: Leader of a local street gang involved in organized crime and drug trafficking.
+
+ID: B0002
+Name: Sophie "The Whisperer" Martinez
+Age: 35
+Height: 5'9"
+Weight: 150 lbs
+Sentence: 40 years
+Time Remaining: 20 years
+Time Spent: 20 years
+Crime: Skilled in forgery and identity theft, responsible for a series of financial frauds.
+
+ID: B0003
+Name: Xavier "The Tinkerer" Anderson
+Age: 38
+Height: 6'1"
+Weight: 190 lbs
+Sentence: 45 years
+Time Remaining: 30 years
+Time Spent: 15 years
+Crime: Involved in industrial espionage and tampering with corporate systems.
+
+ID: B0004
+Name: Maya "The Chameleon" Parker
+Age: 36
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 55 years
+Time Remaining: 35 years
+Time Spent: 20 years
+Crime: Highly skilled in deception and social engineering, with a history of elaborate scams.
+
+ID: B0005
+Name: Logan "The Stuntman" Reynolds
+Age: 42
+Height: 6'0"
+Weight: 180 lbs
+Sentence: 60 years
+Time Remaining: 45 years
+Time Spent: 15 years
+Crime: Alleged mastermind behind a series of bank robberies and high-speed chases.
+
+ID: B0006
+Name: Emma "The Trickster" Gallagher
+Age: 38
+Height: 5'8"
+Weight: 160 lbs
+Sentence: 50 years
+Time Remaining: 30 years
+Time Spent: 20 years
+Crime: Skilled in art forgery and involved in a high-profile museum heist.
+
+ID: B0007
+Name: Benjamin "The Strategist" Wells
+Age: 41
+Height: 6'0"
+Weight: 190 lbs
+Sentence: 45 years
+Time Remaining: 25 years
+Time Spent: 20 years
+Crime: Known for elaborate white-collar fraud schemes affecting major corporations.
+
+ID: B0008
+Name: Sarah "The Illusionist" Knight
+Age: 37
+Height: 5'7"
+Weight: 135 lbs
+Sentence: 55 years
+Time Remaining: 35 years
+Time Spent: 20 years
+Crime: Renowned for her ability to create realistic counterfeit money.
+
+ID: B0009
+Name: Caleb "The Infiltrator" Brooks
+Age: 44
+Height: 6'1"
+Weight: 180 lbs
+Sentence: 60 years
+Time Remaining: 40 years
+Time Spent: 20 years
+Crime: Alleged leader of a highly skilled burglary and infiltration crew.
+
+ID: B0010
+Name: Olivia "The Riddler" Hughes
+Age: 39
+Height: 5'9"
+Weight: 155 lbs
+Sentence: 50 years
+Time Remaining: 30 years
+Time Spent: 20 years
+Crime: Known for leaving intricate puzzles at the scenes of her crimes.
+
+ID: B0011
+Name: Mason "The Operator" Lewis
+Age: 43
+Height: 6'2"
+Weight: 200 lbs
+Sentence: 45 years
+Time Remaining: 25 years
+Time Spent: 20 years
+Crime: Skilled in manipulating financial markets and stock fraud.
+
+ID: B0012
+Name: Isabelle "The Forger" Bennett
+Age: 36
+Height: 5'8"
+Weight: 150 lbs
+Sentence: 40 years
+Time Remaining: 20 years
+Time Spent: 20 years
+Crime: Renowned for forging high-value artworks and documents.
+
+ID: B0013
+Name: Oliver "The Escapist" Cooper
+Age: 39
+Height: 6'0"
+Weight: 175 lbs
+Sentence: 50 years
+Time Remaining: 30 years
+Time Spent: 20 years
+Crime: Known for escaping from several high-security facilities.
+
+ID: B0014
+Name: Emily "The Deceiver" Taylor
+Age: 37
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 55 years
+Time Remaining: 35 years
+Time Spent: 20 years
+Crime: Master of disguises and con games, often involving large sums of money.
+
+ID: B0015
+Name: James "The Enigma" Foster
+Age: 41
+Height: 6'1"
+Weight: 185 lbs
+Sentence: 60 years
+Time Remaining: 40 years
+Time Spent: 20 years
+Crime: Known for creating complex, unsolvable puzzles that baffle investigators.
+
+ID: B0016
+Name: Alex "The Decoder" Mitchell
+Age: 38
+Height: 5'9"
+Weight: 160 lbs
+Sentence: 45 years
+Time Remaining: 25 years
+Time Spent: 20 years
+Crime: Known for hacking into sensitive government databases and classified information.
+
+ID: B0017
+Name: Lily "The Shadow" Parker
+Age: 36
+Height: 5'6"
+Weight: 140 lbs
+Sentence: 50 years
+Time Remaining: 30 years
+Time Spent: 20 years
+Crime: Skilled cat burglar with a history of high-profile heists.
+
+ID: B0018
+Name: Noah "The Smuggler" Reynolds
+Age: 41
+Height: 6'0"
+Weight: 190 lbs
+Sentence: 55 years
+Time Remaining: 35 years
+Time Spent: 20 years
+Crime: Involved in smuggling contraband and illegal goods across borders.
+
+ID: B0019
+Name: Sophia "The Codebreaker" Carter
+Age: 37
+Height: 5'7"
+Weight: 145 lbs
+Sentence: 50 years
+Time Remaining: 30 years
+Time Spent: 20 years
+Crime: Renowned for breaking intricate security systems and cracking codes.
+
+ID: B0020
+Name: Leo "The Artisan" Hernandez
+Age: 40
+Height: 5'8"
+Weight: 170 lbs
+Sentence: 60 years
+Time Remaining: 40 years
+Time Spent: 20 years
+Crime: Known for creating counterfeit masterpieces and selling them to art collectors.
+
+ID: B0021
+Name: Mia "The Infiltrator" Jensen
+Age: 35
+Height: 5'6"
+Weight: 135 lbs
+Sentence: 45 years
+Time Remaining: 25 years
+Time Spent: 20 years
+Crime: Known for infiltrating high-security facilities and corporate offices.
+
+ID: B0022
+Name: Henry "The Strategist" Douglas
+Age: 39
+Height: 6'0"
+Weight: 175 lbs
+Sentence: 50 years
+Time Remaining: 30 years
+Time Spent: 20 years
+Crime: Skilled in orchestrating elaborate white-collar fraud schemes.
+
+ID: B0023
+Name: Lily "The Forger" Stevenson
+Age: 37
+Height: 5'8"
+Weight: 150 lbs
+Sentence: 55 years
+Time Remaining: 35 years
+Time Spent: 20 years
+Crime: Renowned for creating convincing forged documents and passports.
+
+ID: B0024
+Name: Max "The Escape Artist" Clarke
+Age: 42
+Height: 6'1"
+Weight: 180 lbs
+Sentence: 60 years
+Time Remaining: 40 years
+Time Spent: 20 years
+Crime: Known for escaping from high-security prisons and detention centers.
+
+ID: B0025
+Name: Zoe "The Mastermind" Harrison
+Age: 36
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 50 years
+Time Remaining: 30 years
+Time Spent: 20 years
+Crime: Skilled in orchestrating complex criminal operations and heists.
+
+ID: B0026
+Name: Nora "The Saboteur" Walsh
+Age: 38
+Height: 5'9"
+Weight: 160 lbs
+Sentence: 45 years
+Time Remaining: 25 years
+Time Spent: 20 years
+Crime: Known for tampering with corporate systems and causing significant economic damage.
+
+ID: B0027
+Name: Owen "The Deceiver" Hart
+Age: 36
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 50 years
+Time Remaining: 30 years
+Time Spent: 20 years
+Crime: Skilled in deception and social engineering, responsible for various scams.
+
+ID: B0028
+Name: Ella "The Infiltrator" Banks
+Age: 41
+Height: 6'0"
+Weight: 175 lbs
+Sentence: 55 years
+Time Remaining: 35 years
+Time Spent: 20 years
+Crime: Known for infiltrating secure facilities and corporate offices.
+
+ID: B0029
+Name: Luke "The Artisan" Sullivan
+Age: 37
+Height: 5'8"
+Weight: 150 lbs
+Sentence: 50 years
+Time Remaining: 30 years
+Time Spent: 20 years
+Crime: Skilled in creating counterfeit artwork and selling it to art collectors.
+
+ID: B0030
+Name: Mia "The Codebreaker" Larson
+Age: 40
+Height: 5'9"
+Weight: 160 lbs
+Sentence: 60 years
+Time Remaining: 40 years
+Time Spent: 20 years
+Crime: Renowned for breaking intricate security systems and decoding complex codes.
