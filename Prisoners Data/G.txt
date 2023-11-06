@@ -1,0 +1,310 @@
+Name: Ava Turner
+Age: 22
+Height: 5'6"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of public intoxication and disorderly conduct.
+ID: G0001
+
+
+Name: William Foster
+Age: 24
+Height: 5'9"
+Weight: 155 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of misdemeanor assault and public disturbance.
+ID: G0002
+
+
+Name: Mia Turner
+Age: 21
+Height: 5'5"
+Weight: 115 lbs
+Sentence: 9 months
+Time Remaining: 1 month
+Time Spent: 8 months
+Crime: Convicted of vandalism and property damage.
+ID: G0003
+
+
+Name: Jacob Adams
+Age: 25
+Height: 6'0"
+Weight: 160 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of petty theft and shoplifting.
+ID: G0004
+
+
+Name: Chloe Turner
+Age: 22
+Height: 5'6"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of disorderly conduct and public disturbances.
+ID: G0005
+
+
+Name: Benjamin Foster
+Age: 24
+Height: 5'9"
+Weight: 155 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of minor drug possession and distribution.
+ID: G0006
+
+
+Name: Emily Turner
+Age: 21
+Height: 5'5"
+Weight: 115 lbs
+Sentence: 9 months
+Time Remaining: 1 month
+Time Spent: 8 months
+Crime: Convicted of credit card fraud and online scams.
+ID: G0007
+
+
+Name: Aiden Adams
+
+Age: 25
+Height: 6'0"
+Weight: 160 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of public intoxication and disorderly conduct.
+ID: G0008
+
+
+Name: Isabella Turner
+Age: 22
+Height: 5'6"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of vandalism and property damage.
+ID: G0009
+
+
+Name: Noah Foster
+Age: 24
+Height: 5'9"
+Weight: 155 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of misdemeanor assault and public disturbance.
+ID: G0010
+
+Name: Lily Turner
+Age: 21
+Height: 5'5"
+Weight: 115 lbs
+Sentence: 9 months
+Time Remaining: 1 month
+Time Spent: 8 months
+Crime: Convicted of petty theft and shoplifting.
+ID: G0011
+
+Name: Daniel Foster
+Age: 25
+Height: 6'0"
+Weight: 160 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of disorderly conduct and public disturbances.
+ID: G0012
+
+Name: Ava Turner
+Age: 22
+Height: 5'6"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of minor drug possession and distribution.
+ID: G0013
+
+Name: William Foster
+Age: 24
+Height: 5'9"
+Weight: 155 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of public intoxication and disorderly conduct.
+ID: G0014
+
+Name: Mia Turner
+Age: 21
+Height: 5'5"
+Weight: 115 lbs
+Sentence: 9 months
+Time Remaining: 1 month
+Time Spent: 8 months
+Crime: Convicted of credit card fraud and online scams.
+ID: G0015
+
+Name: Jacob Foster
+Age: 25
+Height: 6'0"
+Weight: 160 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of minor drug possession and distribution.
+ID: G0016
+
+Name: Chloe Turner
+Age: 22
+Height: 5'6"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of petty theft and shoplifting.
+ID: G0017
+
+Name: Benjamin Foster
+Age: 24
+Height: 5'9"
+Weight: 155 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of disorderly conduct and public disturbances.
+ID: G0018
+
+Name: Emily Turner
+Age: 21
+Height: 5'5"
+Weight: 115 lbs
+Sentence: 9 months
+Time Remaining: 1 month
+Time Spent: 8 months
+Crime: Convicted of public intoxication and disorderly conduct.
+ID: G0019
+
+Name: Aiden Adams
+
+Age: 25
+Height: 6'0"
+Weight: 160 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of misdemeanor assault and public disturbance.
+ID: G0020
+
+Name: Isabella Turner
+Age: 22
+Height: 5'6"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of vandalism and property damage.
+ID: G0021
+
+Name: Noah Foster
+Age: 24
+Height: 5'9"
+Weight: 155 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of petty theft and shoplifting.
+ID: G0022
+
+Name: Lily Turner
+Age: 21
+Height: 5'5"
+Weight: 115 lbs
+Sentence: 9 months
+Time Remaining: 1 month
+Time Spent: 8 months
+Crime: Convicted of disorderly conduct and public disturbances.
+ID: G0023
+
+Name: Daniel Foster
+Age: 25
+Height: 6'0"
+Weight: 160 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of public intoxication and disorderly conduct.
+ID: G0024
+
+Name: Ava Turner
+Age: 22
+Height: 5'6"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of minor drug possession and distribution.
+ID: G0025
+
+Name: William Foster
+Age: 24
+Height: 5'9"
+Weight: 155 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of disorderly conduct and public disturbances.
+ID: G0026
+
+Name: Mia Turner
+Age: 21
+Height: 5'5"
+Weight: 115 lbs
+Sentence: 9 months
+Time Remaining: 1 month
+Time Spent: 8 months
+Crime: Convicted of credit card fraud and online scams.
+ID: G0027
+
+Name: Jacob Foster
+Age: 25
+Height: 6'0"
+Weight: 160 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of public intoxication and disorderly conduct.
+ID: G0028
+
+Name: Chloe Turner
+Age: 22
+Height: 5'6"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of vandalism and property damage.
+ID: G0029
+
+Name: Benjamin Foster
+Age: 24
+Height: 5'9"
+Weight: 155 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of petty theft and shoplifting.
+ID: G0030

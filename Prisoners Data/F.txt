@@ -1,0 +1,312 @@
+Name: Samuel Mitchell
+Age: 26
+Height: 5'8"
+Weight: 150 lbs
+Sentence: 2 years
+Time Remaining: 3 months
+Time Spent: 1.75 years
+Crime: Convicted of public intoxication and disorderly conduct.
+ID: F0001
+
+
+Name: Emma Turner
+Age: 27
+Height: 5'6"
+Weight: 140 lbs
+Sentence: 1.5 years
+Time Remaining: 2 months
+Time Spent: 1.25 years
+Crime: Convicted of petty theft and shoplifting.
+ID: F0002
+
+
+Name: Benjamin Parker
+Age: 29
+Height: 6'0"
+Weight: 170 lbs
+Sentence: 2.5 years
+Time Remaining: 4 months
+Time Spent: 2 years
+Crime: Convicted of minor drug possession and distribution.
+ID: F0003
+
+
+Name: Ava Foster
+Age: 28
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 1.75 years
+Time Remaining: 3 months
+Time Spent: 1.5 years
+Crime: Convicted of unauthorized access to computer systems.
+ID: F0004
+
+
+Name: William Jenkins
+Age: 30
+Height: 5'10"
+Weight: 175 lbs
+Sentence: 3 years
+Time Remaining: 6 months
+Time Spent: 2.5 years
+Crime: Convicted of white-collar fraud and embezzlement.
+ID: F0005
+
+
+Name: Olivia Turner
+Age: 27
+Height: 5'6"
+Weight: 135 lbs
+Sentence: 1.5 years
+Time Remaining: 2 months
+Time Spent: 1.25 years
+Crime: Convicted of online harassment and cyberbullying.
+ID: F0006
+
+
+Name: Liam Adams
+Age: 31
+Height: 6'0"
+Weight: 170 lbs
+Sentence: 2.5 years
+Time Remaining: 4 months
+Time Spent: 2 years
+Crime: Convicted of property damage and vandalism.
+ID: F0007
+
+
+Name: Mia Mitchell
+Age: 26
+Height: 5'8"
+Weight: 150 lbs
+Sentence: 2 years
+Time Remaining: 3 months
+Time Spent: 1.75 years
+Crime: Convicted of disorderly conduct and public disturbances.
+ID: F0008
+
+
+Name: Jacob Turner
+Age: 29
+Height: 6'0"
+Weight: 170 lbs
+Sentence: 2.5 years
+Time Remaining: 4 months
+Time Spent: 2 years
+Crime: Convicted of insurance fraud and false claims.
+ID: F0009
+
+Name: Isabella Foster
+Age: 28
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 1.75 years
+Time Remaining: 3 months
+Time Spent: 1.5 years
+Crime: Convicted of credit card fraud and online scams.
+ID: F0010
+
+
+Name: Benjamin Parker
+Age: 29
+Height: 6'0"
+Weight: 170 lbs
+Sentence: 2.5 years
+Time Remaining: 4 months
+Time Spent: 2 years
+Crime: Convicted of public intoxication and disorderly conduct.
+ID: F0011
+
+
+Name: Olivia Turner
+Age: 27
+Height: 5'6"
+Weight: 135 lbs
+Sentence: 1.5 years
+Time Remaining: 2 months
+Time Spent: 1.25 years
+Crime: Convicted of petty theft and shoplifting.
+ID: F0012
+
+
+Name: Liam Adams
+Age: 31
+Height: 6'0"
+Weight: 170 lbs
+Sentence: 2.5 years
+Time Remaining: 4 months
+Time Spent: 2 years
+Crime: Convicted of minor drug possession and distribution.
+ID: F0013
+
+
+Name: Emma Foster
+Age: 28
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 1.75 years
+Time Remaining: 3 months
+Time Spent: 1.5 years
+Crime: Convicted of unauthorized access to computer systems.
+ID: F0014
+
+
+Name: William Jenkins
+Age: 30
+Height: 5'10"
+Weight: 175 lbs
+Sentence: 3 years
+Time Remaining: 6 months
+Time Spent: 2.5 years
+Crime: Convicted of white-collar fraud and embezzlement.
+ID: F0015
+
+Name: William Mitchell
+Age: 25
+Height: 5'11"
+Weight: 165 lbs
+Sentence: 2 years
+Time Remaining: 4 months
+Time Spent: 1.5 years
+Crime: Convicted of public intoxication and disorderly conduct.
+ID: F0016
+
+Name: Jacob Foster
+Age: 27
+Height: 5'10"
+Weight: 155 lbs
+Sentence: 3 years
+Time Remaining: 6 months
+Time Spent: 2.5 years
+Crime: Convicted of petty theft and shoplifting.
+ID: F0017
+
+Name: Chloe Turner
+Age: 24
+Height: 5'6"
+Weight: 125 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of minor drug possession and distribution.
+ID: F0018
+
+Name: Daniel Adams
+Age: 26
+Height: 6'0"
+Weight: 170 lbs
+Sentence: 2.5 years
+Time Remaining: 5 months
+Time Spent: 2 years
+Crime: Convicted of white-collar fraud and embezzlement.
+ID: F0019
+
+Name: Sophia Turner
+Age: 23
+Height: 5'5"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of online harassment and cyberbullying.
+ID: F0020
+
+Name: Mason Foster
+Age: 28
+Height: 5'9"
+Weight: 160 lbs
+Sentence: 3 years
+Time Remaining: 6 months
+Time Spent: 2.5 years
+Crime: Convicted of unauthorized access to computer systems.
+ID: F0021
+
+Name: Ava Turner
+Age: 24
+Height: 5'6"
+Weight: 125 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of insurance fraud and false claims.
+ID: F0022
+
+Name: William Adams
+Age: 26
+Height: 6'0"
+Weight: 170 lbs
+Sentence: 2.5 years
+Time Remaining: 5 months
+Time Spent: 2 years
+Crime: Convicted of property theft and burglary.
+ID: F0023
+
+Name: Lily Mitchell
+Age: 23
+Height: 5'5"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of disorderly conduct and public disturbances.
+ID: F0024
+
+Name: Jacob Foster
+Age: 27
+Height: 5'10"
+Weight: 155 lbs
+Sentence: 3 years
+Time Remaining: 6 months
+Time Spent: 2.5 years
+Crime: Convicted of petty theft and shoplifting.
+ID: F0025
+
+Name: Chloe Turner
+Age: 24
+Height: 5'6"
+Weight: 125 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of minor drug possession and distribution.
+ID: F0026
+
+Name: Daniel Adams
+Age: 26
+Height: 6'0"
+Weight: 170 lbs
+Sentence: 2.5 years
+Time Remaining: 5 months
+Time Spent: 2 years
+Crime: Convicted of white-collar fraud and embezzlement.
+ID: F0027
+
+Name: Sophia Turner
+Age: 23
+Height: 5'5"
+Weight: 120 lbs
+Sentence: 1 year
+Time Remaining: 2 months
+Time Spent: 10 months
+Crime: Convicted of online harassment and cyberbullying.
+ID: F0028
+
+Name: Mason Foster
+Age: 28
+Height: 5'9"
+Weight: 160 lbs
+Sentence: 3 years
+Time Remaining: 6 months
+Time Spent: 2.5 years
+Crime: Convicted of unauthorized access to computer systems.
+ID: F0029
+
+Name: Ava Turner
+Age: 24
+Height: 5'6"
+Weight: 125 lbs
+Sentence: 1.5 years
+Time Remaining: 3 months
+Time Spent: 1.2 years
+Crime: Convicted of insurance fraud and false claims.
+ID: F0030
