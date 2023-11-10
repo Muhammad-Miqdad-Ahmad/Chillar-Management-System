@@ -1,5 +1,16 @@
 #include "Addons.h"
 
+Person::Person()
+{
+    this->ID="";
+    this->name="";
+}
+
+Person::~Person()
+{
+}
+
+
 bool Person::operator==(Person &data)
 {
     if(this->ID==data.ID)

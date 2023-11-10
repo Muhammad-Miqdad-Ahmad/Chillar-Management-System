@@ -1,10 +1,11 @@
+#pragma once
 #include "Prisoners.h"
 class Hierarchy
 {
 private:
-    char data;       // variable to store the name of the class
-    Prisoners *root; // The root of the prisoner class. The tree formed will the one holding the data of the prisoners
-    int node_count;
+    char prisoner_grade; // variable to store the name of the class
+    Prisoners *root;     // The root of the prisoner class. The tree formed will the one holding the data of the prisoners
+    int prisoner_count;
     Hierarchy *left, *right; // directions to form a tree. The grade determining tree
 public:
     // constructors
@@ -18,13 +19,13 @@ public:
     friend class Prisoners;
     friend class Hierarchial_tree;
 
-    // friend functions
-    template <typename data_type_1, typename data_type_2> // the function is template so that any class that needs to make a tree can use this function
-    friend void add_chunk(data_type_1 *&chunk, data_type_2 data);
+    // function
+    void make_full_balanced();
+    Prisoners* balancing(vector<Prisoners*> &array, int start, int last);
+    void store_del_tree(Prisoners* &chunk, vector<Prisoners*> &data);
+    void add_chunk(Prisoners *&chunk, Person &data, Person *&relative_1, Person *&relative_2);
 
-    template <typename datatype>
-    friend ostream &operator<<(ostream &out, const datatype *&chunk);
-
+    // friend function
     friend Prisoners *operator%(Hierarchy *&chunk, string data);
 };
 
@@ -42,10 +43,9 @@ public:
 
     // friend classes
     friend class Prisoners;
+    void add_chunk(Hierarchy *&chunk, char data);
 
     // friend functions
-    template <typename data_type_1, typename data_type_2> // the function is template so that any class that needs to make a tree can use this function
-    friend void add_chunk(data_type_1 *&chunk, data_type_2 data);
 
     template <typename datatype>
     friend ostream &operator<<(ostream &out, const datatype *&chunk);

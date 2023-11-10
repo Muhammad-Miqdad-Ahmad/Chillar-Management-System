@@ -1,428 +1,428 @@
-ID: G1
-Name: Ava Turner
-Relative 1: Emma Turner (Sister)
-ID: 783214501
-Relative 2: Lily Turner (Cousin)
-ID: 783214502
-Age: 22
-Height: 5'6"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: March 4, 2023
-Expected Release: June 4, 2024
-Crime: Convicted of public intoxication and disorderly conduct.
+G1
+Ava Turner
+Emma Turner (Sister)
+783214501
+Lily Turner (Cousin)
+783214502
+22
+5'6"
+120 lbs
+1 year
+March 4, 2023
+June 4, 2024
+Convicted of public intoxication and disorderly conduct.
 
 
-ID: G2
-Name: William Foster
-Relative 1: Benjamin Foster (Brother)
-ID: 632187901
-Relative 2: Emily Turner (Cousin)
-ID: 632187902
-Age: 24
-Height: 5'9"
-Weight: 155 lbs
-Sentence: 1.5 years
-Captured on: August 19, 2022
-Expected Release: November 19, 2023
-Crime: Convicted of misdemeanor assault and public disturbance.
+G2
+William Foster
+Benjamin Foster (Brother)
+632187901
+Emily Turner (Cousin)
+632187902
+24
+5'9"
+155 lbs
+1.5 years
+August 19, 2022
+November 19, 2023
+Convicted of misdemeanor assault and public disturbance.
 
 
-ID: G3
-Name: Mia Turner
-Relative 1: Chloe Turner (Sister)
-ID: 514289071
-Relative 2: Lily Turner (Friend)
-ID: 514289072
-Age: 21
-Height: 5'5"
-Weight: 115 lbs
-Sentence: 9 months
-Captured on: January 4, 2023
-Expected Release: April 4, 2024
-Crime: Convicted of vandalism and property damage.
+G3
+Mia Turner
+Chloe Turner (Sister)
+514289071
+Lily Turner (Friend)
+514289072
+21
+5'5"
+115 lbs
+9 months
+January 4, 2023
+April 4, 2024
+Convicted of vandalism and property damage.
 
 
-ID: G4
-Name: Jacob Adams
-Relative 1: Daniel Adams (Brother)
-ID: 109873241
-Relative 2: Benjamin Adams (Friend)
-ID: 109873242
-Age: 25
-Height: 6'0"
-Weight: 160 lbs
-Sentence: 1.5 years
-Captured on: May 20, 2022
-Expected Release: August 20, 2023
-Crime: Convicted of petty theft and shoplifting.
+G4
+Jacob Adams
+Daniel Adams (Brother)
+109873241
+Benjamin Adams (Friend)
+109873242
+25
+6'0"
+160 lbs
+1.5 years
+May 20, 2022
+August 20, 2023
+Convicted of petty theft and shoplifting.
 
 
-ID: G5
-Name: Chloe Turner
-Relative 1: Ava Turner (Sister)
-ID: 425761981
-Relative 2: Emma Turner (Cousin)
-ID: 425761982
-Age: 22
-Height: 5'6"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: October 5, 2023
-Expected Release: January 5, 2025
-Crime: Convicted of disorderly conduct and public disturbances.
+G5
+Chloe Turner
+Ava Turner (Sister)
+425761981
+Emma Turner (Cousin)
+425761982
+22
+5'6"
+120 lbs
+1 year
+October 5, 2023
+January 5, 2025
+Convicted of disorderly conduct and public disturbances.
 
 
-ID: G6
-Name: Benjamin Foster
-Relative 1: William Foster (Brother)
-ID: 876543211
-Relative 2: Emily Foster (Sister)
-ID: 876543212
-Age: 24
-Height: 5'9"
-Weight: 155 lbs
-Sentence: 1.5 years
-Captured on: February 19, 2022
-Expected Release: May 19, 2023
-Crime: Convicted of minor drug possession and distribution.
+G6
+Benjamin Foster
+William Foster (Brother)
+876543211
+Emily Foster (Sister)
+876543212
+24
+5'9"
+155 lbs
+1.5 years
+February 19, 2022
+May 19, 2023
+Convicted of minor drug possession and distribution.
 
 
-ID: G7
-Name: Emily Turner
-Relative 1: Emma Turner (Cousin)
-ID: 987654311
-Relative 2: William Turner (Friend)
-ID: 987654312
-Age: 21
-Height: 5'5"
-Weight: 115 lbs
-Sentence: 9 months
-Captured on: July 6, 2022
-Expected Release: October 6, 2023
-Crime: Convicted of credit card fraud and online scams.
+G7
+Emily Turner
+Emma Turner (Cousin)
+987654311
+William Turner (Friend)
+987654312
+21
+5'5"
+115 lbs
+9 months
+July 6, 2022
+October 6, 2023
+Convicted of credit card fraud and online scams.
 
 
-ID: G8
-Name: Aiden ams
-Relative 1: Daniel ams (Brother)
-ID: 234567891
-Relative 2: Emily ams (Sister)
-ID: 234567892
-Age: 25
-Height: 6'0"
-Weight: 160 lbs
-Sentence: 1.5 years
-Captured on: November 20, 2022
-Expected Release: February 20, 2024
-Crime: Convicted of public intoxication and disorderly conduct.
+G8
+Aiden ams
+Daniel ams (Brother)
+234567891
+Emily ams (Sister)
+234567892
+25
+6'0"
+160 lbs
+1.5 years
+November 20, 2022
+February 20, 2024
+Convicted of public intoxication and disorderly conduct.
 
 
-ID: G9
-Name: Isabella Turner
-Relative 1: Chloe Turner (Sister)
-ID: 765432101
-Relative 2: Lily Turner (Cousin)
-ID: 765432102
-Age: 22
-Height: 5'6"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: April 5, 2023
-Expected Release: July 5, 2024
-Crime: Convicted of vandalism and property damage.
+G9
+Isabella Turner
+Chloe Turner (Sister)
+765432101
+Lily Turner (Cousin)
+765432102
+22
+5'6"
+120 lbs
+1 year
+April 5, 2023
+July 5, 2024
+Convicted of vandalism and property damage.
 
 
-ID: G10
-Name: Noah Foster
-Relative 1: William Foster (Brother)
-ID: 321098751
-Relative 2: Mia Foster (Sister)
-ID: 321098752
-Age: 24
-Height: 5'9"
-Weight: 155 lbs
-Sentence: 1.5 years
-Captured on: September 20, 2022
-Expected Release: December 20, 2023
-Crime: Convicted of misdemeanor assault and public disturbance.
+G10
+Noah Foster
+William Foster (Brother)
+321098751
+Mia Foster (Sister)
+321098752
+24
+5'9"
+155 lbs
+1.5 years
+September 20, 2022
+December 20, 2023
+Convicted of misdemeanor assault and public disturbance.
 
-ID: G11
-Name: Lily Turner
-Relative 1: Ava Turner (Cousin)
-ID: 456789011
-Relative 2: Emma Turner (Sister)
-ID: 456789012
-Age: 21
-Height: 5'5"
-Weight: 115 lbs
-Sentence: 9 months
-Captured on: February 5, 2023
-Expected Release: May 5, 2024
-Crime: Convicted of petty theft and shoplifting.
+G11
+Lily Turner
+Ava Turner (Cousin)
+456789011
+Emma Turner (Sister)
+456789012
+21
+5'5"
+115 lbs
+9 months
+February 5, 2023
+May 5, 2024
+Convicted of petty theft and shoplifting.
 
-ID: G12
-Name: Daniel Foster
-Relative 1: Benjamin Foster (Brother)
-ID: 890123451
-Relative 2: Emily Foster (Sister)
-ID: 890123452
-Age: 25
-Height: 6'0"
-Weight: 160 lbs
-Sentence: 1.5 years
-Captured on: June 21, 2022
-Expected Release: September 21, 2023
-Crime: Convicted of disorderly conduct and public disturbances.
+G12
+Daniel Foster
+Benjamin Foster (Brother)
+890123451
+Emily Foster (Sister)
+890123452
+25
+6'0"
+160 lbs
+1.5 years
+June 21, 2022
+September 21, 2023
+Convicted of disorderly conduct and public disturbances.
 
-ID: G13
-Name: Ava Turner
-Relative 1: Emma Turner (Cousin)
-ID: 135792461
-Relative 2: Lily Turner (Friend)
-ID: 135792462
-Age: 22
-Height: 5'6"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: November 6, 2023
-Expected Release: February 6, 2025
-Crime: Convicted of minor drug possession and distribution.
+G13
+Ava Turner
+Emma Turner (Cousin)
+135792461
+Lily Turner (Friend)
+135792462
+22
+5'6"
+120 lbs
+1 year
+November 6, 2023
+February 6, 2025
+Convicted of minor drug possession and distribution.
 
-ID: G14
-Name: William Foster
-Relative 1: Benjamin Foster (Brother)
-ID: 876543211
-Relative 2: Emily Turner (Cousin)
-ID: 876543212
-Age: 24
-Height: 5'9"
-Weight: 155 lbs
-Sentence: 1.5 years
-Captured on: March 21, 2022
-Expected Release: June 21, 2023
-Crime: Convicted of public intoxication and disorderly conduct.
+G14
+William Foster
+Benjamin Foster (Brother)
+876543211
+Emily Turner (Cousin)
+876543212
+24
+5'9"
+155 lbs
+1.5 years
+March 21, 2022
+June 21, 2023
+Convicted of public intoxication and disorderly conduct.
 
-ID: G15
-Name: Mia Turner
-Relative 1: Chloe Turner (Sister)
-ID: 109876541
-Relative 2: Lily Turner (Friend)
-ID: 109876542
-Age: 21
-Height: 5'5"
-Weight: 115 lbs
-Sentence: 9 months
-Captured on: August 6, 2022
-Expected Release: November 6, 2023
-Crime: Convicted of credit card fraud and online scams.
+G15
+Mia Turner
+Chloe Turner (Sister)
+109876541
+Lily Turner (Friend)
+109876542
+21
+5'5"
+115 lbs
+9 months
+August 6, 2022
+November 6, 2023
+Convicted of credit card fraud and online scams.
 
-ID: G16
-Name: Jacob Foster
-Relative 1: Daniel Foster (Brother)
-ID: 987654321
-Relative 2: Emily Foster (Sister)
-ID: 987654322
-Age: 25
-Height: 6'0"
-Weight: 160 lbs
-Sentence: 1.5 years
-Captured on: December 20, 2022
-Expected Release: March 20, 2024
-Crime: Convicted of minor drug possession and distribution.
+G16
+Jacob Foster
+Daniel Foster (Brother)
+987654321
+Emily Foster (Sister)
+987654322
+25
+6'0"
+160 lbs
+1.5 years
+December 20, 2022
+March 20, 2024
+Convicted of minor drug possession and distribution.
 
-ID: G17
-Name: Chloe Turner
-Relative 1: Ava Turner (Sister)
-ID: 654321091
-Relative 2: Emma Turner (Cousin)
-ID: 654321092
-Age: 22
-Height: 5'6"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: May 5, 2023
-Expected Release: August 5, 2024
-Crime: Convicted of petty theft and shoplifting.
+G17
+Chloe Turner
+Ava Turner (Sister)
+654321091
+Emma Turner (Cousin)
+654321092
+22
+5'6"
+120 lbs
+1 year
+May 5, 2023
+August 5, 2024
+Convicted of petty theft and shoplifting.
 
-ID: G18
-Name: Benjamin Foster
-Relative 1: William Foster (Brother)
-ID: 567890121
-Relative 2: Emily Turner (Sister)
-ID: 567890122
-Age: 24
-Height: 5'9"
-Weight: 155 lbs
-Sentence: 1.5 years
-Captured on: October 21, 2022
-Expected Release: January 21, 2024
-Crime: Convicted of disorderly conduct and public disturbances.
+G18
+Benjamin Foster
+William Foster (Brother)
+567890121
+Emily Turner (Sister)
+567890122
+24
+5'9"
+155 lbs
+1.5 years
+October 21, 2022
+January 21, 2024
+Convicted of disorderly conduct and public disturbances.
 
-ID: G19
-Name: Emily Turner
-Relative 1: Emma Turner (Cousin)
-ID: 432109881
-Relative 2: William Turner (Friend)
-ID: 432109882
-Age: 21
-Height: 5'5"
-Weight: 115 lbs
-Sentence: 9 months
-Captured on: February 6, 2023
-Expected Release: May 6, 2024
-Crime: Convicted of public intoxication and disorderly conduct.
+G19
+Emily Turner
+Emma Turner (Cousin)
+432109881
+William Turner (Friend)
+432109882
+21
+5'5"
+115 lbs
+9 months
+February 6, 2023
+May 6, 2024
+Convicted of public intoxication and disorderly conduct.
 
-ID: G20
-Name: Aiden Adams
-Relative 1: Daniel Adams (Brother)
-ID: 890123461
-Relative 2: Emily Adams (Sister)
-ID: 890123462
-Age: 25
-Height: 6'0"
-Weight: 160 lbs
-Sentence: 1.5 years
-Captured on: June 22, 2022
-Expected Release: September 22, 2023
-Crime: Convicted of misdemeanor assault and public disturbance.
+G20
+Aiden Adams
+Daniel Adams (Brother)
+890123461
+Emily Adams (Sister)
+890123462
+25
+6'0"
+160 lbs
+1.5 years
+June 22, 2022
+September 22, 2023
+Convicted of misdemeanor assault and public disturbance.
 
-ID: G21
-Name: Isabella Turner
-Relative 1: Chloe Turner (Sister)
-ID: 678901241
-Relative 2: Lily Turner (Cousin)
-ID: 678901242
-Age: 22
-Height: 5'6"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: November 7, 2023
-Expected Release: February 7, 2025
-Crime: Convicted of vandalism and property damage.
+G21
+Isabella Turner
+Chloe Turner (Sister)
+678901241
+Lily Turner (Cousin)
+678901242
+22
+5'6"
+120 lbs
+1 year
+November 7, 2023
+February 7, 2025
+Convicted of vandalism and property damage.
 
-ID: G22
-Name: Noah Foster
-Relative 1: William Foster (Brother)
-ID: 987654331
-Relative 2: Mia Foster (Sister)
-ID: 987654332
-Age: 24
-Height: 5'9"
-Weight: 155 lbs
-Sentence: 1.5 years
-Captured on: April 22, 2022
-Expected Release: July 22, 2023
-Crime: Convicted of petty theft and shoplifting.
+G22
+Noah Foster
+William Foster (Brother)
+987654331
+Mia Foster (Sister)
+987654332
+24
+5'9"
+155 lbs
+1.5 years
+April 22, 2022
+July 22, 2023
+Convicted of petty theft and shoplifting.
 
-ID: G23
-Name: Lily Turner
-Relative 1: Ava Turner (Sister)
-ID: 654321091
-Relative 2: Emma Turner (Cousin)
-ID: 654321092
-Age: 21
-Height: 5'5"
-Weight: 115 lbs
-Sentence: 9 months
-Captured on: September 7, 2022
-Expected Release: December 7, 2023
-Crime: Convicted of disorderly conduct and public disturbances.
+G23
+Lily Turner
+Ava Turner (Sister)
+654321091
+Emma Turner (Cousin)
+654321092
+21
+5'5"
+115 lbs
+9 months
+September 7, 2022
+December 7, 2023
+Convicted of disorderly conduct and public disturbances.
 
-ID: G24
-Name: Daniel Foster
-Relative 1: Benjamin Foster (Brother)
-ID: 567890121
-Relative 2: Emily Foster (Sister)
-ID: 567890122
-Age: 25
-Height: 6'0"
-Weight: 160 lbs
-Sentence: 1.5 years
-Captured on: January 21, 2022
-Expected Release: April 21, 2023
-Crime: Convicted of public intoxication and disorderly conduct.
+G24
+Daniel Foster
+Benjamin Foster (Brother)
+567890121
+Emily Foster (Sister)
+567890122
+25
+6'0"
+160 lbs
+1.5 years
+January 21, 2022
+April 21, 2023
+Convicted of public intoxication and disorderly conduct.
 
-ID: G25
-Name: Ava Turner
-Relative 1: Emma Turner (Cousin)
-ID: 432109881
-Relative 2: Lily Turner (Friend)
-ID: 432109882
-Age: 22
-Height: 5'6"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: June 6, 2023
-Expected Release: September 6, 2024
-Crime: Convicted of minor drug possession and distribution.
+G25
+Ava Turner
+Emma Turner (Cousin)
+432109881
+Lily Turner (Friend)
+432109882
+22
+5'6"
+120 lbs
+1 year
+June 6, 2023
+September 6, 2024
+Convicted of minor drug possession and distribution.
 
-ID: G26
-Name: William Foster
-Relative 1: Benjamin Foster (Brother)
-ID: 890123461
-Relative 2: Emily Turner (Cousin)
-ID: 890123462
-Age: 24
-Height: 5'9"
-Weight: 155 lbs
-Sentence: 1.5 years
-Captured on: October 22, 2022
-Expected Release: January 22, 2024
-Crime: Convicted of disorderly conduct and public disturbances.
+G26
+William Foster
+Benjamin Foster (Brother)
+890123461
+Emily Turner (Cousin)
+890123462
+24
+5'9"
+155 lbs
+1.5 years
+October 22, 2022
+January 22, 2024
+Convicted of disorderly conduct and public disturbances.
 
-ID: G27
-Name: Mia Turner
-Relative 1: Chloe Turner (Sister)
-ID: 678901241
-Relative 2: Lily Turner (Cousin)
-ID: 678901242
-Age: 21
-Height: 5'5"
-Weight: 115 lbs
-Sentence: 9 months
-Captured on: March 7, 2023
-Expected Release: June 7, 2024
-Crime: Convicted of credit card fraud and online scams.
+G27
+Mia Turner
+Chloe Turner (Sister)
+678901241
+Lily Turner (Cousin)
+678901242
+21
+5'5"
+115 lbs
+9 months
+March 7, 2023
+June 7, 2024
+Convicted of credit card fraud and online scams.
 
-ID: G28
-Name: Jacob Foster
-Relative 1: Daniel Foster (Brother)
-ID: 987654331
-Relative 2: Emily Foster (Sister)
-ID: 987654332
-Age: 25
-Height: 6'0"
-Weight: 160 lbs
-Sentence: 1.5 years
-Captured on: July 22, 2022
-Expected Release: October 22, 2023
-Crime: Convicted of public intoxication and disorderly conduct.
+G28
+Jacob Foster
+Daniel Foster (Brother)
+987654331
+Emily Foster (Sister)
+987654332
+25
+6'0"
+160 lbs
+1.5 years
+July 22, 2022
+October 22, 2023
+Convicted of public intoxication and disorderly conduct.
 
-ID: G29
-Name: Chloe Turner
-Relative 1: Ava Turner (Sister)
-ID: 654321091
-Relative 2: Emma Turner (Cousin)
-ID: 654321092
-Age: 22
-Height: 5'6"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: December 7, 2023
-Expected Release: March 7, 2025
-Crime: Convicted of vandalism and property damage.
+G29
+Chloe Turner
+Ava Turner (Sister)
+654321091
+Emma Turner (Cousin)
+654321092
+22
+5'6"
+120 lbs
+1 year
+December 7, 2023
+March 7, 2025
+Convicted of vandalism and property damage.
 
-ID: G30
-Name: Benjamin Foster
-Relative 1: William Foster (Brother)
-ID: 567890121
-Relative 2: Emily Turner (Sister)
-ID: 567890122
-Age: 24
-Height: 5'9"
-Weight: 155 lbs
-Sentence: 1.5 years
-Captured on: April 22, 2022
-Expected Release: July 22, 2023
-Crime: Convicted of petty theft and shoplifting.
+G30
+Benjamin Foster
+William Foster (Brother)
+567890121
+Emily Turner (Sister)
+567890122
+24
+5'9"
+155 lbs
+1.5 years
+April 22, 2022
+July 22, 2023
+Convicted of petty theft and shoplifting.

@@ -1,299 +1,299 @@
-ID: B1
-Name: Daniel "The Bulldozer" Turner
-Age: 40
-Height: 6'2"
-Weight: 210 lbs
-Sentence: 50 years
-Captured on: October 5, 2002
-Expected Release: March 5, 2052
-Crime: Leader of a local street gang involved in organized crime and drug trafficking.
+B1
+Daniel "The Bulldozer" Turner
+40
+6'2"
+210 lbs
+50 years
+October 5, 2002
+March 5, 2052
+Leader of a local street gang involved in organized crime and drug trafficking.
 
-ID: B2
-Name: Sophie "The Whisperer" Martinez
-Age: 35
-Height: 5'9"
-Weight: 150 lbs
-Sentence: 40 years
-Captured on: July 15, 2004
-Expected Release: February 2, 2044
-Crime: Skilled in forgery and identity theft, responsible for a series of financial frauds.
+B2
+Sophie "The Whisperer" Martinez
+35
+5'9"
+150 lbs
+40 years
+July 15, 2004
+February 2, 2044
+Skilled in forgery and identity theft, responsible for a series of financial frauds.
 
-ID: B3
-Name: Xavier "The Tinkerer" Anderson
-Age: 38
-Height: 6'1"
-Weight: 190 lbs
-Sentence: 45 years
-Captured on: April 20, 2018
-Expected Release: July 3, 2048
-Crime: Involved in industrial espionage and tampering with corporate systems.
+B3
+Xavier "The Tinkerer" Anderson
+38
+6'1"
+190 lbs
+45 years
+April 20, 2018
+July 3, 2048
+Involved in industrial espionage and tampering with corporate systems.
 
-ID: B4
-Name: Maya "The Chameleon" Parker
-Age: 36
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 55 years
-Captured on: June 10, 2010
-Expected Release: August 5, 2045
-Crime: Highly skilled in deception and social engineering, with a history of elaborate scams.
+B4
+Maya "The Chameleon" Parker
+36
+5'7"
+140 lbs
+55 years
+June 10, 2010
+August 5, 2045
+Highly skilled in deception and social engineering, with a history of elaborate scams.
 
-ID: B5
-Name: Logan "The Stuntman" Reynolds
-Age: 42
-Height: 6'0"
-Weight: 180 lbs
-Sentence: 60 years
-Captured on: September 22, 2006
-Expected Release: January 17, 2057
-Crime: Alleged mastermind behind a series of bank robberies and high-speed chases.
+B5
+Logan "The Stuntman" Reynolds
+42
+6'0"
+180 lbs
+60 years
+September 22, 2006
+January 17, 2057
+Alleged mastermind behind a series of bank robberies and high-speed chases.
 
-ID: B6
-Name: Emma "The Trickster" Gallagher
-Age: 38
-Height: 5'8"
-Weight: 160 lbs
-Sentence: 50 years
-Captured on: March 15, 2011
-Expected Release: August 3, 2041
-Crime: Skilled in art forgery and involved in a high-profile museum heist.
+B6
+Emma "The Trickster" Gallagher
+38
+5'8"
+160 lbs
+50 years
+March 15, 2011
+August 3, 2041
+Skilled in art forgery and involved in a high-profile museum heist.
 
-ID: B7
-Name: Benjamin "The Strategist" Wells
-Age: 41
-Height: 6'0"
-Weight: 190 lbs
-Sentence: 45 years
-Captured on: October 28, 2002
-Expected Release: May 8, 2052
-Crime: Known for elaborate white-collar fraud schemes affecting major corporations.
+B7
+Benjamin "The Strategist" Wells
+41
+6'0"
+190 lbs
+45 years
+October 28, 2002
+May 8, 2052
+Known for elaborate white-collar fraud schemes affecting major corporations.
 
-ID: B8
-Name: Sarah "The Illusionist" Knight
-Age: 37
-Height: 5'7"
-Weight: 135 lbs
-Sentence: 55 years
-Captured on: November 5, 2012
-Expected Release: October 18, 2057
-Crime: Renowned for her ability to create realistic counterfeit money.
+B8
+Sarah "The Illusionist" Knight
+37
+5'7"
+135 lbs
+55 years
+November 5, 2012
+October 18, 2057
+Renowned for her ability to create realistic counterfeit money.
 
-ID: B9
-Name: Caleb "The Infiltrator" Brooks
-Age: 44
-Height: 6'1"
-Weight: 180 lbs
-Sentence: 60 years
-Captured on: August 12, 2005
-Expected Release: June 30, 2045
-Crime: Alleged leader of a highly skilled burglary and infiltration crew.
+B9
+Caleb "The Infiltrator" Brooks
+44
+6'1"
+180 lbs
+60 years
+August 12, 2005
+June 30, 2045
+Alleged leader of a highly skilled burglary and infiltration crew.
 
-ID: B10
-Name: Olivia "The Riddler" Hughes
-Age: 39
-Height: 5'9"
-Weight: 155 lbs
-Sentence: 50 years
-Captured on: December 8, 2010
-Expected Release: March 5, 2042
-Crime: Known for leaving intricate puzzles at the scenes of her crimes.
+B10
+Olivia "The Riddler" Hughes
+39
+5'9"
+155 lbs
+50 years
+December 8, 2010
+March 5, 2042
+Known for leaving intricate puzzles at the scenes of her crimes.
 
-ID: B11
-Name: Mason "The Operator" Lewis
-Age: 43
-Height: 6'2"
-Weight: 200 lbs
-Sentence: 45 years
-Time Remaining: 25 years
-Time Spent: 20 years
-Crime: Skilled in manipulating financial markets and stock fraud.
+B11
+Mason "The Operator" Lewis
+43
+6'2"
+200 lbs
+45 years
+g: 25 years
+rs
+Skilled in manipulating financial markets and stock fraud.
 
-ID: B12
-Name: Isabelle "The Forger" Bennett
-Age: 36
-Height: 5'8"
-Weight: 150 lbs
-Sentence: 40 years
-Captured on: January 20, 2007
-Expected Release: October 5, 2052
-Crime: Renowned for forging high-value artworks and documents.
+B12
+Isabelle "The Forger" Bennett
+36
+5'8"
+150 lbs
+40 years
+January 20, 2007
+October 5, 2052
+Renowned for forging high-value artworks and documents.
 
-ID: B13
-Name: Oliver "The Escapist" Cooper
-Age: 39
-Height: 6'0"
-Weight: 175 lbs
-Sentence: 50 years
-Captured on: March 22, 2010
-Expected Release: February 2, 2040
-Crime: Known for escaping from several high-security facilities.
+B13
+Oliver "The Escapist" Cooper
+39
+6'0"
+175 lbs
+50 years
+March 22, 2010
+February 2, 2040
+Known for escaping from several high-security facilities.
 
-ID: B14
-Name: Emily "The Deceiver" Taylor
-Age: 37
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 55 years
-Captured on: April 3, 2005
-Expected Release: August 20, 2055
-Crime: Master of disguises and con games, often involving large sums of money.
+B14
+Emily "The Deceiver" Taylor
+37
+5'7"
+140 lbs
+55 years
+April 3, 2005
+August 20, 2055
+Master of disguises and con games, often involving large sums of money.
 
-ID: B15
-Name: James "The Enigma" Foster
-Age: 41
-Height: 6'1"
-Weight: 185 lbs
-Sentence: 60 years
-Captured on: June 14, 2010
-Expected Release: November 2, 2040
-Crime: Known for creating complex, unsolvable puzzles that baffle investigators.
+B15
+James "The Enigma" Foster
+41
+6'1"
+185 lbs
+60 years
+June 14, 2010
+November 2, 2040
+Known for creating complex, unsolvable puzzles that baffle investigators.
 
-ID: B16
-Name: Alex "The Decoder" Mitchell
-Age: 38
-Height: 5'9"
-Weight: 160 lbs
-Sentence: 45 years
-Captured on: September 18, 2004
-Expected Release: May 10, 2054
-Crime: Known for hacking into sensitive government databases and classified information.
+B16
+Alex "The Decoder" Mitchell
+38
+5'9"
+160 lbs
+45 years
+September 18, 2004
+May 10, 2054
+Known for hacking into sensitive government databases and classified information.
 
-ID: B17
-Name: Lily "The Shadow" Parker
-Age: 36
-Height: 5'6"
-Weight: 140 lbs
-Sentence: 50 years
-Captured on: October 30, 2009
-Expected Release: January 23, 2049
-Crime: Skilled cat burglar with a history of high-profile heists.
+B17
+Lily "The Shadow" Parker
+36
+5'6"
+140 lbs
+50 years
+October 30, 2009
+January 23, 2049
+Skilled cat burglar with a history of high-profile heists.
 
-ID: B18
-Name: Noah "The Smuggler" Reynolds
-Age: 41
-Height: 6'0"
-Weight: 190 lbs
-Sentence: 55 years
-Captured on: January 5, 2015
-Expected Release: March 30, 2055
-Crime: Involved in smuggling contraband and illegal goods across borders.
+B18
+Noah "The Smuggler" Reynolds
+41
+6'0"
+190 lbs
+55 years
+January 5, 2015
+March 30, 2055
+Involved in smuggling contraband and illegal goods across borders.
 
-ID: B19
-Name: Sophia "The Codebreaker" Carter
-Age: 37
-Height: 5'7"
-Weight: 145 lbs
-Sentence: 50 years
-Captured on: March 14, 2011
-Expected Release: August 12, 2041
-Crime: Renowned for breaking intricate security systems and cracking codes.
+B19
+Sophia "The Codebreaker" Carter
+37
+5'7"
+145 lbs
+50 years
+March 14, 2011
+August 12, 2041
+Renowned for breaking intricate security systems and cracking codes.
 
-ID: B20
-Name: Leo "The Artisan" Hernandez
-Age: 40
-Height: 5'8"
-Weight: 170 lbs
-Sentence: 60 years
-Captured on: April 28, 2008
-Expected Release: July 18, 2048
-Crime: Known for creating counterfeit masterpieces and selling them to art collectors.
+B20
+Leo "The Artisan" Hernandez
+40
+5'8"
+170 lbs
+60 years
+April 28, 2008
+July 18, 2048
+Known for creating counterfeit masterpieces and selling them to art collectors.
 
-ID: B21
-Name: Mia "The Infiltrator" Jensen
-Age: 35
-Height: 5'6"
-Weight: 135 lbs
-Sentence: 45 years
-Captured on: September 10, 2013
-Expected Release: November 30, 2053
-Crime: Known for infiltrating high-security facilities and corporate offices.
+B21
+Mia "The Infiltrator" Jensen
+35
+5'6"
+135 lbs
+45 years
+September 10, 2013
+November 30, 2053
+Known for infiltrating high-security facilities and corporate offices.
 
-ID: B22
-Name: Henry "The Strategist" Douglas
-Age: 39
-Height: 6'0"
-Weight: 175 lbs
-Sentence: 50 years
-Captured on: February 5, 2009
-Expected Release: May 25, 2049
-Crime: Skilled in orchestrating elaborate white-collar fraud schemes.
+B22
+Henry "The Strategist" Douglas
+39
+6'0"
+175 lbs
+50 years
+February 5, 2009
+May 25, 2049
+Skilled in orchestrating elaborate white-collar fraud schemes.
 
-ID: B23
-Name: Lily "The Forger" Stevenson
-Age: 37
-Height: 5'8"
-Weight: 150 lbs
-Sentence: 55 years
-Captured on: August 20, 2015
-Expected Release: October 15, 2055
-Crime: Renowned for creating convincing forged documents and passports.
+B23
+Lily "The Forger" Stevenson
+37
+5'8"
+150 lbs
+55 years
+August 20, 2015
+October 15, 2055
+Renowned for creating convincing forged documents and passports.
 
-ID: B24
-Name: Max "The Escape Artist" Clarke
-Age: 42
-Height: 6'1"
-Weight: 180 lbs
-Sentence: 60 years
-Captured on: November 10, 2008
-Expected Release: January 5, 2049
-Crime: Known for escaping from high-security prisons and detention centers.
+B24
+Max "The Escape Artist" Clarke
+42
+6'1"
+180 lbs
+60 years
+November 10, 2008
+January 5, 2049
+Known for escaping from high-security prisons and detention centers.
 
-ID: B25
-Name: Zoe "The Mastermind" Harrison
-Age: 36
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 50 years
-Captured on: February 16, 2012
-Expected Release: April 8, 2042
-Crime: Skilled in orchestrating complex criminal operations and heists.
+B25
+Zoe "The Mastermind" Harrison
+36
+5'7"
+140 lbs
+50 years
+February 16, 2012
+April 8, 2042
+Skilled in orchestrating complex criminal operations and heists.
 
-ID: B26
-Name: Nora "The Saboteur" Walsh
-Age: 38
-Height: 5'9"
-Weight: 160 lbs
-Sentence: 45 years
-Captured on: October 3, 2016
-Expected Release: December 25, 2051
-Crime: Known for tampering with corporate systems and causing significant economic damage.
+B26
+Nora "The Saboteur" Walsh
+38
+5'9"
+160 lbs
+45 years
+October 3, 2016
+December 25, 2051
+Known for tampering with corporate systems and causing significant economic damage.
 
-ID: B27
-Name: Owen "The Deceiver" Hart
-Age: 36
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 50 years
-Captured on: March 12, 2010
-Expected Release: May 5, 2040
-Crime: Skilled in deception and social engineering, responsible for various scams.
+B27
+Owen "The Deceiver" Hart
+36
+5'7"
+140 lbs
+50 years
+March 12, 2010
+May 5, 2040
+Skilled in deception and social engineering, responsible for various scams.
 
-ID: B28
-Name: Ella "The Infiltrator" Banks
-Age: 41
-Height: 6'0"
-Weight: 175 lbs
-Sentence: 55 years
-Captured on: April 25, 2014
-Expected Release: June 18, 2054
-Crime: Known for infiltrating secure facilities and corporate offices.
+B28
+Ella "The Infiltrator" Banks
+41
+6'0"
+175 lbs
+55 years
+April 25, 2014
+June 18, 2054
+Known for infiltrating secure facilities and corporate offices.
 
-ID: B29
-Name: Luke "The Artisan" Sullivan
-Age: 37
-Height: 5'8"
-Weight: 150 lbs
-Sentence: 50 years
-Captured on: June 9, 2006
-Expected Release: September 2, 2046
-Crime: Skilled in creating counterfeit artwork and selling it to art collectors.
+B29
+Luke "The Artisan" Sullivan
+37
+5'8"
+150 lbs
+50 years
+June 9, 2006
+September 2, 2046
+Skilled in creating counterfeit artwork and selling it to art collectors.
 
-ID: B30
-Name: Mia "The Codebreaker" Larson
-Age: 40
-Height: 5'9"
-Weight: 160 lbs
-Sentence: 60 years
-Captured on: August 2, 2011
-Expected Release: November 25, 2041
-Crime: Renowned for breaking intricate security systems and decoding complex codes.
+B30
+Mia "The Codebreaker" Larson
+40
+5'9"
+160 lbs
+60 years
+August 2, 2011
+November 25, 2041
+Renowned for breaking intricate security systems and decoding complex codes.

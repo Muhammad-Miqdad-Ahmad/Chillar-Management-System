@@ -1,303 +1,303 @@
-ID: C1
-Name: Jacob "The Fixer" Rodriguez
-Age: 32
-Height: 6'0"
-Weight: 180 lbs
-Sentence: 25 years
-Captured on: September 8, 2013
-Expected Release: May 22, 2038
-Crime: Known for brokering deals and settling disputes among local criminal organizations.
+C1
+Jacob "The Fixer" Rodriguez
+32
+6'0"
+180 lbs
+25 years
+September 8, 2013
+May 22, 2038
+Known for brokering deals and settling disputes among local criminal organizations.
 
-ID: C2
-Name: Emily Johnson
-Age: 28
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 20 years
-Captured on: December 2, 2015
-Expected Release: February 5, 2035
-Crime: Convicted of embezzlement and financial fraud.
+C2
+Emily Johnson
+28
+5'7"
+140 lbs
+20 years
+December 2, 2015
+February 5, 2035
+Convicted of embezzlement and financial fraud.
 
-ID: C3
-Name: Liam "The Forger" Sullivan
-Age: 30
-Height: 5'10"
-Weight: 160 lbs
-Sentence: 30 years
-Captured on: July 14, 2012
-Expected Release: November 27, 2042
-Crime: Skilled in creating convincing forged documents and passports.
+C3
+Liam "The Forger" Sullivan
+30
+5'10"
+160 lbs
+30 years
+July 14, 2012
+November 27, 2042
+Skilled in creating convincing forged documents and passports.
 
-ID: C4
-Name: Sophie Anderson
-Age: 27
-Height: 5'5"
-Weight: 130 lbs
-Sentence: 15 years
-Captured on: April 5, 2015
-Expected Release: July 13, 2030
-Crime: Convicted of identy theft and cybercrimes.
-
-
-ID: C5
-Name: Benjamin "The Hacker" Carter
-Age: 31
-Height: 5'11"
-Weight: 170 lbs
-Sentence: 35 years
-Captured on: June 20, 2011
-Expected Release: October 15, 2046
-Crime: Skilled hacker responsible for multiple cyberattacks.
-
-ID: C6
-Name: Emma "The Chemist" White
-Age: 29
-Height: 5'8"
-Weight: 150 lbs
-Sentence: 20 years
-Captured on: October 18, 2015
-Expected Release: August 28, 2035
-Crime: Convicted of manufacturing illegal drugs.
-
-ID: C7
-Name: William "The Smuggler" Parker
-Age: 33
-Height: 6'1"
-Weight: 185 lbs
-Sentence: 25 years
-Captured on: February 3, 2011
-Expected Release: September 15, 2036
-Crime: Known for smuggling contraband and illegal goods.
-
-ID: C8
-Name: Ava "The Enigma" Foster
-Age: 26
-Height: 5'6"
-Weight: 135 lbs
-Sentence: 15 years
-Captured on: May 7, 2017
-Expected Release: November 3, 2032
-Crime: Convicted of orchestrating complex scams and identy theft.
+C4
+Sophie Anderson
+27
+5'5"
+130 lbs
+15 years
+April 5, 2015
+July 13, 2030
+Convicted of identy theft and cybercrimes.
 
 
-ID: C9
-Name: Samuel "The Stuntman" Murphy
-Age: 34
-Height: 6'0"
-Weight: 170 lbs
-Sentence: 30 years
-Captured on: August 20, 2012
-Expected Release: June 12, 2032
-Crime: Involved in high-speed chases and reckless driving resulting in injuries.
+C5
+Benjamin "The Hacker" Carter
+31
+5'11"
+170 lbs
+35 years
+June 20, 2011
+October 15, 2046
+Skilled hacker responsible for multiple cyberattacks.
 
-ID: C10
-Name: Isabelle "The Whisperer" Wright
-Age: 29
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 20 years
-Captured on: December 10, 2015
-Expected Release: March 14, 2035
-Crime: Convicted of eavesdropping and selling sensitive information.
+C6
+Emma "The Chemist" White
+29
+5'8"
+150 lbs
+20 years
+October 18, 2015
+August 28, 2035
+Convicted of manufacturing illegal drugs.
 
-ID: C11
-Name: Henry "The Mechanic" Collins
-Age: 32
-Height: 5'9"
-Weight: 160 lbs
-Sentence: 25 years
-Captured on: March 25, 2013
-Expected Release: September 8, 2038
-Crime: Skilled in car theft and vehicle modification.
+C7
+William "The Smuggler" Parker
+33
+6'1"
+185 lbs
+25 years
+February 3, 2011
+September 15, 2036
+Known for smuggling contraband and illegal goods.
 
-ID: C12
-Name: Olivia Bennett
-Age: 28
-Height: 5'6"
-Weight: 135 lbs
-Sentence: 20 years
-Captured on: September 2, 2014
-Expected Release: October 1, 2034
-Crime: Convicted of computer hacking and cybercrimes.
-
-ID: C13
-Name: Ethan "The Chemist" Mitchell
-Age: 30
-Height: 5'11"
-Weight: 170 lbs
-Sentence: 30 years
-Captured on: November 10, 2010
-Expected Release: December 25, 2040
-Crime: Known for manufacturing illegal drugs and narcotics.
-
-ID: C14
-Name: Chloe Johnson
-Age: 27
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 15 years
-Captured on: June 7, 2013
-Expected Release: August 10, 2038
-Crime: Convicted of identy theft and fraud.
+C8
+Ava "The Enigma" Foster
+26
+5'6"
+135 lbs
+15 years
+May 7, 2017
+November 3, 2032
+Convicted of orchestrating complex scams and identy theft.
 
 
-ID: C15
-Name: Felix "The Broker" Rivera
-Age: 31
-Height: 5'10"
-Weight: 175 lbs
-Sentence: 35 years
-Captured on: January 14, 2011
-Expected Release: May 29, 2046
-Crime: Known for facilitating criminal deals and illicit transactions.
+C9
+Samuel "The Stuntman" Murphy
+34
+6'0"
+170 lbs
+30 years
+August 20, 2012
+June 12, 2032
+Involved in high-speed chases and reckless driving resulting in injuries.
 
-ID: C16
-Name: Lily "The Forger" Adams
-Age: 29
-Height: 5'6"
-Weight: 135 lbs
-Sentence: 20 years
-Captured on: March 9, 2014
-Expected Release: May 16, 2034
-Crime: Known for creating convincing forged documents and counterfeit money.
+C10
+Isabelle "The Whisperer" Wright
+29
+5'7"
+140 lbs
+20 years
+December 10, 2015
+March 14, 2035
+Convicted of eavesdropping and selling sensitive information.
 
-ID: C17
-Name: Nathan Wright
-Age: 33
-Height: 6'0"
-Weight: 170 lbs
-Sentence: 25 years
-Captured on: July 22, 2010
-Expected Release: October 6, 2035
-Crime: Convicted of organized shoplifting and theft.
+C11
+Henry "The Mechanic" Collins
+32
+5'9"
+160 lbs
+25 years
+March 25, 2013
+September 8, 2038
+Skilled in car theft and vehicle modification.
 
-ID: C18
-Name: Isabella "The Smuggler" Ramirez
-Age: 28
-Height: 5'8"
-Weight: 150 lbs
-Sentence: 30 years
-Captured on: October 5, 2017
-Expected Release: December 20, 2037
-Crime: Known for smuggling contraband and illegal goods across borders.
+C12
+Olivia Bennett
+28
+5'6"
+135 lbs
+20 years
+September 2, 2014
+October 1, 2034
+Convicted of computer hacking and cybercrimes.
 
-ID: C19
-Name: Jack "The Mechanic" Price
-Age: 31
-Height: 5'9"
-Weight: 160 lbs
-Sentence: 25 years
-Captured on: February 15, 2013
-Expected Release: May 1, 2038
-Crime: Skilled in vehicle theft and alteration.
+C13
+Ethan "The Chemist" Mitchell
+30
+5'11"
+170 lbs
+30 years
+November 10, 2010
+December 25, 2040
+Known for manufacturing illegal drugs and narcotics.
 
-ID: C20
-Name: Emily Stevens
-Age: 27
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 20 years
-Captured on: August 30, 2015
-Expected Release: July 21, 2035
-Crime: Convicted of credit card fraud and embezzlement.
-
-ID: C21
-Name: Daniel "The Broker" Carter
-Age: 30
-Height: 5'10"
-Weight: 170 lbs
-Sentence: 35 years
-Captured on: June 18, 2011
-Expected Release: January 1, 2046
-Crime: Known for facilitating criminal deals and underground transactions.
-
-ID: C22
-Name: Emma Smith
-Age: 29
-Height: 5'6"
-Weight: 135 lbs
-Sentence: 25 years
-Captured on: October 25, 2014
-Expected Release: February 3, 2039
-Crime: Convicted of online fraud and identy theft.
+C14
+Chloe Johnson
+27
+5'7"
+140 lbs
+15 years
+June 7, 2013
+August 10, 2038
+Convicted of identy theft and fraud.
 
 
-ID: C23
-Name: Benjamin "The Saboteur" Davis
-Age: 32
-Height: 6'0"
-Weight: 180 lbs
-Sentence: 30 years
-Captured on: April 10, 2012
-Expected Release: August 23, 2037
-Crime: Known for tampering with corporate systems and causing economic disruption.
+C15
+Felix "The Broker" Rivera
+31
+5'10"
+175 lbs
+35 years
+January 14, 2011
+May 29, 2046
+Known for facilitating criminal deals and illicit transactions.
 
-ID: C24
-Name: Ava Turner
-Age: 28
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 20 years
-Captured on: July 7, 2014
-Expected Release: September 10, 2034
-Crime: Convicted of bank fraud and embezzlement.
+C16
+Lily "The Forger" Adams
+29
+5'6"
+135 lbs
+20 years
+March 9, 2014
+May 16, 2034
+Known for creating convincing forged documents and counterfeit money.
 
-ID: C25
-Name: William "The Hacker" Walker
-Age: 33
-Height: 6'1"
-Weight: 185 lbs
-Sentence: 25 years
-Captured on: December 18, 2010
-Expected Release: May 2, 2035
-Crime: Skilled hacker responsible for multiple cybercrimes.
+C17
+Nathan Wright
+33
+6'0"
+170 lbs
+25 years
+July 22, 2010
+October 6, 2035
+Convicted of organized shoplifting and theft.
 
-ID: C26
-Name: Olivia "The Whisperer" Hughes
-Age: 31
-Height: 5'8"
-Weight: 150 lbs
-Sentence: 30 years
-Captured on: March 5, 2012
-Expected Release: April 18, 2037
-Crime: Convicted of eavesdropping and selling sensitive information.
+C18
+Isabella "The Smuggler" Ramirez
+28
+5'8"
+150 lbs
+30 years
+October 5, 2017
+December 20, 2037
+Known for smuggling contraband and illegal goods across borders.
 
-ID: C27
-Name: Liam Johnson
-Age: 29
-Height: 5'9"
-Weight: 160 lbs
-Sentence: 25 years
-Captured on: September 15, 2015
-Expected Release: July 3, 2035
-Crime: Convicted of computer hacking and cybercrimes.
+C19
+Jack "The Mechanic" Price
+31
+5'9"
+160 lbs
+25 years
+February 15, 2013
+May 1, 2038
+Skilled in vehicle theft and alteration.
 
-ID: C28
-Name: Chloe "The Chemist" Martin
-Age: 32
-Height: 5'6"
-Weight: 135 lbs
-Sentence: 30 years
-Captured on: November 20, 2012
-Expected Release: January 14, 2038
-Crime: Known for manufacturing illegal drugs.
+C20
+Emily Stevens
+27
+5'7"
+140 lbs
+20 years
+August 30, 2015
+July 21, 2035
+Convicted of credit card fraud and embezzlement.
 
-ID: C29
-Name: Henry Davis
-Age: 28
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 20 years
-Captured on: April 8, 2015
-Expected Release: May 21, 2035
-Crime: Convicted of credit card fraud and embezzlement.
+C21
+Daniel "The Broker" Carter
+30
+5'10"
+170 lbs
+35 years
+June 18, 2011
+January 1, 2046
+Known for facilitating criminal deals and underground transactions.
 
-ID: C30
-Name: Isabella "The Forger" Wright
-Age: 31
-Height: 5'8"
-Weight: 150 lbs
-Sentence: 25 years
-Captured on: June 30, 2013
-Expected Release: September 4, 2038
-Crime: Skilled in creating convincing forged documents and counterfeit money.
+C22
+Emma Smith
+29
+5'6"
+135 lbs
+25 years
+October 25, 2014
+February 3, 2039
+Convicted of online fraud and identy theft.
+
+
+C23
+Benjamin "The Saboteur" Davis
+32
+6'0"
+180 lbs
+30 years
+April 10, 2012
+August 23, 2037
+Known for tampering with corporate systems and causing economic disruption.
+
+C24
+Ava Turner
+28
+5'7"
+140 lbs
+20 years
+July 7, 2014
+September 10, 2034
+Convicted of bank fraud and embezzlement.
+
+C25
+William "The Hacker" Walker
+33
+6'1"
+185 lbs
+25 years
+December 18, 2010
+May 2, 2035
+Skilled hacker responsible for multiple cybercrimes.
+
+C26
+Olivia "The Whisperer" Hughes
+31
+5'8"
+150 lbs
+30 years
+March 5, 2012
+April 18, 2037
+Convicted of eavesdropping and selling sensitive information.
+
+C27
+Liam Johnson
+29
+5'9"
+160 lbs
+25 years
+September 15, 2015
+July 3, 2035
+Convicted of computer hacking and cybercrimes.
+
+C28
+Chloe "The Chemist" Martin
+32
+5'6"
+135 lbs
+30 years
+November 20, 2012
+January 14, 2038
+Known for manufacturing illegal drugs.
+
+C29
+Henry Davis
+28
+5'7"
+140 lbs
+20 years
+April 8, 2015
+May 21, 2035
+Convicted of credit card fraud and embezzlement.
+
+C30
+Isabella "The Forger" Wright
+31
+5'8"
+150 lbs
+25 years
+June 30, 2013
+September 4, 2038
+Skilled in creating convincing forged documents and counterfeit money.

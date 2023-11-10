@@ -2,13 +2,19 @@
 #include "hierarchy.h"
 #include "Visitor.h"
 #include <fstream>
-
-template <typename data_type_1, typename data_type_2> // the function is template so that any class that needs to make a tree can use this function
-void add_chunk(data_type_1 *&chunk, data_type_2 data);
+#include <string>
 
 // template <typename datatype>
 // ostream &operator<<(ostream &out, const datatype *&chunk);
 
+//global functions
+template<typename datatype>
+int partition(vector<datatype> &array, int first, int last);
+
+template<typename datatype>
+void quick_sort(vector<datatype> &array, int first, int last);
+
+// global operator overloads
 Prisoners* operator%(Hierarchy* &chunk, string data);
 Prisoners* operator%(Prisoners* &chunk, string data);
 
