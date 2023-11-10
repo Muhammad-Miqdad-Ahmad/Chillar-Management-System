@@ -1,4 +1,5 @@
 #include "Prisoners.h"
+#include <string>
 class Hierarchy
 {
 private:

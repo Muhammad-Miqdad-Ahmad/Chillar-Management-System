@@ -1,7 +1,8 @@
 #include "Addons.h"
 
-int main(int argc, char const *argv[])
+int main()
 {
     Hierarchial_tree check;
+    cout << "Working\n";
     return 0;
 }

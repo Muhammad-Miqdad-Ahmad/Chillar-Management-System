@@ -17,6 +17,11 @@ Hierarchy::Hierarchy(char prisoner_class)
     ifstream file(file_name+".txt");
     
     // while()
+    //while (!file.eof())
+    //{
+        getline(file, ID);
+        cout << ID<<endl;
+    //}
 }
 
 Hierarchy::~Hierarchy()
