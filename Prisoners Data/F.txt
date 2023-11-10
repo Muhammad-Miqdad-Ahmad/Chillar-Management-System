@@ -1,432 +1,431 @@
-ID: F1
-Name: Samuel Mitchell
-Relative 1: Olivia Baker (Sister)
-ID: 987654876
-Relative 2: Ethan Turner (Cousin)
-ID: 987654877
-Age: 26
-Height: 5'8"
-Weight: 150 lbs
-Sentence: 2 years
-Captured on: September 15, 2022
-Expected Release: December 15, 2023
-Crime: Convicted of public intoxication and disorderly conduct.
+F1
+Samuel Mitchell
+Olivia Baker (Sister)
+987654876
+Ethan Turner (Cousin)
+987654877
+26
+5'8"
+150 lbs
+2 years
+September 15, 2022
+December 15, 2023
+Convicted of public intoxication and disorderly conduct.
 
 
-ID: F2
-Name: Emma Turner
-Relative 1: Grace Turner (Sister)
-ID: 234567890
-Relative 2: Nathan Foster (Friend)
-ID: 234567891
-Age: 27
-Height: 5'6"
-Weight: 140 lbs
-Sentence: 1.5 years
-Captured on: February 28, 2022
-Expected Release: May 28, 2023
-Crime: Convicted of petty theft and shoplifting.
+F2
+Emma Turner
+Grace Turner (Sister)
+234567890
+Nathan Foster (Friend)
+234567891
+27
+5'6"
+140 lbs
+1.5 years
+February 28, 2022
+May 28, 2023
+Convicted of petty theft and shoplifting.
 
 
-ID: F3
-Name: Benjamin Parker
-Relative 1: Joshua Parker (Brother)
-ID: 654321987
-Relative 2: Sophia Parker (Sister)
-ID: 654321988
-Age: 29
-Height: 6'0"
-Weight: 170 lbs
-Sentence: 2.5 years
-Captured on: June 15, 2021
-Expected Release: September 15, 2023
-Crime: Convicted of minor drug possession and distribution.
+F3
+Benjamin Parker
+Joshua Parker (Brother)
+654321987
+Sophia Parker (Sister)
+654321988
+29
+6'0"
+170 lbs
+2.5 years
+June 15, 2021
+September 15, 2023
+Convicted of minor drug possession and distribution.
 
 
-ID: F4
-Name: Ava Foster
-Relative 1: Daniel Foster (Brother)
-ID: 876543210
-Relative 2: Lily Turner (Friend)
-ID: 876543211
-Age: 28
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 1.75 years
-Captured on: November 30, 2021
-Expected Release: February 28, 2023
-Crime: Convicted of unauthorized access to computer systems.
+F4
+Ava Foster
+Daniel Foster (Brother)
+876543210
+Lily Turner (Friend)
+876543211
+28
+5'7"
+140 lbs
+1.75 years
+November 30, 2021
+February 28, 2023
+Convicted of unauthorized access to computer systems.
 
 
-ID: F5
-Name: William Jenkins
-Relative 1: Grace Jenkins (Sister)
-ID: 135792468
-Relative 2: Oliver Foster (Friend)
-ID: 135792469
-Age: 30
-Height: 5'10"
-Weight: 175 lbs
-Sentence: 3 years
-Captured on: April 15, 2021
-Expected Release: July 15, 2023
-Crime: Convicted of white-collar fraud and embezzlement.
+F5
+William Jenkins
+Grace Jenkins (Sister)
+135792468
+Oliver Foster (Friend)
+135792469
+30
+5'10"
+175 lbs
+3 years
+April 15, 2021
+July 15, 2023
+Convicted of white-collar fraud and embezzlement.
 
 
-ID: F6
-Name: Olivia Turner
-Relative 1: Mia Turner (Sister)
-ID: 246801357
-Relative 2: Ethan Turner (Cousin)
-ID: 246801358
-Age: 27
-Height: 5'6"
-Weight: 135 lbs
-Sentence: 1.5 years
-Captured on: August 30, 2022
-Expected Release: November 30, 2023
-Crime: Convicted of online harassment and cyberbullying.
+F6
+Olivia Turner
+Mia Turner (Sister)
+246801357
+Ethan Turner (Cousin)
+246801358
+27
+5'6"
+135 lbs
+1.5 years
+August 30, 2022
+November 30, 2023
+Convicted of online harassment and cyberbullying.
 
 
-ID: F7
-Name: Liam Adams
-Relative 1: Ethan Adams (Brother)
-ID: 567890123
-Relative 2: Ava Adams (Sister)
-ID: 567890124
-Age: 31
-Height: 6'0"
-Weight: 170 lbs
-Sentence: 2.5 years
-Captured on: January 15, 2021
-Expected Release: April 15, 2023
-Crime: Convicted of property damage and vandalism.
+F7
+Liam Adams
+Ethan Adams (Brother)
+567890123
+Ava Adams (Sister)
+567890124
+31
+6'0"
+170 lbs
+2.5 years
+January 15, 2021
+April 15, 2023
+Convicted of property damage and vandalism.
 
 
-ID: F8
-Name: Mia Mitchell
-Relative 1: Lily Mitchell (Sister)
-ID: 789012345
-Relative 2: Oliver Foster (Friend)
-ID: 789012346
-Age: 26
-Height: 5'8"
-Weight: 150 lbs
-Sentence: 2 years
-Captured on: May 30, 2022
-Expected Release: August 30, 2023
-Crime: Convicted of disorderly conduct and public disturbances.
+F8
+Mia Mitchell
+Lily Mitchell (Sister)
+789012345
+Oliver Foster (Friend)
+789012346
+26
+5'8"
+150 lbs
+2 years
+May 30, 2022
+August 30, 2023
+Convicted of disorderly conduct and public disturbances.
 
 
-ID: F9
-Name: Jacob Turner
-Relative 1: Ava Turner (Sister)
-ID: 987654321
-Relative 2: Sophia Turner (Friend)
-ID: 987654322
-Age: 29
-Height: 6'0"
-Weight: 170 lbs
-Sentence: 2.5 years
-Captured on: October 15, 2021
-Expected Release: January 15, 2023
-Crime: Convicted of insurance fraud and false claims.
+F9
+Jacob Turner
+Ava Turner (Sister)
+987654321
+Sophia Turner (Friend)
+987654322
+29
+6'0"
+170 lbs
+2.5 years
+October 15, 2021
+January 15, 2023
+Convicted of insurance fraud and false claims.
 
-ID: F10
-Name: Isabella Foster
-Relative 1: Daniel Foster (Brother)
-ID: 654321098
-Relative 2: Lily Turner (Friend)
-ID: 654321099
-Age: 28
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 1.75 years
-Captured on: March 1, 2022
-Expected Release: June 1, 2023
-Crime: Convicted of credit card fraud and online scams.
-
-
-ID: F11
-Name: Benjamin Parker
-Relative 1: Joshua Parker (Brother)
-ID: 234567890
-Relative 2: Sophia Parker (Sister)
-ID: 234567891
-Age: 29
-Height: 6'0"
-Weight: 170 lbs
-Sentence: 2.5 years
-Captured on: July 16, 2021
-Expected Release: October 16, 2023
-Crime: Convicted of public intoxication and disorderly conduct.
+F10
+Isabella Foster
+Daniel Foster (Brother)
+654321098
+Lily Turner (Friend)
+654321099
+28
+5'7"
+140 lbs
+1.75 years
+March 1, 2022
+June 1, 2023
+Convicted of credit card fraud and online scams.
 
 
-ID: F12
-Name: Olivia Turner
-Relative 1: Emma Turner (Sister)
-ID: 876543210
-Relative 2: Mia Turner (Cousin)
-ID: 876543211
-Age: 27
-Height: 5'6"
-Weight: 135 lbs
-Sentence: 1.5 years
-Captured on: December 1, 2022
-Expected Release: March 1, 2024
-Crime: Convicted of petty theft and shoplifting.
+F11
+Benjamin Parker
+Joshua Parker (Brother)
+234567890
+Sophia Parker (Sister)
+234567891
+29
+6'0"
+170 lbs
+2.5 years
+July 16, 2021
+October 16, 2023
+Convicted of public intoxication and disorderly conduct.
 
 
-ID: F13
-Name: Liam Adams
-Relative 1: Ethan Adams (Brother)
-ID: 135792468
-Relative 2: Ava Adams (Sister)
-ID: 135792469
-Age: 31
-Height: 6'0"
-Weight: 170 lbs
-Sentence: 2.5 years
-Captured on: April 16, 2021
-Expected Release: July 16, 2023
-Crime: Convicted of minor drug possession and distribution.
+F12
+Olivia Turner
+Emma Turner (Sister)
+876543210
+Mia Turner (Cousin)
+876543211
+27
+5'6"
+135 lbs
+1.5 years
+December 1, 2022
+March 1, 2024
+Convicted of petty theft and shoplifting.
 
 
-ID: F14
-Name: Emma Foster
-Relative 1: Daniel Foster (Brother)
-ID: 246801357
-Relative 2: Lily Turner (Friend)
-ID: 246801358
-Age: 28
-Height: 5'7"
-Weight: 140 lbs
-Sentence: 1.75 years
-Captured on: September 1, 2022
-Expected Release: December 1, 2023
-Crime: Convicted of unauthorized access to computer systems.
+F13
+Liam Adams
+Ethan Adams (Brother)
+135792468
+Ava Adams (Sister)
+135792469
+31
+6'0"
+170 lbs
+2.5 years
+April 16, 2021
+July 16, 2023
+Convicted of minor drug possession and distribution.
 
 
-ID: F15
-Name: William Jenkins
-Relative 1: Grace Jenkins (Sister)
-ID: 567890123
-Relative 2: Oliver Foster (Friend)
-ID: 567890124
-Age: 30
-Height: 5'10"
-Weight: 175 lbs
-Sentence: 3 years
-Captured on: January 16, 2021
-Expected Release: April 16, 2023
-Crime: Convicted of white-collar fraud and embezzlement.
+F14
+Emma Foster
+Daniel Foster (Brother)
+246801357
+Lily Turner (Friend)
+246801358
+28
+5'7"
+140 lbs
+1.75 years
+September 1, 2022
+December 1, 2023
+Convicted of unauthorized access to computer systems.
 
-ID: F16
-Name: William Mitchell
-Relative 1: Lily Mitchell (Sister)
-ID: 789012345
-Relative 2: Isabella Foster (Friend)
-ID: 789012346
-Age: 25
-Height: 5'11"
-Weight: 165 lbs
-Sentence: 2 years
-Captured on: May 31, 2022
-Expected Release: August 31, 2023
-Crime: Convicted of public intoxication and disorderly conduct.
 
-ID: F17
-Name: Jacob Foster
-Relative 1: Ava Turner (Sister)
-ID: 987654321
-Relative 2: Sophia Turner (Friend)
-ID: 987654322
-Age: 27
-Height: 5'10"
-Weight: 155 lbs
-Sentence: 3 years
-Captured on: October 16, 2021
-Expected Release: January 16, 2023
-Crime: Convicted of petty theft and shoplifting.
+F15
+William Jenkins
+Grace Jenkins (Sister)
+567890123
+Oliver Foster (Friend)
+567890124
+30
+5'10"
+175 lbs
+3 years
+January 16, 2021
+April 16, 2023
+Convicted of white-collar fraud and embezzlement.
 
-ID: F18
-Name: Chloe Turner
-Relative 1: William Turner (Brother)
-ID: 654321098
-Relative 2: Oliver Foster (Friend)
-ID: 654321099
-Age: 24
-Height: 5'6"
-Weight: 125 lbs
-Sentence: 1.5 years
-Captured on: March 2, 2022
-Expected Release: June 2, 2023
-Crime: Convicted of minor drug possession and distribution.
+F16
+William Mitchell
+Lily Mitchell (Sister)
+789012345
+Isabella Foster (Friend)
+789012346
+25
+5'11"
+165 lbs
+2 years
+May 31, 2022
+August 31, 2023
+Convicted of public intoxication and disorderly conduct.
 
-ID: F19
-Name: Daniel Adams
-Relative 1: Joshua Adams (Brother)
-ID: 234567890
-Relative 2: Emily Adams (Sister)
-ID: 234567891
-Age: 26
-Height: 6'0"
-Weight: 170 lbs
-Sentence: 2.5 years
-Captured on: July 17, 2021
-Expected Release: October 17, 2023
-Crime: Convicted of white-collar fraud and embezzlement.
+F17
+Jacob Foster
+Ava Turner (Sister)
+987654321
+Sophia Turner (Friend)
+987654322
+27
+5'10"
+155 lbs
+3 years
+October 16, 2021
+January 16, 2023
+Convicted of petty theft and shoplifting.
 
-ID: F20
-Name: Sophia Turner
-Relative 1: Grace Turner (Sister)
-ID: 876543210
-Relative 2: Mia Turner (Cousin)
-ID: 876543211
-Age: 23
-Height: 5'5"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: December 2, 2022
-Expected Release: March 2, 2024
-Crime: Convicted of online harassment and cyberbullying.
+F18
+Chloe Turner
+William Turner (Brother)
+654321098
+Oliver Foster (Friend)
+654321099
+24
+5'6"
+125 lbs
+1.5 years
+March 2, 2022
+June 2, 2023
+Convicted of minor drug possession and distribution.
 
-ID: F21
-Name: Mason Foster
-Relative 1: Daniel Foster (Brother)
-ID: 135792468
-Relative 2: Lily Turner (Friend)
-ID: 135792469
-Age: 28
-Height: 5'9"
-Weight: 160 lbs
-Sentence: 3 years
-Captured on: April 17, 2021
-Expected Release: July 17, 2023
-Crime: Convicted of unauthorized access to computer systems.
+F19
+Daniel Adams
+Joshua Adams (Brother)
+234567890
+Emily Adams (Sister)
+234567891
+26
+6'0"
+170 lbs
+2.5 years
+July 17, 2021
+October 17, 2023
+Convicted of white-collar fraud and embezzlement.
 
-ID: F22
-Name: Ava Turner
-Relative 1: Jacob Turner (Brother)
-ID: 246801357
-Relative 2: Emily Turner (Sister)
-ID: 246801358
-Age: 24
-Height: 5'6"
-Weight: 125 lbs
-Sentence: 1.5 years
-Captured on: September 2, 2022
-Expected Release: December 2, 2023
-Crime: Convicted of insurance fraud and false claims.
+F20
+Sophia Turner
+Grace Turner (Sister)
+876543210
+Mia Turner (Cousin)
+876543211
+23
+5'5"
+120 lbs
+1 year
+December 2, 2022
+March 2, 2024
+Convicted of online harassment and cyberbullying.
 
-ID: F23
-Name: William Adams
-Relative 1: Liam Adams (Brother)
-ID: 567890123
-Relative 2: Emma Adams (Sister)
-ID: 567890124
-Age: 26
-Height: 6'0"
-Weight: 170 lbs
-Sentence: 2.5 years
-Captured on: January 17, 2021
-Expected Release: April 17, 2023
-Crime: Convicted of property theft and burglary.
+F21
+Mason Foster
+Daniel Foster (Brother)
+135792468
+Lily Turner (Friend)
+135792469
+28
+5'9"
+160 lbs
+3 years
+April 17, 2021
+July 17, 2023
+Convicted of unauthorized access to computer systems.
 
-ID: F24
-Name: Lily Mitchell
-Relative 1: Samuel Mitchell (Brother)
-ID: 789012345
-Relative 2: Ava Turner (Cousin)
-ID: 789012346
-Age: 23
-Height: 5'5"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: June 1, 2022
-Expected Release: September 1, 2023
-Crime: Convicted of disorderly conduct and public disturbances.
+F22
+Ava Turner
+Jacob Turner (Brother)
+246801357
+Emily Turner (Sister)
+246801358
+24
+5'6"
+125 lbs
+1.5 years
+September 2, 2022
+December 2, 2023
+Convicted of insurance fraud and false claims.
 
-ID: F25
-Name: Jacob Foster
-Relative 1: Daniel Foster (Brother)
-ID: 987654321
-Relative 2: Emily Foster (Sister)
-ID: 987654322
-Age: 27
-Height: 5'10"
-Weight: 155 lbs
-Sentence: 3 years
-Captured on: October 17, 2021
-Expected Release: January 17, 2023
-Crime: Convicted of petty theft and shoplifting.
+F23
+William Adams
+Liam Adams (Brother)
+567890123
+Emma Adams (Sister)
+567890124
+26
+6'0"
+170 lbs
+2.5 years
+January 17, 2021
+April 17, 2023
+Convicted of property theft and burglary.
 
-ID: F26
-Name: Chloe Turner
-Relative 1: William Turner (Brother)
-ID: 654321098
-Relative 2: Oliver Foster (Friend)
-ID: 654321099
-Age: 24
-Height: 5'6"
-Weight: 125 lbs
-Sentence: 1.5 years
-Captured on: March 3, 2022
-Expected Release: June 3, 2023
-Crime: Convicted of minor drug possession and distribution.
+F24
+Lily Mitchell
+Samuel Mitchell (Brother)
+789012345
+Ava Turner (Cousin)
+789012346
+23
+5'5"
+120 lbs
+1 year
+June 1, 2022
+September 1, 2023
+Convicted of disorderly conduct and public disturbances.
 
-ID: F27
-Name: Daniel Adams
-Relative 1: Joshua Adams (Brother)
-ID: 234567890
-Relative 2: Emily Adams (Sister)
-ID: 234567891
-Age: 26
-Height: 6'0"
-Weight: 170 lbs
-Sentence: 2.5 years
-Captured on: July 18, 2021
-Expected Release: October 18, 2023
-Crime: Convicted of white-collar fraud and embezzlement.
+F25
+Jacob Foster
+Daniel Foster (Brother)
+987654321
+Emily Foster (Sister)
+987654322
+27
+5'10"
+155 lbs
+3 years
+October 17, 2021
+January 17, 2023
+Convicted of petty theft and shoplifting.
 
-ID: F28
-Name: Sophia Turner
-Relative 1: Grace Turner (Sister)
-ID: 876543210
-Relative 2: Mia Turner (Cousin)
-ID: 876543211
-Age: 23
-Height: 5'5"
-Weight: 120 lbs
-Sentence: 1 year
-Captured on: December 3, 2022
-Expected Release: March 3, 2024
-Crime: Convicted of online harassment and cyberbullying.
+F26
+Chloe Turner
+William Turner (Brother)
+654321098
+Oliver Foster (Friend)
+654321099
+24
+5'6"
+125 lbs
+1.5 years
+March 3, 2022
+June 3, 2023
+Convicted of minor drug possession and distribution.
 
-ID: F29
-Name: Mason Foster
-Relative 1: Daniel Foster (Brother)
-ID: 135792468
-Relative 2: Lily Turner (Friend)
-ID: 135792469
-Age: 28
-Height: 5'9"
-Weight: 160 lbs
-Sentence: 3 years
-Captured on: April 18, 2021
-Expected Release: July 18, 2023
-Crime: Convicted of unauthorized access to computer systems.
+F27
+Daniel Adams
+Joshua Adams (Brother)
+234567890
+Emily Adams (Sister)
+234567891
+26
+6'0"
+170 lbs
+2.5 years
+July 18, 2021
+October 18, 2023
+Convicted of white-collar fraud and embezzlement.
 
-ID: F30
-Name: Ava Turner
-Relative 1: Jacob Turner (Brother)
-ID: 246801357
-Relative 2: Emily Turner (Sister)
-ID: 246801358
-Age: 24
-Height: 5'6"
-Weight: 125 lbs
-Sentence: 1.5 years
+F28
+Sophia Turner
+Grace Turner (Sister)
+876543210
+Mia Turner (Cousin)
+876543211
+23
+5'5"
+120 lbs
+1 year
+December 3, 2022
+March 3, 2024
+Convicted of online harassment and cyberbullying.
+
+F29
+Mason Foster
+Daniel Foster (Brother)
+135792468
+Lily Turner (Friend)
+135792469
+28
+5'9"
+160 lbs
+3 years
+April 18, 2021
+July 18, 2023
+Convicted of unauthorized access to computer systems.
+0
+Turner
+: Jacob Turner (Brother)
+46801357
+: Emily Turner (Sister)
+246801358
+24
+5'6"
+125 lbs
+.5 years
 Captured on: September 3, 2022
-Expected Release: December 3, 2023
-Crime: Convicted of insurance fraud and false claims.
+December 3, 2023
+Convicted of insurance fraud and false claims.

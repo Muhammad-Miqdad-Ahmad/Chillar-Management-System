@@ -1,22 +1,15 @@
 #include "Addons.h"
 
-Person::Person()
-{
-}
-
-Person::~Person()
-{
-}
-
 Prisoners::Prisoners()
 {
     left=right=nullptr;
+    this->relative_1=this->relative_2=nullptr;
 }
 
 Prisoners::Prisoners(Person data)
 {
     left=right=nullptr;
-    this->data=data;
+    this->convict=data;
 }
 
 Prisoners::~Prisoners()
@@ -36,9 +29,9 @@ Person::Person(string ID, string name)
 
 Prisoners* operator%(Prisoners* &chunk, string data)
 {
-    if(data<chunk->data.ID)
+    if(data<chunk->convict.ID)
         return chunk->left%data;
-    else if(data>chunk->data.ID)
+    else if(data>chunk->convict.ID)
         return chunk->right%data;
     else
         return chunk;
