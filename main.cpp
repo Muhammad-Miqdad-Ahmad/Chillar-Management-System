@@ -1,6 +1,7 @@
 #include "Addons.h"
 
-int main(int argc, char const *argv[])
+int main()
 {
+    cout << "Nigga this shit works!!!\n";
     return 0;
 }
