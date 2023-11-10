@@ -12,6 +12,11 @@ Hierarchy::Hierarchy(char prisoner_class)
     this->data = prisoner_class;
     this->left=this->right=nullptr;
     this->root=nullptr;
+    // create an onbject to read from the file.
+    string ID,name,file_name= "Prisoners Data\\" + this->data;
+    ifstream file(file_name+".txt");
+    
+    // while()
 }
 
 Hierarchy::~Hierarchy()

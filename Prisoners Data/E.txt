@@ -1,299 +1,419 @@
+ID: E1
 Name: Lily Turner
+Relative 1: Ethan Turner (Brother)
+ID: 111222333
+Relative 2: Mia Turner (Cousin)
+ID: 111222334
 Age: 27
 Height: 5'6"
 Weight: 130 lbs
 Sentence: 3 years
-Time Remaining: 6 months
-Time Spent: 2.5 years
+Captured on: April 3, 2021
+Expected Release: October 3, 2023
 Crime: Convicted of petty theft and shoplifting.
-ID: E0001
 
+ID: E2
 Name: Daniel Parker
+Relative 1: Sophia Parker (Sister)
+ID: 222333444
+Relative 2: Benjamin Foster (Friend)
+ID: 222333445
 Age: 29
 Height: 5'9"
 Weight: 160 lbs
 Sentence: 4 years
-Time Remaining: 8 months
-Time Spent: 3.5 years
+Captured on: August 12, 2017
+Expected Release: April 12, 2022
 Crime: Convicted of minor drug possession and distribution.
-ID: E0002
 
+ID: E3
 Name: Emily Mitchell
+Relative 1: Oliver Mitchell (Brother)
+ID: 333444555
+Relative 2: Emma Turner (Cousin)
+ID: 333444556
 Age: 26
 Height: 5'5"
 Weight: 125 lbs
 Sentence: 2 years
-Time Remaining: 4 months
-Time Spent: 1.5 years
+Captured on: November 7, 2019
+Expected Release: May 7, 2022
 Crime: Convicted of online harassment and cyberbullying.
-ID: E0003
 
+ID: E4
 Name: Benjamin Adams
+Relative 1: Chloe Adams (Sister)
+ID: 444555666
+Relative 2: William Turner (Friend)
+ID: 444555667
 Age: 31
 Height: 6'0"
 Weight: 175 lbs
 Sentence: 5 years
-Time Remaining: 10 months
-Time Spent: 4.5 years
+Captured on: June 10, 2018
+Expected Release: December 10, 2022
 Crime: Convicted of white-collar fraud and embezzlement.
-ID: E0004
 
+ID: E5
 Name: Ava Jenkins
+Relative 1: Nathan Jenkins (Brother)
+ID: 555666777
+Relative 2: Isabella Foster (Friend)
+ID: 555666778
 Age: 28
 Height: 5'7"
 Weight: 140 lbs
 Sentence: 3.5 years
-Time Remaining: 7 months
-Time Spent: 3 years
+Captured on: January 8, 2020
+Expected Release: July 8, 2023
 Crime: Convicted of unauthorized access to computer systems.
-ID: E0005
 
+ID: E6
 Name: William Turner
+Relative 1: Chloe Turner (Sister)
+ID: 666777888
+Relative 2: Liam Adams (Friend)
+ID: 666777889
 Age: 30
 Height: 5'10"
 Weight: 170 lbs
 Sentence: 4.5 years
-Time Remaining: 9 months
-Time Spent: 4 years
+Captured on: March 18, 2018
+Expected Release: September 18, 2022
 Crime: Convicted of insurance fraud and false claims.
-ID: E0006
 
+ID: E7
 Name: Isabella Foster
+Relative 1: Benjamin Foster (Brother)
+ID: 777888999
+Relative 2: Ava Turner (Friend)
+ID: 777888990
 Age: 27
 Height: 5'6"
 Weight: 135 lbs
 Sentence: 3 years
-Time Remaining: 6 months
-Time Spent: 2.5 years
+Captured on: November 3, 2019
+Expected Release: May 3, 2022
 Crime: Convicted of property theft and burglary.
-ID: E0007
 
+ID: E8
 Name: Liam Parker
+Relative 1: Lily Parker (Sister)
+ID: 888999000
+Relative 2: Ethan Adams (Friend)
+ID: 888999001
 Age: 29
 Height: 5'9"
 Weight: 160 lbs
 Sentence: 4 years
-Time Remaining: 8 months
-Time Spent: 3.5 years
+Captured on: August 12, 2017
+Expected Release: April 12, 2022
 Crime: Convicted of disorderly conduct and public disturbances.
-ID: E0008
 
+ID: E9
 Name: Emma Lewis
+Relative 1: Emily Lewis (Sister)
+ID: 999000111
+Relative 2: William Turner (Friend)
+ID: 999000112
 Age: 26
 Height: 5'5"
 Weight: 125 lbs
 Sentence: 2 years
-Time Remaining: 4 months
-Time Spent: 1.5 years
+Captured on: November 7, 2019
+Expected Release: May 7, 2022
 Crime: Convicted of credit card fraud and online scams.
-ID: E0009
 
+ID: E10
 Name: Nathan Mitchell
+Relative 1: Ava Mitchell (Sister)
+ID: 000111222
+Relative 2: Mia Turner (Friend)
+ID: 000111223
 Age: 31
 Height: 6'0"
 Weight: 175 lbs
 Sentence: 5 years
-Time Remaining: 10 months
-Time Spent: 4.5 years
+Captured on: June 10, 2018
+Expected Release: December 10, 2022
 Crime: Convicted of vandalism and property damage.
-ID: E0010
 
+ID: E11
 Name: Chloe Adams
+Relative 1: Benjamin Adams (Brother)
+ID: 111222333
+Relative 2: Sophia Parker (Friend)
+ID: 111222334
 Age: 28
 Height: 5'7"
 Weight: 140 lbs
 Sentence: 3.5 years
-Time Remaining: 7 months
-Time Spent: 3 years
+Captured on: January 8, 2020
+Expected Release: July 8, 2023
 Crime: Convicted of petty theft and shoplifting.
-ID: E0011
 
+ID: E12
 Name: Jacob Turner
+Relative 1: Isabella Turner (Sister)
+ID: 222333444
+Relative 2: Oliver Foster (Friend)
+ID: 222333445
 Age: 32
 Height: 6'0"
 Weight: 175 lbs
 Sentence: 4 years
-Time Remaining: 8 months
-Time Spent: 3.5 years
+Captured on: March 18, 2018
+Expected Release: September 18, 2022
 Crime: Convicted of minor drug possession and distribution.
-ID: E0012
 
+ID: E13
 Name: Ava Mitchell
+Relative 1: Nathan Mitchell (Brother)
+ID: 333444555
+Relative 2: Emily Turner (Friend)
+ID: 333444556
 Age: 26
 Height: 5'5"
 Weight: 125 lbs
 Sentence: 2 years
-Time Remaining: 4 months
-Time Spent: 1.5 years
+Captured on: November 3, 2019
+Expected Release: May 3, 2022
 Crime: Convicted of online harassment and cyberbullying.
-ID: E0013
 
+ID: E14
 Name: Liam Adams
+Relative 1: Ethan Adams (Brother)
+ID: 444555666
+Relative 2: Ava Adams (Sister)
+ID: 444555667
 Age: 31
 Height: 6'0"
 Weight: 175 lbs
 Sentence: 5 years
-Time Remaining: 10 months
-Time Spent: 4.5 years
+Captured on: August 12, 2017
+Expected Release: April 12, 2022
 Crime: Convicted of white-collar fraud and embezzlement.
-ID: E0014
 
+ID: E15
 Name: Emily Jenkins
+Relative 1: William Jenkins (Brother)
+ID: 555666777
+Relative 2: Oliver Foster (Friend)
+ID: 555666778
 Age: 28
 Height: 5'7"
 Weight: 140 lbs
 Sentence: 3.5 years
-Time Remaining: 7 months
-Time Spent: 3 years
+Captured on: January 8, 2020
+Expected Release: July 8, 2023
 Crime: Convicted of unauthorized access to computer systems.
-ID: E0015
 
+ID: E16
 Name: Benjamin Turner
+Relative 1: Lily Turner (Sister)
+ID: 666777888
+Relative 2: Isabella Foster (Friend)
+ID: 666777889
 Age: 30
 Height: 5'10"
 Weight: 170 lbs
 Sentence: 4.5 years
-Time Remaining: 9 months
-Time Spent: 4 years
+Captured on: March 18, 2018
+Expected Release: September 18, 2022
 Crime: Convicted of insurance fraud and false claims.
-ID: E0016
 
+ID: E17
 Name: Isabella Jenkins
+Relative 1: Ava Jenkins (Sister)
+ID: 777888999
+Relative 2: Nathan Jenkins (Friend)
+ID: 777888990
 Age: 27
 Height: 5'6"
 Weight: 135 lbs
 Sentence: 3 years
-Time Remaining: 6 months
-Time Spent: 2.5 years
+Captured on: November 3, 2019
+Expected Release: May 3, 2022
 Crime: Convicted of property theft and burglary.
-ID: E0017
 
+ID: E18
 Name: Nathan Turner
+Relative 1: Chloe Turner (Sister)
+ID: 888999000
+Relative 2: Liam Adams (Friend)
+ID: 888999001
 Age: 29
 Height: 5'9"
 Weight: 160 lbs
 Sentence: 4 years
-Time Remaining: 8 months
-Time Spent: 3.5 years
+Captured on: June 10, 2018
+Expected Release: December 10, 2022
 Crime: Convicted of disorderly conduct and public disturbances.
-ID: E0018
 
+ID: E19
 Name: Mia Adams
+Relative 1: Benjamin Adams (Brother)
+ID: 999000111
+Relative 2: Sophia Parker (Friend)
+ID: 999000112
 Age: 28
 Height: 5'7"
 Weight: 140 lbs
 Sentence: 3.5 years
-Time Remaining: 7 months
-Time Spent: 3 years
+Captured on: January 8, 2020
+Expected Release: July 8, 2023
 Crime: Convicted of petty theft and shoplifting.
-ID: E0019
 
+ID: E20
 Name: William Turner
+Relative 1: Isabella Turner (Sister)
+ID: 000111222
+Relative 2: Oliver Foster (Friend)
+ID: 000111223
 Age: 31
 Height: 6'0"
 Weight: 175 lbs
 Sentence: 5 years
-Time Remaining: 10 months
-Time Spent: 4.5 years
+Captured on: March 18, 2018
+Expected Release: September 18, 2022
 Crime: Convicted of vandalism and property damage.
-ID: E0020
 
+ID: E21
 Name: Chloe Mitchell
+Relative 1: Nathan Mitchell (Brother)
+ID: 111222333
+Relative 2: Emily Turner (Friend)
+ID: 111222334
 Age: 28
 Height: 5'7"
 Weight: 140 lbs
 Sentence: 3.5 years
-Time Remaining: 7 months
-Time Spent: 3 years
+Captured on: November 3, 2019
+Expected Release: May 3, 2022
 Crime: Convicted of petty theft and shoplifting.
-ID: E0021
 
+ID: E22
 Name: Jacob Adams
+Relative 1: Ethan Adams (Brother)
+ID: 222333444
+Relative 2: Ava Adams (Sister)
+ID: 222333445
 Age: 32
 Height: 6'0"
 Weight: 175 lbs
 Sentence: 4 years
-Time Remaining: 8 months
-Time Spent: 3.5 years
+Captured on: August 12, 2017
+Expected Release: April 12, 2022
 Crime: Convicted of minor drug possession and distribution.
-ID: E0022
 
+ID: E23
 Name: Ava Turner
+Relative 1: William Turner (Brother)
+ID: 333444555
+Relative 2: Oliver Foster (Friend)
+ID: 333444556
 Age: 29
 Height: 5'7"
 Weight: 140 lbs
 Sentence: 3 years
-Time Remaining: 6 months
-Time Spent: 2.5 years
+Captured on: November 7, 2019
+Expected Release: May 7, 2022
 Crime: Convicted of online harassment and cyberbullying.
-ID: E0023
 
+ID: E24
 Name: Liam Mitchell
+Relative 1: Lily Mitchell (Sister)
+ID: 444555666
+Relative 2: Isabella Foster (Friend)
+ID: 444555667
 Age: 31
 Height: 6'0"
 Weight: 175 lbs
 Sentence: 5 years
-Time Remaining: 10 months
-Time Spent: 4.5 years
+Captured on: June 10, 2018
+Expected Release: December 10, 2022
 Crime: Convicted of white-collar fraud and embezzlement.
-ID: E0024
 
+ID: E25
 Name: Emily Turner
+Relative 1: Isabella Turner (Sister)
+ID: 555666777
+Relative 2: Oliver Foster (Friend)
+ID: 555666778
 Age: 28
 Height: 5'7"
 Weight: 140 lbs
 Sentence: 3.5 years
-Time Remaining: 7 months
-Time Spent: 3 years
+Captured on: January 8, 2020
+Expected Release: July 8, 2023
 Crime: Convicted of unauthorized access to computer systems.
-ID: E0025
 
+ID: E26
 Name: Benjamin Mitchell
+Relative 1: Nathan Mitchell (Brother)
+ID: 666777888
+Relative 2: Emily Turner (Friend)
+ID: 666777889
 Age: 30
 Height: 5'10"
 Weight: 170 lbs
 Sentence: 4.5 years
-Time Remaining: 9 months
-Time Spent: 4 years
+Captured on: March 18, 2018
+Expected Release: September 18, 2022
 Crime: Convicted of insurance fraud and false claims.
-ID: E0026
 
+ID: E27
 Name: Isabella Jenkins
+Relative 1: Ava Jenkins (Sister)
+ID: 777888999
+Relative 2: Nathan Jenkins (Friend)
+ID: 777888990
 Age: 27
 Height: 5'6"
 Weight: 135 lbs
 Sentence: 3 years
-Time Remaining: 6 months
-Time Spent: 2.5 years
+Captured on: November 3, 2019
+Expected Release: May 3, 2022
 Crime: Convicted of property theft and burglary.
-ID: E0027
 
+ID: E28
 Name: Nathan Turner
+Relative 1: Chloe Turner (Sister)
+ID: 888999000
+Relative 2: Liam Adams (Friend)
+ID: 888999001
 Age: 29
 Height: 5'9"
 Weight: 160 lbs
 Sentence: 4 years
-Time Remaining: 8 months
-Time Spent: 3.5 years
+Captured on: June 10, 2018
+Expected Release: December 10, 2022
 Crime: Convicted of disorderly conduct and public disturbances.
-ID: E0028
 
+ID: E29
 Name: Mia Adams
+Relative 1: Benjamin Adams (Brother)
+ID: 999000111
+Relative 2: Sophia Parker (Friend)
+ID: 999000112
 Age: 28
 Height: 5'7"
 Weight: 140 lbs
 Sentence: 3.5 years
-Time Remaining: 7 months
-Time Spent: 3 years
+Captured on: January 8, 2020
+Expected Release: July 8, 2023
 Crime: Convicted of petty theft and shoplifting.
-ID: E0029
 
+ID: E30
 Name: William Turner
+Relative 1: Isabella Turner (Sister)
+ID: 000111222
+Relative 2: Oliver Foster (Friend)
+ID: 000111223
 Age: 31
 Height: 6'0"
 Weight: 175 lbs
 Sentence: 5 years
-Time Remaining: 10 months
-Time Spent: 4.5 years
+Captured on: March 18, 2018
+Expected Release: September 18, 2022
 Crime: Convicted of vandalism and property damage.
-ID: E0030

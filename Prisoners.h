@@ -28,7 +28,8 @@ class Prisoners
 {
 private:
     Person data;
-
+    Person Relative_1;
+    Person Relative_2;
     //directions to form a tree
     Prisoners *left, *right;
 public:
