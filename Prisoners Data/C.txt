@@ -1,0 +1,303 @@
+Name: Jacob "The Fixer" Rodriguez
+Age: 32
+Height: 6'0"
+Weight: 180 lbs
+Sentence: 25 years
+Time Remaining: 10 years
+Time Spent: 15 years
+Crime: Known for brokering deals and settling disputes among local criminal organizations.
+ID: C0001
+
+Name: Emily Johnson
+Age: 28
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 20 years
+Time Remaining: 10 years
+Time Spent: 10 years
+Crime: Convicted of embezzlement and financial fraud.
+ID: C0002
+
+Name: Liam "The Forger" Sullivan
+Age: 30
+Height: 5'10"
+Weight: 160 lbs
+Sentence: 30 years
+Time Remaining: 15 years
+Time Spent: 15 years
+Crime: Skilled in creating convincing forged documents and passports.
+ID: C0003
+
+Name: Sophie Anderson
+Age: 27
+Height: 5'5"
+Weight: 130 lbs
+Sentence: 15 years
+Time Remaining: 5 years
+Time Spent: 10 years
+Crime: Convicted of identity theft and cybercrimes.
+
+ID: C0004
+
+Name: Benjamin "The Hacker" Carter
+Age: 31
+Height: 5'11"
+Weight: 170 lbs
+Sentence: 35 years
+Time Remaining: 20 years
+Time Spent: 15 years
+Crime: Skilled hacker responsible for multiple cyberattacks.
+ID: C0005
+
+Name: Emma "The Chemist" White
+Age: 29
+Height: 5'8"
+Weight: 150 lbs
+Sentence: 20 years
+Time Remaining: 10 years
+Time Spent: 10 years
+Crime: Convicted of manufacturing illegal drugs.
+ID: C0006
+
+Name: William "The Smuggler" Parker
+Age: 33
+Height: 6'1"
+Weight: 185 lbs
+Sentence: 25 years
+Time Remaining: 15 years
+Time Spent: 10 years
+Crime: Known for smuggling contraband and illegal goods.
+ID: C0007
+
+Name: Ava "The Enigma" Foster
+Age: 26
+Height: 5'6"
+Weight: 135 lbs
+Sentence: 15 years
+Time Remaining: 5 years
+Time Spent: 10 years
+Crime: Convicted of orchestrating complex scams and identity theft.
+
+ID: C0008
+
+Name: Samuel "The Stuntman" Murphy
+Age: 34
+Height: 6'0"
+Weight: 170 lbs
+Sentence: 30 years
+Time Remaining: 20 years
+Time Spent: 10 years
+Crime: Involved in high-speed chases and reckless driving resulting in injuries.
+ID: C0009
+
+Name: Isabelle "The Whisperer" Wright
+Age: 29
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 20 years
+Time Remaining: 10 years
+Time Spent: 10 years
+Crime: Convicted of eavesdropping and selling sensitive information.
+ID: C0010
+
+Name: Henry "The Mechanic" Collins
+Age: 32
+Height: 5'9"
+Weight: 160 lbs
+Sentence: 25 years
+Time Remaining: 10 years
+Time Spent: 15 years
+Crime: Skilled in car theft and vehicle modification.
+ID: C0011
+
+Name: Olivia Bennett
+Age: 28
+Height: 5'6"
+Weight: 135 lbs
+Sentence: 20 years
+Time Remaining: 10 years
+Time Spent: 10 years
+Crime: Convicted of computer hacking and cybercrimes.
+ID: C0012
+
+Name: Ethan "The Chemist" Mitchell
+Age: 30
+Height: 5'11"
+Weight: 170 lbs
+Sentence: 30 years
+Time Remaining: 15 years
+Time Spent: 15 years
+Crime: Known for manufacturing illegal drugs and narcotics.
+ID: C0013
+
+Name: Chloe Johnson
+Age: 27
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 15 years
+Time Remaining: 5 years
+Time Spent: 10 years
+Crime: Convicted of identity theft and fraud.
+
+ID: C0014
+
+Name: Felix "The Broker" Rivera
+Age: 31
+Height: 5'10"
+Weight: 175 lbs
+Sentence: 35 years
+Time Remaining: 20 years
+Time Spent: 15 years
+Crime: Known for facilitating criminal deals and illicit transactions.
+ID: C0015
+
+Name: Lily "The Forger" Adams
+Age: 29
+Height: 5'6"
+Weight: 135 lbs
+Sentence: 20 years
+Time Remaining: 10 years
+Time Spent: 10 years
+Crime: Known for creating convincing forged documents and counterfeit money.
+ID: C0016
+
+Name: Nathan Wright
+Age: 33
+Height: 6'0"
+Weight: 170 lbs
+Sentence: 25 years
+Time Remaining: 15 years
+Time Spent: 10 years
+Crime: Convicted of organized shoplifting and theft.
+ID: C0017
+
+Name: Isabella "The Smuggler" Ramirez
+Age: 28
+Height: 5'8"
+Weight: 150 lbs
+Sentence: 30 years
+Time Remaining: 20 years
+Time Spent: 10 years
+Crime: Known for smuggling contraband and illegal goods across borders.
+ID: C0018
+
+Name: Jack "The Mechanic" Price
+Age: 31
+Height: 5'9"
+Weight: 160 lbs
+Sentence: 25 years
+Time Remaining: 10 years
+Time Spent: 15 years
+Crime: Skilled in vehicle theft and alteration.
+ID: C0019
+
+Name: Emily Stevens
+Age: 27
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 20 years
+Time Remaining: 10 years
+Time Spent: 10 years
+Crime: Convicted of credit card fraud and embezzlement.
+ID: C0020
+
+Name: Daniel "The Broker" Carter
+Age: 30
+Height: 5'10"
+Weight: 170 lbs
+Sentence: 35 years
+Time Remaining: 20 years
+Time Spent: 15 years
+Crime: Known for facilitating criminal deals and underground transactions.
+ID: C0021
+
+Name: Emma Smith
+Age: 29
+Height: 5'6"
+Weight: 135 lbs
+Sentence: 25 years
+Time Remaining: 15 years
+Time Spent: 10 years
+Crime: Convicted of online fraud and identity theft.
+
+ID: C0022
+
+Name: Benjamin "The Saboteur" Davis
+Age: 32
+Height: 6'0"
+Weight: 180 lbs
+Sentence: 30 years
+Time Remaining: 15 years
+Time Spent: 15 years
+Crime: Known for tampering with corporate systems and causing economic disruption.
+ID: C0023
+
+Name: Ava Turner
+Age: 28
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 20 years
+Time Remaining: 10 years
+Time Spent: 10 years
+Crime: Convicted of bank fraud and embezzlement.
+ID: C0024
+
+Name: William "The Hacker" Walker
+Age: 33
+Height: 6'1"
+Weight: 185 lbs
+Sentence: 25 years
+Time Remaining: 15 years
+Time Spent: 10 years
+Crime: Skilled hacker responsible for multiple cybercrimes.
+ID: C0025
+
+Name: Olivia "The Whisperer" Hughes
+Age: 31
+Height: 5'8"
+Weight: 150 lbs
+Sentence: 30 years
+Time Remaining: 15 years
+Time Spent: 15 years
+Crime: Convicted of eavesdropping and selling sensitive information.
+ID: C0026
+
+Name: Liam Johnson
+Age: 29
+Height: 5'9"
+Weight: 160 lbs
+Sentence: 25 years
+Time Remaining: 15 years
+Time Spent: 10 years
+Crime: Convicted of computer hacking and cybercrimes.
+ID: C0027
+
+Name: Chloe "The Chemist" Martin
+Age: 32
+Height: 5'6"
+Weight: 135 lbs
+Sentence: 30 years
+Time Remaining: 15 years
+Time Spent: 15 years
+Crime: Known for manufacturing illegal drugs.
+ID: C0028
+
+Name: Henry Davis
+Age: 28
+Height: 5'7"
+Weight: 140 lbs
+Sentence: 20 years
+Time Remaining: 10 years
+Time Spent: 10 years
+Crime: Convicted of credit card fraud and embezzlement.
+ID: C0029
+
+Name: Isabella "The Forger" Wright
+Age: 31
+Height: 5'8"
+Weight: 150 lbs
+Sentence: 25 years
+Time Remaining: 15 years
+Time Spent: 10 years
+Crime: Skilled in creating convincing forged documents and counterfeit money.
+ID: C0030
