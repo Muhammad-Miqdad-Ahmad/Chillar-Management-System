@@ -22,16 +22,29 @@ bool Person::operator==(Person &data)
 bool Person::operator<(Person &data)
 {
     if(this->ID<data.ID)
-        if(this->name<data.name)
-            return true;
+        return true;
+    return false;
+}
+
+bool Person::operator<=(Person &data)
+{
+    cout << "yhi bta do agar ye call how h eto 😭\n";
+    if(this->ID <= data.ID)
+        return true;
     return false;
 }
 
 bool Person::operator>(Person &data)
 {
     if(this->ID>data.ID)
-        if(this->name>data.name)
-            return true;
+        return true;
+    return false;
+}
+
+bool Person::operator>=(Person &data)
+{
+    if(this->ID>=data.ID)
+        return true;
     return false;
 }
 

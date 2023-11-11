@@ -84,6 +84,7 @@ Hierarchy::Hierarchy(char prisoner_class)
 
 Hierarchy::~Hierarchy()
 {
+    cout << "is this being called anywhere\n\n\n";
     /*  first we delete the root of the prisoners tree.
     With this the tree inside each node that depiicts a grade
     will be destroyed   */
@@ -108,7 +109,6 @@ Hierarchial_tree::~Hierarchial_tree()
 
 Hierarchial_tree::Hierarchial_tree()
 {
-    cout << "Hirarchial tree is called\n";
     this->root = nullptr;
     for (int i = 0; i < 7; i++)
     {
@@ -157,16 +157,18 @@ void Hierarchy::add_chunk(Prisoners *&chunk, Person &data, Person *&relative_1, 
 
 void Hierarchy::make_full_balanced() // function to make the tree full balanced.
 {
-    cout << "Make full balanced was called\n";
     vector<Prisoners *> temporary_storage;
     store_del_tree(this->root, temporary_storage); // this function stores the tree in a vector.
-    cout << "we are out of store_del_tree\n";
+
     for (auto &&i : temporary_storage)
         i->left = i->right = nullptr;
-    cout << "this is the size of the vector: " << temporary_storage.size() << endl;
-    cout << "Outside the loop going in to the balancing\n";
+
+    cout << "quick sort call kr rha hoon\n";
+    quick_sort(temporary_storage, 0, temporary_storage.size() - 1);             // function to quick sort the vector
+    cout << "Do we get out of this shit\n";
+
     this->root = balancing(temporary_storage, 0, temporary_storage.size() - 1); // the root the balancing function returns is stored in the root of class
-    cout << "Are we out of the balancing?\n";
+    temporary_storage.clear();
 }
 
 void Hierarchy::store_del_tree(Prisoners *&chunk, vector<Prisoners *> &data) // this is to store the tree in a vector
@@ -176,34 +178,36 @@ void Hierarchy::store_del_tree(Prisoners *&chunk, vector<Prisoners *> &data) // 
         store_del_tree(chunk->left, data);
         data.push_back(chunk);
         store_del_tree(chunk->right, data);
-        // chunk->right = chunk->left = chunk = nullptr; // aftre pusing back I simply null the tree so that there is no space leakage. I think it should work
-    } // but I have not tested it.
-    // quick_sort(data, 0, data.size() - 1);             // function to quick sort the vector
+    }
 }
 
 Prisoners *Hierarchy::balancing(vector<Prisoners *> &array, int start, int last) // this function is the one responsible of balancing the tree
 {
-    cout << "this was called\n";
+    if (start > last)
+        return nullptr;
+
     int mid = (start + last) / 2;     // we find the mid point of the rray
     Prisoners *new_root = array[mid]; // then we make it the root of the tree
-    if (start != last)
-    {
-        new_root->left = balancing(array, start, mid - 1); // after that I sent the lower half towards the left
-        new_root->right = balancing(array, mid + 1, last); // the upper half towards the right
-    }
-    cout << "return the root\n";
-    return new_root; // we simply return the root
+    /* if(start<last)  AAAAAAhHHHHHHHHH FUCK THIS WAS THE ERROR. THt was why it was not working because it was not returning any nulll pointer
+    This shitty thing it destroyed my weakend. I am sooo done with coding and DSA. Main ni khel ra*/
+    // {
+    // new_root->left = balancing(array, start, mid - 1); // after that I sent the lower half towards the left
+    // new_root->right = balancing(array, mid + 1, last); // the upper half towards the right
+    // }
+    new_root->left = balancing(array, start, mid - 1); // after that I sent the lower half towards the left
+    new_root->right = balancing(array, mid + 1, last); // the upper half towards the right
+    return new_root;                                   // we simply return the root
 }
 
-// void display(datatype* &data)
-// template<typename datatype>
 ostream &operator<<(ostream &out, Hierarchy *data)
 {
+    // out << "Is this called????\n";
     if (data != nullptr)
     {
-        cout << data->left;
-        cout << data->root;
-        cout << data->right;
+        out << "Wtf is this shitty fish\n";
+        out << data->left;
+        out << data->root;
+        out << data->right;
     }
     return out;
 }

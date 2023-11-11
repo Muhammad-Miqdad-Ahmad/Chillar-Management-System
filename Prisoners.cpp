@@ -36,14 +36,15 @@ Prisoners *operator%(Prisoners *&chunk, string data)
     else
         return chunk;
 }
-
+/*what thw shit is wrong with the shit is the fish cake
+kyaa msla hee tre ko bhens ki dum tera error ni kht m ho k de rha he wtdqjnedjneljnejbw*/
 ostream &operator<<(ostream &out, Prisoners *data)
 {
     if (data != nullptr)
     {
-        cout << data->left;
-        cout << data->root;
-        cout << data->right;
+        out << data->left;
+        out << data->root;
+        out << data->right;
     }
     return out;
 }

@@ -19,7 +19,9 @@ public:
 
     //comparison operator overload
     bool operator < (Person &data);
+    bool operator <= (Person &data);
     bool operator > (Person &data);
+    bool operator >= (Person &data);
     bool operator == (Person &data);
 
     //stream operators overload
@@ -49,6 +51,8 @@ public:
 //friend functions
     // template<typename datatype>
     // friend void display(datatype* &data);
+    friend int partition(vector<Prisoners*> &array, int first, int last);
+    friend void quick_sort(vector<Prisoners*> &array, int first, int last);
     friend ostream &operator <<(ostream &out, Prisoners* data);
     friend Prisoners* operator%(Prisoners* &chunk, string data); //this is the % operator overload that is basically the search function.
 };
