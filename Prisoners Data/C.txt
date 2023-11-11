@@ -38,7 +38,6 @@ April 5, 2015
 July 13, 2030
 Convicted of identy theft and cybercrimes.
 
-
 C5
 Benjamin "The Hacker" Carter
 31
@@ -78,7 +77,6 @@ Ava "The Enigma" Foster
 May 7, 2017
 November 3, 2032
 Convicted of orchestrating complex scams and identy theft.
-
 
 C9
 Samuel "The Stuntman" Murphy
@@ -139,7 +137,6 @@ Chloe Johnson
 June 7, 2013
 August 10, 2038
 Convicted of identy theft and fraud.
-
 
 C15
 Felix "The Broker" Rivera
@@ -220,7 +217,6 @@ Emma Smith
 October 25, 2014
 February 3, 2039
 Convicted of online fraud and identy theft.
-
 
 C23
 Benjamin "The Saboteur" Davis

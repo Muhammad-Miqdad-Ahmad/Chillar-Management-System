@@ -37,8 +37,8 @@ bool Person::operator>(Person &data)
 
 ostream &operator << (ostream &out, Person &data)
 {
-    out << "The name of the person is: " <<data.name << endl;
-    out << "The Id of the person is: " <<data.ID << endl << endl;
+    out << "The name of the person is: " << data.name << endl;
+    out << "The Id of the person is: " << data.ID << endl << endl;
     return out;
 }
 

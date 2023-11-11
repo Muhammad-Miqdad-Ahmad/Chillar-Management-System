@@ -1,17 +1,17 @@
-#pragma once
-class Admin
-{
-private:
-    /* data */
-public:
-    Admin(/* args */);
-    ~Admin();
-};
+// #pragma once
+// class Admin
+// {
+// private:
+//     /* data */
+// public:
+//     Admin(/* args */);
+//     ~Admin();
+// };
 
-Admin::Admin(/* args */)
-{
-}
+// Admin::Admin(/* args */)
+// {
+// }
 
-Admin::~Admin()
-{
-}
+// Admin::~Admin()
+// {
+// }

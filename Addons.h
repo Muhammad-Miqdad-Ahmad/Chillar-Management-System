@@ -15,6 +15,13 @@ template<typename datatype>
 void quick_sort(vector<datatype> &array, int first, int last);
 
 // global operator overloads
+// template<typename datatype>
+// ostream &operator << (ostream &out, Hierarchial_tree* &data); 
+// ostream &operator << (ostream &out, Hierarchy* &data); 
+// ostream &operator << (ostream &out, Person* &data); 
+// ostream &operator << (ostream &out, Pris* &data); 
+// void display(datatype* &data);
+// void display(Person* &data);
 Prisoners* operator%(Hierarchy* &chunk, string data);
 Prisoners* operator%(Prisoners* &chunk, string data);
 

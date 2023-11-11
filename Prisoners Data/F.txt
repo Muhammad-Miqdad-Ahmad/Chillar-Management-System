@@ -12,7 +12,6 @@ September 15, 2022
 December 15, 2023
 Convicted of public intoxication and disorderly conduct.
 
-
 F2
 Emma Turner
 Grace Turner (Sister)
@@ -26,7 +25,6 @@ Nathan Foster (Friend)
 February 28, 2022
 May 28, 2023
 Convicted of petty theft and shoplifting.
-
 
 F3
 Benjamin Parker
@@ -42,7 +40,6 @@ June 15, 2021
 September 15, 2023
 Convicted of minor drug possession and distribution.
 
-
 F4
 Ava Foster
 Daniel Foster (Brother)
@@ -56,7 +53,6 @@ Lily Turner (Friend)
 November 30, 2021
 February 28, 2023
 Convicted of unauthorized access to computer systems.
-
 
 F5
 William Jenkins
@@ -72,7 +68,6 @@ April 15, 2021
 July 15, 2023
 Convicted of white-collar fraud and embezzlement.
 
-
 F6
 Olivia Turner
 Mia Turner (Sister)
@@ -86,7 +81,6 @@ Ethan Turner (Cousin)
 August 30, 2022
 November 30, 2023
 Convicted of online harassment and cyberbullying.
-
 
 F7
 Liam Adams
@@ -102,7 +96,6 @@ January 15, 2021
 April 15, 2023
 Convicted of property damage and vandalism.
 
-
 F8
 Mia Mitchell
 Lily Mitchell (Sister)
@@ -116,7 +109,6 @@ Oliver Foster (Friend)
 May 30, 2022
 August 30, 2023
 Convicted of disorderly conduct and public disturbances.
-
 
 F9
 Jacob Turner
@@ -146,7 +138,6 @@ March 1, 2022
 June 1, 2023
 Convicted of credit card fraud and online scams.
 
-
 F11
 Benjamin Parker
 Joshua Parker (Brother)
@@ -160,7 +151,6 @@ Sophia Parker (Sister)
 July 16, 2021
 October 16, 2023
 Convicted of public intoxication and disorderly conduct.
-
 
 F12
 Olivia Turner
@@ -176,7 +166,6 @@ December 1, 2022
 March 1, 2024
 Convicted of petty theft and shoplifting.
 
-
 F13
 Liam Adams
 Ethan Adams (Brother)
@@ -191,7 +180,6 @@ April 16, 2021
 July 16, 2023
 Convicted of minor drug possession and distribution.
 
-
 F14
 Emma Foster
 Daniel Foster (Brother)
@@ -205,7 +193,6 @@ Lily Turner (Friend)
 September 1, 2022
 December 1, 2023
 Convicted of unauthorized access to computer systems.
-
 
 F15
 William Jenkins
@@ -416,16 +403,18 @@ Lily Turner (Friend)
 April 18, 2021
 July 18, 2023
 Convicted of unauthorized access to computer systems.
-0
-Turner
-: Jacob Turner (Brother)
+
+30
+Ezreth Turner
+Jacob Turner (Brother)
 46801357
-: Emily Turner (Sister)
+Emily Turner (Sister)
 246801358
 24
 5'6"
 125 lbs
-.5 years
+0.5 years
 Captured on: September 3, 2022
 December 3, 2023
 Convicted of insurance fraud and false claims.
+

@@ -12,7 +12,6 @@ March 4, 2023
 June 4, 2024
 Convicted of public intoxication and disorderly conduct.
 
-
 G2
 William Foster
 Benjamin Foster (Brother)
@@ -26,7 +25,6 @@ Emily Turner (Cousin)
 August 19, 2022
 November 19, 2023
 Convicted of misdemeanor assault and public disturbance.
-
 
 G3
 Mia Turner
@@ -42,7 +40,6 @@ January 4, 2023
 April 4, 2024
 Convicted of vandalism and property damage.
 
-
 G4
 Jacob Adams
 Daniel Adams (Brother)
@@ -56,7 +53,6 @@ Benjamin Adams (Friend)
 May 20, 2022
 August 20, 2023
 Convicted of petty theft and shoplifting.
-
 
 G5
 Chloe Turner
@@ -72,7 +68,6 @@ October 5, 2023
 January 5, 2025
 Convicted of disorderly conduct and public disturbances.
 
-
 G6
 Benjamin Foster
 William Foster (Brother)
@@ -86,7 +81,6 @@ Emily Foster (Sister)
 February 19, 2022
 May 19, 2023
 Convicted of minor drug possession and distribution.
-
 
 G7
 Emily Turner
@@ -102,7 +96,6 @@ July 6, 2022
 October 6, 2023
 Convicted of credit card fraud and online scams.
 
-
 G8
 Aiden ams
 Daniel ams (Brother)
@@ -117,7 +110,6 @@ November 20, 2022
 February 20, 2024
 Convicted of public intoxication and disorderly conduct.
 
-
 G9
 Isabella Turner
 Chloe Turner (Sister)
@@ -131,7 +123,6 @@ Lily Turner (Cousin)
 April 5, 2023
 July 5, 2024
 Convicted of vandalism and property damage.
-
 
 G10
 Noah Foster
