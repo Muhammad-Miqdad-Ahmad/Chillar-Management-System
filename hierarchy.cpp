@@ -116,9 +116,6 @@ Hierarchial_tree::Hierarchial_tree()
     }
 }
 
-// Its a template function that is written in the hirarchy class
-// It can be inherited and used anywhere because the add node function is the same
-// for every tree.
 void Hierarchial_tree::add_chunk(Hierarchy *&chunk, char data)
 {
     if (chunk == nullptr) // if chunk is null then make a new node
@@ -163,9 +160,8 @@ void Hierarchy::make_full_balanced() // function to make the tree full balanced.
     for (auto &&i : temporary_storage)
         i->left = i->right = nullptr;
 
-    cout << "quick sort call kr rha hoon\n";
+    // cout << "quick sort call kr rha hoon\n";
     quick_sort(temporary_storage, 0, temporary_storage.size() - 1);             // function to quick sort the vector
-    cout << "Do we get out of this shit\n";
 
     this->root = balancing(temporary_storage, 0, temporary_storage.size() - 1); // the root the balancing function returns is stored in the root of class
     temporary_storage.clear();
@@ -189,7 +185,7 @@ Prisoners *Hierarchy::balancing(vector<Prisoners *> &array, int start, int last)
     int mid = (start + last) / 2;     // we find the mid point of the rray
     Prisoners *new_root = array[mid]; // then we make it the root of the tree
     /* if(start<last)  AAAAAAhHHHHHHHHH FUCK THIS WAS THE ERROR. THt was why it was not working because it was not returning any nulll pointer
-    This shitty thing it destroyed my weakend. I am sooo done with coding and DSA. Main ni khel ra*/
+    This shitty thing it destroyed my weakend. I am sooo done with coding and DSA. Main ni khel ra */
     // {
     // new_root->left = balancing(array, start, mid - 1); // after that I sent the lower half towards the left
     // new_root->right = balancing(array, mid + 1, last); // the upper half towards the right
@@ -204,7 +200,7 @@ ostream &operator<<(ostream &out, Hierarchy *data)
     // out << "Is this called????\n";
     if (data != nullptr)
     {
-        out << "Wtf is this shitty fish\n";
+        // out << "Wtf is this shitty fish\n";
         out << data->left;
         out << data->root;
         out << data->right;
