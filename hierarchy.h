@@ -12,7 +12,7 @@ public:
     // constructors
     Hierarchy();
     Hierarchy(char prisoner_class);
-
+    
     // destructors
     ~Hierarchy();
 

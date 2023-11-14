@@ -1,17 +1,14 @@
-// #pragma once
-// class Admin
-// {
-// private:
-//     /* data */
-// public:
-//     Admin(/* args */);
-//     ~Admin();
-// };
+#pragma once
+#include "Prisoners.h"
 
-// Admin::Admin(/* args */)
-// {
-// }
-
-// Admin::~Admin()
-// {
-// }
+class Admin
+{
+private:
+    Person admin;
+    string code;
+public:
+    Admin();
+    bool add_prisoner();
+    bool admin_UI();
+    // ~Admin();
+};

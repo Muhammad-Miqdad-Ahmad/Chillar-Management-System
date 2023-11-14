@@ -1,9 +1,9 @@
 #pragma once
 #include "hierarchy.h"
 #include "Visitor.h"
+#include "admin.h"
 #include <fstream>
 #include <string>
-
 // template <typename datatype>
 // ostream &operator<<(ostream &out, const datatype *&chunk);
 

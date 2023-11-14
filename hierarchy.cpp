@@ -25,6 +25,7 @@ Hierarchy::Hierarchy(char prisoner_class)
 
         while (!file.eof())
         {
+            // Convicted temp2;
             string ID, name, temp;
             relative1_data = new Person; // create a new person object
             relative2_data = new Person; // to store data
@@ -40,6 +41,7 @@ Hierarchy::Hierarchy(char prisoner_class)
             getline(file, ID);   // relative 2 id
             relative2_data->name = name;
             relative2_data->ID = ID;
+
             // now to ignore the rest of the file
             getline(file, temp); // age
             getline(file, temp); // height
@@ -66,6 +68,7 @@ Hierarchy::Hierarchy(char prisoner_class)
             convict_data.ID = ID;
             convict_data.name = name;
             // for the class A, B and C there is no relative info.
+            
             // now to ignore the rest of the file
             getline(file, temp); // age
             getline(file, temp); // height
