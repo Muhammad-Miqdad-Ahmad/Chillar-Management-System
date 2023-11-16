@@ -1,18 +1,18 @@
-#pragma once
+// #pragma once
 
-class Visitor
-{
-private:
-    /* data */
-public:
-    Visitor(/* args */);
-    ~Visitor();
-};
+// class Visitor
+// {
+// private:
+//     /* data */
+// public:
+//     Visitor(/* args */);
+//     ~Visitor();
+// };
 
-Visitor::Visitor(/* args */)
-{
-}
+// Visitor::Visitor(/* args */)
+// {
+// }
 
-Visitor::~Visitor()
-{
-}
+// Visitor::~Visitor()
+// {
+// }
