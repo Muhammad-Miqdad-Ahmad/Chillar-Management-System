@@ -21,21 +21,22 @@ Prisoners::~Prisoners()
     left = right = nullptr;
 }
 
+Prisoners* Prisoners::search(Prisoners* chunk,string data)
+{
+    if(data < this->root.ID)
+        return this->search(chunk->left,data);
+    else if(data > this->root.ID)
+        return this->search(chunk->right,data);
+    else
+        return chunk;
+}
+
 Person::Person(string ID, string name)
 {
     this->ID = ID;
     this->name = name;
 }
 
-Prisoners *operator%(Prisoners *&chunk, string data)
-{
-    if (data < chunk->root.ID)
-        return chunk->left % data;
-    else if (data > chunk->root.ID)
-        return chunk->right % data;
-    else
-        return chunk;
-}
 /*what thw shit is wrong with the shit is the fish cake
 kyaa msla hee tre ko bhens ki dum tera error ni kht m ho k de rha he wtdqjnedjneljnejbw*/
 ostream &operator<<(ostream &out, Prisoners *data)

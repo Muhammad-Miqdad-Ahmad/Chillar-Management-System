@@ -30,7 +30,7 @@ public:
     // template<typename datatype>
     // friend void display(Hierarchy* &data);
     friend ostream &operator<<(ostream &out, Hierarchy *data);
-    friend Prisoners *operator%(Hierarchy *&chunk, string data);
+    Prisoners *operator%(string data);
 };
 
 class Hierarchial_tree

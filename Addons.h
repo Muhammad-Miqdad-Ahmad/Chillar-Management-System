@@ -1,5 +1,6 @@
 #pragma once
 #include "hierarchy.h"
+#include <windows.h>
 #include "Visitor.h"
 #include "admin.h"
 #include <fstream>
@@ -19,8 +20,8 @@ void quick_sort(vector<Prisoners*> &array, int first, int last);
 // ostream &operator << (ostream &out, Pris* &data); 
 // void display(datatype* &data);
 // void display(Person* &data);
-Prisoners* operator%(Hierarchy* &chunk, string data);
-Prisoners* operator%(Prisoners* &chunk, string data);
+// Prisoners* operator%(Hierarchy* &chunk, string data);
+// Prisoners* operator%(Prisoners* &chunk, string data);
 
 // The namespace that will contain all constants
 namespace Constants
