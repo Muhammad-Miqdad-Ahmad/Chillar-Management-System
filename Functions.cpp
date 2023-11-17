@@ -34,10 +34,10 @@ void quick_sort(vector<Prisoners*> &array, int first, int last)
     }
 }
 
-// template <typename datatype>
-// void quick_swap(datatype &a, datatype &b)
-// {
-//     datatype temp = a;
-//     b = a;
-//     a = temp;
-// }
+//// template <typename datatype>
+//// void quick_swap(datatype &a, datatype &b)
+//// {
+////     datatype temp = a;
+////     b = a;
+////     a = temp;
+//// }

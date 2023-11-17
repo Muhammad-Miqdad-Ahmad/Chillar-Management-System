@@ -75,7 +75,7 @@ public:
     friend int partition(vector<Prisoners *> &array, int first, int last);
     friend void quick_sort(vector<Prisoners *> &array, int first, int last);
     friend ostream &operator<<(ostream &out, Prisoners *data);
-    friend Prisoners *operator%(Prisoners *&chunk, string data); // this is the % operator overload that is basically the search function.
+    Prisoners* search(Prisoners* chunk,string data); // this is the % operator overload that is basically the search function.
 };
 
 //? This is a special class that will inherit the Person class.
@@ -83,7 +83,7 @@ public:
 class Convicted : Person
 {
 private:
-    string age, height, weight, sentence, crime;
+    string age, height, height_ft, height_in, weight, sentence, crime;
     Capture_date captured_on, expected_release;
 
 public:

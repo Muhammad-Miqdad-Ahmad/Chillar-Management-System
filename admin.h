@@ -1,14 +1,13 @@
 #pragma once
 #include "Prisoners.h"
 
-class Admin
+class Admin: Person
 {
 private:
-    Person admin;
     string code;
 public:
     Admin();
-    bool add_prisoner();
-    bool admin_UI();
+    bool add_prisoner(Hierarchial_tree Thana);
+    bool admin_UI(Hierarchial_tree Thana);
     // ~Admin();
 };

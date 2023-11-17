@@ -129,16 +129,6 @@ void Hierarchial_tree::add_chunk(Hierarchy *&chunk, char data)
         add_chunk(chunk->left, data);
 }
 
-Prisoners *operator%(Hierarchy *&chunk, string data)
-{
-    if (data[0] > chunk->prisoner_grade)
-        return chunk->right % data;
-    else if (data[0] < chunk->prisoner_grade)
-        return chunk->left % data;
-    else
-        return chunk->root % data;
-}
-
 void Hierarchy::add_chunk(Prisoners *&chunk, Person &data, Person *&relative_1, Person *&relative_2) // function to add chunk to tree
 {
     if (chunk == nullptr)
