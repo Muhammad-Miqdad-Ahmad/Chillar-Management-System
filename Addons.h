@@ -4,10 +4,12 @@
 #include "admin.h"
 #include <fstream>
 #include <string>
+#include <windows.h>
 // template <typename datatype>
 // ostream &operator<<(ostream &out, const datatype *&chunk);
 
 //global functions
+bool is_empty(ifstream& pFile);
 int partition(vector<Prisoners*> &array, int first, int last);
 void quick_sort(vector<Prisoners*> &array, int first, int last);
 

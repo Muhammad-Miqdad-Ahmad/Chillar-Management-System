@@ -107,17 +107,20 @@ istream &operator>>(istream &in, Convicted &data)
     in >> data;
     cout << "Enter the age of the convicted: ";
     in >> data.age;
-    cout << "Enter the height of the convicted: ";
-    in >> data.height;
-    cout << "Enter the weight of the convicted: ";
+    cout << "Enter the height in feets of the convicted: ";
+    in >> data.height_ft;
+    cout << "Enter the height in inches of the convicted: ";
+    in >> data.height_in;
+    data.height=data.height_ft+"'"+data.height_in+"\"";
+    cout << "Enter the weight of the convicted in lbs: ";
     in >> data.weight;
+    data.weight=data.weight+" lbs";
     cout << "Enter the sentence of the convicted: ";
     getline(in,data.sentence);
     cout << "When was the convicted captured: ";
     in >> data.captured_on;
-    cout << "When is the expected release: ";
-    in >> data.expected_release;
-    cout << "WHat was the crime: ";
+    cout << "What was the crime: ";
+    cin.ignore();
     getline(in, data.crime);
     return in;
 }

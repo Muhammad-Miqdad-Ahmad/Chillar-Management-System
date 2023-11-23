@@ -80,18 +80,18 @@ public:
 
 //? This is a special class that will inherit the Person class.
 //? THis will be an extended version of the same person class designed to hold the prisoner data
-class Convicted : Person
+class Convicted : public Person
 {
 private:
-    string age, height, weight, sentence, crime;
+    string age, height, weight, sentence, crime,height_ft,height_in;
     Capture_date captured_on, expected_release;
 
 public:
 
+    Convicted();
     friend ostream &operator<<(ostream &out, Convicted &data);
     friend ofstream &operator<<(ofstream &out, Convicted &data);
     friend istream &operator>>(istream &in, Convicted &data);
     friend ifstream &operator>>(ifstream &in, Convicted &data);
-    Convicted();
     // ~Convicted();
 };
