@@ -108,19 +108,37 @@ bool Admin::add_prisoner(Hierarchial_tree Thana)
 {
     vector<Convicted> data;
     Convicted new_prisoner;
+    Person *relative_1 = nullptr, *relative_2 = nullptr;
     string prisoner_grade, file_name;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
     file_name = "Prisoners Data\\" + prisoner_grade;
-    fstream file(file_name + ".txt", ios::in);
+    ifstream file(file_name + ".txt", ios::in);
     if (!file.is_open())
         return false;
-
-    while (!file.eof())
+    if (prisoner_grade == "A" || prisoner_grade == "B" || prisoner_grade == "C")
     {
-        Convicted temp;
-        file >> temp;
-        data.push_back(temp);
+        relative_1=new Person;
+        relative_2=new Person;
+        while (!file.eof())
+        {
+            Convicted temp;
+            //! yhan pe read from file ka function aana he
+            //! us main change kr. paremetes km kr and this use kr
+            //!relative bhi andr wale use kr.
+            data.push_back(temp);
+            delete relative_1;
+            delete relative_2;
+        }
+    }
+    else
+    {
+        while (!file.eof())
+        {
+            Convicted temp;
+            file >> temp;
+            data.push_back(temp);
+        }
     }
     file.close();
     if (file.is_open())
@@ -133,12 +151,16 @@ bool Admin::add_prisoner(Hierarchial_tree Thana)
 
 bool Admin::generate_ID(Convicted &new_prisoner, vector<Convicted> data, string prisoner_grade)
 {
-    ifstream file_1("Removed_IDs.txt", ios::in);
+    ifstream file_1("Prisoners Data\\Removed_IDs.txt", ios::in);
     if (!file_1.is_open())
-        return false;
-
-    if (is_it_empty(file_1))
     {
+        cout << "oooohhhhhhhhhhhf cuk\n\n\n";
+        return false;
+    }
+
+    if (!is_it_empty(file_1))
+    {
+        cout << "\nthe file was not empty\n";
         vector<string> unused_IDs;
         while (!file_1.eof())
         {
@@ -157,12 +179,12 @@ bool Admin::generate_ID(Convicted &new_prisoner, vector<Convicted> data, string 
     }
     else
     {
+        cout << "\nthe file was empty\n";
         string new_id;
-        stringstream temp;
-        // temp << data.size()+1;
-        // temp >> new_id;
-        new_id = to_string(data.size()+1);
+        new_id = to_string(data.size());
         new_prisoner.ID = prisoner_grade + new_id;
+        cout << new_id << endl
+             << endl;
     }
     return true;
 }

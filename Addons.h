@@ -3,7 +3,6 @@
 #include <windows.h>
 #include "Visitor.h"
 #include "admin.h"
-#include <sstream>
 #include <fstream>
 #include <string>
 // template <typename datatype>

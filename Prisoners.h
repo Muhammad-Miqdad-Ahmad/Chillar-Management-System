@@ -9,6 +9,7 @@ private:
     string month;
     string date;
     string year;
+
 public:
     Capture_date(/* args */);
 
@@ -83,15 +84,20 @@ public:
 class Convicted : public Person
 {
 private:
-    string age, height, weight, sentence, crime,height_ft,height_in;
+    string age, height, weight, sentence, crime, height_ft, height_in;
     Capture_date captured_on, expected_release;
-
+    Person *relative_1, *relative_2;
 public:
-
     Convicted();
+    // ~Convicted();
+
+    // functions
+    void file_read(ifstream &in, Convicted &data, Person* &relative_1, Person* &relative_2);
+    void file_write(ofstream &out, Convicted &data, Person* &relative_1, Person* &relative_2);
+
+    // operators overloaded
     friend ostream &operator<<(ostream &out, Convicted &data);
     friend ofstream &operator<<(ofstream &out, Convicted &data);
     friend istream &operator>>(istream &in, Convicted &data);
     friend ifstream &operator>>(ifstream &in, Convicted &data);
-    // ~Convicted();
 };

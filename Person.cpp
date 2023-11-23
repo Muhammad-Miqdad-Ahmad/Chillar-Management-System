@@ -89,6 +89,8 @@ ifstream &operator>>(ifstream &in, Person &data)
 
 Convicted::Convicted() : Person()
 {
+    this->relative_1=nullptr;
+    this->relative_2=nullptr;
     this->age = "";
     this->weight = "";
     this->height_ft="";
@@ -106,9 +108,7 @@ Convicted::Convicted() : Person()
 
 istream &operator>>(istream &in, Convicted &data)
 {
-    cout << "input operator of convicted\n\n";
     cout << "Enter the name of the convicted: ";
-    cin.ignore();
     getline(in, data.name);
     cout << "Enter the age of the convicted: ";
     in >> data.age;
@@ -121,6 +121,7 @@ istream &operator>>(istream &in, Convicted &data)
     in >> data.weight;
     data.weight=data.weight+" lbs";
     cout << "Enter the sentence of the convicted: ";
+    cin.ignore();
     getline(in,data.sentence);
     cout << "When was the convicted captured: ";
     in >> data.captured_on;
@@ -147,7 +148,7 @@ ifstream &operator>>(ifstream &in, Convicted &data)
 ostream &operator<<(ostream &out, Convicted &data)
 {
     out << "The name of the convicted is: " << data.name << endl;
-    out << "The name of the convicted is: " << data.ID << endl;
+    out << "The ID of the convicted is: " << data.ID << endl;
     out << "The age of the convicted is: " << data.age << endl;
     out << "The height of the convicted is: " << data.height << endl;
     out << "The weight of the convicted is: " << data.weight << endl;
@@ -182,7 +183,7 @@ Capture_date::Capture_date()
 
 ostream &operator<<(ostream &out, Capture_date &data)
 {
-    out << data.month << " " <<data.date << ", " << data.year << endl;
+    out << data.month << " " <<data.date << ", " << data.year;
     return out;
 }
 
@@ -209,4 +210,39 @@ ifstream &operator>>(ifstream &in, Capture_date &data)
     in >> data.date;
     in >> data.year;
     return in;
+}
+
+void Convicted::file_read(ifstream &in, Convicted &data, Person* &relative_1, Person* &relative_2)
+{
+    Person temp;
+    getline(in, data.ID);
+    in >> temp;
+    *relative_1=temp;
+    in >> temp;
+    *relative_2=temp;
+    getline(in, data.name);
+    getline(in, data.age);
+    getline(in, data.height);
+    getline(in, data.weight);
+    getline(in,data.sentence);
+    in >> data.captured_on;
+    in >> data.expected_release;
+    getline(in, data.crime);
+}
+
+void Convicted::file_write(ofstream &out, Convicted &data, Person* &relative_1, Person* &relative_2)
+{
+    Person temp = *relative_1;
+    out << data.name << endl;
+    out << data.ID << endl;
+    out << temp;
+    temp=*relative_2;
+    out << temp;
+    out << data.age << endl;
+    out << data.height << endl;
+    out << data.weight << endl;
+    out << data.sentence << endl;
+    out << data.captured_on << endl;
+    out << data.expected_release << endl;
+    out << data.crime << endl;
 }
