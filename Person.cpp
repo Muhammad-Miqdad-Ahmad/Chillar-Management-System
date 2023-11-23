@@ -18,7 +18,7 @@ bool Person::operator==(Person &data)
     return false;
 }
 
-bool Person::operator==(Person &data)
+bool Person::operator!=(Person &data)
 {
     if (this->ID != data.ID)
         if (this->name != data.name)
@@ -91,23 +91,28 @@ Convicted::Convicted() : Person()
 {
     this->age = "";
     this->weight = "";
+    this->height_ft="";
+    this->height_in="";
     this->crime = "";
     this->height = "";
 }
 
-ofstream &operator<<(ofstream &out, Convicted &data)
-{
-    out << data.ID << endl;
-    out << data.name << endl;
-    return out;
-}
+// ofstream &operator<<(ofstream &out, Convicted &data)
+// {
+//     out << data.ID << endl;
+//     out << data.name << endl;
+//     return out;
+// }
 
 istream &operator>>(istream &in, Convicted &data)
 {
-    in >> data;
+    cout << "input operator of convicted\n\n";
+    cout << "Enter the name of the convicted: ";
+    cin.ignore();
+    getline(in, data.name);
     cout << "Enter the age of the convicted: ";
     in >> data.age;
-    cout << "Enter the height in feets of the convicted: ";
+    cout << "Enter the height in feet of the convicted: ";
     in >> data.height_ft;
     cout << "Enter the height in inches of the convicted: ";
     in >> data.height_in;
@@ -127,27 +132,22 @@ istream &operator>>(istream &in, Convicted &data)
 
 ifstream &operator>>(ifstream &in, Convicted &data)
 {
-    in >> data;
-    cout << "Enter the age of the convicted: ";
+    getline(in, data.ID);
+    getline(in, data.name);
     getline(in, data.age);
-    cout << "Enter the height of the convicted: ";
     getline(in, data.height);
-    cout << "Enter the weight of the convicted: ";
     getline(in, data.weight);
-    cout << "Enter the sentence of the convicted: ";
     getline(in,data.sentence);
-    cout << "When was the convicted captured: ";
     in >> data.captured_on;
-    cout << "When is the expected release: ";
     in >> data.expected_release;
-    cout << "What was the crime: ";
     getline(in, data.crime);
     return in;
 }
 
 ostream &operator<<(ostream &out, Convicted &data)
 {
-    out << data;
+    out << "The name of the convicted is: " << data.name << endl;
+    out << "The name of the convicted is: " << data.ID << endl;
     out << "The age of the convicted is: " << data.age << endl;
     out << "The height of the convicted is: " << data.height << endl;
     out << "The weight of the convicted is: " << data.weight << endl;
@@ -161,7 +161,8 @@ ostream &operator<<(ostream &out, Convicted &data)
 
 ofstream &operator<<(ofstream &out, Convicted &data)
 {
-    out << data;
+    out << data.name << endl;
+    out << data.ID << endl;
     out << data.age << endl;
     out << data.height << endl;
     out << data.weight << endl;
@@ -169,6 +170,7 @@ ofstream &operator<<(ofstream &out, Convicted &data)
     out << data.captured_on << endl;
     out << data.expected_release << endl;
     out << data.crime << endl;
+    return out;
 }
 
 Capture_date::Capture_date()

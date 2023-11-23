@@ -42,7 +42,7 @@ void quick_sort(vector<Prisoners *> &array, int first, int last)
 ////     a = temp;
 //// }
 
-bool is_empty(ifstream& pFile)
+bool is_it_empty(ifstream& pFile)
 {
     return pFile.peek() == ifstream::traits_type::eof();
 }

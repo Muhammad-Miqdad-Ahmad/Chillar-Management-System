@@ -2,9 +2,9 @@
 
 Admin::Admin()
 {
-    this->admin.ID="BSCE010307";
-    this->admin.name="Muhammad Waleed Tahir";
-    this->code="grandu";
+    this->admin.ID = "BSCE010307";
+    this->admin.name = "Muhammad Waleed Tahir";
+    this->code = "grandu";
 }
 
 bool Admin::admin_UI(Hierarchial_tree Thana)
@@ -108,11 +108,11 @@ bool Admin::add_prisoner(Hierarchial_tree Thana)
 {
     vector<Convicted> data;
     Convicted new_prisoner;
-    string prisoner_grade, prisoner_name, prisoner_ID;
+    string prisoner_grade, file_name;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
-    prisoner_grade = "Prisoners Data\\" + prisoner_grade;
-    ifstream file(prisoner_grade + ".txt", ios::in);
+    file_name = "Prisoners Data\\" + prisoner_grade;
+    fstream file(file_name + ".txt", ios::in);
     if (!file.is_open())
         return false;
 
@@ -126,17 +126,43 @@ bool Admin::add_prisoner(Hierarchial_tree Thana)
     if (file.is_open())
         return false;
 
-    cin << new_prisoner;
-    ifstream file("Removed_IDs.txt", ios::in);
-    if(!is_empty(file))
+    cin >> new_prisoner;
+    generate_ID(new_prisoner, data, prisoner_grade);
+    return true;
+}
+
+bool Admin::generate_ID(Convicted &new_prisoner, vector<Convicted> data, string prisoner_grade)
+{
+    ifstream file_1("Removed_IDs.txt", ios::in);
+    if (!file_1.is_open())
+        return false;
+
+    if (is_it_empty(file_1))
     {
         vector<string> unused_IDs;
-        while(!file.eof())
+        while (!file_1.eof())
         {
             string temp;
-            getline(file,temp);
+            getline(file_1, temp);
             unused_IDs.push_back(temp);
         }
-        new_prisoner.ID=unused_IDs[0];
+        new_prisoner.ID = unused_IDs[0];
+        unused_IDs.erase(unused_IDs.begin());
+        file_1.close();
+        ofstream file("Removed_IDs.txt", ios::out | ios::trunc);
+        for (auto &&i : unused_IDs)
+            file << i << endl;
+        unused_IDs.clear();
+        file.close();
     }
+    else
+    {
+        string new_id;
+        stringstream temp;
+        // temp << data.size()+1;
+        // temp >> new_id;
+        new_id = to_string(data.size()+1);
+        new_prisoner.ID = prisoner_grade + new_id;
+    }
+    return true;
 }
