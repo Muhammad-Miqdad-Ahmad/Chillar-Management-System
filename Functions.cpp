@@ -41,3 +41,11 @@ void quick_sort(vector<Prisoners*> &array, int first, int last)
 ////     b = a;
 ////     a = temp;
 //// }
+
+//the peek function checks the next character in the file without extracting it.
+//if teh peek is equal to the end of file character then that means there are no more characters to read.
+//since we are checking the first character then that means there are no characters in the file at all. 
+bool is_it_empty(ifstream& pFile)
+{
+    return pFile.peek() == ifstream::traits_type::eof();
+}

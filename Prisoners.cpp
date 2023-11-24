@@ -21,15 +21,15 @@ Prisoners::~Prisoners()
     left = right = nullptr;
 }
 
-Prisoners *Prisoners::search(Prisoners *chunk, string data)
-{
-    if (data < this->root.ID)
-        return this->search(chunk->left, data);
-    else if (data > this->root.ID)
-        return this->search(chunk->right, data);
-    else
-        return chunk;
-}
+// Prisoners *Prisoners::search(Prisoners *chunk, string data)
+// {
+//     if (data < this->root.ID)
+//         return this->search(chunk->left, data);
+//     else if (data > this->root.ID)
+//         return this->search(chunk->right, data);
+//     else
+//         return chunk;
+// }
 
 Person::Person(string ID, string name)
 {
