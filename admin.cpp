@@ -40,31 +40,46 @@ bool Admin::admin_UI(Hierarchial_tree Thana)
     }
 }
 
+// ye function hmeen bs file se sb utha k ik vector main store kr k de deta he
+bool Admin::store_from_file(vector<Convicted> &data, string &prisoner_grade)
+{
+    string file_name = "Prisoners Data\\" + prisoner_grade; // yhan pe main file ka naam grade k hisab se string main store kr deta hoon
+    ifstream file(file_name + ".txt", ios::in);             // file open krta hoon
+    if (!file.is_open())                                    // agar file open nhi hoi to function false return kr dega
+        return false;
+
+    while (!file.eof()) // agar file open ho gai he to end of file tk loop chle ga.
+    {
+        Convicted temp;                  // ik convicted ka temp var bnao
+        temp.give_space(prisoner_grade); // ye function bs yeh krta he k agar hmara prisoner garde A, B, C nhi he to wo Convicted class main relatives ko space de deta he
+        file >> temp;                    // baqi sb operator overloading main likha he
+        data.push_back(temp);            // vector main push back kr de sb
+    }
+    file.close(); // file close kr de and prisonewr garde ko file name k equal kr de ta k asal code main bhi file ka name chala jae and bar bar bnana na pre.
+    prisoner_grade = file_name;
+    if (file.is_open()) // agar close krne k bad file open he to false
+        return false;
+    else // ni to sb sahi hoa he true
+        return true;
+}
+
+// this is the function to simply remove some data from the system
 bool Admin::remove_user()
 {
     vector<Convicted> data;
     string prisoner_grade, prisoner_name, prisoner_ID;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
-    prisoner_grade = "Prisoners Data\\" + prisoner_grade;
-    ifstream file(prisoner_grade + ".txt", ios::in);
-    if (!file.is_open())
-        return false;
+    string file_name = prisoner_grade;
 
-    while (!file.eof())
-    {
-        Convicted temp;
-        file >> temp;
-        data.push_back(temp);
-    }
-    file.close();
-    if (file.is_open())
+    if (!this->store_from_file(data, file_name))
         return false;
 
     cout << "Enter the name of the convicted to remove: ";
     cin >> prisoner_name;
     cout << "Enter the ID of the convicted to remove: ";
     cin >> prisoner_ID;
+
     for (int i = 0; i < data.size(); i++)
     {
         if (data[i].ID == prisoner_ID && data[i].name == prisoner_name)
@@ -85,7 +100,7 @@ bool Admin::remove_user()
                 return false;
 
             data.erase(data.begin() + i);
-            ofstream file(prisoner_grade + ".txt", ios::out | ios::trunc);
+            ofstream file(file_name + ".txt", ios::out | ios::trunc);
 
             if (!file.is_open())
                 return false;
@@ -108,43 +123,19 @@ bool Admin::add_prisoner(Hierarchial_tree Thana)
 {
     vector<Convicted> data;
     Convicted new_prisoner;
-    Person *relative_1 = nullptr, *relative_2 = nullptr;
     string prisoner_grade, file_name;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
-    file_name = "Prisoners Data\\" + prisoner_grade;
-    ifstream file(file_name + ".txt", ios::in);
-    if (!file.is_open())
-        return false;
-    if (prisoner_grade == "A" || prisoner_grade == "B" || prisoner_grade == "C")
-    {
-        relative_1=new Person;
-        relative_2=new Person;
-        while (!file.eof())
-        {
-            Convicted temp;
-            //! yhan pe read from file ka function aana he
-            //! us main change kr. paremetes km kr and this use kr
-            //!relative bhi andr wale use kr.
-            data.push_back(temp);
-            delete relative_1;
-            delete relative_2;
-        }
-    }
-    else
-    {
-        while (!file.eof())
-        {
-            Convicted temp;
-            file >> temp;
-            data.push_back(temp);
-        }
-    }
-    file.close();
-    if (file.is_open())
+    string file_name = prisoner_grade;
+
+    //ye function hmeen store kr k de deta he sb ik vector main. 
+    // agar ye sahi ni chla to false return kr dega.
+    if (!this->store_from_file(data, file_name))
         return false;
 
-    cin >> new_prisoner;
+    cin >> new_prisoner; // nae prisoner ka data input krwa liya he.
+
+    new_prisoner.give_space(prisoner_grade);
     generate_ID(new_prisoner, data, prisoner_grade);
     return true;
 }
@@ -153,10 +144,7 @@ bool Admin::generate_ID(Convicted &new_prisoner, vector<Convicted> data, string 
 {
     ifstream file_1("Prisoners Data\\Removed_IDs.txt", ios::in);
     if (!file_1.is_open())
-    {
-        cout << "oooohhhhhhhhhhhf cuk\n\n\n";
         return false;
-    }
 
     if (!is_it_empty(file_1))
     {

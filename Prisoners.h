@@ -92,8 +92,7 @@ public:
     // ~Convicted();
 
     // functions
-    void file_read(ifstream &in, Convicted &data, Person* &relative_1, Person* &relative_2);
-    void file_write(ofstream &out, Convicted &data, Person* &relative_1, Person* &relative_2);
+    void give_space(string yada);
 
     // operators overloaded
     friend ostream &operator<<(ostream &out, Convicted &data);
