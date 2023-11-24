@@ -36,7 +36,9 @@ bool Person::operator<(Person &data)
 bool Person::operator<=(Person &data)
 {
     if (this->ID <= data.ID)
+    {
         return true;
+    }
     return false;
 }
 
@@ -87,8 +89,12 @@ ifstream &operator>>(ifstream &in, Person &data)
 
 Convicted::Convicted() : Person()
 {
+    this->relative_1 = nullptr;
+    this->relative_2 = nullptr;
     this->age = "";
     this->weight = "";
+    this->height_ft = "";
+    this->height_in = "";
     this->crime = "";
     this->height = "";
 }
@@ -102,25 +108,27 @@ Convicted::Convicted() : Person()
 
 istream &operator>>(istream &in, Convicted &data)
 {
-    // in >> data;
     cout << "Enter the name of the convicted: ";
-    cin.ignore();
-    getline(cin,data.name);
+    getline(in, data.name);
     cout << "Enter the age of the convicted: ";
     in >> data.age;
-    cout << "Enter the height in feets of the convicted: ";
+    if (data.relative_1)
+        in >> *data.relative_1;
+    if (data.relative_2)
+        in >> *data.relative_2;
+    cout << "Enter the height in feet of the convicted: ";
     in >> data.height_ft;
     cout << "Enter the height in inches of the convicted: ";
     in >> data.height_in;
-    data.height=data.height_ft+"'"+data.height_in+"\"";
-    cout << "Enter the weight of the convicted: ";
-    cin.ignore();
-    getline(in, data.weight);
+    data.height = data.height_ft + "'" + data.height_in + "\"";
+    cout << "Enter the weight of the convicted in lbs: ";
+    in >> data.weight;
+    data.weight = data.weight + " lbs";
     cout << "Enter the sentence of the convicted: ";
     cin.ignore();
-    getline(in,data.sentence);
+    getline(in, data.sentence);
+    cout << "When was the convicted captured: ";
     in >> data.captured_on;
-    in >> data.expected_release;
     cout << "What was the crime: ";
     cin.ignore();
     getline(in, data.crime);
@@ -129,7 +137,12 @@ istream &operator>>(istream &in, Convicted &data)
 
 ifstream &operator>>(ifstream &in, Convicted &data)
 {
-    in >> data;
+    getline(in, data.ID);
+    getline(in, data.name);
+    if (data.relative_1)
+        in >> *data.relative_1;
+    if (data.relative_2)
+        in >> *data.relative_2;
     getline(in, data.age);
     getline(in, data.height);
     getline(in, data.weight);
@@ -142,23 +155,31 @@ ifstream &operator>>(ifstream &in, Convicted &data)
 
 ostream &operator<<(ostream &out, Convicted &data)
 {
-    out << data;
+    out << "The name of the convicted is: " << data.name << endl;
+    out << "The ID of the convicted is: " << data.ID << endl;
+    if (data.relative_1)
+        out << *data.relative_1;
+    if (data.relative_2)
+        out << *data.relative_2;
     out << "The age of the convicted is: " << data.age << endl;
     out << "The height of the convicted is: " << data.height << endl;
     out << "The weight of the convicted is: " << data.weight << endl;
     out << "The sentence of the convicted is: " << data.sentence << endl;
     out << "The convicted was captured on: " << data.captured_on << endl;
     out << "The convicted is expected to be released on: " << data.expected_release << endl;
-    out << "The crime of the conviceted is: " << data.crime << endl
+    out << "The crimpe of the conviceted is: " << data.crime << endl
         << endl;
     return out;
 }
 
 ofstream &operator<<(ofstream &out, Convicted &data)
 {
-    out << endl;
     out << data.name << endl;
     out << data.ID << endl;
+    if (data.relative_1)
+        out << *data.relative_1;
+    if (data.relative_2)
+        out << *data.relative_2;
     out << data.age << endl;
     out << data.height << endl;
     out << data.weight << endl;
@@ -171,14 +192,14 @@ ofstream &operator<<(ofstream &out, Convicted &data)
 
 Capture_date::Capture_date()
 {
-    this->date="";
-    this->month="";
-    this->year="";
+    this->date = "";
+    this->month = "";
+    this->year = "";
 }
 
 ostream &operator<<(ostream &out, Capture_date &data)
 {
-    out << data.month << " " <<data.date << ", " << data.year << endl;
+    out << data.month << " " << data.date << ", " << data.year;
     return out;
 }
 
@@ -195,7 +216,7 @@ istream &operator>>(istream &in, Capture_date &data)
 
 ofstream &operator<<(ofstream &out, Capture_date &data)
 {
-    out << data.month << " " <<data.date << ", " << data.year;
+    out << data.month << " " << data.date << ", " << data.year << endl;
     return out;
 }
 
@@ -205,4 +226,13 @@ ifstream &operator>>(ifstream &in, Capture_date &data)
     in >> data.date;
     in >> data.year;
     return in;
+}
+
+void Convicted::give_space(string yaan)
+{
+    if (yaan == "A" || yaan == "B" || yaan == "C")
+    {
+        this->relative_1 = new Person;
+        this->relative_2 = new Person;
+    }
 }
