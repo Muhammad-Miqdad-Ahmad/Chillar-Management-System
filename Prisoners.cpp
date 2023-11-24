@@ -90,7 +90,7 @@ void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
     monthCap += static_cast<int>(num);
     if (monthCap > 12)
     {
-        yearCap += monthCap / 12;
+        yearCap += monthCap / 12; 
         monthCap %= 12;
     }
     this->date = cap_on.date;
