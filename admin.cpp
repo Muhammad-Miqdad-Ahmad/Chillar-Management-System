@@ -7,7 +7,7 @@ Admin::Admin()
     this->code = "grandu";
 }
 
-bool Admin::admin_UI(Hierarchial_tree Thana)
+bool Admin::admin_UI()
 {
     Person admin;
     string password;
@@ -26,7 +26,7 @@ bool Admin::admin_UI(Hierarchial_tree Thana)
         switch (choice)
         {
         case 'a':
-            if (!this->add_prisoner(Thana))
+            if (!this->add_prisoner())
                 cout << "The process did not work as intended\n";
             break;
 
@@ -119,37 +119,42 @@ bool Admin::remove_user()
     return false;
 }
 
-bool Admin::add_prisoner(Hierarchial_tree Thana)
+bool Admin::add_prisoner()
 {
     vector<Convicted> data;
     Convicted new_prisoner;
     string prisoner_grade, file_name;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
-    string file_name = prisoner_grade;
+    file_name = prisoner_grade;
 
-    //ye function hmeen store kr k de deta he sb ik vector main. 
-    // agar ye sahi ni chla to false return kr dega.
+    // ye function hmeen store kr k de deta he sb ik vector main.
+    //  agar ye sahi ni chla to false return kr dega.
     if (!this->store_from_file(data, file_name))
         return false;
 
     cin >> new_prisoner; // nae prisoner ka data input krwa liya he.
 
+    // ye function basically check krta he agr grade ABC ni he to relatives k pointers ko space de deta he
     new_prisoner.give_space(prisoner_grade);
+
     generate_ID(new_prisoner, data, prisoner_grade);
     return true;
 }
 
 bool Admin::generate_ID(Convicted &new_prisoner, vector<Convicted> data, string prisoner_grade)
 {
+    // we open the file that contains all the removed IDs
     ifstream file_1("Prisoners Data\\Removed_IDs.txt", ios::in);
     if (!file_1.is_open())
         return false;
 
+    //this is a function that tells us if a file is empty or not.
     if (!is_it_empty(file_1))
     {
-        cout << "\nthe file was not empty\n";
+        // returns false if the file is not empty
         vector<string> unused_IDs;
+        //loop to iterate through the entre file. 
         while (!file_1.eof())
         {
             string temp;
@@ -167,12 +172,17 @@ bool Admin::generate_ID(Convicted &new_prisoner, vector<Convicted> data, string 
     }
     else
     {
-        cout << "\nthe file was empty\n";
+        //returns true if the file is empty
         string new_id;
         new_id = to_string(data.size());
         new_prisoner.ID = prisoner_grade + new_id;
         cout << new_id << endl
              << endl;
     }
+    return true;
+}
+
+bool modify_data()
+{
     return true;
 }

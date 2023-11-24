@@ -2,9 +2,12 @@
 #include "hierarchy.h"
 #include <windows.h>
 #include "Visitor.h"
+#include <typeinfo>
+// #include <typeinfo.h>
 #include "admin.h"
 #include <fstream>
 #include <string>
+#include <ctime>
 // template <typename datatype>
 // ostream &operator<<(ostream &out, const datatype *&chunk);
 
