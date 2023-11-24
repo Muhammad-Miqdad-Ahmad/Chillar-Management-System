@@ -28,7 +28,7 @@ public:
 
     // friend function
     // template<typename datatype>
-    // friend void display(Hierarchy* &data);
+    // fri  end void display(Hierarchy* &data);
     friend ostream &operator<<(ostream &out, Hierarchy *data);
     Prisoners *operator%(string data);
 };
@@ -55,5 +55,5 @@ public:
 
     // // void add_chunk(Hierarchy* &chunk, int index); // dont un comment it. I am just eaving it here for research purposes ( ;
 
-    // operator overloads
+    // operator overloads   
 };

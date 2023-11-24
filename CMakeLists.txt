@@ -7,4 +7,8 @@ add_executable(Chillar_Management_System main.cpp
         Person.cpp
         Prisoners.cpp
         hierarchy.cpp
-        admin.h)
+        admin.h
+        Visitor.cpp
+        Functions.cpp
+        admin.cpp
+        admin.cpp)

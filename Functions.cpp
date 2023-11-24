@@ -17,7 +17,7 @@ int partition(vector<Prisoners*> &array, int first, int last)
             swap(array[j], array[i]);
         }
     }
-    swap(array[j], array[last]);
+    swap(array[j+1], array[last]);
     piviot=nullptr;
     return j + 1;
 }

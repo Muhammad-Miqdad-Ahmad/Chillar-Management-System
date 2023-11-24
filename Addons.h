@@ -27,4 +27,6 @@ void quick_sort(vector<Prisoners*> &array, int first, int last);
 namespace Constants
 {
     static const char hierarchial_classes[] = "DBFACEG";
+    static const string monthNames[12] = {"January","February","March","April","May","June","July","August","Spetember",
+    "October","November","December"};
 } // namespace Constants

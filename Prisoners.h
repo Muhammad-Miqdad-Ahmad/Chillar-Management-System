@@ -12,6 +12,7 @@ private:
 public:
     Capture_date(/* args */);
 
+    void cal_expected_date(Capture_date cap_on, string sentence);
     // stream operators overload
     friend ostream &operator<<(ostream &out, Capture_date &data);
     friend ofstream &operator<<(ofstream &out, Capture_date &data);

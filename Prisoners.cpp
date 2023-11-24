@@ -21,12 +21,12 @@ Prisoners::~Prisoners()
     left = right = nullptr;
 }
 
-Prisoners* Prisoners::search(Prisoners* chunk,string data)
+Prisoners *Prisoners::search(Prisoners *chunk, string data)
 {
-    if(data < this->root.ID)
-        return this->search(chunk->left,data);
-    else if(data > this->root.ID)
-        return this->search(chunk->right,data);
+    if (data < this->root.ID)
+        return this->search(chunk->left, data);
+    else if (data > this->root.ID)
+        return this->search(chunk->right, data);
     else
         return chunk;
 }
@@ -48,4 +48,52 @@ ostream &operator<<(ostream &out, Prisoners *data)
         out << data->right;
     }
     return out;
+}
+
+void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
+{
+    double num = stod(sentence); // ye string s double m number change kar k de ga
+    int size = sentence.size();  // ye string ka size hai;
+    string yearOrmonth;
+
+    for (int i = 0; i < size; i++)
+    {
+        if (sentence[i] == 'y' || sentence[i] == 'Y') // agr sentence years m hai to yaha s year ah jai ga
+        {
+            yearOrmonth = "year";
+            break;
+        }
+        if (sentence[i] == 'm' || sentence[i] == 'M') // agr sentence month m hai to yaha s month ah jai ga
+        {
+            yearOrmonth = "month";
+            break;
+        }
+    }
+
+    if (yearOrmonth == "year")
+    {
+        num = num * 12.0;
+    }
+
+    int monthCap;
+    int yearCap = stoi(cap_on.year); // captured on wala year
+
+    for (int i = 0; i < 12; i++)
+    {
+        if (Constants::monthNames[i] == cap_on.month)
+        {
+            monthCap = i + 1;
+            break;
+        }
+    }
+
+    monthCap += static_cast<int>(num);
+    if (monthCap > 12)
+    {
+        yearCap += monthCap / 12;
+        monthCap %= 12;
+    }
+    this->date = cap_on.date;
+    this->month = Constants::monthNames[monthCap - 1];
+    this->year = to_string(yearCap);
 }
