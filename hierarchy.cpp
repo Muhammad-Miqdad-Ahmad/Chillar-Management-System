@@ -154,7 +154,7 @@ void Hierarchy::make_full_balanced() // function to make the tree full balanced.
         i->left = i->right = nullptr;
 
     // cout << "quick sort call kr rha hoon\n";
-    quick_sort(temporary_storage, 0, temporary_storage.size() - 1);             // BKL awi dalah hai
+    //quick_sort(temporary_storage, 0, temporary_storage.size() - 1);             // BKL awi dalah hai
 
     this->root = balancing(temporary_storage, 0, temporary_storage.size() - 1); // the root the balancing function returns is stored in the root of class
     temporary_storage.clear();
