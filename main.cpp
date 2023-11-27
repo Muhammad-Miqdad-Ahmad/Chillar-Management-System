@@ -40,33 +40,21 @@ int main(int argc, char const *argv[])
     Person* data2=new Person;
     abstract *liq;
     Hierarchy *root=new Hierarchy;
-    // while(!file.eof())
-    // {
-        string name,id,height,weight,age,sentence,crime,empty,suq;
-        Capture_date captured_on,release;
-        getline(file,id);
-        getline(file,name);
-        getline(file,age);
-        getline(file,height);
-        getline(file,weight);
-        getline(file,sentence);
-        file >> captured_on;
-        file >> release;
-        getline(file,crime);
+    while(!file.eof())
+    {
+        liq=new Convicted;
+        liq->read(file);
         file>>data1;
         file>>data2;
-        getline(file,empty);
-    cout << name << endl << id << endl << age << endl << height << endl << weight << endl << sentence << endl << captured_on << endl << release << endl << crime << endl << empty << endl <<"yhan tk\n" << endl  << endl;
-
-        liq=new Convicted;
-        // liq->read(file);
-        // file>>data1;
-        // file>>data2;
-        // getline(file,temp);
-        // root->add_chunk(root->root,liq,data1,data2);
-        
-    // }
+        getline(file,temp);
+        root->add_chunk(root->root,liq,data1,data2);
+    }
     file.close();
-    // cout << root;
+    cout << root;
+    root->make_full_balanced();
+    ofstream file1("G.txt", ios::out|ios::trunc);
+    root->write_file_in_BFS(root->root,file1);
+    file1.close();
+    
     
 }

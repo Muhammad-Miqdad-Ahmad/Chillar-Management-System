@@ -312,6 +312,18 @@ void Convicted::read(ifstream &in)
     getline(in, this->crime);
 }
 
+void Convicted::write(ofstream &out)
+{
+    out << this->ID << endl;
+    out << this->name << endl;
+    out << this->age << endl;
+    out << this->height << endl;
+    out << this->weight << endl;
+    out << this->sentence << endl;
+    out << this->captured_on << endl;
+    out << this->expected_release << endl;
+    out << this->crime << endl;
+}
 
 void Convicted::give_space(string yaan)
 {
@@ -321,4 +333,3 @@ void Convicted::give_space(string yaan)
         this->relative_2 = new Person;
     }
 }
-

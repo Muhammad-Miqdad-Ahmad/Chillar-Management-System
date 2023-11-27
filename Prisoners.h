@@ -1,7 +1,5 @@
 #pragma once
-#include <iostream>
-#include <vector>
-using namespace std;
+#include "Abstract.h"
 
 class Capture_date
 {
@@ -23,26 +21,6 @@ public:
     friend ifstream &operator>>(ifstream &in, Capture_date &data);
 };
 
-class abstract
-{
-public:
-    string ID;
-    string name;
-    virtual void display() = 0;
-    virtual void read(ifstream &file) = 0;
-    virtual bool operator<(abstract &data) = 0;
-    virtual bool operator<(abstract *&data) = 0;
-    virtual bool operator<=(abstract &data) = 0;
-    virtual bool operator<=(abstract *&data) = 0;
-    virtual bool operator>(abstract &data) = 0;
-    virtual bool operator>(abstract *&data) = 0;
-    virtual bool operator>=(abstract &data) = 0;
-    virtual bool operator>=(abstract *&data) = 0;
-    virtual bool operator==(abstract &data) = 0;
-    virtual bool operator==(abstract *&data) = 0;
-    virtual bool operator!=(abstract &data) = 0;
-    virtual bool operator!=(abstract *&data) = 0;
-};
 
 class Person : public abstract
 {
@@ -59,6 +37,7 @@ public:
     // functions
     void display() override;
     void read(ifstream &file) override;
+    void write(ofstream &file) override;
 
     // comparison operator overload
     bool operator<(abstract &data) override;
@@ -102,6 +81,7 @@ public:
     void display() override;
     void give_space(string yada);
     void read(ifstream &file) override;
+    void write(ofstream &file) override;
 
     // comparison operator overload
     bool operator<(abstract &data) override;
@@ -151,11 +131,12 @@ public:
     friend class Hierarchy;
 
     //functions
-    void re_write(string file_name);
+    void write(ofstream &out);
 
     // friend functions
     friend int partition(vector<Prisoners *> &array, int first, int last);
     friend void quick_sort(vector<Prisoners *> &array, int first, int last);
     friend ostream &operator<<(ostream &out, Prisoners *data);
+    friend ofstream &operator<<(ofstream &out, Prisoners *data);
     // friend Prisoners *operator%(Prisoners *&chunk, string data); // this is the % operator overload that is basically the search function.
 };

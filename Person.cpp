@@ -180,7 +180,7 @@ Capture_date::Capture_date()
 
 ostream &operator<<(ostream &out, Capture_date &data)
 {
-    out << data.month << " " << data.date << " " << data.year;
+    out << data.month << " " << data.date  << data.year;
     return out;
 }
 
@@ -197,7 +197,7 @@ istream &operator>>(istream &in, Capture_date &data)
 
 ofstream &operator<<(ofstream &out, Capture_date &data)
 {
-    out << data.month << " " << data.date << ", " << data.year << endl;
+    out << data.month << " " << data.date << data.year;
     return out;
 }
 
@@ -206,7 +206,7 @@ ifstream &operator>>(ifstream &in, Capture_date &data)
     string temp;
     in >> data.month;
     in >> data.date;
-    in >> data.year;
+    getline(in, data.year);
     return in;
 }
 
@@ -226,6 +226,12 @@ void Person::read(ifstream &file)
     getline(file, temp); // expected release
     getline(file, temp); // crime
     // getline(file, temp); // empty line
+}
+
+void Person::write(ofstream &file)
+{
+    file << this->ID << endl;
+    file << this->name << endl;
 }
 
 void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
