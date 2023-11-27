@@ -1,9 +1,5 @@
 G1
 Ava Turner
-Emma Turner (Sister)
-783214501
-Lily Turner (Cousin)
-783214502
 22
 5'6"
 120 lbs
@@ -11,13 +7,13 @@ Lily Turner (Cousin)
 March 4, 2023
 June 4, 2024
 Convicted of public intoxication and disorderly conduct.
+Emma Turner (Sister)
+783214501
+Lily Turner (Cousin)
+783214502
 
 G2
 William Foster
-Benjamin Foster (Brother)
-632187901
-Emily Turner (Cousin)
-632187902
 24
 5'9"
 155 lbs
@@ -25,13 +21,13 @@ Emily Turner (Cousin)
 August 19, 2022
 November 19, 2023
 Convicted of misdemeanor assault and public disturbance.
+Benjamin Foster (Brother)
+632187901
+Emily Turner (Cousin)
+632187902
 
 G3
 Mia Turner
-Chloe Turner (Sister)
-514289071
-Lily Turner (Friend)
-514289072
 21
 5'5"
 115 lbs
@@ -39,13 +35,13 @@ Lily Turner (Friend)
 January 4, 2023
 April 4, 2024
 Convicted of vandalism and property damage.
+Chloe Turner (Sister)
+514289071
+Lily Turner (Friend)
+514289072
 
 G4
 Jacob Adams
-Daniel Adams (Brother)
-109873241
-Benjamin Adams (Friend)
-109873242
 25
 6'0"
 160 lbs
@@ -53,13 +49,13 @@ Benjamin Adams (Friend)
 May 20, 2022
 August 20, 2023
 Convicted of petty theft and shoplifting.
+Daniel Adams (Brother)
+109873241
+Benjamin Adams (Friend)
+109873242
 
 G5
 Chloe Turner
-Ava Turner (Sister)
-425761981
-Emma Turner (Cousin)
-425761982
 22
 5'6"
 120 lbs
@@ -67,13 +63,13 @@ Emma Turner (Cousin)
 October 5, 2023
 January 5, 2025
 Convicted of disorderly conduct and public disturbances.
+Ava Turner (Sister)
+425761981
+Emma Turner (Cousin)
+425761982
 
 G6
 Benjamin Foster
-William Foster (Brother)
-876543211
-Emily Foster (Sister)
-876543212
 24
 5'9"
 155 lbs
@@ -81,13 +77,13 @@ Emily Foster (Sister)
 February 19, 2022
 May 19, 2023
 Convicted of minor drug possession and distribution.
+William Foster (Brother)
+876543211
+Emily Foster (Sister)
+876543212
 
 G7
 Emily Turner
-Emma Turner (Cousin)
-987654311
-William Turner (Friend)
-987654312
 21
 5'5"
 115 lbs
@@ -95,13 +91,13 @@ William Turner (Friend)
 July 6, 2022
 October 6, 2023
 Convicted of credit card fraud and online scams.
+Emma Turner (Cousin)
+987654311
+William Turner (Friend)
+987654312
 
 G8
 Aiden ams
-Daniel ams (Brother)
-234567891
-Emily ams (Sister)
-234567892
 25
 6'0"
 160 lbs
@@ -109,13 +105,13 @@ Emily ams (Sister)
 November 20, 2022
 February 20, 2024
 Convicted of public intoxication and disorderly conduct.
+Daniel ams (Brother)
+234567891
+Emily ams (Sister)
+234567892
 
 G9
 Isabella Turner
-Chloe Turner (Sister)
-765432101
-Lily Turner (Cousin)
-765432102
 22
 5'6"
 120 lbs
@@ -123,13 +119,13 @@ Lily Turner (Cousin)
 April 5, 2023
 July 5, 2024
 Convicted of vandalism and property damage.
+Chloe Turner (Sister)
+765432101
+Lily Turner (Cousin)
+765432102
 
 G10
 Noah Foster
-William Foster (Brother)
-321098751
-Mia Foster (Sister)
-321098752
 24
 5'9"
 155 lbs
@@ -137,13 +133,13 @@ Mia Foster (Sister)
 September 20, 2022
 December 20, 2023
 Convicted of misdemeanor assault and public disturbance.
+William Foster (Brother)
+321098751
+Mia Foster (Sister)
+321098752
 
 G11
 Lily Turner
-Ava Turner (Cousin)
-456789011
-Emma Turner (Sister)
-456789012
 21
 5'5"
 115 lbs
@@ -151,13 +147,13 @@ Emma Turner (Sister)
 February 5, 2023
 May 5, 2024
 Convicted of petty theft and shoplifting.
+Ava Turner (Cousin)
+456789011
+Emma Turner (Sister)
+456789012
 
 G12
 Daniel Foster
-Benjamin Foster (Brother)
-890123451
-Emily Foster (Sister)
-890123452
 25
 6'0"
 160 lbs
@@ -165,13 +161,13 @@ Emily Foster (Sister)
 June 21, 2022
 September 21, 2023
 Convicted of disorderly conduct and public disturbances.
+Benjamin Foster (Brother)
+890123451
+Emily Foster (Sister)
+890123452
 
 G13
 Ava Turner
-Emma Turner (Cousin)
-135792461
-Lily Turner (Friend)
-135792462
 22
 5'6"
 120 lbs
@@ -179,13 +175,13 @@ Lily Turner (Friend)
 November 6, 2023
 February 6, 2025
 Convicted of minor drug possession and distribution.
+Emma Turner (Cousin)
+135792461
+Lily Turner (Friend)
+135792462
 
 G14
 William Foster
-Benjamin Foster (Brother)
-876543211
-Emily Turner (Cousin)
-876543212
 24
 5'9"
 155 lbs
@@ -193,13 +189,13 @@ Emily Turner (Cousin)
 March 21, 2022
 June 21, 2023
 Convicted of public intoxication and disorderly conduct.
+Benjamin Foster (Brother)
+876543211
+Emily Turner (Cousin)
+876543212
 
 G15
 Mia Turner
-Chloe Turner (Sister)
-109876541
-Lily Turner (Friend)
-109876542
 21
 5'5"
 115 lbs
@@ -207,13 +203,13 @@ Lily Turner (Friend)
 August 6, 2022
 November 6, 2023
 Convicted of credit card fraud and online scams.
+Chloe Turner (Sister)
+109876541
+Lily Turner (Friend)
+109876542
 
 G16
 Jacob Foster
-Daniel Foster (Brother)
-987654321
-Emily Foster (Sister)
-987654322
 25
 6'0"
 160 lbs
@@ -221,13 +217,13 @@ Emily Foster (Sister)
 December 20, 2022
 March 20, 2024
 Convicted of minor drug possession and distribution.
+Daniel Foster (Brother)
+987654321
+Emily Foster (Sister)
+987654322
 
 G17
 Chloe Turner
-Ava Turner (Sister)
-654321091
-Emma Turner (Cousin)
-654321092
 22
 5'6"
 120 lbs
@@ -235,13 +231,13 @@ Emma Turner (Cousin)
 May 5, 2023
 August 5, 2024
 Convicted of petty theft and shoplifting.
+Ava Turner (Sister)
+654321091
+Emma Turner (Cousin)
+654321092
 
 G18
 Benjamin Foster
-William Foster (Brother)
-567890121
-Emily Turner (Sister)
-567890122
 24
 5'9"
 155 lbs
@@ -249,13 +245,13 @@ Emily Turner (Sister)
 October 21, 2022
 January 21, 2024
 Convicted of disorderly conduct and public disturbances.
+William Foster (Brother)
+567890121
+Emily Turner (Sister)
+567890122
 
 G19
 Emily Turner
-Emma Turner (Cousin)
-432109881
-William Turner (Friend)
-432109882
 21
 5'5"
 115 lbs
@@ -263,13 +259,13 @@ William Turner (Friend)
 February 6, 2023
 May 6, 2024
 Convicted of public intoxication and disorderly conduct.
+Emma Turner (Cousin)
+432109881
+William Turner (Friend)
+432109882
 
 G20
 Aiden Adams
-Daniel Adams (Brother)
-890123461
-Emily Adams (Sister)
-890123462
 25
 6'0"
 160 lbs
@@ -277,13 +273,13 @@ Emily Adams (Sister)
 June 22, 2022
 September 22, 2023
 Convicted of misdemeanor assault and public disturbance.
+Daniel Adams (Brother)
+890123461
+Emily Adams (Sister)
+890123462
 
 G21
 Isabella Turner
-Chloe Turner (Sister)
-678901241
-Lily Turner (Cousin)
-678901242
 22
 5'6"
 120 lbs
@@ -291,13 +287,13 @@ Lily Turner (Cousin)
 November 7, 2023
 February 7, 2025
 Convicted of vandalism and property damage.
+Chloe Turner (Sister)
+678901241
+Lily Turner (Cousin)
+678901242
 
 G22
 Noah Foster
-William Foster (Brother)
-987654331
-Mia Foster (Sister)
-987654332
 24
 5'9"
 155 lbs
@@ -305,13 +301,13 @@ Mia Foster (Sister)
 April 22, 2022
 July 22, 2023
 Convicted of petty theft and shoplifting.
+William Foster (Brother)
+987654331
+Mia Foster (Sister)
+987654332
 
 G23
 Lily Turner
-Ava Turner (Sister)
-654321091
-Emma Turner (Cousin)
-654321092
 21
 5'5"
 115 lbs
@@ -319,13 +315,13 @@ Emma Turner (Cousin)
 September 7, 2022
 December 7, 2023
 Convicted of disorderly conduct and public disturbances.
+Ava Turner (Sister)
+654321091
+Emma Turner (Cousin)
+654321092
 
 G24
 Daniel Foster
-Benjamin Foster (Brother)
-567890121
-Emily Foster (Sister)
-567890122
 25
 6'0"
 160 lbs
@@ -333,13 +329,13 @@ Emily Foster (Sister)
 January 21, 2022
 April 21, 2023
 Convicted of public intoxication and disorderly conduct.
+Benjamin Foster (Brother)
+567890121
+Emily Foster (Sister)
+567890122
 
 G25
 Ava Turner
-Emma Turner (Cousin)
-432109881
-Lily Turner (Friend)
-432109882
 22
 5'6"
 120 lbs
@@ -347,13 +343,13 @@ Lily Turner (Friend)
 June 6, 2023
 September 6, 2024
 Convicted of minor drug possession and distribution.
+Emma Turner (Cousin)
+432109881
+Lily Turner (Friend)
+432109882
 
 G26
 William Foster
-Benjamin Foster (Brother)
-890123461
-Emily Turner (Cousin)
-890123462
 24
 5'9"
 155 lbs
@@ -361,13 +357,13 @@ Emily Turner (Cousin)
 October 22, 2022
 January 22, 2024
 Convicted of disorderly conduct and public disturbances.
+Benjamin Foster (Brother)
+890123461
+Emily Turner (Cousin)
+890123462
 
 G27
 Mia Turner
-Chloe Turner (Sister)
-678901241
-Lily Turner (Cousin)
-678901242
 21
 5'5"
 115 lbs
@@ -375,13 +371,13 @@ Lily Turner (Cousin)
 March 7, 2023
 June 7, 2024
 Convicted of credit card fraud and online scams.
+Chloe Turner (Sister)
+678901241
+Lily Turner (Cousin)
+678901242
 
 G28
 Jacob Foster
-Daniel Foster (Brother)
-987654331
-Emily Foster (Sister)
-987654332
 25
 6'0"
 160 lbs
@@ -389,13 +385,13 @@ Emily Foster (Sister)
 July 22, 2022
 October 22, 2023
 Convicted of public intoxication and disorderly conduct.
+Daniel Foster (Brother)
+987654331
+Emily Foster (Sister)
+987654332
 
 G29
 Chloe Turner
-Ava Turner (Sister)
-654321091
-Emma Turner (Cousin)
-654321092
 22
 5'6"
 120 lbs
@@ -403,13 +399,13 @@ Emma Turner (Cousin)
 December 7, 2023
 March 7, 2025
 Convicted of vandalism and property damage.
+Ava Turner (Sister)
+654321091
+Emma Turner (Cousin)
+654321092
 
 G30
 Benjamin Foster
-William Foster (Brother)
-567890121
-Emily Turner (Sister)
-567890122
 24
 5'9"
 155 lbs
@@ -417,3 +413,7 @@ Emily Turner (Sister)
 April 22, 2022
 July 22, 2023
 Convicted of petty theft and shoplifting.
+William Foster (Brother)
+567890121
+Emily Turner (Sister)
+567890122

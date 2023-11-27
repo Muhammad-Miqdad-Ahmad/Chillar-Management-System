@@ -92,7 +92,7 @@ bool Admin::remove_user()
 
             file_id << data[i].ID << endl;
             file_data << data[i];
-            //! try and input also the released date of the prisoner
+            file_data << "The relase time was: " << get_time() << endl; //The function to get the relase time
             file_id.close();
             file_data.close();
 
@@ -182,7 +182,14 @@ bool Admin::generate_ID(Convicted &new_prisoner, vector<Convicted> data, string 
     return true;
 }
 
-bool modify_data()
+bool Admin::modify_data()
 {
+    vector<Convicted> data;
+    string prisoner_grade, file_name;
+    cout << "Enter the grade of the prisoner: ";
+    cin >> prisoner_grade;
+    file_name = prisoner_grade;
+    if (!this->store_from_file(data, file_name))
+        return false;
     return true;
 }

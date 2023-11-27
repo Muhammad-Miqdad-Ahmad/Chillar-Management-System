@@ -1,9 +1,5 @@
 F1
 Samuel Mitchell
-Olivia Baker (Sister)
-987654876
-Ethan Turner (Cousin)
-987654877
 26
 5'8"
 150 lbs
@@ -11,13 +7,13 @@ Ethan Turner (Cousin)
 September 15, 2022
 December 15, 2023
 Convicted of public intoxication and disorderly conduct.
+Olivia Baker (Sister)
+987654876
+Ethan Turner (Cousin)
+987654877
 
 F2
 Emma Turner
-Grace Turner (Sister)
-234567890
-Nathan Foster (Friend)
-234567891
 27
 5'6"
 140 lbs
@@ -25,13 +21,13 @@ Nathan Foster (Friend)
 February 28, 2022
 May 28, 2023
 Convicted of petty theft and shoplifting.
+Grace Turner (Sister)
+234567890
+Nathan Foster (Friend)
+234567891
 
 F3
 Benjamin Parker
-Joshua Parker (Brother)
-654321987
-Sophia Parker (Sister)
-654321988
 29
 6'0"
 170 lbs
@@ -39,13 +35,13 @@ Sophia Parker (Sister)
 June 15, 2021
 September 15, 2023
 Convicted of minor drug possession and distribution.
+Joshua Parker (Brother)
+654321987
+Sophia Parker (Sister)
+654321988
 
 F4
 Ava Foster
-Daniel Foster (Brother)
-876543210
-Lily Turner (Friend)
-876543211
 28
 5'7"
 140 lbs
@@ -53,13 +49,13 @@ Lily Turner (Friend)
 November 30, 2021
 February 28, 2023
 Convicted of unauthorized access to computer systems.
+Daniel Foster (Brother)
+876543210
+Lily Turner (Friend)
+876543211
 
 F5
 William Jenkins
-Grace Jenkins (Sister)
-135792468
-Oliver Foster (Friend)
-135792469
 30
 5'10"
 175 lbs
@@ -67,13 +63,13 @@ Oliver Foster (Friend)
 April 15, 2021
 July 15, 2023
 Convicted of white-collar fraud and embezzlement.
+Grace Jenkins (Sister)
+135792468
+Oliver Foster (Friend)
+135792469
 
 F6
 Olivia Turner
-Mia Turner (Sister)
-246801357
-Ethan Turner (Cousin)
-246801358
 27
 5'6"
 135 lbs
@@ -81,13 +77,13 @@ Ethan Turner (Cousin)
 August 30, 2022
 November 30, 2023
 Convicted of online harassment and cyberbullying.
+Mia Turner (Sister)
+246801357
+Ethan Turner (Cousin)
+246801358
 
 F7
 Liam Adams
-Ethan Adams (Brother)
-567890123
-Ava Adams (Sister)
-567890124
 31
 6'0"
 170 lbs
@@ -95,13 +91,13 @@ Ava Adams (Sister)
 January 15, 2021
 April 15, 2023
 Convicted of property damage and vandalism.
+Ethan Adams (Brother)
+567890123
+Ava Adams (Sister)
+567890124
 
 F8
 Mia Mitchell
-Lily Mitchell (Sister)
-789012345
-Oliver Foster (Friend)
-789012346
 26
 5'8"
 150 lbs
@@ -109,13 +105,13 @@ Oliver Foster (Friend)
 May 30, 2022
 August 30, 2023
 Convicted of disorderly conduct and public disturbances.
+Lily Mitchell (Sister)
+789012345
+Oliver Foster (Friend)
+789012346
 
 F9
 Jacob Turner
-Ava Turner (Sister)
-987654321
-Sophia Turner (Friend)
-987654322
 29
 6'0"
 170 lbs
@@ -123,13 +119,13 @@ Sophia Turner (Friend)
 October 15, 2021
 January 15, 2023
 Convicted of insurance fraud and false claims.
+Ava Turner (Sister)
+987654321
+Sophia Turner (Friend)
+987654322
 
 F10
 Isabella Foster
-Daniel Foster (Brother)
-654321098
-Lily Turner (Friend)
-654321099
 28
 5'7"
 140 lbs
@@ -137,13 +133,13 @@ Lily Turner (Friend)
 March 1, 2022
 June 1, 2023
 Convicted of credit card fraud and online scams.
+Daniel Foster (Brother)
+654321098
+Lily Turner (Friend)
+654321099
 
 F11
 Benjamin Parker
-Joshua Parker (Brother)
-234567890
-Sophia Parker (Sister)
-234567891
 29
 6'0"
 170 lbs
@@ -151,13 +147,13 @@ Sophia Parker (Sister)
 July 16, 2021
 October 16, 2023
 Convicted of public intoxication and disorderly conduct.
+Joshua Parker (Brother)
+234567890
+Sophia Parker (Sister)
+234567891
 
 F12
 Olivia Turner
-Emma Turner (Sister)
-876543210
-Mia Turner (Cousin)
-876543211
 27
 5'6"
 135 lbs
@@ -165,13 +161,13 @@ Mia Turner (Cousin)
 December 1, 2022
 March 1, 2024
 Convicted of petty theft and shoplifting.
+Emma Turner (Sister)
+876543210
+Mia Turner (Cousin)
+876543211
 
 F13
 Liam Adams
-Ethan Adams (Brother)
-135792468
-Ava Adams (Sister)
-135792469
 31
 6'0"
 170 lbs
@@ -179,13 +175,13 @@ Ava Adams (Sister)
 April 16, 2021
 July 16, 2023
 Convicted of minor drug possession and distribution.
+Ethan Adams (Brother)
+135792468
+Ava Adams (Sister)
+135792469
 
 F14
 Emma Foster
-Daniel Foster (Brother)
-246801357
-Lily Turner (Friend)
-246801358
 28
 5'7"
 140 lbs
@@ -193,13 +189,13 @@ Lily Turner (Friend)
 September 1, 2022
 December 1, 2023
 Convicted of unauthorized access to computer systems.
+Daniel Foster (Brother)
+246801357
+Lily Turner (Friend)
+246801358
 
 F15
 William Jenkins
-Grace Jenkins (Sister)
-567890123
-Oliver Foster (Friend)
-567890124
 30
 5'10"
 175 lbs
@@ -207,13 +203,13 @@ Oliver Foster (Friend)
 January 16, 2021
 April 16, 2023
 Convicted of white-collar fraud and embezzlement.
+Grace Jenkins (Sister)
+567890123
+Oliver Foster (Friend)
+567890124
 
 F16
 William Mitchell
-Lily Mitchell (Sister)
-789012345
-Isabella Foster (Friend)
-789012346
 25
 5'11"
 165 lbs
@@ -221,13 +217,13 @@ Isabella Foster (Friend)
 May 31, 2022
 August 31, 2023
 Convicted of public intoxication and disorderly conduct.
+Lily Mitchell (Sister)
+789012345
+Isabella Foster (Friend)
+789012346
 
 F17
 Jacob Foster
-Ava Turner (Sister)
-987654321
-Sophia Turner (Friend)
-987654322
 27
 5'10"
 155 lbs
@@ -235,13 +231,13 @@ Sophia Turner (Friend)
 October 16, 2021
 January 16, 2023
 Convicted of petty theft and shoplifting.
+Ava Turner (Sister)
+987654321
+Sophia Turner (Friend)
+987654322
 
 F18
 Chloe Turner
-William Turner (Brother)
-654321098
-Oliver Foster (Friend)
-654321099
 24
 5'6"
 125 lbs
@@ -249,13 +245,13 @@ Oliver Foster (Friend)
 March 2, 2022
 June 2, 2023
 Convicted of minor drug possession and distribution.
+William Turner (Brother)
+654321098
+Oliver Foster (Friend)
+654321099
 
 F19
 Daniel Adams
-Joshua Adams (Brother)
-234567890
-Emily Adams (Sister)
-234567891
 26
 6'0"
 170 lbs
@@ -263,13 +259,13 @@ Emily Adams (Sister)
 July 17, 2021
 October 17, 2023
 Convicted of white-collar fraud and embezzlement.
+Joshua Adams (Brother)
+234567890
+Emily Adams (Sister)
+234567891
 
 F20
 Sophia Turner
-Grace Turner (Sister)
-876543210
-Mia Turner (Cousin)
-876543211
 23
 5'5"
 120 lbs
@@ -277,13 +273,13 @@ Mia Turner (Cousin)
 December 2, 2022
 March 2, 2024
 Convicted of online harassment and cyberbullying.
+Grace Turner (Sister)
+876543210
+Mia Turner (Cousin)
+876543211
 
 F21
 Mason Foster
-Daniel Foster (Brother)
-135792468
-Lily Turner (Friend)
-135792469
 28
 5'9"
 160 lbs
@@ -291,13 +287,13 @@ Lily Turner (Friend)
 April 17, 2021
 July 17, 2023
 Convicted of unauthorized access to computer systems.
+Daniel Foster (Brother)
+135792468
+Lily Turner (Friend)
+135792469
 
 F22
 Ava Turner
-Jacob Turner (Brother)
-246801357
-Emily Turner (Sister)
-246801358
 24
 5'6"
 125 lbs
@@ -305,13 +301,13 @@ Emily Turner (Sister)
 September 2, 2022
 December 2, 2023
 Convicted of insurance fraud and false claims.
+Jacob Turner (Brother)
+246801357
+Emily Turner (Sister)
+246801358
 
 F23
 William Adams
-Liam Adams (Brother)
-567890123
-Emma Adams (Sister)
-567890124
 26
 6'0"
 170 lbs
@@ -319,13 +315,13 @@ Emma Adams (Sister)
 January 17, 2021
 April 17, 2023
 Convicted of property theft and burglary.
+Liam Adams (Brother)
+567890123
+Emma Adams (Sister)
+567890124
 
 F24
 Lily Mitchell
-Samuel Mitchell (Brother)
-789012345
-Ava Turner (Cousin)
-789012346
 23
 5'5"
 120 lbs
@@ -333,13 +329,13 @@ Ava Turner (Cousin)
 June 1, 2022
 September 1, 2023
 Convicted of disorderly conduct and public disturbances.
+Samuel Mitchell (Brother)
+789012345
+Ava Turner (Cousin)
+789012346
 
 F25
 Jacob Foster
-Daniel Foster (Brother)
-987654321
-Emily Foster (Sister)
-987654322
 27
 5'10"
 155 lbs
@@ -347,13 +343,13 @@ Emily Foster (Sister)
 October 17, 2021
 January 17, 2023
 Convicted of petty theft and shoplifting.
+Daniel Foster (Brother)
+987654321
+Emily Foster (Sister)
+987654322
 
 F26
 Chloe Turner
-William Turner (Brother)
-654321098
-Oliver Foster (Friend)
-654321099
 24
 5'6"
 125 lbs
@@ -361,13 +357,13 @@ Oliver Foster (Friend)
 March 3, 2022
 June 3, 2023
 Convicted of minor drug possession and distribution.
+William Turner (Brother)
+654321098
+Oliver Foster (Friend)
+654321099
 
 F27
 Daniel Adams
-Joshua Adams (Brother)
-234567890
-Emily Adams (Sister)
-234567891
 26
 6'0"
 170 lbs
@@ -375,13 +371,13 @@ Emily Adams (Sister)
 July 18, 2021
 October 18, 2023
 Convicted of white-collar fraud and embezzlement.
+Joshua Adams (Brother)
+234567890
+Emily Adams (Sister)
+234567891
 
 F28
 Sophia Turner
-Grace Turner (Sister)
-876543210
-Mia Turner (Cousin)
-876543211
 23
 5'5"
 120 lbs
@@ -389,13 +385,13 @@ Mia Turner (Cousin)
 December 3, 2022
 March 3, 2024
 Convicted of online harassment and cyberbullying.
+Grace Turner (Sister)
+876543210
+Mia Turner (Cousin)
+876543211
 
 F29
 Mason Foster
-Daniel Foster (Brother)
-135792468
-Lily Turner (Friend)
-135792469
 28
 5'9"
 160 lbs
@@ -403,13 +399,13 @@ Lily Turner (Friend)
 April 18, 2021
 July 18, 2023
 Convicted of unauthorized access to computer systems.
+Daniel Foster (Brother)
+135792468
+Lily Turner (Friend)
+135792469
 
 30
 Ezreth Turner
-Jacob Turner (Brother)
-46801357
-Emily Turner (Sister)
-246801358
 24
 5'6"
 125 lbs
@@ -417,3 +413,7 @@ Emily Turner (Sister)
 Captured on: September 3, 2022
 December 3, 2023
 Convicted of insurance fraud and false claims.
+Jacob Turner (Brother)
+46801357
+Emily Turner (Sister)
+246801358

@@ -1,9 +1,5 @@
 id
 name
-relative 1
-relative id
-relative 2
-relative id
 Age
 Height
 Weight
@@ -11,3 +7,7 @@ Sentence
 Captured on
 Expected Release
 Crime
+relative 1
+relative id
+relative 2
+relative id

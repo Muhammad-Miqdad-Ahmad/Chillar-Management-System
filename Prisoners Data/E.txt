@@ -1,9 +1,5 @@
 E1
 Lily Turner
-Ethan Turner (Brother)
-111222333
-Mia Turner (Cousin)
-111222334
 27
 5'6"
 130 lbs
@@ -11,13 +7,13 @@ Mia Turner (Cousin)
 April 3, 2021
 October 3, 2023
 Convicted of petty theft and shoplifting.
+Ethan Turner (Brother)
+111222333
+Mia Turner (Cousin)
+111222334
 
 E2
 Daniel Parker
-Sophia Parker (Sister)
-222333444
-Benjamin Foster (Friend)
-222333445
 29
 5'9"
 160 lbs
@@ -25,13 +21,13 @@ Benjamin Foster (Friend)
 August 12, 2017
 April 12, 2022
 Convicted of minor drug possession and distribution.
+Sophia Parker (Sister)
+222333444
+Benjamin Foster (Friend)
+222333445
 
 E3
 Emily Mitchell
-Oliver Mitchell (Brother)
-333444555
-Emma Turner (Cousin)
-333444556
 26
 5'5"
 125 lbs
@@ -39,13 +35,13 @@ Emma Turner (Cousin)
 November 7, 2019
 May 7, 2022
 Convicted of online harassment and cyberbullying.
+Oliver Mitchell (Brother)
+333444555
+Emma Turner (Cousin)
+333444556
 
 E4
 Benjamin Adams
-Chloe Adams (Sister)
-444555666
-William Turner (Friend)
-444555667
 31
 6'0"
 175 lbs
@@ -53,13 +49,13 @@ William Turner (Friend)
 June 10, 2018
 December 10, 2022
 Convicted of white-collar fraud and embezzlement.
+Chloe Adams (Sister)
+444555666
+William Turner (Friend)
+444555667
 
 E5
 Ava Jenkins
-Nathan Jenkins (Brother)
-555666777
-Isabella Foster (Friend)
-555666778
 28
 5'7"
 140 lbs
@@ -67,13 +63,13 @@ Isabella Foster (Friend)
 January 8, 2020
 July 8, 2023
 Convicted of unauthorized access to computer systems.
+Nathan Jenkins (Brother)
+555666777
+Isabella Foster (Friend)
+555666778
 
 E6
 William Turner
-Chloe Turner (Sister)
-666777888
-Liam Adams (Friend)
-666777889
 30
 5'10"
 170 lbs
@@ -81,13 +77,13 @@ Liam Adams (Friend)
 March 18, 2018
 September 18, 2022
 Convicted of insurance fraud and false claims.
+Chloe Turner (Sister)
+666777888
+Liam Adams (Friend)
+666777889
 
 E7
 Isabella Foster
-Benjamin Foster (Brother)
-777888999
-Ava Turner (Friend)
-777888990
 27
 5'6"
 135 lbs
@@ -95,13 +91,13 @@ Ava Turner (Friend)
 November 3, 2019
 May 3, 2022
 Convicted of property theft and burglary.
+Benjamin Foster (Brother)
+777888999
+Ava Turner (Friend)
+777888990
 
 E8
 Liam Parker
-Lily Parker (Sister)
-888999000
-Ethan Adams (Friend)
-888999001
 29
 5'9"
 160 lbs
@@ -109,13 +105,13 @@ Ethan Adams (Friend)
 August 12, 2017
 April 12, 2022
 Convicted of disorderly conduct and public disturbances.
+Lily Parker (Sister)
+888999000
+Ethan Adams (Friend)
+888999001
 
 E9
 Emma Lewis
-Emily Lewis (Sister)
-999000111
-William Turner (Friend)
-999000112
 26
 5'5"
 125 lbs
@@ -123,13 +119,13 @@ William Turner (Friend)
 November 7, 2019
 May 7, 2022
 Convicted of credit card fraud and online scams.
+Emily Lewis (Sister)
+999000111
+William Turner (Friend)
+999000112
 
 E10
 Nathan Mitchell
-Ava Mitchell (Sister)
-000111222
-Mia Turner (Friend)
-000111223
 31
 6'0"
 175 lbs
@@ -137,13 +133,13 @@ Mia Turner (Friend)
 June 10, 2018
 December 10, 2022
 Convicted of vandalism and property damage.
+Ava Mitchell (Sister)
+000111222
+Mia Turner (Friend)
+000111223
 
 E11
 Chloe Adams
-Benjamin Adams (Brother)
-111222333
-Sophia Parker (Friend)
-111222334
 28
 5'7"
 140 lbs
@@ -151,13 +147,13 @@ Sophia Parker (Friend)
 January 8, 2020
 July 8, 2023
 Convicted of petty theft and shoplifting.
+Benjamin Adams (Brother)
+111222333
+Sophia Parker (Friend)
+111222334
 
 E12
 Jacob Turner
-Isabella Turner (Sister)
-222333444
-Oliver Foster (Friend)
-222333445
 32
 6'0"
 175 lbs
@@ -165,13 +161,13 @@ Oliver Foster (Friend)
 March 18, 2018
 September 18, 2022
 Convicted of minor drug possession and distribution.
+Isabella Turner (Sister)
+222333444
+Oliver Foster (Friend)
+222333445
 
 E13
 Ava Mitchell
-Nathan Mitchell (Brother)
-333444555
-Emily Turner (Friend)
-333444556
 26
 5'5"
 125 lbs
@@ -179,13 +175,13 @@ Emily Turner (Friend)
 November 3, 2019
 May 3, 2022
 Convicted of online harassment and cyberbullying.
+Nathan Mitchell (Brother)
+333444555
+Emily Turner (Friend)
+333444556
 
 E14
 Liam Adams
-Ethan Adams (Brother)
-444555666
-Ava Adams (Sister)
-444555667
 31
 6'0"
 175 lbs
@@ -193,13 +189,13 @@ Ava Adams (Sister)
 August 12, 2017
 April 12, 2022
 Convicted of white-collar fraud and embezzlement.
+Ethan Adams (Brother)
+444555666
+Ava Adams (Sister)
+444555667
 
 E15
 Emily Jenkins
-William Jenkins (Brother)
-555666777
-Oliver Foster (Friend)
-555666778
 28
 5'7"
 140 lbs
@@ -207,13 +203,13 @@ Oliver Foster (Friend)
 January 8, 2020
 July 8, 2023
 Convicted of unauthorized access to computer systems.
+William Jenkins (Brother)
+555666777
+Oliver Foster (Friend)
+555666778
 
 E16
 Benjamin Turner
-Lily Turner (Sister)
-666777888
-Isabella Foster (Friend)
-666777889
 30
 5'10"
 170 lbs
@@ -221,13 +217,13 @@ Isabella Foster (Friend)
 March 18, 2018
 September 18, 2022
 Convicted of insurance fraud and false claims.
+Lily Turner (Sister)
+666777888
+Isabella Foster (Friend)
+666777889
 
 E17
 Isabella Jenkins
-Ava Jenkins (Sister)
-777888999
-Nathan Jenkins (Friend)
-777888990
 27
 5'6"
 135 lbs
@@ -235,13 +231,13 @@ Nathan Jenkins (Friend)
 November 3, 2019
 May 3, 2022
 Convicted of property theft and burglary.
+Ava Jenkins (Sister)
+777888999
+Nathan Jenkins (Friend)
+777888990
 
 E18
 Nathan Turner
-Chloe Turner (Sister)
-888999000
-Liam Adams (Friend)
-888999001
 29
 5'9"
 160 lbs
@@ -249,13 +245,13 @@ Liam Adams (Friend)
 June 10, 2018
 December 10, 2022
 Convicted of disorderly conduct and public disturbances.
+Chloe Turner (Sister)
+888999000
+Liam Adams (Friend)
+888999001
 
 E19
 Mia Adams
-Benjamin Adams (Brother)
-999000111
-Sophia Parker (Friend)
-999000112
 28
 5'7"
 140 lbs
@@ -263,13 +259,13 @@ Sophia Parker (Friend)
 January 8, 2020
 July 8, 2023
 Convicted of petty theft and shoplifting.
+Benjamin Adams (Brother)
+999000111
+Sophia Parker (Friend)
+999000112
 
 E20
 William Turner
-Isabella Turner (Sister)
-000111222
-Oliver Foster (Friend)
-000111223
 31
 6'0"
 175 lbs
@@ -277,13 +273,13 @@ Oliver Foster (Friend)
 March 18, 2018
 September 18, 2022
 Convicted of vandalism and property damage.
+Isabella Turner (Sister)
+000111222
+Oliver Foster (Friend)
+000111223
 
 E21
 Chloe Mitchell
-Nathan Mitchell (Brother)
-111222333
-Emily Turner (Friend)
-111222334
 28
 5'7"
 140 lbs
@@ -291,13 +287,13 @@ Emily Turner (Friend)
 November 3, 2019
 May 3, 2022
 Convicted of petty theft and shoplifting.
+Nathan Mitchell (Brother)
+111222333
+Emily Turner (Friend)
+111222334
 
 E22
 Jacob Adams
-Ethan Adams (Brother)
-222333444
-Ava Adams (Sister)
-222333445
 32
 6'0"
 175 lbs
@@ -305,13 +301,13 @@ Ava Adams (Sister)
 August 12, 2017
 April 12, 2022
 Convicted of minor drug possession and distribution.
+Ethan Adams (Brother)
+222333444
+Ava Adams (Sister)
+222333445
 
 E23
 Ava Turner
-William Turner (Brother)
-333444555
-Oliver Foster (Friend)
-333444556
 29
 5'7"
 140 lbs
@@ -319,13 +315,13 @@ Oliver Foster (Friend)
 November 7, 2019
 May 7, 2022
 Convicted of online harassment and cyberbullying.
+William Turner (Brother)
+333444555
+Oliver Foster (Friend)
+333444556
 
 E24
 Liam Mitchell
-Lily Mitchell (Sister)
-444555666
-Isabella Foster (Friend)
-444555667
 31
 6'0"
 175 lbs
@@ -333,13 +329,13 @@ Isabella Foster (Friend)
 June 10, 2018
 December 10, 2022
 Convicted of white-collar fraud and embezzlement.
+Lily Mitchell (Sister)
+444555666
+Isabella Foster (Friend)
+444555667
 
 E25
 Emily Turner
-Isabella Turner (Sister)
-555666777
-Oliver Foster (Friend)
-555666778
 28
 5'7"
 140 lbs
@@ -347,13 +343,13 @@ Oliver Foster (Friend)
 January 8, 2020
 July 8, 2023
 Convicted of unauthorized access to computer systems.
+Isabella Turner (Sister)
+555666777
+Oliver Foster (Friend)
+555666778
 
 E26
 Benjamin Mitchell
-Nathan Mitchell (Brother)
-666777888
-Emily Turner (Friend)
-666777889
 30
 5'10"
 170 lbs
@@ -361,13 +357,13 @@ Emily Turner (Friend)
 March 18, 2018
 September 18, 2022
 Convicted of insurance fraud and false claims.
+Nathan Mitchell (Brother)
+666777888
+Emily Turner (Friend)
+666777889
 
 E27
 Isabella Jenkins
-Ava Jenkins (Sister)
-777888999
-Nathan Jenkins (Friend)
-777888990
 27
 5'6"
 135 lbs
@@ -375,13 +371,13 @@ Nathan Jenkins (Friend)
 November 3, 2019
 May 3, 2022
 Convicted of property theft and burglary.
+Ava Jenkins (Sister)
+777888999
+Nathan Jenkins (Friend)
+777888990
 
 E28
 Nathan Turner
-Chloe Turner (Sister)
-888999000
-Liam Adams (Friend)
-888999001
 29
 5'9"
 160 lbs
@@ -389,13 +385,13 @@ Liam Adams (Friend)
 June 10, 2018
 December 10, 2022
 Convicted of disorderly conduct and public disturbances.
+Chloe Turner (Sister)
+888999000
+Liam Adams (Friend)
+888999001
 
 E29
 Mia Adams
-Benjamin Adams (Brother)
-999000111
-Sophia Parker (Friend)
-999000112
 28
 5'7"
 140 lbs
@@ -403,13 +399,13 @@ Sophia Parker (Friend)
 January 8, 2020
 July 8, 2023
 Convicted of petty theft and shoplifting.
+Benjamin Adams (Brother)
+999000111
+Sophia Parker (Friend)
+999000112
 
 E30
 William Turner
-Isabella Turner (Sister)
-000111222
-Oliver Foster (Friend)
-000111223
 31
 6'0"
 175 lbs
@@ -417,3 +413,7 @@ Oliver Foster (Friend)
 March 18, 2018
 September 18, 2022
 Convicted of vandalism and property damage.
+Isabella Turner (Sister)
+000111222
+Oliver Foster (Friend)
+000111223

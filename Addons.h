@@ -1,17 +1,19 @@
 #pragma once
+
 #include "hierarchy.h"
 #include <windows.h>
 #include "Visitor.h"
 #include <typeinfo>
-// #include <typeinfo.h>
-#include "admin.h"
 #include <fstream>
+#include "admin.h"
 #include <string>
+#include <queue>
 #include <ctime>
 // template <typename datatype>
 // ostream &operator<<(ostream &out, const datatype *&chunk);
 
 //global functions
+char* get_time();
 bool is_it_empty(ifstream& pFile);
 int partition(vector<Prisoners*> &array, int first, int last);
 void quick_sort(vector<Prisoners*> &array, int first, int last);

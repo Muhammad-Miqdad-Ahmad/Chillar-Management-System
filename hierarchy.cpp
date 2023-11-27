@@ -14,7 +14,8 @@ Hierarchy::Hierarchy(char prisoner_class)
     this->left = this->right = nullptr;    // we null the left and right pointers
     this->root = nullptr;                  // also null the root
 
-    Person convict_data, *relative1_data = nullptr, *relative2_data = nullptr;
+    Person *relative1_data = nullptr, *relative2_data = nullptr;
+    abstract *convict_data=new Person;
 
     string file_name = "Prisoners Data\\";        // create a string to read from the file.
     file_name = file_name + this->prisoner_grade; // storing the path in a string
@@ -26,31 +27,21 @@ Hierarchy::Hierarchy(char prisoner_class)
         while (!file.eof())
         {
             // Convicted temp2;
-            string ID, name, temp;
+            string ID, name;
+            convict_data->read(file);
             relative1_data = new Person; // create a new person object
             relative2_data = new Person; // to store data
-            getline(file, ID);           // prisoner ID
-            getline(file, name);         // Prisoner name
-            convict_data.ID = ID;
-            convict_data.name = name;
+
             getline(file, name); // relative 1 name
             getline(file, ID);   // relative 1 id
             relative1_data->name = name;
             relative1_data->ID = ID;
+
             getline(file, name); // relative 2 name
             getline(file, ID);   // relative 2 id
             relative2_data->name = name;
             relative2_data->ID = ID;
 
-            // now to ignore the rest of the file
-            getline(file, temp); // age
-            getline(file, temp); // height
-            getline(file, temp); // weight
-            getline(file, temp); // sentence
-            getline(file, temp); // captured on
-            getline(file, temp); // expected release
-            getline(file, temp); // crime
-            getline(file, temp); // empty line
             add_chunk(this->root, convict_data, relative1_data, relative2_data);
             delete relative1_data; // delete so that it can be used again
             delete relative2_data;
@@ -62,22 +53,7 @@ Hierarchy::Hierarchy(char prisoner_class)
         // there is no relatives in this case so we will not give new space to the relative pointers
         while (!file.eof())
         {
-            string ID, name, temp;
-            getline(file, ID);   // prisoner ID
-            getline(file, name); // Prisoner name
-            convict_data.ID = ID;
-            convict_data.name = name;
-            // for the class A, B and C there is no relative info.
-            
-            // now to ignore the rest of the file
-            getline(file, temp); // age
-            getline(file, temp); // height
-            getline(file, temp); // weight
-            getline(file, temp); // sentence
-            getline(file, temp); // captured on
-            getline(file, temp); // expected release
-            getline(file, temp); // crime
-            getline(file, temp); // empty line
+            convict_data->read(file);
             add_chunk(this->root, convict_data, relative1_data, relative2_data);
         }
     }
@@ -104,32 +80,7 @@ Hierarchy::~Hierarchy()
     left = right = nullptr;
 }
 
-Hierarchial_tree::~Hierarchial_tree()
-{
-    if (this->root)
-        delete this->root;
-}
-
-Hierarchial_tree::Hierarchial_tree()
-{
-    this->root = nullptr;
-    for (int i = 0; i < 7; i++)
-    {
-        add_chunk(this->root, Constants::hierarchial_classes[i]);
-    }
-}
-
-void Hierarchial_tree::add_chunk(Hierarchy *&chunk, char data)
-{
-    if (chunk == nullptr) // if chunk is null then make a new node
-        chunk = new Hierarchy(data);
-    else if (chunk->prisoner_grade > data) // else search
-        add_chunk(chunk->right, data);
-    else if (chunk->prisoner_grade < data)
-        add_chunk(chunk->left, data);
-}
-
-void Hierarchy::add_chunk(Prisoners *&chunk, Person &data, Person *&relative_1, Person *&relative_2) // function to add chunk to tree
+void Hierarchy::add_chunk(Prisoners *&chunk, abstract* &data, Person *&relative_1, Person *&relative_2) // function to add chunk to tree
 {
     if (chunk == nullptr)
     {
@@ -199,6 +150,31 @@ ostream &operator<<(ostream &out, Hierarchy *data)
         out << data->right;
     }
     return out;
+}
+
+Hierarchial_tree::~Hierarchial_tree()
+{
+    if (this->root)
+        delete this->root;
+}
+
+Hierarchial_tree::Hierarchial_tree()
+{
+    this->root = nullptr;
+    for (int i = 0; i < 7; i++)
+    {
+        add_chunk(this->root, Constants::hierarchial_classes[i]);
+    }
+}
+
+void Hierarchial_tree::add_chunk(Hierarchy *&chunk, char data)
+{
+    if (chunk == nullptr) // if chunk is null then make a new node
+        chunk = new Hierarchy(data);
+    else if (chunk->prisoner_grade > data) // else search
+        add_chunk(chunk->right, data);
+    else if (chunk->prisoner_grade < data)
+        add_chunk(chunk->left, data);
 }
 
 ostream &operator<<(ostream &out, Hierarchial_tree *data)

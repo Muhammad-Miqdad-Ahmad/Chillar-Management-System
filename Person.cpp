@@ -9,8 +9,8 @@ Person::Person()
 Person::~Person()
 {
 }
-
-bool Person::operator==(Person &data)
+// all the comparison operatos have been overloaded for the objects of the class
+bool Person::operator==(abstract &data)
 {
     if (this->ID == data.ID)
         if (this->name == data.name)
@@ -18,7 +18,7 @@ bool Person::operator==(Person &data)
     return false;
 }
 
-bool Person::operator!=(Person &data)
+bool Person::operator!=(abstract &data)
 {
     if (this->ID != data.ID)
         if (this->name != data.name)
@@ -26,14 +26,14 @@ bool Person::operator!=(Person &data)
     return false;
 }
 
-bool Person::operator<(Person &data)
+bool Person::operator<(abstract &data)
 {
     if (this->ID < data.ID)
         return true;
     return false;
 }
 
-bool Person::operator<=(Person &data)
+bool Person::operator<=(abstract &data)
 {
     if (this->ID <= data.ID)
     {
@@ -42,16 +42,62 @@ bool Person::operator<=(Person &data)
     return false;
 }
 
-bool Person::operator>(Person &data)
+bool Person::operator>(abstract &data)
 {
     if (this->ID > data.ID)
         return true;
     return false;
 }
 
-bool Person::operator>=(Person &data)
+bool Person::operator>=(abstract &data)
 {
     if (this->ID >= data.ID)
+        return true;
+    return false;
+}
+// all the operators have been overloaded for the pointers of the class.
+bool Person::operator==(abstract *&data)
+{
+    if (this->ID == data->ID)
+        if (this->name == data->name)
+            return true;
+    return false;
+}
+
+bool Person::operator!=(abstract *&data)
+{
+    if (this->ID != data->ID)
+        if (this->name != data->name)
+            return true;
+    return false;
+}
+
+bool Person::operator<(abstract *&data)
+{
+    if (this->ID < data->ID)
+        return true;
+    return false;
+}
+
+bool Person::operator<=(abstract *&data)
+{
+    if (this->ID <= data->ID)
+    {
+        return true;
+    }
+    return false;
+}
+
+bool Person::operator>(abstract *&data)
+{
+    if (this->ID > data->ID)
+        return true;
+    return false;
+}
+
+bool Person::operator>=(abstract *&data)
+{
+    if (this->ID >= data->ID)
         return true;
     return false;
 }
@@ -64,10 +110,25 @@ ostream &operator<<(ostream &out, Person &data)
     return out;
 }
 
+ostream &operator<<(ostream &out, Person *&data)
+{
+    out << "The name of the person is: " << data->name << endl;
+    out << "The Id of the person is: " << data->ID << endl
+        << endl;
+    return out;
+}
+
 ofstream &operator<<(ofstream &out, Person &data)
 {
     out << data.name << endl;
     out << data.ID << endl;
+    return out;
+}
+
+ofstream &operator<<(ofstream &out, Person *&data)
+{
+    out << data->name << endl;
+    out << data->ID << endl;
     return out;
 }
 
@@ -80,6 +141,15 @@ istream &operator>>(istream &in, Person &data)
     return in;
 }
 
+istream &operator>>(istream &in, Person *&data)
+{
+    cout << "Enter the name of the person: ";
+    getline(in, data->name);
+    cout << "Enter the Id of the person: ";
+    in >> data->ID;
+    return in;
+}
+
 ifstream &operator>>(ifstream &in, Person &data)
 {
     getline(in, data.name);
@@ -87,107 +157,18 @@ ifstream &operator>>(ifstream &in, Person &data)
     return in;
 }
 
-Convicted::Convicted() : Person()
+ifstream &operator>>(ifstream &in, Person *&data)
 {
-    this->relative_1 = nullptr;
-    this->relative_2 = nullptr;
-    this->age = "";
-    this->weight = "";
-    this->height_ft = "";
-    this->height_in = "";
-    this->crime = "";
-    this->height = "";
-}
-
-// ofstream &operator<<(ofstream &out, Convicted &data)
-// {
-//     out << data.ID << endl;
-//     out << data.name << endl;
-//     return out;
-// }
-
-istream &operator>>(istream &in, Convicted &data)
-{
-    cout << "Enter the name of the convicted: ";
-    getline(in, data.name);
-    cout << "Enter the age of the convicted: ";
-    in >> data.age;
-    if (data.relative_1)
-        in >> *data.relative_1;
-    if (data.relative_2)
-        in >> *data.relative_2;
-    cout << "Enter the height in feet of the convicted: ";
-    in >> data.height_ft;
-    cout << "Enter the height in inches of the convicted: ";
-    in >> data.height_in;
-    data.height = data.height_ft + "'" + data.height_in + "\"";
-    cout << "Enter the weight of the convicted in lbs: ";
-    in >> data.weight;
-    data.weight = data.weight + " lbs";
-    cout << "Enter the sentence of the convicted: ";
-    cin.ignore();
-    getline(in, data.sentence);
-    cout << "When was the convicted captured: ";
-    in >> data.captured_on;
-    cout << "What was the crime: ";
-    cin.ignore();
-    getline(in, data.crime);
+    getline(in, data->name);
+    getline(in, data->ID);
     return in;
 }
 
-ifstream &operator>>(ifstream &in, Convicted &data)
+void Person::display()
 {
-    getline(in, data.ID);
-    getline(in, data.name);
-    if (data.relative_1)
-        in >> *data.relative_1;
-    if (data.relative_2)
-        in >> *data.relative_2;
-    getline(in, data.age);
-    getline(in, data.height);
-    getline(in, data.weight);
-    getline(in, data.sentence);
-    in >> data.captured_on;
-    in >> data.expected_release;
-    getline(in, data.crime);
-    return in;
-}
-
-ostream &operator<<(ostream &out, Convicted &data)
-{
-    out << "The name of the convicted is: " << data.name << endl;
-    out << "The ID of the convicted is: " << data.ID << endl;
-    if (data.relative_1)
-        out << *data.relative_1;
-    if (data.relative_2)
-        out << *data.relative_2;
-    out << "The age of the convicted is: " << data.age << endl;
-    out << "The height of the convicted is: " << data.height << endl;
-    out << "The weight of the convicted is: " << data.weight << endl;
-    out << "The sentence of the convicted is: " << data.sentence << endl;
-    out << "The convicted was captured on: " << data.captured_on << endl;
-    out << "The convicted is expected to be released on: " << data.expected_release << endl;
-    out << "The crimpe of the conviceted is: " << data.crime << endl
-        << endl;
-    return out;
-}
-
-ofstream &operator<<(ofstream &out, Convicted &data)
-{
-    out << data.name << endl;
-    out << data.ID << endl;
-    if (data.relative_1)
-        out << *data.relative_1;
-    if (data.relative_2)
-        out << *data.relative_2;
-    out << data.age << endl;
-    out << data.height << endl;
-    out << data.weight << endl;
-    out << data.sentence << endl;
-    out << data.captured_on << endl;
-    out << data.expected_release << endl;
-    out << data.crime << endl;
-    return out;
+    cout << "The name of the person is: " << this->name << endl;
+    cout << "The Id of the person is: " << this->ID << endl
+         << endl;
 }
 
 Capture_date::Capture_date()
@@ -199,7 +180,7 @@ Capture_date::Capture_date()
 
 ostream &operator<<(ostream &out, Capture_date &data)
 {
-    out << data.month << " " << data.date << ", " << data.year;
+    out << data.month << " " << data.date << " " << data.year;
     return out;
 }
 
@@ -222,17 +203,75 @@ ofstream &operator<<(ofstream &out, Capture_date &data)
 
 ifstream &operator>>(ifstream &in, Capture_date &data)
 {
+    string temp;
     in >> data.month;
     in >> data.date;
     in >> data.year;
     return in;
 }
 
-void Convicted::give_space(string yaan)
+void Person::read(ifstream &file)
 {
-    if (yaan == "A" || yaan == "B" || yaan == "C")
+    string ID, name, temp;
+    getline(file, name); // Prisoner name
+    getline(file, ID);   // prisoner ID
+    this->ID = ID;
+    this->name = name;
+    // now to ignore the rest of the file
+    getline(file, temp); // age
+    getline(file, temp); // height
+    getline(file, temp); // weight
+    getline(file, temp); // sentence
+    getline(file, temp); // captured on
+    getline(file, temp); // expected release
+    getline(file, temp); // crime
+    // getline(file, temp); // empty line
+}
+
+void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
+{
+    double num = stod(sentence); // ye string s double m number change kar k de ga
+    int size = sentence.size();  // ye string ka size hai;
+    string yearOrmonth;
+
+    for (int i = 0; i < size; i++)
     {
-        this->relative_1 = new Person;
-        this->relative_2 = new Person;
+        if (sentence[i] == 'y' || sentence[i] == 'Y') // agr sentence years m hai to yaha s year ah jai ga
+        {
+            yearOrmonth = "year";
+            break;
+        }
+        if (sentence[i] == 'm' || sentence[i] == 'M') // agr sentence month m hai to yaha s month ah jai ga
+        {
+            yearOrmonth = "month";
+            break;
+        }
     }
+
+    if (yearOrmonth == "year")
+    {
+        num = num * 12.0;
+    }
+
+    int monthCap;
+    int yearCap = stoi(cap_on.year); // captured on wala year
+
+    for (int i = 0; i < 12; i++)
+    {
+        if (Constants::monthNames[i] == cap_on.month)
+        {
+            monthCap = i + 1;
+            break;
+        }
+    }
+
+    monthCap += static_cast<int>(num);
+    if (monthCap > 12)
+    {
+        yearCap += monthCap / 12;
+        monthCap %= 12;
+    }
+    this->date = cap_on.date;
+    this->month = Constants::monthNames[monthCap - 1];
+    this->year = to_string(yearCap);
 }
