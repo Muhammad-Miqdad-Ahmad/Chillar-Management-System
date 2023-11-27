@@ -1,0 +1,53 @@
+// #include <iostream>
+// #include <limits>
+// #include <cmath>
+// using namespace std;
+
+// int main(int argc, char const *argv[])
+// {
+//     float h, min, sec;
+//     while (true)
+//     {
+//         cout << "Enter hours: ";
+//         cin >> h;
+//         if (cin.fail() || floor(h) != h || h <= 0 || h > 60)
+//         {
+//             cin.seekg(0, ios::end);
+//             cin.clear();
+//             cin.ignore(numeric_limits<streamsize>::max(), '\n');
+//             cout << "invlaid input\n";
+//         }
+//         else
+//             break;
+//     }
+//     while (true)
+//     {
+//         cout << "Enter Minutes: ";
+//         cin >> min;
+//         if (cin.fail() || floor(min) != min || min <= 0 || min > 60)
+//             cout << "invlaid input minutes can not be entered like this\n";
+//         else
+//             break;
+//         cin.seekg(0, ios::end);
+//         cin.clear();
+//         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+//     }
+//     while (true)
+//     {
+//         cout << "Enter seconds: ";
+//         cin >> sec;
+//         if (cin.fail() || floor(sec) != sec || sec <= 0 || sec > 60)
+//             cout << "invlaid input seconds can not be entered like this\n";
+//         else
+//         {
+//             h = h * 60 * 60;
+//             min = min * 60;
+//             sec = min + sec + h;
+//             cout << "the total seconds are: " << sec << endl;
+//             return 0;
+//         }
+//         cin.seekg(0, ios::end);
+//         cin.clear();
+//         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+//     }
+// }

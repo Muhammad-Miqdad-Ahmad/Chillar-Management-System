@@ -49,3 +49,15 @@ bool is_it_empty(ifstream& pFile)
 {
     return pFile.peek() == ifstream::traits_type::eof();
 }
+
+char* get_time()
+{
+    // current date and time on the current system
+    time_t now = time(0);
+    //gives the time in the form of some integer.
+    // idk what that shit is. you wann a see it. 
+    // cout << now << endl; // here is a cout statement. see for yourself.
+
+   // convert now to string form
+   return ctime(&now);
+}
