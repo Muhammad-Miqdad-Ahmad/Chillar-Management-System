@@ -206,7 +206,8 @@ ifstream &operator>>(ifstream &in, Capture_date &data)
     string temp;
     in >> data.month;
     in >> data.date;
-    in >> data.year;
+    // in >> data.year;
+    getline(in, data.year);
     return in;
 }
 

@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
     Hierarchy *root=new Hierarchy;
     // while(!file.eof())
     // {
-        string name,id,height,weight,age,sentence,crime,empty,suq;
+        string name,id,height,weight,age,sentence,crime,empty,suq,co,rd;
         Capture_date captured_on,release;
         getline(file,id);
         getline(file,name);
@@ -52,11 +52,37 @@ int main(int argc, char const *argv[])
         getline(file,sentence);
         file >> captured_on;
         file >> release;
+        // getline(file,co);
+        // getline(file,suq);
         getline(file,crime);
+        cout<<crime<<endl<<"here\n";
         file>>data1;
         file>>data2;
         getline(file,empty);
-    cout << name << endl << id << endl << age << endl << height << endl << weight << endl << sentence << endl << captured_on << endl << release << endl << crime << endl << empty << endl <<"yhan tk\n" << endl  << endl;
+    cout <<"Name: "<< name << endl <<"ID: "<< id << endl <<"Age: "<< age << endl <<"Height: "<< height << endl 
+    <<"Weight: "<< weight << endl <<"Sentence: "<< sentence << endl <<"CAPon: "<< captured_on << endl <<"Release: "<< release << endl 
+    <<"Crime: "<< crime << endl <<"Empty: "<< empty << endl <<"yhan tk\n" << endl <<"REL1:\n"<< data1 << endl
+    <<"REL2:\n"<< data2 << endl;
+
+        getline(file,id);
+        getline(file,name);
+        getline(file,age);
+        getline(file,height);
+        getline(file,weight);
+        getline(file,sentence);
+        file >> captured_on;
+        file >> release;
+        // getline(file,co);
+        // getline(file,suq);
+        getline(file,crime);
+        cout<<crime<<endl<<"here\n";
+        file>>data1;
+        file>>data2;
+        getline(file,empty);
+    cout <<"Name: "<< name << endl <<"ID: "<< id << endl <<"Age: "<< age << endl <<"Height: "<< height << endl 
+    <<"Weight: "<< weight << endl <<"Sentence: "<< sentence << endl <<"CAPon: "<< captured_on << endl <<"Release: "<< release << endl 
+    <<"Crime: "<< crime << endl <<"Empty: "<< empty << endl <<"yhan tk\n" << endl  <<"REL1:\n"<< data1 << endl
+    <<"REL2:\n"<< data2 << endl;
 
         liq=new Convicted;
         // liq->read(file);
