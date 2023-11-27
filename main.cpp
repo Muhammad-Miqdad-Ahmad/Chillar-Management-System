@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
     Hierarchy *root=new Hierarchy;
     // while(!file.eof())
     // {
-        string name,id,height,weight,age,sentence,crime,empty;
+        string name,id,height,weight,age,sentence,crime,empty,suq;
         Capture_date captured_on,release;
         getline(file,id);
         getline(file,name);
@@ -53,18 +53,20 @@ int main(int argc, char const *argv[])
         file >> captured_on;
         file >> release;
         getline(file,crime);
-        getline(file,empty);
-        liq=new Convicted;
-        liq->read(file);
         file>>data1;
-        cout << data1;
         file>>data2;
-        cout << data2;
-        getline(file,temp);
-        root->add_chunk(root->root,liq,data1,data2);
+        getline(file,empty);
+    cout << name << endl << id << endl << age << endl << height << endl << weight << endl << sentence << endl << captured_on << endl << release << endl << crime << endl << empty << endl <<"yhan tk\n" << endl  << endl;
+
+        liq=new Convicted;
+        // liq->read(file);
+        // file>>data1;
+        // file>>data2;
+        // getline(file,temp);
+        // root->add_chunk(root->root,liq,data1,data2);
+        
     // }
-    cout << name << endl << id << endl << age << endl << height << endl << weight << endl << sentence << endl << captured_on << endl << release << endl << crime << endl << empty << endl <<"yhan tk\n" << endl ;
     file.close();
-    cout << root;
+    // cout << root;
     
 }

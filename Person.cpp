@@ -203,6 +203,7 @@ ofstream &operator<<(ofstream &out, Capture_date &data)
 
 ifstream &operator>>(ifstream &in, Capture_date &data)
 {
+    string temp;
     in >> data.month;
     in >> data.date;
     in >> data.year;
@@ -214,7 +215,7 @@ void Person::read(ifstream &file)
     string ID, name, temp;
     getline(file, name); // Prisoner name
     getline(file, ID);   // prisoner ID
-    this->ID=ID;
+    this->ID = ID;
     this->name = name;
     // now to ignore the rest of the file
     getline(file, temp); // age
@@ -267,11 +268,10 @@ void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
     monthCap += static_cast<int>(num);
     if (monthCap > 12)
     {
-        yearCap += monthCap / 12; 
+        yearCap += monthCap / 12;
         monthCap %= 12;
     }
     this->date = cap_on.date;
     this->month = Constants::monthNames[monthCap - 1];
     this->year = to_string(yearCap);
 }
-

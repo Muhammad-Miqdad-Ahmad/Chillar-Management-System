@@ -221,7 +221,7 @@ ostream &operator<<(ostream &out, Convicted &data)
     out << "The sentence of the convicted is: " << data.sentence << endl;
     out << "The convicted was captured on: " << data.captured_on << endl;
     out << "The convicted is expected to be released on: " << data.expected_release << endl;
-    out << "The crimpe of the conviceted is: " << data.crime << endl
+    out << "The crime of the convicted is: " << data.crime << endl
         << endl;
     return out;
 }
@@ -240,7 +240,7 @@ ostream &operator<<(ostream &out, Convicted* &data)
     out << "The sentence of the convicted is: " << data->sentence << endl;
     out << "The convicted was captured on: " << data->captured_on << endl;
     out << "The convicted is expected to be released on: " << data->expected_release << endl;
-    out << "The crimpe of the conviceted is: " << data->crime << endl
+    out << "The crime of the convicted is: " << data->crime << endl
         << endl;
     return out;
 }
@@ -295,7 +295,7 @@ void Convicted::display()
     cout << "The sentence of the convicted is: " << this->sentence << endl;
     cout << "The convicted was captured on: " << this->captured_on << endl;
     cout << "The convicted is expected to be released on: " << this->expected_release << endl;
-    cout << "The crimpe of the conviceted is: " << this->crime << endl
+    cout << "The crime of the convicted is: " << this->crime << endl
         << endl;
 }
 
