@@ -54,5 +54,5 @@ void Prisoners::write(ofstream &out)
     if(relative_1)
     out << this->relative_1;
     if(relative_2)
-    out << this->relative_2 << endl;
+    out << this->relative_2;
 }

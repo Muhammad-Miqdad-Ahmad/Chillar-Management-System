@@ -33,28 +33,30 @@ int main(int argc, char const *argv[])
     // }
     // cout << check;
     string temp;
-    ifstream file("G.txt", ios::in);
-    if(!file.is_open())
+    ifstream file("Prisoners Data\\G.txt", ios::in);
+    if (!file.is_open())
         cout << "Shit happenned\n";
-    Person* data1=new Person;
-    Person* data2=new Person;
+    Person *data1 = nullptr;
+    Person *data2 = nullptr;
     abstract *liq;
-    Hierarchy *root=new Hierarchy;
-    while(!file.eof())
+    Hierarchy *root = new Hierarchy;
+    while (!file.eof())
     {
-        liq=new Convicted;
+        data1 = new Person;
+        data2 = new Person;
+        liq = new Convicted;
         liq->read(file);
-        file>>data1;
-        file>>data2;
-        getline(file,temp);
-        root->add_chunk(root->root,liq,data1,data2);
+        file >> data1;
+        file >> data2;
+        getline(file, temp);
+        root->add_chunk(root->root, liq, data1, data2);
+        liq = nullptr;
+        data1 = data2 = nullptr;
     }
     file.close();
-    cout << root;
+    // cout << root;
     root->make_full_balanced();
-    ofstream file1("G.txt", ios::out|ios::trunc);
-    root->write_file_in_BFS(root->root,file1);
+    ofstream file1("Prisoners Data\\G.txt", ios::out | ios::trunc);
+    root->write_file_in_BFS(root->root, file1);
     file1.close();
-    
-    
 }

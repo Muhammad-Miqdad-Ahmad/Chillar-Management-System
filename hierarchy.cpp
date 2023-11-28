@@ -19,7 +19,9 @@ Hierarchy::Hierarchy(char prisoner_class)
 
     string file_name = "Prisoners Data\\";        // create a string to read from the file.
     file_name = file_name + this->prisoner_grade; // storing the path in a string
+    // Prisoners Data/G
     ifstream file(file_name + ".txt");
+    // Prisoners Data/G.txt
 
     if (this->prisoner_grade != 'A' && this->prisoner_grade != 'B' && this->prisoner_grade != 'C')
     {
@@ -106,6 +108,13 @@ void Hierarchy::make_full_balanced() // function to make the tree full balanced.
 
     // cout << "quick sort call kr rha hoon\n";
     quick_sort(temporary_storage, 0, temporary_storage.size() - 1); // BKL awi dalah hai
+    int count = 0;
+    for (auto &&i : temporary_storage)
+    {
+        count++;
+        cout << "Entity number: " << count << endl << i << endl
+             << endl;
+    }
 
     this->root = balancing(temporary_storage, 0, temporary_storage.size() - 1); // the root the balancing function returns is stored in the root of class
     temporary_storage.clear();

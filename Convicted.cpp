@@ -314,15 +314,15 @@ void Convicted::read(ifstream &in)
 
 void Convicted::write(ofstream &out)
 {
-    out << this->ID << endl;
-    out << this->name << endl;
-    out << this->age << endl;
-    out << this->height << endl;
-    out << this->weight << endl;
-    out << this->sentence << endl;
-    out << this->captured_on << endl;
-    out << this->expected_release << endl;
-    out << this->crime << endl;
+    out << endl << this->ID;
+    out << endl << this->name;
+    out << endl << this->age;
+    out << endl << this->height;
+    out << endl << this->weight;
+    out << endl << this->sentence;
+    out << endl << this->captured_on;
+    out << endl << this->expected_release;
+    out << endl << this->crime;
 }
 
 void Convicted::give_space(string yaan)

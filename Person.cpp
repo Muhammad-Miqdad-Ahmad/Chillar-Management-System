@@ -127,8 +127,8 @@ ofstream &operator<<(ofstream &out, Person &data)
 
 ofstream &operator<<(ofstream &out, Person *&data)
 {
-    out << data->name << endl;
-    out << data->ID << endl;
+    out << endl << data->name;
+    out << endl << data->ID;
     return out;
 }
 
@@ -203,7 +203,6 @@ ofstream &operator<<(ofstream &out, Capture_date &data)
 
 ifstream &operator>>(ifstream &in, Capture_date &data)
 {
-    string temp;
     in >> data.month;
     in >> data.date;
     getline(in, data.year);
