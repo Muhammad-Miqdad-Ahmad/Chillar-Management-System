@@ -8,6 +8,22 @@ bool Convicted::operator==(abstract &data)
     return false;
 }
 
+bool Convicted::equal(abstract &data)
+{
+    if (this->ID == data.ID)
+        if (this->name == data.name)
+            return true;
+    return false;
+}
+
+bool Convicted::equal(abstract* &data)
+{
+    if (this->ID == data->ID)
+        if (this->name == data->name)
+            return true;
+    return false;
+}
+
 bool Convicted::operator!=(abstract &data)
 {
     if (this->ID != data.ID)
@@ -16,9 +32,39 @@ bool Convicted::operator!=(abstract &data)
     return false;
 }
 
+bool Convicted::not_equal(abstract &data)
+{
+    if (this->ID != data.ID)
+        if (this->name != data.name)
+            return true;
+    return false;
+}
+
+bool Convicted::not_equal(abstract* &data)
+{
+    if (this->ID != data->ID)
+        if (this->name != data->name)
+            return true;
+    return false;
+}
+
 bool Convicted::operator<(abstract &data)
 {
     if (this->ID < data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::less_than(abstract &data)
+{
+    if (this->ID < data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::less_than(abstract* &data)
+{
+    if (this->ID < data->ID)
         return true;
     return false;
 }
@@ -32,6 +78,20 @@ bool Convicted::operator<=(abstract &data)
     return false;
 }
 
+bool Convicted::less_than_equal(abstract &data)
+{
+    if (this->ID <= data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::less_than_equal(abstract* &data)
+{
+    if (this->ID <= data->ID)
+        return true;
+    return false;
+}
+
 bool Convicted::operator>(abstract &data)
 {
     if (this->ID > data.ID)
@@ -39,9 +99,37 @@ bool Convicted::operator>(abstract &data)
     return false;
 }
 
+bool Convicted::greater_than(abstract &data)
+{
+    if (this->ID > data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::greater_than(abstract* &data)
+{
+    if (this->ID > data->ID)
+        return true;
+    return false;
+}
+
 bool Convicted::operator>=(abstract &data)
 {
     if (this->ID >= data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::greater_than_equal(abstract &data)
+{
+    if (this->ID >= data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::greater_than_equal(abstract* &data)
+{
+    if (this->ID >= data->ID)
         return true;
     return false;
 }
@@ -80,6 +168,7 @@ bool Convicted::operator<=(abstract *&data)
 
 bool Convicted::operator>(abstract *&data)
 {
+    cout << "is this called\n";
     if (this->ID > data->ID)
         return true;
     return false;

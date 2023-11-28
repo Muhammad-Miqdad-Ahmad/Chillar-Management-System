@@ -86,13 +86,12 @@ void Hierarchy::add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_
 {
     if (chunk == nullptr)
     {
-        chunk = new Prisoners;
-        chunk->root = data;             // prisoners data
+        chunk = new Prisoners(data);            // prisoners data
         chunk->relative_1 = relative_1; // relative 1 data
         chunk->relative_2 = relative_2; // relative two data
         this->prisoner_count++;         // increase the prisoner count
     }
-    else if (data < chunk->root)
+    else if (data->less_than(chunk->root))
         this->add_chunk(chunk->left, data, relative_1, relative_2);
     else
         this->add_chunk(chunk->right, data, relative_1, relative_2);
@@ -108,14 +107,6 @@ void Hierarchy::make_full_balanced() // function to make the tree full balanced.
 
     // cout << "quick sort call kr rha hoon\n";
     quick_sort(temporary_storage, 0, temporary_storage.size() - 1); // BKL awi dalah hai
-    int count = 0;
-    for (auto &&i : temporary_storage)
-    {
-        count++;
-        cout << "Entity number: " << count << endl << i << endl
-             << endl;
-    }
-
     this->root = balancing(temporary_storage, 0, temporary_storage.size() - 1); // the root the balancing function returns is stored in the root of class
     temporary_storage.clear();
 }

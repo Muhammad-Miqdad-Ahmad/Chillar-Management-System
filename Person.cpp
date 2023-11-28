@@ -9,11 +9,27 @@ Person::Person()
 Person::~Person()
 {
 }
-// all the comparison operatos have been overloaded for the objects of the class
+
 bool Person::operator==(abstract &data)
 {
     if (this->ID == data.ID)
         if (this->name == data.name)
+            return true;
+    return false;
+}
+
+bool Person::equal(abstract &data)
+{
+    if (this->ID == data.ID)
+        if (this->name == data.name)
+            return true;
+    return false;
+}
+
+bool Person::equal(abstract* &data)
+{
+    if (this->ID == data->ID)
+        if (this->name == data->name)
             return true;
     return false;
 }
@@ -26,9 +42,39 @@ bool Person::operator!=(abstract &data)
     return false;
 }
 
+bool Person::not_equal(abstract &data)
+{
+    if (this->ID != data.ID)
+        if (this->name != data.name)
+            return true;
+    return false;
+}
+
+bool Person::not_equal(abstract* &data)
+{
+    if (this->ID != data->ID)
+        if (this->name != data->name)
+            return true;
+    return false;
+}
+
 bool Person::operator<(abstract &data)
 {
     if (this->ID < data.ID)
+        return true;
+    return false;
+}
+
+bool Person::less_than(abstract &data)
+{
+    if (this->ID < data.ID)
+        return true;
+    return false;
+}
+
+bool Person::less_than(abstract* &data)
+{
+    if (this->ID < data->ID)
         return true;
     return false;
 }
@@ -42,9 +88,37 @@ bool Person::operator<=(abstract &data)
     return false;
 }
 
+bool Person::less_than_equal(abstract &data)
+{
+    if (this->ID <= data.ID)
+        return true;
+    return false;
+}
+
+bool Person::less_than_equal(abstract* &data)
+{
+    if (this->ID <= data->ID)
+        return true;
+    return false;
+}
+
 bool Person::operator>(abstract &data)
 {
     if (this->ID > data.ID)
+        return true;
+    return false;
+}
+
+bool Person::greater_than(abstract &data)
+{
+    if (this->ID > data.ID)
+        return true;
+    return false;
+}
+
+bool Person::greater_than(abstract* &data)
+{
+    if (this->ID > data->ID)
         return true;
     return false;
 }
@@ -55,7 +129,21 @@ bool Person::operator>=(abstract &data)
         return true;
     return false;
 }
-// all the operators have been overloaded for the pointers of the class.
+
+bool Person::greater_than_equal(abstract &data)
+{
+    if (this->ID >= data.ID)
+        return true;
+    return false;
+}
+
+bool Person::greater_than_equal(abstract* &data)
+{
+    if (this->ID >= data->ID)
+        return true;
+    return false;
+}
+
 bool Person::operator==(abstract *&data)
 {
     if (this->ID == data->ID)
@@ -90,6 +178,7 @@ bool Person::operator<=(abstract *&data)
 
 bool Person::operator>(abstract *&data)
 {
+    cout << "is this called\n";
     if (this->ID > data->ID)
         return true;
     return false;

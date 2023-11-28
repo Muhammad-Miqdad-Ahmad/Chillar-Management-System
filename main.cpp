@@ -38,24 +38,24 @@ int main(int argc, char const *argv[])
         cout << "Shit happenned\n";
     Person *data1 = nullptr;
     Person *data2 = nullptr;
-    abstract *liq;
+    abstract *data;
     Hierarchy *root = new Hierarchy;
+    getline(file, temp);
     while (!file.eof())
     {
         data1 = new Person;
         data2 = new Person;
-        liq = new Convicted;
-        liq->read(file);
+        data = new Convicted;
+        data->read(file);
         file >> data1;
         file >> data2;
-        getline(file, temp);
-        root->add_chunk(root->root, liq, data1, data2);
-        liq = nullptr;
+        root->add_chunk(root->root, data, data1, data2);
+        data = nullptr;
         data1 = data2 = nullptr;
     }
     file.close();
-    // cout << root;
     root->make_full_balanced();
+    cout << root;
     ofstream file1("Prisoners Data\\G.txt", ios::out | ios::trunc);
     root->write_file_in_BFS(root->root, file1);
     file1.close();

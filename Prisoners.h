@@ -11,7 +11,7 @@ private:
 public:
     Capture_date(/* args */);
 
-    //functions
+    // functions
     void cal_expected_date(Capture_date cap_on, string sentence);
 
     // stream operators overload
@@ -20,7 +20,6 @@ public:
     friend istream &operator>>(istream &in, Capture_date &data);
     friend ifstream &operator>>(ifstream &in, Capture_date &data);
 };
-
 
 class Person : public abstract
 {
@@ -40,18 +39,30 @@ public:
     void write(ofstream &file) override;
 
     // comparison operator overload
-    bool operator<(abstract &data) override;
-    bool operator<(abstract *&data) override;
-    bool operator<=(abstract &data) override;
-    bool operator<=(abstract *&data) override;
-    bool operator>(abstract &data) override;
-    bool operator>(abstract *&data) override;
-    bool operator>=(abstract &data) override;
-    bool operator>=(abstract *&data) override;
-    bool operator==(abstract &data) override;
-    bool operator==(abstract *&data) override;
-    bool operator!=(abstract &data) override;
-    bool operator!=(abstract *&data) override;
+    bool operator<(abstract &data);
+    bool operator<(abstract *&data);
+    bool operator<=(abstract &data);
+    bool operator<=(abstract *&data);
+    bool operator>(abstract &data);
+    bool operator>(abstract *&data);
+    bool operator>=(abstract &data);
+    bool operator>=(abstract *&data);
+    bool operator==(abstract &data);
+    bool operator==(abstract *&data);
+    bool operator!=(abstract &data);
+    bool operator!=(abstract *&data);
+    bool less_than(abstract &data) override;
+    bool less_than(abstract *&data) override;
+    bool less_than_equal(abstract &data) override;
+    bool less_than_equal(abstract *&data) override;
+    bool greater_than(abstract &data) override;
+    bool greater_than(abstract *&data) override;
+    bool greater_than_equal(abstract &data) override;
+    bool greater_than_equal(abstract *&data) override;
+    bool equal(abstract &data) override;
+    bool equal(abstract *&data) override;
+    bool not_equal(abstract &data) override;
+    bool not_equal(abstract *&data) override;
 
     // stream operators overload
     //  void display(Person* &data);
@@ -84,18 +95,30 @@ public:
     void write(ofstream &file) override;
 
     // comparison operator overload
-    bool operator<(abstract &data) override;
-    bool operator<(abstract *&data) override;
-    bool operator<=(abstract &data) override;
-    bool operator<=(abstract *&data) override;
-    bool operator>(abstract &data) override;
-    bool operator>(abstract *&data) override;
-    bool operator>=(abstract &data) override;
-    bool operator>=(abstract *&data) override;
-    bool operator==(abstract &data) override;
-    bool operator==(abstract *&data) override;
-    bool operator!=(abstract &data) override;
-    bool operator!=(abstract *&data) override;
+    bool operator<(abstract &data);
+    bool operator<(abstract *&data);
+    bool operator<=(abstract &data);
+    bool operator<=(abstract *&data);
+    bool operator>(abstract &data);
+    bool operator>(abstract *&data);
+    bool operator>=(abstract &data);
+    bool operator>=(abstract *&data);
+    bool operator==(abstract &data);
+    bool operator==(abstract *&data);
+    bool operator!=(abstract &data);
+    bool operator!=(abstract *&data);
+    bool less_than(abstract &data) override;
+    bool less_than(abstract *&data) override;
+    bool less_than_equal(abstract &data) override;
+    bool less_than_equal(abstract *&data) override;
+    bool greater_than(abstract &data) override;
+    bool greater_than(abstract *&data) override;
+    bool greater_than_equal(abstract &data) override;
+    bool greater_than_equal(abstract *&data) override;
+    bool equal(abstract &data) override;
+    bool equal(abstract *&data) override;
+    bool not_equal(abstract &data) override;
+    bool not_equal(abstract *&data) override;
 
     // operators overloaded
     friend ostream &operator<<(ostream &out, Convicted &data);
@@ -130,7 +153,7 @@ public:
     // friend classes
     friend class Hierarchy;
 
-    //functions
+    // functions
     void write(ofstream &out);
 
     // friend functions

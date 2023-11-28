@@ -14,16 +14,16 @@ public:
     virtual void read(ifstream &file) = 0;
 
     // comparison operator overload
-    virtual bool operator<(abstract &data) = 0;
-    virtual bool operator<(abstract *&data) = 0;
-    virtual bool operator<=(abstract &data) = 0;
-    virtual bool operator<=(abstract *&data) = 0;
-    virtual bool operator>(abstract &data) = 0;
-    virtual bool operator>(abstract *&data) = 0;
-    virtual bool operator>=(abstract &data) = 0;
-    virtual bool operator>=(abstract *&data) = 0;
-    virtual bool operator==(abstract &data) = 0;
-    virtual bool operator==(abstract *&data) = 0;
-    virtual bool operator!=(abstract &data) = 0;
-    virtual bool operator!=(abstract *&data) = 0;
+    virtual bool less_than(abstract &data) = 0;
+    virtual bool less_than(abstract *&data) = 0;
+    virtual bool less_than_equal(abstract &data) = 0;
+    virtual bool less_than_equal(abstract *&data) = 0;
+    virtual bool greater_than(abstract &data) = 0;
+    virtual bool greater_than(abstract *&data) = 0;
+    virtual bool greater_than_equal(abstract &data) = 0;
+    virtual bool greater_than_equal(abstract *&data) = 0;
+    virtual bool equal(abstract &data) = 0;
+    virtual bool equal(abstract *&data) = 0;
+    virtual bool not_equal(abstract &data) = 0;
+    virtual bool not_equal(abstract *&data) = 0;
 };
