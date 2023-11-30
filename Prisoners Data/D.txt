@@ -1,198 +1,3 @@
-D1
-Xavier Dawson
-36
-5'11"
-175 lbs
-10 years
-November 17, 2015
-August 29, 2023
-Convicted of tax evasion and financial fraud.
-Lily Dawson (Sister)
-111222333
-Benjamin Foster (Friend)
-111222334
-
-D2
-Samantha Abbott
-33
-5'6"
-140 lbs
-5 years
-March 22, 2018
-February 8, 2023
-Convicted of petty theft and shoplifting.
-Daniel Abbott (Brother)
-222333444
-Isabella Turner (Friend)
-222333445
-
-D3
-Marcus Turner
-38
-6'0"
-190 lbs
-12 years
-June 5, 2013
-April 16, 2025
-Convicted of white-collar fraud and embezzlement.
-Ava Turner (Sister)
-333444555
-Nathan Walker (Friend)
-333444556
-
-D4
-Olivia Parker
-31
-5'7"
-145 lbs
-7 years
-October 12, 2016
-October 23, 2023
-Convicted of cybercrimes and unauthorized access.
-William Parker (Brother)
-444555666
-Emily Turner (Friend)
-444555667
-
-D5
-Ethan Harrison
-35
-5'10"
-170 lbs
-8 years
-August 6, 2018
-July 24, 2023
-Convicted of insurance fraud and forgery.
-Isabella Foster (Sister)
-555666777
-Benjamin Jenkins (Friend)
-555666778
-
-D6
-Isabelle Foster
-29
-5'8"
-150 lbs
-6 years
-January 2, 2017
-October 12, 2022
-Convicted of identy theft and credit card fraud.
-Chloe Foster (Sister)
-666777888
-Daniel Carter (Friend)
-666777889
-
-D7
-Mason Sullivan
-34
-6'1"
-185 lbs
-9 years
-May 19, 2015
-April 27, 2024
-Convicted of property damage and vandalism.
-Olivia Sullivan (Sister)
-777888999
-Jack Adams (Friend)
-777888990
-
-D8
-Emily Carter
-32
-5'9"
-160 lbs
-8 years
-February 14, 2016
-February 7, 2023
-Convicted of mail fraud and illegal document destruction.
-William Carter (Brother)
-888999000
-Olivia Turner (Friend)
-888999001
-
-D9
-William Ramirez
-36
-6'2"
-200 lbs
-11 years
-November 30, 2013
-September 14, 2025
-Convicted of property theft and burglary.
-Emma Ramirez (Sister)
-999000111
-Benjamin Mitchell (Friend)
-999000112
-
-D10
-Mia Cooper
-30
-5'6"
-140 lbs
-7 years
-October 8, 2016
-October 12, 2023
-Convicted of credit card fraud and online scams.
-Liam Cooper (Brother)
-000111222
-Sophia Mitchell (Friend)
-000111223
-
-D11
-Sophia Mitchell
-31
-5'8"
-155 lbs
-6 years
-September 3, 2016
-August 18, 2022
-Convicted of online harassment and cyberbullying.
-Nathan Mitchell (Brother)
-111222333
-Ava Bennett (Friend)
-111222334
-
-D12
-Nathan Walker
-33
-6'0"
-170 lbs
-7 years
-June 19, 2017
-June 6, 2022
-Convicted of misdemeanor assault and public disturbance.
-Olivia Walker (Sister)
-222333444
-William Jenkins (Friend)
-222333445
-
-D13
-Ava Bennett
-29
-5'7"
-140 lbs
-5 years
-February 14, 2018
-January 7, 2023
-Convicted of minor drug possession and distribution.
-Liam Bennett (Brother)
-333444555
-Emma Turner (Friend)
-333444556
-
-D14
-Jack Adams
-34
-6'1"
-185 lbs
-8 years
-July 22, 2017
-June 2, 2024
-Convicted of public intoxication and disorderly conduct.
-Benjamin Adams (Brother)
-444555666
-Mia Anderson (Friend)
-444555667
 
 D15
 Olivia Turner
@@ -207,105 +12,19 @@ Isabella Turner (Sister)
 555666777
 Oliver Foster (Friend)
 555666778
-
-D16
-Benjamin Jenkins
-36
-6'2"
-200 lbs
-10 years
-March 17, 2017
-February 22, 2024
-Convicted of vandalism and property damage.
-Lily Jenkins (Sister)
-666777888
-Isabella Turner (Friend)
-666777889
-
-D17
-Emma Lewis
-30
-5'6"
-140 lbs
-6 years
-October 30, 2017
-October 30, 2022
-Convicted of unauthorized access to computer systems.
-Nathan Lewis (Brother)
-777888999
-Emily Turner (Friend)
-777888990
-
-D18
-William Mitchell
-33
-6'0"
-170 lbs
-7 years
-September 5, 2017
-August 20, 2022
-Convicted of insurance fraud and false claims.
-Ava Mitchell (Sister)
-888999000
-Oliver Foster (Friend)
-888999001
-
-D19
-Isabella Turner
-29
-5'7"
-140 lbs
-5 years
-January 20, 2018
-December 21, 2022
-Convicted of online harassment and cyberstalking.
-Liam Turner (Brother)
-999000111
-Sophia Mitchell (Friend)
-999000112
-
-D20
-Liam Cooper
+D7
+Mason Sullivan
 34
 6'1"
 185 lbs
-8 years
-April 15, 2016
-March 27, 2024
-Convicted of disorderly conduct and public disturbances.
-Chloe Cooper (Sister)
-000111222
-Benjamin Foster (Friend)
-000111223
-
-D21
-Mia Anderson
-31
-5'8"
-155 lbs
-6 years
-October 7, 2017
-October 7, 2022
-Convicted of unauthorized access to computer systems.
-Ethan Anderson (Brother)
-111222333
-Ava Adams (Friend)
-111222334
-
-D22
-Nathan Harrison
-33
-6'0"
-170 lbs
-7 years
-June 14, 2018
-June 1, 2023
-Convicted of misdemeanor assault and public disturbance.
-Olivia Harrison (Sister)
-222333444
-Benjamin Adams (Friend)
-222333445
-
+9 years
+May 19, 2015
+April 27, 2024
+Convicted of property damage and vandalism.
+Olivia Sullivan (Sister)
+777888999
+Jack Adams (Friend)
+777888990
 D23
 Chloe Martin
 29
@@ -319,49 +38,45 @@ Ava Martin (Sister)
 333444555
 Nathan Jenkins (Friend)
 333444556
-
-D24
-Daniel Carter
-34
-6'1"
-185 lbs
-8 years
-March 15, 2016
-February 28, 2023
-Convicted of public intoxication and disorderly conduct.
-Liam Carter (Brother)
-444555666
-Emily Turner (Friend)
-444555667
-
-D25
-Isabelle Foster
-32
-5'9"
-160 lbs
-7 years
-July 12, 2016
-June 15, 2022
-Convicted of petty theft and shoplifting.
-Chloe Foster (Sister)
-555666777
-Daniel Carter (Friend)
-555666778
-
-D26
-William Jenkins
-36
-6'2"
-200 lbs
-10 years
-January 29, 2018
-December 18, 2023
-Convicted of vandalism and property damage.
-Benjamin Jenkins (Brother)
-666777888
-Ava Jenkins (Friend)
-666777889
-
+D3
+Marcus Turner
+38
+6'0"
+190 lbs
+12 years
+June 5, 2013
+April 16, 2025
+Convicted of white-collar fraud and embezzlement.
+Ava Turner (Sister)
+333444555
+Nathan Walker (Friend)
+333444556
+D11
+Sophia Mitchell
+31
+5'8"
+155 lbs
+6 years
+September 3, 2016
+August 18, 2022
+Convicted of online harassment and cyberbullying.
+Nathan Mitchell (Brother)
+111222333
+Ava Bennett (Friend)
+111222334
+D19
+Isabella Turner
+29
+5'7"
+140 lbs
+5 years
+January 20, 2018
+December 21, 2022
+Convicted of online harassment and cyberstalking.
+Liam Turner (Brother)
+999000111
+Sophia Mitchell (Friend)
+999000112
 D27
 Olivia Lewis
 30
@@ -375,21 +90,97 @@ Nathan Lewis (Brother)
 777888999
 Emily Turner (Friend)
 777888990
-
-D28
-Benjamin Mitchell
-33
-6'0"
+D1
+Xavier Dawson
+36
+5'11"
+175 lbs
+10 years
+November 17, 2015
+August 29, 2023
+Convicted of tax evasion and financial fraud.
+Lily Dawson (Sister)
+111222333
+Benjamin Foster (Friend)
+111222334
+D5
+Ethan Harrison
+35
+5'10"
 170 lbs
+8 years
+August 6, 2018
+July 24, 2023
+Convicted of insurance fraud and forgery.
+Isabella Foster (Sister)
+555666777
+Benjamin Jenkins (Friend)
+555666778
+D9
+William Ramirez
+36
+6'2"
+200 lbs
+11 years
+November 30, 2013
+September 14, 2025
+Convicted of property theft and burglary.
+Emma Ramirez (Sister)
+999000111
+Benjamin Mitchell (Friend)
+999000112
+D13
+Ava Bennett
+29
+5'7"
+140 lbs
+5 years
+February 14, 2018
+January 7, 2023
+Convicted of minor drug possession and distribution.
+Liam Bennett (Brother)
+333444555
+Emma Turner (Friend)
+333444556
+D17
+Emma Lewis
+30
+5'6"
+140 lbs
+6 years
+October 30, 2017
+October 30, 2022
+Convicted of unauthorized access to computer systems.
+Nathan Lewis (Brother)
+777888999
+Emily Turner (Friend)
+777888990
+D21
+Mia Anderson
+31
+5'8"
+155 lbs
+6 years
+October 7, 2017
+October 7, 2022
+Convicted of unauthorized access to computer systems.
+Ethan Anderson (Brother)
+111222333
+Ava Adams (Friend)
+111222334
+D25
+Isabelle Foster
+32
+5'9"
+160 lbs
 7 years
-June 7, 2017
-June 6, 2024
-Convicted of insurance fraud and false claims.
-Ava Mitchell (Sister)
-888999000
-Oliver Foster (Friend)
-888999001
-
+July 12, 2016
+June 15, 2022
+Convicted of petty theft and shoplifting.
+Chloe Foster (Sister)
+555666777
+Daniel Carter (Friend)
+555666778
 D29
 Emma Turner
 29
@@ -403,7 +194,188 @@ Chloe Turner (Sister)
 999000111
 Liam Adams (Friend)
 999000112
-
+D2
+Samantha Abbott
+33
+5'6"
+140 lbs
+5 years
+March 22, 2018
+February 8, 2023
+Convicted of petty theft and shoplifting.
+Daniel Abbott (Brother)
+222333444
+Isabella Turner (Friend)
+222333445
+D4
+Olivia Parker
+31
+5'7"
+145 lbs
+7 years
+October 12, 2016
+October 23, 2023
+Convicted of cybercrimes and unauthorized access.
+William Parker (Brother)
+444555666
+Emily Turner (Friend)
+444555667
+D6
+Isabelle Foster
+29
+5'8"
+150 lbs
+6 years
+January 2, 2017
+October 12, 2022
+Convicted of identy theft and credit card fraud.
+Chloe Foster (Sister)
+666777888
+Daniel Carter (Friend)
+666777889
+D8
+Emily Carter
+32
+5'9"
+160 lbs
+8 years
+February 14, 2016
+February 7, 2023
+Convicted of mail fraud and illegal document destruction.
+William Carter (Brother)
+888999000
+Olivia Turner (Friend)
+888999001
+D10
+Mia Cooper
+30
+5'6"
+140 lbs
+7 years
+October 8, 2016
+October 12, 2023
+Convicted of credit card fraud and online scams.
+Liam Cooper (Brother)
+000111222
+Sophia Mitchell (Friend)
+000111223
+D12
+Nathan Walker
+33
+6'0"
+170 lbs
+7 years
+June 19, 2017
+June 6, 2022
+Convicted of misdemeanor assault and public disturbance.
+Olivia Walker (Sister)
+222333444
+William Jenkins (Friend)
+222333445
+D14
+Jack Adams
+34
+6'1"
+185 lbs
+8 years
+July 22, 2017
+June 2, 2024
+Convicted of public intoxication and disorderly conduct.
+Benjamin Adams (Brother)
+444555666
+Mia Anderson (Friend)
+444555667
+D16
+Benjamin Jenkins
+36
+6'2"
+200 lbs
+10 years
+March 17, 2017
+February 22, 2024
+Convicted of vandalism and property damage.
+Lily Jenkins (Sister)
+666777888
+Isabella Turner (Friend)
+666777889
+D18
+William Mitchell
+33
+6'0"
+170 lbs
+7 years
+September 5, 2017
+August 20, 2022
+Convicted of insurance fraud and false claims.
+Ava Mitchell (Sister)
+888999000
+Oliver Foster (Friend)
+888999001
+D20
+Liam Cooper
+34
+6'1"
+185 lbs
+8 years
+April 15, 2016
+March 27, 2024
+Convicted of disorderly conduct and public disturbances.
+Chloe Cooper (Sister)
+000111222
+Benjamin Foster (Friend)
+000111223
+D22
+Nathan Harrison
+33
+6'0"
+170 lbs
+7 years
+June 14, 2018
+June 1, 2023
+Convicted of misdemeanor assault and public disturbance.
+Olivia Harrison (Sister)
+222333444
+Benjamin Adams (Friend)
+222333445
+D24
+Daniel Carter
+34
+6'1"
+185 lbs
+8 years
+March 15, 2016
+February 28, 2023
+Convicted of public intoxication and disorderly conduct.
+Liam Carter (Brother)
+444555666
+Emily Turner (Friend)
+444555667
+D26
+William Jenkins
+36
+6'2"
+200 lbs
+10 years
+January 29, 2018
+December 18, 2023
+Convicted of vandalism and property damage.
+Benjamin Jenkins (Brother)
+666777888
+Ava Jenkins (Friend)
+666777889
+D28
+Benjamin Mitchell
+33
+6'0"
+170 lbs
+7 years
+June 7, 2017
+June 6, 2024
+Convicted of insurance fraud and false claims.
+Ava Mitchell (Sister)
+888999000
+Oliver Foster (Friend)
+888999001
 D30
 Liam Cooper
 34
@@ -416,4 +388,4 @@ Convicted of disorderly conduct and public disturbances.
 Mia Cooper (Sister)
 000111222
 Benjamin Turner (Friend)
-000111223
+000111223

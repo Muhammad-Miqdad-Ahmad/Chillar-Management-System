@@ -17,33 +17,23 @@ Hierarchy::Hierarchy(char prisoner_class)
     Person *relative1_data = nullptr, *relative2_data = nullptr;
     abstract *convict_data = new Person;
 
-    string file_name = "Prisoners Data\\";        // create a string to read from the file.
-    file_name = file_name + this->prisoner_grade; // storing the path in a string
-    // Prisoners Data/G
-    ifstream file(file_name + ".txt");
-    // Prisoners Data/G.txt
+    string file_name = "Prisoners Data\\", garbage; // create a string to read from the file.
+    file_name = file_name + this->prisoner_grade;   // storing the path in a string
 
+    ifstream file(file_name + ".txt"); // open the file
+
+    getline(file, garbage); // every file has en empty line on the top. This will remove the empty line
     if (this->prisoner_grade != 'A' && this->prisoner_grade != 'B' && this->prisoner_grade != 'C')
     {
 
         while (!file.eof())
         {
             // Convicted temp2;
-            string ID, name;
             convict_data->read(file);
             relative1_data = new Person; // create a new person object
             relative2_data = new Person; // to store data
-
-            getline(file, name); // relative 1 name
-            getline(file, ID);   // relative 1 id
-            relative1_data->name = name;
-            relative1_data->ID = ID;
-
-            getline(file, name); // relative 2 name
-            getline(file, ID);   // relative 2 id
-            relative2_data->name = name;
-            relative2_data->ID = ID;
-
+            file >> relative1_data;
+            file >> relative2_data;
             add_chunk(this->root, convict_data, relative1_data, relative2_data);
             delete relative1_data; // delete so that it can be used again
             delete relative2_data;
@@ -65,7 +55,6 @@ Hierarchy::Hierarchy(char prisoner_class)
 
 Hierarchy::~Hierarchy()
 {
-    cout << "is this being called anywhere\n\n\n";
     /*  first we delete the root of the prisoners tree.
     With this the tree inside each node that depiicts a grade
     will be destroyed   */
@@ -86,10 +75,8 @@ void Hierarchy::add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_
 {
     if (chunk == nullptr)
     {
-        chunk = new Prisoners(data);            // prisoners data
-        chunk->relative_1 = relative_1; // relative 1 data
-        chunk->relative_2 = relative_2; // relative two data
-        this->prisoner_count++;         // increase the prisoner count
+        chunk = new Prisoners(data, relative_1, relative_2); // prisoners data
+        this->prisoner_count++;                              // increase the prisoner count
     }
     else if (data->less_than(chunk->root))
         this->add_chunk(chunk->left, data, relative_1, relative_2);
@@ -106,7 +93,7 @@ void Hierarchy::make_full_balanced() // function to make the tree full balanced.
         i->left = i->right = nullptr;
 
     // cout << "quick sort call kr rha hoon\n";
-    quick_sort(temporary_storage, 0, temporary_storage.size() - 1); // BKL awi dalah hai
+    quick_sort(temporary_storage, 0, temporary_storage.size() - 1);             // BKL awi dalah hai
     this->root = balancing(temporary_storage, 0, temporary_storage.size() - 1); // the root the balancing function returns is stored in the root of class
     temporary_storage.clear();
 }
@@ -164,6 +151,26 @@ void Hierarchy::write_file_in_BFS(Prisoners *chunk, ofstream &file)
     }
 }
 
+Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
+{
+    if (chunk == nullptr)
+        return nullptr;
+    else if (chunk->root == to_find)
+        return chunk;
+    else if (chunk->root < to_find)
+        return this->search(chunk->left, to_find);
+    else
+        return this->search(chunk->right, to_find);
+}
+
+Prisoners *Hierarchy::get_smallest()
+{
+    Prisoners *move = nullptr;
+    for (move = this->root; move->left != nullptr; move = move->left)
+        ;
+    return move;
+}
+
 ostream &operator<<(ostream &out, Hierarchy *data)
 {
     // out << "Is this called????\n";
@@ -172,6 +179,18 @@ ostream &operator<<(ostream &out, Hierarchy *data)
         // out << "Wtf is this shitty fish\n";
         out << data->left;
         out << data->root;
+        out << data->right;
+    }
+    return out;
+}
+
+ofstream &operator<<(ofstream &out, Hierarchy *data)
+{
+    if (data != nullptr)
+    {
+        // out << "Wtf is this shitty fish\n";
+        out << data->left;
+        data->root->write(out);
         out << data->right;
     }
     return out;

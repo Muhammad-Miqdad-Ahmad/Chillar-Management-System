@@ -12,7 +12,7 @@ public:
     // constructors
     Hierarchy();
     Hierarchy(char prisoner_class);
-    
+
     // destructors
     ~Hierarchy();
 
@@ -21,16 +21,19 @@ public:
     friend class Hierarchial_tree;
 
     // function
+    Prisoners* get_smallest();
     void make_full_balanced();
+    Prisoners *search(Prisoners *&chunk, abstract* to_find);
     void write_file_in_BFS(Prisoners *chunk, ofstream &file);
     void store_del_tree(Prisoners *&chunk, vector<Prisoners *> &data);
     Prisoners *balancing(vector<Prisoners *> &array, int start, int last);
-    void add_chunk(Prisoners *&chunk, abstract* &data, Person *&relative_1, Person *&relative_2);
+    void add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_1, Person *&relative_2);
 
     // friend function
     // template<typename datatype>
     // fri  end void display(Hierarchy* &data);
     friend ostream &operator<<(ostream &out, Hierarchy *data);
+    friend ofstream &operator<<(ofstream &out, Hierarchy *data);
     // Prisoners *operator%(string data);
 };
 
@@ -56,5 +59,5 @@ public:
 
     // // void add_chunk(Hierarchy* &chunk, int index); // dont un comment it. I am just eaving it here for research purposes ( ;
 
-    // operator overloads   
+    // operator overloads
 };

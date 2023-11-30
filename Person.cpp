@@ -6,6 +6,12 @@ Person::Person()
     this->name = "";
 }
 
+Person::Person(string ID, string name)
+{
+    this->ID = ID;
+    this->name = name;
+}
+
 Person::~Person()
 {
 }
@@ -26,7 +32,7 @@ bool Person::equal(abstract &data)
     return false;
 }
 
-bool Person::equal(abstract* &data)
+bool Person::equal(abstract *&data)
 {
     if (this->ID == data->ID)
         if (this->name == data->name)
@@ -50,7 +56,7 @@ bool Person::not_equal(abstract &data)
     return false;
 }
 
-bool Person::not_equal(abstract* &data)
+bool Person::not_equal(abstract *&data)
 {
     if (this->ID != data->ID)
         if (this->name != data->name)
@@ -72,7 +78,7 @@ bool Person::less_than(abstract &data)
     return false;
 }
 
-bool Person::less_than(abstract* &data)
+bool Person::less_than(abstract *&data)
 {
     if (this->ID < data->ID)
         return true;
@@ -95,7 +101,7 @@ bool Person::less_than_equal(abstract &data)
     return false;
 }
 
-bool Person::less_than_equal(abstract* &data)
+bool Person::less_than_equal(abstract *&data)
 {
     if (this->ID <= data->ID)
         return true;
@@ -116,7 +122,7 @@ bool Person::greater_than(abstract &data)
     return false;
 }
 
-bool Person::greater_than(abstract* &data)
+bool Person::greater_than(abstract *&data)
 {
     if (this->ID > data->ID)
         return true;
@@ -137,7 +143,7 @@ bool Person::greater_than_equal(abstract &data)
     return false;
 }
 
-bool Person::greater_than_equal(abstract* &data)
+bool Person::greater_than_equal(abstract *&data)
 {
     if (this->ID >= data->ID)
         return true;
@@ -216,8 +222,10 @@ ofstream &operator<<(ofstream &out, Person &data)
 
 ofstream &operator<<(ofstream &out, Person *&data)
 {
-    out << endl << data->name;
-    out << endl << data->ID;
+    out << endl
+        << data->name;
+    out << endl
+        << data->ID;
     return out;
 }
 
@@ -260,44 +268,6 @@ void Person::display()
          << endl;
 }
 
-Capture_date::Capture_date()
-{
-    this->date = "";
-    this->month = "";
-    this->year = "";
-}
-
-ostream &operator<<(ostream &out, Capture_date &data)
-{
-    out << data.month << " " << data.date  << data.year;
-    return out;
-}
-
-istream &operator>>(istream &in, Capture_date &data)
-{
-    cout << "Enter the month of capture: ";
-    in >> data.month;
-    cout << "Enter the date of the capture: ";
-    in >> data.date;
-    cout << "Enter the year of the capture: ";
-    in >> data.year;
-    return in;
-}
-
-ofstream &operator<<(ofstream &out, Capture_date &data)
-{
-    out << data.month << " " << data.date << data.year;
-    return out;
-}
-
-ifstream &operator>>(ifstream &in, Capture_date &data)
-{
-    in >> data.month;
-    in >> data.date;
-    getline(in, data.year);
-    return in;
-}
-
 void Person::read(ifstream &file)
 {
     string ID, name, temp;
@@ -318,12 +288,75 @@ void Person::read(ifstream &file)
 
 void Person::write(ofstream &file)
 {
-    file << this->ID << endl;
-    file << this->name << endl;
+    file << endl
+         << this->ID;
+    file << endl
+         << this->name;
+}
+
+void Person::input()
+{
+    cout << "The name of the person is: " << this->name << endl;
+    cout << "The Id of the person is: " << this->ID << endl
+         << endl;
+}
+
+void Person::modify()
+{
+    
+}
+
+Capture_date::Capture_date()
+{
+    this->date = "";
+    this->month = "";
+    this->year = "";
+}
+
+ostream &operator<<(ostream &out, Capture_date &data)
+{
+    out << data.month << " " << data.date << data.year;
+    return out;
+}
+
+istream &operator>>(istream &in, Capture_date &data)
+{
+    cout << "Enter the month of capture: ";
+    in >> data.month;
+    cout << "Enter the date of the capture: ";
+    in >> data.date;
+    cout << "Enter the year of the capture: ";
+    in >> data.year;
+    return in;
+}
+
+ofstream &operator<<(ofstream &out, Capture_date &data)
+{
+    if (data.month != "bob" && data.year != "bob" && data.date != "bob")
+        out << data.month << " " << data.date << data.year;
+    else
+        out << "Life without parole";
+    return out;
+}
+
+ifstream &operator>>(ifstream &in, Capture_date &data)
+{
+    in >> data.month;
+    in >> data.date;
+    getline(in, data.year);
+    return in;
 }
 
 void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
 {
+    if (sentence == "Life without parole")
+    {
+        this->date = "bob";
+        this->month = "bob";
+        this->year = "bob";
+        return;
+    }
+
     double num = stod(sentence); // ye string s double m number change kar k de ga
     int size = sentence.size();  // ye string ka size hai;
     string yearOrmonth;
@@ -369,3 +402,5 @@ void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
     this->month = Constants::monthNames[monthCap - 1];
     this->year = to_string(yearCap);
 }
+
+

@@ -1,142 +1,3 @@
-A1
-Victor "The Viper" Thornhill
-45
-6'2"
-200 lbs
-Life without parole
-March 10, 2005
-Life without parole
-Mastermind behind a multi-million dollar heist and international drug cartel.
-
-A2
-Isabella "The Serpent" Blackwood
-36
-5'10"
-150 lbs
-60 years
-June 25, 2003
-October 12, 2043
-Infamous hacker responsible for several large-scale cyberattacks.
-
-A3
-Lucius "The Butcher" Maddox
-50
-6'0"
-220 lbs
-Life without parole
-August 3, 2011
-Life without parole
-Serial killer who terrorized a major city for over a decade.
-
-A4
-Victoria "The Black Widow"inclair
-42
-5'6"
-140 lbs
-75 years
-November 14, 1992
-May 12, 2037
-Convicted of multiple counts of high-profile assassinations.
-
-A5
-Maximilian "The Shadow" Kovac
-48
-6'4"
-210 lbs
-Life without parole
-December 18, 2007
-Life without parole
-International spy and double agent responsible for espionage and numerous covert operations.
-
-A6
-Cassandra "The Enchantress" Thornfield
-39
-5'8"
-130 lbs
-Life without parole
-February 2, 2011
-Life without parole
-Mastermind of a sophisticated international art theft ring.
-
-A7
-Lawrence "The Puppetmaster" Stroud
-51
-5'11"
-190 lbs
-80 years
-July 19, 1992
-November 15, 2072
-Renowned for manipulating influential figures and orchestrating large-scale financial fraud schemes.
-
-A8
-Selena "The Banshee" Blackthorn
-37
-5'7"
-145 lbs
-Life without parole
-May 8, 2013
-Life without parole
-Infamous contract assassin with a trail of high-profile targets.
-
-A9
-Adrian "The Chameleon" Darrow
-43
-6'0"
-180 lbs
-70 years
-September 30, 1997
-January 17, 2067
-Master of disguise and infiltration, responsible for numerous espionage missions.
-
-A10
-Lydia "The Sorceress" Ravenscroft
-40
-5'9"
-160 lbs
-Life without parole
-June 14, 2009
-Life without parole
-Leader of a secretive and powerful occult organization involved in dark rituals and criminal activities.
-
-A11
-Maximus "The Tyrant" Valerian
-49
-6'3"
-220 lbs
-Life without parole
-July 7, 2010
-Life without parole
-Ruthless dictator responsible for war crimes and mass atrocities in a war-torn nation.
-
-A12
-Seraphina "The Voodoo Queen" Dupont
-35
-5'5"
-140 lbs
-70 years
-March 5, 2003
-October 12, 2053
-Practitioner of dark voodoo rituals linked to mysterious deaths and disappearances.
-
-A13
-GideonThe Revenant" Kane
-47
-6'1"
-200 lbs
-Life without parole
-August 22, 2007
-Life without parole
-Alleged supernatural cult leader involved in ritualistic sacrifices.
-
-A14
-IsidoreThe Alchemist" Thorne
-53
-5'10"
-180 lbs
-90 years
-November 30, 1991
-March 20, 2091
-Accused of conducting illegal experiments that have resulted in mysterious and dangerous substances.
 
 A15
 Valentina "The Enigma" Devereux
@@ -147,77 +8,15 @@ Life without parole
 February 18, 2014
 Life without parole
 Notorious for intricate heists and elaborate, unsolved crimes that baffle law enforcement.
-
-A16
-Ignatius "The Inferno" Draven
-45
-6'0"
-190 lbs
-Life without parole
-September 10, 2011
-Life without parole
-Infamous arsonist responsible for a series of destructive fires.
-
-A17
-Morgana "The Nightshade" Blackthorn
-36
-5'9"
-140 lbs
-70 years
-May 23, 2003
-October 12, 2053
-Leader of a covert organization specializing in international corporate espionage.
-
-A18
-Thaddeus "The Reckoner" Havisham
-50
-6'2"
-210 lbs
-Life without parole
-December 3, 2006
-Life without parole
-Alleged mastermind behind a series of large-scale stock market manipulations and economic crashes.
-
-A19
-Anastasia "The Siren" St. Clair
-37
-5'7"
-130 lbs
-Life without parole
-August 15, 2010
-Life without parole
-Seductive con artist known for manipulating and deceiving the wealthy elite.
-
-A20
-Leopold "The Riddlester" Voss
-43
+A7
+Lawrence "The Puppetmaster" Stroud
+51
 5'11"
-180 lbs
-75 years
-November 27, 1992
-May 12, 2052
-Elusive puzzle creator and extortionist behind a string of high-profile kidnapng cases.
-
-A21
-Octavia "The Orchestrator" Voss
-44
-5'8"
-150 lbs
+190 lbs
 80 years
-December 5, 1993
-March 30, 2093
-Alleged mastermind behind a sophisticated international money laundering operation.
-
-A22
-Lysander "The Illusionist" Blackthorn
-38
-6'0"
-170 lbs
-Life without parole
-June 8, 2009
-Life without parole
-Renowned magician and escape artist involved in a series of heists.
-
+July 19, 1992
+November 15, 2072
+Renowned for manipulating influential figures and orchestrating large-scale financial fraud schemes.
 A23
 Seraphine "The Enchantress" Malvern
 41
@@ -227,37 +26,33 @@ Life without parole
 October 14, 2005
 Life without parole
 Leader of a mysterious cult that practiced dark rituals and human sacrifices.
-
-A24
-Maximilian "The Puppeteer" Vale
-49
-6'1"
-200 lbs
-85 years
-January 23, 2008
-Life without parole
-Accused of orchestrating a string of high-profile political assassinations.
-
-A25
-Lilith "The Temptress" Wraith
-35
-5'7"
-135 lbs
-70 years
-June 30, 2010
-Life without parole
-Notorious for infiltrating the highest echelons of society to carry out covert espionage missions.
-
-A26
-Silas "The Archfiend" Blackwood
-42
+A3
+Lucius "The Butcher" Maddox
+50
 6'0"
-190 lbs
+220 lbs
 Life without parole
-April 7, 2008
+August 3, 2011
 Life without parole
-Alleged leader of a criminal syndicate responsible for international drug trafficking and arms smuggling.
-
+Serial killer who terrorized a major city for over a decade.
+A11
+Maximus "The Tyrant" Valerian
+49
+6'3"
+220 lbs
+Life without parole
+July 7, 2010
+Life without parole
+Ruthless dictator responsible for war crimes and mass atrocities in a war-torn nation.
+A19
+Anastasia "The Siren" St. Clair
+37
+5'7"
+130 lbs
+Life without parole
+August 15, 2010
+Life without parole
+Seductive con artist known for manipulating and deceiving the wealthy elite.
 A27
 Morgana "The Banshee" Darrow
 39
@@ -267,17 +62,69 @@ Morgana "The Banshee" Darrow
 February 15, 2012
 Life without parole
 Master of psychological manipulation and coercion, responsible for several high-profile kidnapngs.
-
-A28
-Lucius "The Reckoning" Thorne
-48
+A1
+Victor "The Viper" Thornhill
+45
 6'2"
+200 lbs
+Life without parole
+March 10, 2005
+Life without parole
+Mastermind behind a multi-million dollar heist and international drug cartel.
+A5
+Maximilian "The Shadow" Kovac
+48
+6'4"
 210 lbs
 Life without parole
-July 2, 2006
+December 18, 2007
 Life without parole
-Convicted of orchestrating a series of high-profile assassinations and political coups.
-
+International spy and double agent responsible for espionage and numerous covert operations.
+A9
+Adrian "The Chameleon" Darrow
+43
+6'0"
+180 lbs
+70 years
+September 30, 1997
+January 17, 2067
+Master of disguise and infiltration, responsible for numerous espionage missions.
+A13
+GideonThe Revenant" Kane
+47
+6'1"
+200 lbs
+Life without parole
+August 22, 2007
+Life without parole
+Alleged supernatural cult leader involved in ritualistic sacrifices.
+A17
+Morgana "The Nightshade" Blackthorn
+36
+5'9"
+140 lbs
+70 years
+May 23, 2003
+October 12, 2053
+Leader of a covert organization specializing in international corporate espionage.
+A21
+Octavia "The Orchestrator" Voss
+44
+5'8"
+150 lbs
+80 years
+December 5, 1993
+March 30, 2093
+Alleged mastermind behind a sophisticated international money laundering operation.
+A25
+Lilith "The Temptress" Wraith
+35
+5'7"
+135 lbs
+70 years
+June 30, 2010
+Life without parole
+Notorious for infiltrating the highest echelons of society to carry out covert espionage missions.
 A29
 Cassandra "The Alchemist" Sinclair
 44
@@ -287,7 +134,132 @@ Cassandra "The Alchemist" Sinclair
 September 18, 2004
 March 15, 2084
 Accused of conducting dangerous and forbidden experiments leading to catastrophic consequences.
-
+A2
+Isabella "The Serpent" Blackwood
+36
+5'10"
+150 lbs
+60 years
+June 25, 2003
+October 12, 2043
+Infamous hacker responsible for several large-scale cyberattacks.
+A4
+Victoria "The Black Widow"inclair
+42
+5'6"
+140 lbs
+75 years
+November 14, 1992
+May 12, 2037
+Convicted of multiple counts of high-profile assassinations.
+A6
+Cassandra "The Enchantress" Thornfield
+39
+5'8"
+130 lbs
+Life without parole
+February 2, 2011
+Life without parole
+Mastermind of a sophisticated international art theft ring.
+A8
+Selena "The Banshee" Blackthorn
+37
+5'7"
+145 lbs
+Life without parole
+May 8, 2013
+Life without parole
+Infamous contract assassin with a trail of high-profile targets.
+A10
+Lydia "The Sorceress" Ravenscroft
+40
+5'9"
+160 lbs
+Life without parole
+June 14, 2009
+Life without parole
+Leader of a secretive and powerful occult organization involved in dark rituals and criminal activities.
+A12
+Seraphina "The Voodoo Queen" Dupont
+35
+5'5"
+140 lbs
+70 years
+March 5, 2003
+October 12, 2053
+Practitioner of dark voodoo rituals linked to mysterious deaths and disappearances.
+A14
+IsidoreThe Alchemist" Thorne
+53
+5'10"
+180 lbs
+90 years
+November 30, 1991
+March 20, 2091
+Accused of conducting illegal experiments that have resulted in mysterious and dangerous substances.
+A16
+Ignatius "The Inferno" Draven
+45
+6'0"
+190 lbs
+Life without parole
+September 10, 2011
+Life without parole
+Infamous arsonist responsible for a series of destructive fires.
+A18
+Thaddeus "The Reckoner" Havisham
+50
+6'2"
+210 lbs
+Life without parole
+December 3, 2006
+Life without parole
+Alleged mastermind behind a series of large-scale stock market manipulations and economic crashes.
+A20
+Leopold "The Riddlester" Voss
+43
+5'11"
+180 lbs
+75 years
+November 27, 1992
+May 12, 2052
+Elusive puzzle creator and extortionist behind a string of high-profile kidnapng cases.
+A22
+Lysander "The Illusionist" Blackthorn
+38
+6'0"
+170 lbs
+Life without parole
+June 8, 2009
+Life without parole
+Renowned magician and escape artist involved in a series of heists.
+A24
+Maximilian "The Puppeteer" Vale
+49
+6'1"
+200 lbs
+85 years
+January 23, 2008
+Life without parole
+Accused of orchestrating a string of high-profile political assassinations.
+A26
+Silas "The Archfiend" Blackwood
+42
+6'0"
+190 lbs
+Life without parole
+April 7, 2008
+Life without parole
+Alleged leader of a criminal syndicate responsible for international drug trafficking and arms smuggling.
+A28
+Lucius "The Reckoning" Thorne
+48
+6'2"
+210 lbs
+Life without parole
+July 2, 2006
+Life without parole
+Convicted of orchestrating a series of high-profile assassinations and political coups.
 A30
 Maximus "The Phantom" Ravenscroft
 46
@@ -296,4 +268,4 @@ Maximus "The Phantom" Ravenscroft
 Life without parole
 October 10, 2007
 Life without parole
-Notorious for orchestrating high-stakes heists and art thefts, leaving behind no traces.
+Notorious for orchestrating high-stakes heists and art thefts, leaving behind no traces.

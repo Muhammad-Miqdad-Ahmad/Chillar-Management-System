@@ -1,142 +1,3 @@
-B1
-Daniel "The Bulldozer" Turner
-40
-6'2"
-210 lbs
-50 years
-October 5, 2002
-March 5, 2052
-Leader of a local street gang involved in organized crime and drug trafficking.
-
-B2
-Sophie "The Whisperer" Martinez
-35
-5'9"
-150 lbs
-40 years
-July 15, 2004
-February 2, 2044
-Skilled in forgery and identity theft, responsible for a series of financial frauds.
-
-B3
-Xavier "The Tinkerer" Anderson
-38
-6'1"
-190 lbs
-45 years
-April 20, 2018
-July 3, 2048
-Involved in industrial espionage and tampering with corporate systems.
-
-B4
-Maya "The Chameleon" Parker
-36
-5'7"
-140 lbs
-55 years
-June 10, 2010
-August 5, 2045
-Highly skilled in deception and social engineering, with a history of elaborate scams.
-
-B5
-Logan "The Stuntman" Reynolds
-42
-6'0"
-180 lbs
-60 years
-September 22, 2006
-January 17, 2057
-Alleged mastermind behind a series of bank robberies and high-speed chases.
-
-B6
-Emma "The Trickster" Gallagher
-38
-5'8"
-160 lbs
-50 years
-March 15, 2011
-August 3, 2041
-Skilled in art forgery and involved in a high-profile museum heist.
-
-B7
-Benjamin "The Strategist" Wells
-41
-6'0"
-190 lbs
-45 years
-October 28, 2002
-May 8, 2052
-Known for elaborate white-collar fraud schemes affecting major corporations.
-
-B8
-Sarah "The Illusionist" Knight
-37
-5'7"
-135 lbs
-55 years
-November 5, 2012
-October 18, 2057
-Renowned for her ability to create realistic counterfeit money.
-
-B9
-Caleb "The Infiltrator" Brooks
-44
-6'1"
-180 lbs
-60 years
-August 12, 2005
-June 30, 2045
-Alleged leader of a highly skilled burglary and infiltration crew.
-
-B10
-Olivia "The Riddler" Hughes
-39
-5'9"
-155 lbs
-50 years
-December 8, 2010
-March 5, 2042
-Known for leaving intricate puzzles at the scenes of her crimes.
-
-B11
-Mason "The Operator" Lewis
-43
-6'2"
-200 lbs
-45 years
-g: 25 years
-rs
-Skilled in manipulating financial markets and stock fraud.
-
-B12
-Isabelle "The Forger" Bennett
-36
-5'8"
-150 lbs
-40 years
-January 20, 2007
-October 5, 2052
-Renowned for forging high-value artworks and documents.
-
-B13
-Oliver "The Escapist" Cooper
-39
-6'0"
-175 lbs
-50 years
-March 22, 2010
-February 2, 2040
-Known for escaping from several high-security facilities.
-
-B14
-Emily "The Deceiver" Taylor
-37
-5'7"
-140 lbs
-55 years
-April 3, 2005
-August 20, 2055
-Master of disguises and con games, often involving large sums of money.
 
 B15
 James "The Enigma" Foster
@@ -147,77 +8,15 @@ James "The Enigma" Foster
 June 14, 2010
 November 2, 2040
 Known for creating complex, unsolvable puzzles that baffle investigators.
-
-B16
-Alex "The Decoder" Mitchell
-38
-5'9"
-160 lbs
-45 years
-September 18, 2004
-May 10, 2054
-Known for hacking into sensitive government databases and classified information.
-
-B17
-Lily "The Shadow" Parker
-36
-5'6"
-140 lbs
-50 years
-October 30, 2009
-January 23, 2049
-Skilled cat burglar with a history of high-profile heists.
-
-B18
-Noah "The Smuggler" Reynolds
+B7
+Benjamin "The Strategist" Wells
 41
 6'0"
 190 lbs
-55 years
-January 5, 2015
-March 30, 2055
-Involved in smuggling contraband and illegal goods across borders.
-
-B19
-Sophia "The Codebreaker" Carter
-37
-5'7"
-145 lbs
-50 years
-March 14, 2011
-August 12, 2041
-Renowned for breaking intricate security systems and cracking codes.
-
-B20
-Leo "The Artisan" Hernandez
-40
-5'8"
-170 lbs
-60 years
-April 28, 2008
-July 18, 2048
-Known for creating counterfeit masterpieces and selling them to art collectors.
-
-B21
-Mia "The Infiltrator" Jensen
-35
-5'6"
-135 lbs
 45 years
-September 10, 2013
-November 30, 2053
-Known for infiltrating high-security facilities and corporate offices.
-
-B22
-Henry "The Strategist" Douglas
-39
-6'0"
-175 lbs
-50 years
-February 5, 2009
-May 25, 2049
-Skilled in orchestrating elaborate white-collar fraud schemes.
-
+October 28, 2002
+May 8, 2052
+Known for elaborate white-collar fraud schemes affecting major corporations.
 B23
 Lily "The Forger" Stevenson
 37
@@ -227,37 +26,33 @@ Lily "The Forger" Stevenson
 August 20, 2015
 October 15, 2055
 Renowned for creating convincing forged documents and passports.
-
-B24
-Max "The Escape Artist" Clarke
-42
-6'1"
-180 lbs
-60 years
-November 10, 2008
-January 5, 2049
-Known for escaping from high-security prisons and detention centers.
-
-B25
-Zoe "The Mastermind" Harrison
-36
-5'7"
-140 lbs
-50 years
-February 16, 2012
-April 8, 2042
-Skilled in orchestrating complex criminal operations and heists.
-
-B26
-Nora "The Saboteur" Walsh
+B3
+Xavier "The Tinkerer" Anderson
 38
-5'9"
-160 lbs
+6'1"
+190 lbs
 45 years
-October 3, 2016
-December 25, 2051
-Known for tampering with corporate systems and causing significant economic damage.
-
+April 20, 2018
+July 3, 2048
+Involved in industrial espionage and tampering with corporate systems.
+B11
+Mason "The Operator" Lewis
+43
+6'2"
+200 lbs
+45 years
+April 20, 2007
+May 5, 2057
+Skilled in manipulating financial markets and stock fraud.
+B19
+Sophia "The Codebreaker" Carter
+37
+5'7"
+145 lbs
+50 years
+March 14, 2011
+August 12, 2041
+Renowned for breaking intricate security systems and cracking codes.
 B27
 Owen "The Deceiver" Hart
 36
@@ -267,17 +62,69 @@ Owen "The Deceiver" Hart
 March 12, 2010
 May 5, 2040
 Skilled in deception and social engineering, responsible for various scams.
-
-B28
-Ella "The Infiltrator" Banks
-41
+B1
+Daniel "The Bulldozer" Turner
+40
+6'2"
+210 lbs
+50 years
+October 5, 2002
+March 5, 2052
+Leader of a local street gang involved in organized crime and drug trafficking.
+B5
+Logan "The Stuntman" Reynolds
+42
+6'0"
+180 lbs
+60 years
+September 22, 2006
+January 17, 2057
+Alleged mastermind behind a series of bank robberies and high-speed chases.
+B9
+Caleb "The Infiltrator" Brooks
+44
+6'1"
+180 lbs
+60 years
+August 12, 2005
+June 30, 2045
+Alleged leader of a highly skilled burglary and infiltration crew.
+B13
+Oliver "The Escapist" Cooper
+39
 6'0"
 175 lbs
-55 years
-April 25, 2014
-June 18, 2054
-Known for infiltrating secure facilities and corporate offices.
-
+50 years
+March 22, 2010
+February 2, 2040
+Known for escaping from several high-security facilities.
+B17
+Lily "The Shadow" Parker
+36
+5'6"
+140 lbs
+50 years
+October 30, 2009
+January 23, 2049
+Skilled cat burglar with a history of high-profile heists.
+B21
+Mia "The Infiltrator" Jensen
+35
+5'6"
+135 lbs
+45 years
+September 10, 2013
+November 30, 2053
+Known for infiltrating high-security facilities and corporate offices.
+B25
+Zoe "The Mastermind" Harrison
+36
+5'7"
+140 lbs
+50 years
+February 16, 2012
+April 8, 2042
+Skilled in orchestrating complex criminal operations and heists.
 B29
 Luke "The Artisan" Sullivan
 37
@@ -287,7 +134,132 @@ Luke "The Artisan" Sullivan
 June 9, 2006
 September 2, 2046
 Skilled in creating counterfeit artwork and selling it to art collectors.
-
+B2
+Sophie "The Whisperer" Martinez
+35
+5'9"
+150 lbs
+40 years
+July 15, 2004
+February 2, 2044
+Skilled in forgery and identity theft, responsible for a series of financial frauds.
+B4
+Maya "The Chameleon" Parker
+36
+5'7"
+140 lbs
+55 years
+June 10, 2010
+August 5, 2045
+Highly skilled in deception and social engineering, with a history of elaborate scams.
+B6
+Emma "The Trickster" Gallagher
+38
+5'8"
+160 lbs
+50 years
+March 15, 2011
+August 3, 2041
+Skilled in art forgery and involved in a high-profile museum heist.
+B8
+Sarah "The Illusionist" Knight
+37
+5'7"
+135 lbs
+55 years
+November 5, 2012
+October 18, 2057
+Renowned for her ability to create realistic counterfeit money.
+B10
+Olivia "The Riddler" Hughes
+39
+5'9"
+155 lbs
+50 years
+December 8, 2010
+March 5, 2042
+Known for leaving intricate puzzles at the scenes of her crimes.
+B12
+Isabelle "The Forger" Bennett
+36
+5'8"
+150 lbs
+40 years
+January 20, 2007
+October 5, 2052
+Renowned for forging high-value artworks and documents.
+B14
+Emily "The Deceiver" Taylor
+37
+5'7"
+140 lbs
+55 years
+April 3, 2005
+August 20, 2055
+Master of disguises and con games, often involving large sums of money.
+B16
+Alex "The Decoder" Mitchell
+38
+5'9"
+160 lbs
+45 years
+September 18, 2004
+May 10, 2054
+Known for hacking into sensitive government databases and classified information.
+B18
+Noah "The Smuggler" Reynolds
+41
+6'0"
+190 lbs
+55 years
+January 5, 2015
+March 30, 2055
+Involved in smuggling contraband and illegal goods across borders.
+B20
+Leo "The Artisan" Hernandez
+40
+5'8"
+170 lbs
+60 years
+April 28, 2008
+July 18, 2048
+Known for creating counterfeit masterpieces and selling them to art collectors.
+B22
+Henry "The Strategist" Douglas
+39
+6'0"
+175 lbs
+50 years
+February 5, 2009
+May 25, 2049
+Skilled in orchestrating elaborate white-collar fraud schemes.
+B24
+Max "The Escape Artist" Clarke
+42
+6'1"
+180 lbs
+60 years
+November 10, 2008
+January 5, 2049
+Known for escaping from high-security prisons and detention centers.
+B26
+Nora "The Saboteur" Walsh
+38
+5'9"
+160 lbs
+45 years
+October 3, 2016
+December 25, 2051
+Known for tampering with corporate systems and causing significant economic damage.
+B28
+Ella "The Infiltrator" Banks
+41
+6'0"
+175 lbs
+55 years
+April 25, 2014
+June 18, 2054
+Known for infiltrating secure facilities and corporate offices.
 B30
 Mia "The Codebreaker" Larson
 40
@@ -296,4 +268,4 @@ Mia "The Codebreaker" Larson
 60 years
 August 2, 2011
 November 25, 2041
-Renowned for breaking intricate security systems and decoding complex codes.
+Renowned for breaking intricate security systems and decoding complex codes.

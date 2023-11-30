@@ -1,5 +1,6 @@
 #pragma once
 #include "Prisoners.h"
+#include "hierarchy.h"
 
 class Admin
 {
@@ -8,11 +9,11 @@ private:
     string code;
 public:
     Admin();
-    bool remove_user();
     bool admin_UI();
+    bool remove_user();
     bool add_prisoner();
     bool modify_data();
-    bool store_from_file(vector<Convicted> &data,string &prisoner_grade);
-    bool generate_ID(Convicted &new_prisoner, vector<Convicted> data, string prisoner_grade);
+    bool store_from_file(Hierarchy* &data,string &prisoner_grade);
+    bool generate_ID(Convicted &new_prisoner, int data, string prisoner_grade);
     // ~Admin();
 };
