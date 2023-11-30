@@ -21,13 +21,30 @@ bool Admin::admin_UI()
     cout << "Welcome Mr." << this->admin.name << endl;
     while (true)
     {
-        cout << "Enter the thing u want: ";
+        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter your input here: ";
         cin >> choice;
         switch (choice)
         {
         case 'a':
             if (!this->add_prisoner())
-                cout << "The process did not work as intended\n";
+            {
+                cout << "There was some error while adding. PLease recheck\n";
+                return false;
+            }
+            break;
+        case 'b':
+            if (!this->remove_user())
+            {
+                cout << "There was some error while removing. PLease recheck\n";
+                return false;
+            }
+            break;
+        case 'c':
+            if (!this->modify_data())
+            {
+                cout << "There was some error while modifying. PLease recheck\n";
+                return false;
+            }
             break;
 
         case 'x':
@@ -107,10 +124,10 @@ bool Admin::remove_user()
     swap(to_del->relative_1, smallest->relative_1);
     swap(to_del->relative_2, smallest->relative_2);
     delete smallest;
-    smallest =to_del =nullptr;
+    smallest = to_del = nullptr;
     data->make_full_balanced();
-    ofstream file(file_name+".txt", ios::out|ios::trunc);
-    data->write_file_in_BFS(data->root,file);
+    ofstream file(file_name + ".txt", ios::out | ios::trunc);
+    data->write_file_in_BFS(data->root, file);
     file.close();
     return true;
 }
@@ -121,9 +138,9 @@ bool Admin::add_prisoner()
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
     file_name = prisoner_grade;
-    Hierarchy* data=new Hierarchy;
-    abstract *new_prisoner=new Convicted;
-    Person* r1, *r2;
+    Hierarchy *data = new Hierarchy;
+    abstract *new_prisoner = new Convicted;
+    Person *r1, *r2;
 
     // ye function hmeen store kr k de deta he sb ik vector main.
     //  agar ye sahi ni chla to false return kr dega.
@@ -131,24 +148,24 @@ bool Admin::add_prisoner()
         return false;
 
     new_prisoner->input();
-    if(prisoner_grade != "A" ||prisoner_grade != "B" ||prisoner_grade != "C")
+    if (prisoner_grade != "A" || prisoner_grade != "B" || prisoner_grade != "C")
     {
-        r1=new Person;
-        r2=new Person;
+        r1 = new Person;
+        r2 = new Person;
         cin >> r1;
         cin >> r2;
     }
-    
-    data->add_chunk(data->root,new_prisoner,r1,r2);
+
+    data->add_chunk(data->root, new_prisoner, r1, r2);
     data->make_full_balanced();
-    ofstream file(file_name+".txt", ios::out|ios::trunc);
-    data->write_file_in_BFS(data->root,file);
+    ofstream file(file_name + ".txt", ios::out | ios::trunc);
+    data->write_file_in_BFS(data->root, file);
     file.close();
     delete r1;
     delete r2;
     delete new_prisoner;
-    r1=r2=nullptr;
-    new_prisoner=nullptr;
+    r1 = r2 = nullptr;
+    new_prisoner = nullptr;
     return true;
 }
 
@@ -196,20 +213,20 @@ bool Admin::generate_ID(Convicted &new_prisoner, int number, string prisoner_gra
 
 bool Admin::modify_data()
 {
-    Hierarchy* data;
+    Hierarchy *data;
     string prisoner_grade, file_name;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
     file_name = prisoner_grade;
     if (!this->store_from_file(data, file_name))
         return false;
-    Person *input=new Person;
+    Person *input = new Person;
     input->input();
-    Prisoners* to_modify=data->search(data->root,input);
+    Prisoners *to_modify = data->search(data->root, input);
     char choice;
     to_modify->root->modify();
-    ofstream file(file_name+".txt", ios::out|ios::trunc);
-    data->write_file_in_BFS(data->root,file);
+    ofstream file(file_name + ".txt", ios::out | ios::trunc);
+    data->write_file_in_BFS(data->root, file);
     file.close();
     return true;
 }
