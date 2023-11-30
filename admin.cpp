@@ -123,10 +123,26 @@ bool Admin::remove_user()
     swap(to_del->root, smallest->root);
     swap(to_del->relative_1, smallest->relative_1);
     swap(to_del->relative_2, smallest->relative_2);
+    ofstream file1("Prisoners Data\\Removed_IDs.txt", ios::out | ios::app), file2("Prisoners Data\\Removed_Prisoners.txt", ios::out | ios::app);
+
+    if (!file1.is_open() || !file1.is_open())
+        return false;
+        
+    smallest->write(file2);
+    file1 << endl
+          << smallest->root->ID;
+    file1.close();
+    file2.close();
+
+    if (file1.is_open() || file1.is_open())
+        return false;
+
     delete smallest;
     smallest = to_del = nullptr;
     data->make_full_balanced();
     ofstream file(file_name + ".txt", ios::out | ios::trunc);
+    if (!file.is_open())
+        return false;
     data->write_file_in_BFS(data->root, file);
     file.close();
     return true;
