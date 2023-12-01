@@ -153,11 +153,9 @@ void Hierarchy::write_file_in_BFS(Prisoners *chunk, ofstream &file)
 
 Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
 {
-    if (chunk == nullptr)
-        return nullptr;
-    else if (chunk->root == to_find)
+    if (chunk == nullptr || chunk->root->equal(to_find))
         return chunk;
-    else if (chunk->root < to_find)
+    else if (chunk->root->less_than(to_find))
         return this->search(chunk->left, to_find);
     else
         return this->search(chunk->right, to_find);

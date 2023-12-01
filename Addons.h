@@ -7,6 +7,7 @@
 #include <fstream>
 #include "admin.h"
 #include <string>
+#include <limits>
 #include <queue>
 #include <ctime>
 //// template <typename datatype>

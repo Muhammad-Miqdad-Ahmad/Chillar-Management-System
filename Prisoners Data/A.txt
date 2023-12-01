@@ -60,7 +60,7 @@ Morgana "The Banshee" Darrow
 150 lbs
 75 years
 February 15, 2012
-Life without parole
+November 15, 2087
 Master of psychological manipulation and coercion, responsible for several high-profile kidnapngs.
 A1
 Victor "The Viper" Thornhill
@@ -123,7 +123,7 @@ Lilith "The Temptress" Wraith
 135 lbs
 70 years
 June 30, 2010
-Life without parole
+june 30, 2080
 Notorious for infiltrating the highest echelons of society to carry out covert espionage missions.
 A29
 Cassandra "The Alchemist" Sinclair
@@ -268,4 +268,4 @@ Maximus "The Phantom" Ravenscroft
 Life without parole
 October 10, 2007
 Life without parole
-Notorious for orchestrating high-stakes heists and art thefts, leaving behind no traces.
+Notorious for orchestrating high-stakes heists and art thefts, leaving behind no traces.

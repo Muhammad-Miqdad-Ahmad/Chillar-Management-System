@@ -37,6 +37,7 @@ public:
     void input() override;
     void modify() override;
     void display() override;
+    bool is_empty() override;
     void read(ifstream &file) override;
     void write(ofstream &file) override;
 
@@ -84,7 +85,6 @@ class Convicted : public abstract
 private:
     string age, height, weight, sentence, crime, height_ft, height_in;
     Capture_date captured_on, expected_release;
-    Person *relative_1, *relative_2;
 
 public:
     Convicted();
@@ -94,6 +94,7 @@ public:
     void input() override;
     void modify() override;
     void display() override;
+    bool is_empty() override;
     void give_space(string yada);
     void read(ifstream &file) override;
     void write(ofstream &file) override;

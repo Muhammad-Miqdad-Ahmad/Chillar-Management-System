@@ -34,6 +34,7 @@ bool Person::equal(abstract &data)
 
 bool Person::equal(abstract *&data)
 {
+    cout << "kitni bar call hota he bhosra\n";
     if (this->ID == data->ID)
         if (this->name == data->name)
             return true;
@@ -296,14 +297,24 @@ void Person::write(ofstream &file)
 
 void Person::input()
 {
-    cout << "The name of the person is: " << this->name << endl;
-    cout << "The Id of the person is: " << this->ID << endl
-         << endl;
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cout << "Enter the name of the person: ";
+    getline(cin, this->name);
+    cout << "The Id of the person is: ";
+    getline(cin,this->ID);
 }
 
 void Person::modify()
 {
     
+}
+
+bool Person::is_empty()
+{
+    if(this->name==""||this->ID=="")
+        return false;
+    return true;
 }
 
 Capture_date::Capture_date()
@@ -325,6 +336,7 @@ istream &operator>>(istream &in, Capture_date &data)
     in >> data.month;
     cout << "Enter the date of the capture: ";
     in >> data.date;
+    data.date=data.date+", ";
     cout << "Enter the year of the capture: ";
     in >> data.year;
     return in;
@@ -332,10 +344,10 @@ istream &operator>>(istream &in, Capture_date &data)
 
 ofstream &operator<<(ofstream &out, Capture_date &data)
 {
-    if (data.month != "bob" && data.year != "bob" && data.date != "bob")
-        out << data.month << " " << data.date << data.year;
-    else
+    if (data.month == "bob" || data.year == "bob" || data.date == "bob")
         out << "Life without parole";
+    else
+        out << data.month << " " << data.date << data.year;
     return out;
 }
 
@@ -349,7 +361,7 @@ ifstream &operator>>(ifstream &in, Capture_date &data)
 
 void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
 {
-    if (sentence == "Life without parole")
+    if (sentence == "Life without parole"|| sentence == "forever")
     {
         this->date = "bob";
         this->month = "bob";

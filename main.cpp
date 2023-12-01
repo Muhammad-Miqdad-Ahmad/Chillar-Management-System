@@ -1,6 +1,5 @@
 #include "Addons.h"
 //! check the constrcuctor of the hirarchy class.
-#include <limits>
 // int c;
 // cout << "Enter input: ";
 //         cin >> h;
@@ -15,5 +14,7 @@
 
 int main(int argc, char const *argv[])
 {
+    Admin admin;
+    admin.admin_UI();
     return 0;
 }
