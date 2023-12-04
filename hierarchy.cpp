@@ -34,7 +34,8 @@ Hierarchy::Hierarchy(char prisoner_class)
             relative2_data = new Person; // to store data
             file >> relative1_data;
             file >> relative2_data;
-            add_chunk(this->root, convict_data, relative1_data, relative2_data);
+            file >> this->root->credits;
+            add_chunk(this->root, convict_data, relative1_data, relative2_data, this->root->credits);
             delete relative1_data; // delete so that it can be used again
             delete relative2_data;
             relative1_data = relative2_data = nullptr; // null the pointers
@@ -46,7 +47,7 @@ Hierarchy::Hierarchy(char prisoner_class)
         while (!file.eof())
         {
             convict_data->read(file);
-            add_chunk(this->root, convict_data, relative1_data, relative2_data);
+            add_chunk(this->root, convict_data, relative1_data, relative2_data, 0);
         }
     }
     file.close();
@@ -71,18 +72,18 @@ Hierarchy::~Hierarchy()
     left = right = nullptr;
 }
 
-void Hierarchy::add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_1, Person *&relative_2) // function to add chunk to tree
+void Hierarchy::add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_1, Person *&relative_2, int credits) // function to add chunk to tree
 {
     if (chunk == nullptr)
     {
         data->remove_spaces();
-        chunk = new Prisoners(data, relative_1, relative_2); // prisoners data
+        chunk = new Prisoners(data, relative_1, relative_2, credits); // prisoners data
         this->prisoner_count++;                              // increase the prisoner count
     }
     else if (data->less_than(chunk->root))
-        this->add_chunk(chunk->left, data, relative_1, relative_2);
+        this->add_chunk(chunk->left, data, relative_1, relative_2, credits);
     else
-        this->add_chunk(chunk->right, data, relative_1, relative_2);
+        this->add_chunk(chunk->right, data, relative_1, relative_2, credits);
 }
 
 void Hierarchy::make_full_balanced() // function to make the tree full balanced.

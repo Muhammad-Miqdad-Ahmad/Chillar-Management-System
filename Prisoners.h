@@ -149,12 +149,14 @@ private:
 
     // directions to form a tree
     Prisoners *left, *right;
+    int credits;
+    bool workDone;
 
 public:
     // constructors
     Prisoners();
     Prisoners(abstract *data);
-    Prisoners(abstract *data, Person *data1, Person *data2);
+    Prisoners(abstract *data, Person *data1, Person *data2, int credits);
     // Prisoners(Convicted *data);
 
     // destructors
@@ -173,4 +175,16 @@ public:
     friend ostream &operator<<(ostream &out, Prisoners *data);
     friend ofstream &operator<<(ofstream &out, Prisoners *data);
     // friend Prisoners *operator%(Prisoners *&chunk, string data); // this is the % operator overload that is basically the search function.
+};
+
+class PrisonersUi
+{
+public:
+    Hierarchial_tree* mainTree;
+    Prisoners* prisoner;
+    string prisonerName, id, grade;
+    PrisonersUi(Hierarchial_tree* data);
+
+    bool signIn();
+    void turnIn();
 };
