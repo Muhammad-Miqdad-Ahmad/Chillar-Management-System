@@ -165,6 +165,7 @@ public:
     friend class Admin;
     friend class PrisonersUi;
     // functions
+    void give_take_credit();
     void give_space(string);
     void write(ofstream &out);
 

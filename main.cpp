@@ -13,7 +13,7 @@
 
 int main()
 {
-    Admin admin;
-    admin.admin_UI();
+    Hierarchial_tree *trial= new Hierarchial_tree;
+    cout << "Done";
     return 0;
 }

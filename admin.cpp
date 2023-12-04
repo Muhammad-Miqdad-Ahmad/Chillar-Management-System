@@ -1,7 +1,8 @@
 #include "Addons.h"
 
-Admin::Admin()
+Admin::Admin(Hierarchial_tree* &tree)
 {
+    this->origin=tree;
     this->admin.ID = "BSCE010307";
     this->admin.name = "Muhammad Waleed Tahir";
     this->code = "grandu";
@@ -10,20 +11,20 @@ Admin::Admin()
 
 bool Admin::admin_UI()
 {
-    // Person admin;
-    // string password;
+    Person admin;
+    string password;
     char choice;
-    // cin >> admin;
-    // cout << "Enter the password: ";
-    // cin >> password;
-    // if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
-    //     return false;
+    cin >> admin;
+    cout << "Enter the password: ";
+    cin >> password;
+    if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
+        return false;
 
     system("clear");
     cout << "Welcome Mr." << this->admin.name << endl;
     while (true)
     {
-        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
+        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nPress 'e' to verify the credits\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
         cin >> choice;
         switch (choice)
         {
@@ -54,6 +55,9 @@ bool Admin::admin_UI()
                 cout << "There was some error while Reading the file\n";
                 return false;
             }
+            break;
+        case 'e':
+            this->credit_check();
             break;
 
         case 'x':
@@ -88,7 +92,8 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
             file >> relative_1;
             relative_2 = new Person;
             file >> relative_2;
-            file >> credit;
+            getline(file, garbage);
+            credit = stoi(garbage);
             if (temp->is_empty())
                 delete temp;
             else
@@ -103,7 +108,8 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
         {
             temp = new Convicted;
             temp->read(file);
-            file >> credit;
+            getline(file, garbage);
+            credit = stoi(garbage);
             if (temp->is_empty())
                 delete temp;
             else
@@ -247,7 +253,7 @@ bool Admin::add_prisoner()
 bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_grade)
 {
     // we open the file that contains all the removed IDs
-    bool check=true;
+    bool check = true;
     ifstream file_1("Prisoners Data\\Removed_IDs.txt", ios::in);
     if (!file_1.is_open())
         return false;
@@ -272,12 +278,12 @@ bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_gra
             if (unused_IDs[i][0] == prisoner_grade[0])
             {
                 new_prisoner->ID = unused_IDs[i];
-                unused_IDs.erase(unused_IDs.begin()+i);
-                check=false;
+                unused_IDs.erase(unused_IDs.begin() + i);
+                check = false;
                 break;
             }
         }
-        if(check)
+        if (check)
             goto jump;
         ofstream file("Prisoners Data\\Removed_IDs.txt", ios::out | ios::trunc);
         for (auto &&i : unused_IDs)
@@ -290,8 +296,8 @@ bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_gra
     }
     else
     {
-        // returns true if the file is empty
-        jump:
+    // returns true if the file is empty
+    jump:
         string new_id;
         new_id = to_string(number);
         new_prisoner->ID = prisoner_grade + new_id;
@@ -362,3 +368,53 @@ bool Admin::display_data()
     cout << data;
     system("cmd/ C pause");
 }
+
+void Admin::credit_check()
+{
+    // if (tree->root == nullptr)
+    //     return;
+    for (int i = 0; i < 7; i++)
+    {
+        if (Constants::hierarchial_classes[i] == 'A' || Constants::hierarchial_classes[i] == 'B' || Constants::hierarchial_classes[i] == 'C')
+        {
+            continue;
+        }
+        else
+        {
+            string grade = "" + Constants::hierarchial_classes[i];
+            this->store_from_file(this->data, grade);
+
+            queue<Prisoners *> temp;
+            temp.push(this->data->root);
+
+            while (!temp.empty())
+            {
+                Prisoners *current = temp.front();
+                current->give_take_credit();
+                temp.pop();
+
+                if (current->left != nullptr)
+                    temp.push(current->left);
+
+                if (current->right != nullptr)
+                    temp.push(current->right);
+            }
+
+            ofstream file(grade + ".txt", ios::out | ios::trunc);
+            data->write_file_in_BFS(file);
+            delete data;
+            data=nullptr;
+        }
+    }
+}
+
+// void Admin::search_to_del_and_rewrite(Hierarchy* &chunk, char grade)
+// {
+//     if(chunk==nullptr)
+//         return;
+//     else if(chunk->prisoner_grade==grade)
+//     {
+//         delete chunk->root;
+//     }    
+// }
+

@@ -273,8 +273,8 @@ void Person::display()
 void Person::read(ifstream &file)
 {
     string ID, name, temp;
-    getline(file, name); // Prisoner name
     getline(file, ID);   // prisoner ID
+    getline(file, name); // Prisoner name
     this->ID = ID;
     this->name = name;
     // now to ignore the rest of the file
@@ -285,7 +285,6 @@ void Person::read(ifstream &file)
     getline(file, temp); // captured on
     getline(file, temp); // expected release
     getline(file, temp); // crime
-    // getline(file, temp); // empty line
 }
 
 void Person::write(ofstream &file)

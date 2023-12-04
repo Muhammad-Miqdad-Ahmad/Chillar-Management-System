@@ -74,3 +74,12 @@ void Prisoners::give_space(string check)
         this->relative_2 = new Person;
     }
 }
+
+void Prisoners::give_take_credit()
+{
+    if(this->workDone)
+        this->credits=this->credits+10;
+    else
+        this->credits=this->credits-10;
+    this->workDone=false;
+}
