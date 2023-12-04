@@ -1,5 +1,4 @@
 #include "Addons.h"
-//! check the constrcuctor of the hirarchy class.
 // int c;
 // cout << "Enter input: ";
 //         cin >> h;
@@ -12,9 +11,13 @@
 //         else
 //             break;
 
-int main(int argc, char const *argv[])
+int main()
 {
-    Admin a;
-    a.admin_UI();
+    Hierarchial_tree *trial= new Hierarchial_tree;
+    abstract *tofind=new Person;
+    tofind->input();
+    trial->searchGrade(trial->root,tofind);
+    // Admin admin(trial);
+    // admin.admin_UI();
     return 0;
 }

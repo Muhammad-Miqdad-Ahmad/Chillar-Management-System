@@ -38,7 +38,6 @@ public:
     void modify() override;
     void display() override;
     bool is_empty() override;
-    void remove_spaces() override;
     void read(ifstream &file) override;
     void write(ofstream &file) override;
 
@@ -99,7 +98,6 @@ public:
     void modify() override;
     void display() override;
     bool is_empty() override;
-    void remove_spaces() override;
     void read(ifstream &file) override;
     void write(ofstream &file) override;
 
@@ -168,6 +166,7 @@ public:
     friend class PrisonersUi;
     friend class Visitor;
     // functions
+    void give_take_credit();
     void give_space(string);
     void write(ofstream &out);
 
@@ -178,3 +177,4 @@ public:
     friend ofstream &operator<<(ofstream &out, Prisoners *data);
     // friend Prisoners *operator%(Prisoners *&chunk, string data); // this is the % operator overload that is basically the search function.
 };
+

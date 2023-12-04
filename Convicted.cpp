@@ -391,15 +391,6 @@ void Convicted::write(ofstream &out)
         << this->crime;
 }
 
-void Convicted::give_space(string yaan)
-{
-    // if (yaan == "A" || yaan == "B" || yaan == "C")
-    // {
-    //     this->relative_1 = new Person;
-    //     this->relative_2 = new Person;
-    // }
-}
-
 void Convicted::input()
 {
     system("clear");
@@ -497,10 +488,5 @@ bool Convicted::is_empty()
     if (this->name == "")
         return true;
     return false;
-}
-
-void Convicted::remove_spaces()
-{
-    remove(this->ID.begin(),this->ID.end(),' ');
 }
 
