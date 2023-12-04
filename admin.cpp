@@ -176,8 +176,8 @@ bool Admin::remove_user()
 
     delete this->data;
     delete input;
-    input=nullptr;
-    this->data=nullptr;
+    input = nullptr;
+    this->data = nullptr;
     return true;
 }
 
@@ -213,7 +213,7 @@ bool Admin::add_prisoner()
 
     this->generate_ID(input, data->prisoner_count, prisoner_grade); // this function will generate the new ID of for the new prisoner
     data->add_chunk(data->root, input, r1, r2);                     // add the info of the new Prisoner in the tree
-    data->make_full_balanced();                                            // balance the tree again
+    data->make_full_balanced();                                     // balance the tree again
 
     ofstream file(file_name + ".txt", ios::out | ios::trunc);
     if (!file.is_open())
@@ -244,11 +244,12 @@ bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_gra
 
     // this is a function that tells us if a file is empty or not.
     if (!is_it_empty(file_1))
-        // returns false if the file is not empty
-    {   string garbage;
+    // returns false if the file is not empty
+    {
+        string garbage;
         queue<string> unused_IDs;
         // loop to iterate through the entre file.
-        getline(file_1,garbage);
+        getline(file_1, garbage);
         while (!file_1.eof())
         {
             string temp;
@@ -291,7 +292,7 @@ bool Admin::modify_data()
         return false;                            // if something goes wrong the function will return false
 
     this->input = new Person; // take input of the person whose data wants to be modified
-    input->input();             // take input
+    input->input();           // take input
 
     //! yhan se modification start hoi he aag eyhan se sb krna modify
     // cout << (data->root->left->root->ID == input->ID) << endl;
