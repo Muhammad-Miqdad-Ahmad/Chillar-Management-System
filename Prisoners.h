@@ -165,6 +165,7 @@ public:
     // friend classes
     friend class Hierarchy;
     friend class Admin;
+    friend class PrisonersUi;
     // functions
     void give_space(string);
     void write(ofstream &out);
@@ -175,16 +176,4 @@ public:
     friend ostream &operator<<(ostream &out, Prisoners *data);
     friend ofstream &operator<<(ofstream &out, Prisoners *data);
     // friend Prisoners *operator%(Prisoners *&chunk, string data); // this is the % operator overload that is basically the search function.
-};
-
-class PrisonersUi
-{
-public:
-    Hierarchial_tree* mainTree;
-    Prisoners* prisoner;
-    string prisonerName, id, grade;
-    PrisonersUi(Hierarchial_tree* data);
-
-    bool signIn();
-    void turnIn();
 };
