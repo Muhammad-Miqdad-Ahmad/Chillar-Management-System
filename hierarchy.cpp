@@ -260,3 +260,31 @@ ostream &operator<<(ostream &out, Hierarchial_tree *data)
         << endl;
     return out;
 }
+
+Prisoners *Hierarchial_tree::searchGrade(Hierarchy *&chunk, abstract *tofind)
+{
+    cout << "1" << endl;
+    if (chunk == nullptr || chunk->prisoner_grade == tofind->ID[0])
+    {
+        cout << "2" << endl;
+        if (chunk == nullptr)
+        {
+            cout<<"Inki pinki ponky, daddy bought a donkey, donkey die, daddy cry\n";
+        }
+        
+
+        return chunk->search(chunk->root, tofind);
+    }
+    else if (tofind->ID[0] < chunk->prisoner_grade)
+    {
+        cout << "3" << endl;
+
+        return this->searchGrade(chunk->left, tofind);
+    }
+    else
+    {
+        cout << "4" << endl;
+
+        return this->searchGrade(chunk->right, tofind);
+    }
+}
