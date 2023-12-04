@@ -164,23 +164,12 @@ void Hierarchy::write_file_in_BFS(ofstream &file)
 
 Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
 {
-    cout << "S1\n";
-    if (chunk == nullptr)
-    {
-        cout << "Inki pinki ponky, daddy bought a donkey, donkey die, daddy cry\n";
-    }
-
     if (chunk == nullptr || chunk->root->equal(to_find))
     {
-        cout << "S4\n";
-
         return chunk;
     }
     else if (to_find->less_than(chunk->root))
     {
-        cout << "S1\n";
-
-        cout << "Left pe jata he\n";
         return this->search(chunk->left, to_find);
     }
     else
