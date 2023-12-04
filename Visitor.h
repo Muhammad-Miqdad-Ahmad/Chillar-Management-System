@@ -8,7 +8,6 @@ class Visitor{
 
     Visitor(Hierarchial_tree*);
     void getPrisoner();
-    bool visitor_UI();
-    friend istream &operator>>(istream &in, Visitor &visitor);
+    void visitor_UI();
 };
 

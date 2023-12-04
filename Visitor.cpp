@@ -1,14 +1,6 @@
 #include "Addons.h"
 #include "Visitor.h"
 
-istream &operator>>(istream &in, Visitor &visitor)
-{
-    cout<<"\n\t\t\tInput Visitor Information\n\n";
-    visitor.apnaData->input();
-    cout<<"\n\t\t\tInput Prisoner Information\n\n";
-    visitor.relData->input();
-}
-
 Visitor::Visitor(Hierarchial_tree* tree)
 {
     this->apnaData = nullptr;
@@ -51,6 +43,11 @@ void Visitor::getPrisoner()
     }
 }
 
-bool Visitor::visitor_UI()
+void Visitor::visitor_UI()
 {
+    cout<<"\n\t\t\tInput Visitor Information\n\n";
+    this->apnaData->input();
+    cout<<"\n\t\t\tInput Prisoner Information\n\n";
+    this->relData->input();
+    this->getPrisoner();
 }
