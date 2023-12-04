@@ -365,6 +365,7 @@ ifstream &operator>>(ifstream &in, Capture_date &data)
 
 void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
 {
+    cap_on.month[0] = toupper(cap_on.month[0]);
     if (sentence == "Life without parole"|| sentence == "life without parole"|| sentence == "forever"|| sentence == "Forever" || sentence == "N/A")
     {
         this->date = "";

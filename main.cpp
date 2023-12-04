@@ -1,4 +1,5 @@
 #include "Addons.h"
+//! check the constrcuctor of the hirarchy class.
 // int c;
 // cout << "Enter input: ";
 //         cin >> h;
@@ -13,7 +14,13 @@
 
 int main()
 {
-    Admin admin;
-    admin.admin_UI();
+    cout<<"here\n";
+    auto* wank = new Hierarchial_tree;
+    cout<<"here3\n";
+
+    PrisonersUi ui(wank);
+    cout<<"here4\n";
+    
+    ui.prisonerUi();
     return 0;
 }
