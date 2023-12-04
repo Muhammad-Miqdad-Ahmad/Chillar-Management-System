@@ -1,18 +1,12 @@
-// #pragma once
+#pragma once
+#include "hierarchy.h"
 
-// class Visitor
-// {
-// private:
-//     /* data */
-// public:
-//     Visitor(/* args */);
-//     ~Visitor();
-// };
+class Visitor{
+    abstract* apnaData;
+    abstract* relData;
+    Hierarchial_tree* allData;
 
-// Visitor::Visitor(/* args */)
-// {
-// }
+    Visitor(Hierarchial_tree*);
+    friend istream &operator>>(istream &in, Visitor &visitor);
+};
 
-// Visitor::~Visitor()
-// {
-// }
