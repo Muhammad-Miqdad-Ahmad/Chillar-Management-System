@@ -34,9 +34,14 @@ bool Person::equal(abstract &data)
 
 bool Person::equal(abstract *&data)
 {
+    cout << this->name << endl << data->name << endl;
+    cout << this->ID << endl << data->ID << endl;
+    cout << (this->ID == data->ID) << endl;
+    cout << (this->name == data->name) << endl;
     if (this->ID == data->ID)
         if (this->name == data->name)
             return true;
+    cout << "return false krta hoon\n";
     return false;
 }
 
