@@ -15,7 +15,13 @@ int main()
 {
     Hierarchial_tree *trial= new Hierarchial_tree;
     // cout << trial;
-    PrisonersUi a(trial);
-    a.prisonerUi();
+    abstract *tofind = new Person;
+    tofind->input();
+    Prisoners* data=trial->searchGrade(trial->root,tofind);
+
+    if (data==nullptr)
+        cout << "Ye null he\n";
+        
+    cout << data;
     return 0;
 }

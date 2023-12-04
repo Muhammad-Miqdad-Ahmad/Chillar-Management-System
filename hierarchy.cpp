@@ -22,10 +22,7 @@ Hierarchy::Hierarchy(char prisoner_class)
     ifstream file(file_name + ".txt"); // open the file
 
     if (is_it_empty(file))
-    {
-        cout << "file is empty\n";
         return;
-    }
 
     abstract *convict_data;
 
@@ -167,7 +164,6 @@ void Hierarchy::write_file_in_BFS(ofstream &file)
 
 Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
 {
-    cout << this->prisoner_grade << endl;
     if (chunk == nullptr || chunk->root->equal(to_find))
         return chunk;
     else if (to_find->less_than(chunk->root))
@@ -255,10 +251,7 @@ Hierarchial_tree::Hierarchial_tree()
 {
     this->root = nullptr;
     for (int i = 0; i < 7; i++)
-    {
-        cout << "this: " << i << endl;
         add_chunk(this->root, Constants::hierarchial_classes[i]);
-    }
 }
 
 ostream &operator<<(ostream &out, Hierarchial_tree *data)
