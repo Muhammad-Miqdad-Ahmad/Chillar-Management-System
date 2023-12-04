@@ -17,6 +17,7 @@ Hierarchy::Hierarchy(char prisoner_class)
     Person *relative1_data = nullptr, *relative2_data = nullptr;
     abstract *convict_data = new Person;
 
+    int credits;
     string file_name = "Prisoners Data\\", garbage; // create a string to read from the file.
     file_name = file_name + this->prisoner_grade;   // storing the path in a string
 
@@ -34,8 +35,8 @@ Hierarchy::Hierarchy(char prisoner_class)
             relative2_data = new Person; // to store data
             file >> relative1_data;
             file >> relative2_data;
-            file >> this->root->credits;
-            add_chunk(this->root, convict_data, relative1_data, relative2_data, this->root->credits);
+            file >> credits;
+            add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
             delete relative1_data; // delete so that it can be used again
             delete relative2_data;
             relative1_data = relative2_data = nullptr; // null the pointers
@@ -47,7 +48,8 @@ Hierarchy::Hierarchy(char prisoner_class)
         while (!file.eof())
         {
             convict_data->read(file);
-            add_chunk(this->root, convict_data, relative1_data, relative2_data, 0);
+            file >> credits;
+            add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
         }
     }
     file.close();
@@ -69,6 +71,7 @@ Hierarchy::~Hierarchy()
         delete right;
     if (this->left)
         delete left;
+    
     left = right = nullptr;
 }
 
@@ -76,7 +79,6 @@ void Hierarchy::add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_
 {
     if (chunk == nullptr)
     {
-        data->remove_spaces();
         chunk = new Prisoners(data, relative_1, relative_2, credits); // prisoners data
         this->prisoner_count++;                              // increase the prisoner count
     }

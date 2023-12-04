@@ -14,7 +14,6 @@ public:
     virtual void modify() = 0;
     virtual void display() = 0;
     virtual bool is_empty() = 0;
-    virtual void remove_spaces() = 0;
     virtual void read(ifstream &file) = 0;
     virtual void write(ofstream &file) = 0;
 

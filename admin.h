@@ -10,8 +10,9 @@ private:
     abstract *input;
     Hierarchy *data;
     bool remove_user();
-    bool add_prisoner();
     bool modify_data();
+    bool add_prisoner();
+    bool display_data();
     bool store_from_file(Hierarchy* &data,string &prisoner_grade);
     bool generate_ID(abstract* &new_prisoner, int data, string prisoner_grade);
 

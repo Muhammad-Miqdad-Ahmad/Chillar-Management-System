@@ -314,13 +314,8 @@ void Person::modify()
 bool Person::is_empty()
 {
     if(this->name==""||this->ID=="")
-        return false;
-    return true;
-}
-
-void Person::remove_spaces()
-{
-    remove(this->ID.begin(),this->ID.end(),' ');
+        return true;
+    return false;
 }
 
 Capture_date::Capture_date()
@@ -370,7 +365,7 @@ ifstream &operator>>(ifstream &in, Capture_date &data)
 
 void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
 {
-    if (sentence == "Life without parole"|| sentence == "forever"|| sentence == "Forever" || sentence == "N/A")
+    if (sentence == "Life without parole"|| sentence == "life without parole"|| sentence == "forever"|| sentence == "Forever" || sentence == "N/A")
     {
         this->date = "";
         this->month = "";

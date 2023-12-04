@@ -38,7 +38,6 @@ public:
     void modify() override;
     void display() override;
     bool is_empty() override;
-    void remove_spaces() override;
     void read(ifstream &file) override;
     void write(ofstream &file) override;
 
@@ -99,7 +98,6 @@ public:
     void modify() override;
     void display() override;
     bool is_empty() override;
-    void remove_spaces() override;
     void read(ifstream &file) override;
     void write(ofstream &file) override;
 
@@ -175,16 +173,4 @@ public:
     friend ostream &operator<<(ostream &out, Prisoners *data);
     friend ofstream &operator<<(ofstream &out, Prisoners *data);
     // friend Prisoners *operator%(Prisoners *&chunk, string data); // this is the % operator overload that is basically the search function.
-};
-
-class PrisonersUi
-{
-public:
-    Hierarchial_tree* mainTree;
-    Prisoners* prisoner;
-    string prisonerName, id, grade;
-    PrisonersUi(Hierarchial_tree* data);
-
-    bool signIn();
-    void turnIn();
 };

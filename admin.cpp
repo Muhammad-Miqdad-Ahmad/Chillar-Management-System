@@ -10,20 +10,20 @@ Admin::Admin()
 
 bool Admin::admin_UI()
 {
-    // Person admin;
-    // string password;
+    Person admin;
+    string password;
     char choice;
-    // cin >> admin;
-    // cout << "Enter the password: ";
-    // cin >> password;
-    // if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
-    //     return false;
+    cin >> admin;
+    cout << "Enter the password: ";
+    cin >> password;
+    if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
+        return false;
 
-    Sleep(10);
+    system("clear");
     cout << "Welcome Mr." << this->admin.name << endl;
     while (true)
     {
-        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter your input here: ";
+        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
         cin >> choice;
         switch (choice)
         {
@@ -48,6 +48,13 @@ bool Admin::admin_UI()
                 return false;
             }
             break;
+        case 'd':
+            if (!this->display_data())
+            {
+                cout << "There was some error while Reading the file\n";
+                return false;
+            }
+            break;
 
         case 'x':
             return true;
@@ -68,6 +75,7 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
 
     Person *relative_1 = nullptr, *relative_2 = nullptr;
     abstract *temp; // ik convicted ka temp var bnao
+    int credit;
     getline(file, garbage);
 
     if (prisoner_grade != "A" && prisoner_grade != "B" && prisoner_grade != "C")
@@ -80,10 +88,11 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
             file >> relative_1;
             relative_2 = new Person;
             file >> relative_2;
+            file >> credit;
             if (temp->is_empty())
                 delete temp;
             else
-                data->add_chunk(data->root, temp, relative_1, relative_2);
+                data->add_chunk(data->root, temp, relative_1, relative_2, credit);
             relative_1 = relative_2 = nullptr;
             temp = nullptr;
         }
@@ -94,11 +103,11 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
         {
             temp = new Convicted;
             temp->read(file);
-
+            file >> credit;
             if (temp->is_empty())
                 delete temp;
             else
-                data->add_chunk(data->root, temp, relative_1, relative_2);
+                data->add_chunk(data->root, temp, relative_1, relative_2, credit);
 
             temp = nullptr;
         }
@@ -116,7 +125,7 @@ bool Admin::remove_user()
     system("clear");
     this->data = new Hierarchy;
     this->input = new Person;
-    string prisoner_grade, prisoner_name, prisoner_ID;
+    string prisoner_grade;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
     string file_name = prisoner_grade;
@@ -124,7 +133,7 @@ bool Admin::remove_user()
     if (!this->store_from_file(data, file_name)) // this will return a tree
         return false;
 
-    input->input(); // get the input in the person to find the person to delete
+    this->input->input(); // get the input in the person to find the person to delete
 
     Prisoners *to_del = data->search(data->root, input); // search and return a prisoner pointer
 
@@ -212,7 +221,7 @@ bool Admin::add_prisoner()
     }
 
     this->generate_ID(input, data->prisoner_count, prisoner_grade); // this function will generate the new ID of for the new prisoner
-    data->add_chunk(data->root, input, r1, r2);                     // add the info of the new Prisoner in the tree
+    data->add_chunk(data->root, input, r1, r2, 0);                     // add the info of the new Prisoner in the tree
     data->make_full_balanced();                                     // balance the tree again
 
     ofstream file(file_name + ".txt", ios::out | ios::trunc);
@@ -324,3 +333,20 @@ bool Admin::modify_data()
 
     return true;
 }
+
+bool Admin::display_data()
+{
+    system("clear");
+    string grade, file_name;
+    cout << "Enter the grade of the Prisoners whose data you want to see: ";
+    cin >> grade;
+    file_name=grade;
+    this->data=new Hierarchy;
+
+    if (!this->store_from_file(data, file_name))
+        return false;
+
+    cout << data;
+    system("cmd/ C pause");
+}
+
