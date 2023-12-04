@@ -14,15 +14,24 @@
 int main()
 {
     Hierarchial_tree *trial= new Hierarchial_tree;
+    // Admin admin(trial);
+    // admin.admin_UI();
+    // delete trial;
+    // trial = new Hierarchial_tree;
+    // abstract *tofind = new Person;
+    // tofind->input();
+    // Prisoners* data=trial->searchGrade(trial->root,tofind);
+
+    // if (data==nullptr)
+    //     cout << "Ye null he\n";
+        
+    // cout << data;
+    PrisonersUi a(trial);
+    a.prisonerUi();
     Admin admin(trial);
     admin.admin_UI();
-    abstract *tofind = new Person;
-    tofind->input();
-    Prisoners* data=trial->searchGrade(trial->root,tofind);
-
-    if (data==nullptr)
-        cout << "Ye null he\n";
-        
-    cout << data;
+    delete trial;
+    trial = new Hierarchial_tree;
+    a.prisonerUi();
     return 0;
 }

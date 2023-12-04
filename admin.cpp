@@ -61,8 +61,8 @@ bool Admin::admin_UI()
             break;
 
         case 'x':
-            delete this->origin;
-            this->origin=new Hierarchial_tree;
+            // delete this->origin;
+            // this->origin=new Hierarchial_tree;
             this->origin=nullptr;
             return true;
 

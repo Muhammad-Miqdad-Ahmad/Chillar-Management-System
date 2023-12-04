@@ -38,7 +38,8 @@ void PrisonersUi::viewData()
     cout << "Prisone Name: " << prisoner->root->name << endl;
     cout << "Prisoner ID: " << prisoner->root->ID << endl;
     cout << "Earned Credits: " << prisoner->credits << endl;
-    cout << "Today's work status: " << prisoner->workDone ? "Completed\n" : "Pending\n";
+    cout << "Today's work status: ";
+    prisoner->workDone ? cout<<"Completed\n" : cout<<"Pending\n";
 }
 
 void PrisonersUi::prisonerUi()
