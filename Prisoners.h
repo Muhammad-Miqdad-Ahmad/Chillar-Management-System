@@ -166,6 +166,7 @@ public:
     friend class Hierarchy;
     friend class Admin;
     friend class PrisonersUi;
+    friend class Visitor;
     // functions
     void give_space(string);
     void write(ofstream &out);
