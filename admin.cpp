@@ -411,6 +411,7 @@ void Admin::credit_check()
             }
             delete data;
             data = nullptr;
+
             ifstream file(grade + ".txt", ios::in);
             this->search_to_del_and_rewrite(this->origin->root, Constants::hierarchial_classes[i], file);
             file.close();
@@ -444,7 +445,7 @@ void Admin::search_to_del_and_rewrite(Hierarchy *&chunk, char grade, ifstream &f
             relative1_data = relative2_data = nullptr; // null the pointers
         }
     }
-    else if (chunk->prisoner_grade < grade)
+    else if (grade<chunk->prisoner_grade)
         search_to_del_and_rewrite(chunk->left, grade, file);
     else
         search_to_del_and_rewrite(chunk->right, grade, file);
