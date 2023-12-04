@@ -13,7 +13,6 @@ Hierarchy::Hierarchy(char prisoner_class)
     this->prisoner_grade = prisoner_class; // we assign the class
     this->left = this->right = nullptr;    // we null the left and right pointers
     this->root = nullptr;                  // also null the root
-
     Person *relative1_data = nullptr, *relative2_data = nullptr;
 
     int credits;
@@ -44,9 +43,7 @@ Hierarchy::Hierarchy(char prisoner_class)
             file >> relative2_data;
             getline(file, temp);
             credits = stoi(temp);
-            add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
-            delete relative1_data; // delete so that it can be used again
-            delete relative2_data;
+            this->add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
             relative1_data = relative2_data = nullptr; // null the pointers
         }
     }

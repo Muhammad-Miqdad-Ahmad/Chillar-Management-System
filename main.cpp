@@ -14,6 +14,7 @@
 int main()
 {
     Hierarchial_tree *trial= new Hierarchial_tree;
-    cout << "Done";
+    Admin admin(trial);
+    admin.admin_UI();
     return 0;
 }
