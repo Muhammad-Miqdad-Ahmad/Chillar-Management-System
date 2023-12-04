@@ -14,7 +14,10 @@
 int main()
 {
     Hierarchial_tree *trial= new Hierarchial_tree;
-    Admin admin(trial);
-    admin.admin_UI();
+    abstract *tofind=new Person;
+    tofind->input();
+    trial->searchGrade(trial->root,tofind);
+    // Admin admin(trial);
+    // admin.admin_UI();
     return 0;
 }
