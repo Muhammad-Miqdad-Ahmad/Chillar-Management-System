@@ -66,7 +66,7 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
     if (!file.is_open())                                             // agar file open nhi hoi to function false return kr dega
         return false;
 
-    Person *relative_1 = nullptr, *relative_2 = nullptr;
+    Person *relative_1 = nullptr, *relative_2 = nullptr; int credit;
     abstract *temp; // ik convicted ka temp var bnao
     getline(file, garbage);
 
@@ -80,10 +80,11 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
             file >> relative_1;
             relative_2 = new Person;
             file >> relative_2;
+            file >> credit;
             if (temp->is_empty())
                 delete temp;
             else
-                data->add_chunk(data->root, temp, relative_1, relative_2);
+                data->add_chunk(data->root, temp, relative_1, relative_2, credit);
             relative_1 = relative_2 = nullptr;
             temp = nullptr;
         }
@@ -98,7 +99,7 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
             if (temp->is_empty())
                 delete temp;
             else
-                data->add_chunk(data->root, temp, relative_1, relative_2);
+                data->add_chunk(data->root, temp, relative_1, relative_2, 0);
 
             temp = nullptr;
         }
@@ -212,7 +213,7 @@ bool Admin::add_prisoner()
     }
 
     this->generate_ID(input, data->prisoner_count, prisoner_grade); // this function will generate the new ID of for the new prisoner
-    data->add_chunk(data->root, input, r1, r2);                     // add the info of the new Prisoner in the tree
+    data->add_chunk(data->root, input, r1, r2, 0);                     // add the info of the new Prisoner in the tree
     data->make_full_balanced();                                            // balance the tree again
 
     ofstream file(file_name + ".txt", ios::out | ios::trunc);

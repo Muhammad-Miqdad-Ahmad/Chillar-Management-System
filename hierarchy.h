@@ -53,6 +53,7 @@ public:
     // friend classes
     friend class Prisoners;
     void add_chunk(Hierarchy *&chunk, char data);
+    Prisoners *searchGrade(Hierarchy *&chunk, abstract* tofind);
 
     // friend functions
     // template<typename datatype>
