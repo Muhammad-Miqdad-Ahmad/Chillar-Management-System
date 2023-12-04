@@ -13,7 +13,6 @@ Hierarchy::Hierarchy(char prisoner_class)
     this->prisoner_grade = prisoner_class; // we assign the class
     this->left = this->right = nullptr;    // we null the left and right pointers
     this->root = nullptr;                  // also null the root
-
     Person *relative1_data = nullptr, *relative2_data = nullptr;
 
     int credits;
@@ -44,9 +43,7 @@ Hierarchy::Hierarchy(char prisoner_class)
             file >> relative2_data;
             getline(file, temp);
             credits = stoi(temp);
-            add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
-            delete relative1_data; // delete so that it can be used again
-            delete relative2_data;
+            this->add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
             relative1_data = relative2_data = nullptr; // null the pointers
         }
     }
@@ -168,19 +165,11 @@ void Hierarchy::write_file_in_BFS(ofstream &file)
 Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
 {
     if (chunk == nullptr || chunk->root->equal(to_find))
-    {
         return chunk;
-    }
     else if (to_find->less_than(chunk->root))
-    {
-        cout << "Left pe jata he\n";
         return this->search(chunk->left, to_find);
-    }
     else
-    {
-        cout << "right pe ja rha he\n";
         return this->search(chunk->right, to_find);
-    }
 }
 
 Prisoners *Hierarchy::get_smallest()
@@ -277,23 +266,12 @@ ostream &operator<<(ostream &out, Hierarchial_tree *data)
 
 Prisoners *Hierarchial_tree::searchGrade(Hierarchy *&chunk, abstract *tofind)
 {
-    
-    cout<<chunk->prisoner_grade <<" "<< tofind->ID[0] <<endl;
     if (chunk == nullptr)
-    {
         return nullptr;
-    }
-    if (chunk->prisoner_grade == tofind->ID[0])
-    {
-        cout<<"going\n";
+    else if (chunk->prisoner_grade == tofind->ID[0])
         return chunk->search(chunk->root, tofind);
-    }
-    else if (tofind->ID[0] < chunk->prisoner_grade)
-    {
+    else if (chunk->prisoner_grade < tofind->ID[0])
         return this->searchGrade(chunk->left, tofind);
-    }
     else
-    {
         return this->searchGrade(chunk->right, tofind);
-    }
 }

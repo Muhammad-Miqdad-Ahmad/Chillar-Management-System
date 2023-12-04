@@ -1,8 +1,8 @@
 #include "Addons.h"
 
-Admin::Admin(Hierarchial_tree* &tree)
+Admin::Admin(Hierarchial_tree *&tree)
 {
-    this->origin=tree;
+    this->origin = tree;
     this->admin.ID = "BSCE010307";
     this->admin.name = "Muhammad Waleed Tahir";
     this->code = "grandu";
@@ -61,6 +61,7 @@ bool Admin::admin_UI()
             break;
 
         case 'x':
+            this->origin = nullptr;
             return true;
 
         default:
@@ -193,6 +194,12 @@ bool Admin::remove_user()
     delete input;
     input = nullptr;
     this->data = nullptr;
+
+    //THis part of code will re write the HIrerichal tree for that specific grade so that the added prisoner is also included
+    ifstream file_to_del(prisoner_grade + ".txt", ios::in);
+    this->search_to_del_and_rewrite(this->origin->root, prisoner_grade[0], file_to_del);
+    file_to_del.close();
+
     return true;
 }
 
@@ -247,6 +254,12 @@ bool Admin::add_prisoner()
     r1 = r2 = nullptr;
     this->data = nullptr;
     this->input = nullptr;
+
+    //THis part of code will re write the HIrerichal tree for that specific grade so that the added prisoner is also included
+    ifstream file_to_del(prisoner_grade + ".txt", ios::in);
+    this->search_to_del_and_rewrite(this->origin->root, prisoner_grade[0], file_to_del);
+    file_to_del.close();
+
     return true;
 }
 
@@ -322,18 +335,6 @@ bool Admin::modify_data()
     this->input = new Person; // take input of the person whose data wants to be modified
     input->input();           // take input
 
-    //! yhan se modification start hoi he aag eyhan se sb krna modify
-    // cout << (data->root->left->root->ID == input->ID) << endl;
-    // cout << data->root->left->root->ID << endl;
-    // cout << input->ID << endl
-    //      << endl;
-    // cout << data->root->left->root->name.length() << endl;
-    // cout << input->name.length() << endl
-    //      << endl;
-    // system("cmd /C pause");
-    // exit(-1);
-    //! yhan tk ka cod useless he debuging k liye bs
-
     Prisoners *to_modify = data->search(data->root, input); // function to search the data.
 
     if (to_modify == nullptr)
@@ -349,6 +350,11 @@ bool Admin::modify_data()
     this->data = nullptr;
     delete input;
     input = nullptr;
+
+    //THis part of code will re write the HIrerichal tree for that specific grade so that the modified prisoner is also included
+    ifstream file_to_del(prisoner_grade + ".txt", ios::in);
+    this->search_to_del_and_rewrite(this->origin->root, prisoner_grade[0], file_to_del);
+    file_to_del.close();
 
     return true;
 }
@@ -371,8 +377,6 @@ bool Admin::display_data()
 
 void Admin::credit_check()
 {
-    // if (tree->root == nullptr)
-    //     return;
     for (int i = 0; i < 7; i++)
     {
         if (Constants::hierarchial_classes[i] == 'A' || Constants::hierarchial_classes[i] == 'B' || Constants::hierarchial_classes[i] == 'C')
@@ -400,21 +404,48 @@ void Admin::credit_check()
                     temp.push(current->right);
             }
 
-            ofstream file(grade + ".txt", ios::out | ios::trunc);
-            data->write_file_in_BFS(file);
+            {
+                ofstream file(grade + ".txt", ios::out | ios::trunc);
+                data->write_file_in_BFS(file);
+                file.close();
+            }
             delete data;
-            data=nullptr;
+            data = nullptr;
+            ifstream file(grade + ".txt", ios::in);
+            this->search_to_del_and_rewrite(this->origin->root, Constants::hierarchial_classes[i], file);
+            file.close();
         }
     }
 }
 
-// void Admin::search_to_del_and_rewrite(Hierarchy* &chunk, char grade)
-// {
-//     if(chunk==nullptr)
-//         return;
-//     else if(chunk->prisoner_grade==grade)
-//     {
-//         delete chunk->root;
-//     }    
-// }
-
+void Admin::search_to_del_and_rewrite(Hierarchy *&chunk, char grade, ifstream &file)
+{
+    if (chunk == nullptr)
+        return;
+    else if (chunk->prisoner_grade == grade)
+    {
+        delete chunk->root;
+        chunk->root = nullptr;
+        this->input = new Person;
+        Person *relative1_data = nullptr, *relative2_data = nullptr;
+        string temp;
+        int credits;
+        while (!file.eof())
+        {
+            // Convicted temp2;
+            input->read(file);
+            relative1_data = new Person; // create a new person object
+            relative2_data = new Person; // to store data
+            file >> relative1_data;
+            file >> relative2_data;
+            getline(file, temp);
+            credits = stoi(temp);
+            this->data->add_chunk(this->data->root, input, relative1_data, relative2_data, credits);
+            relative1_data = relative2_data = nullptr; // null the pointers
+        }
+    }
+    else if (chunk->prisoner_grade < grade)
+        search_to_del_and_rewrite(chunk->left, grade, file);
+    else
+        search_to_del_and_rewrite(chunk->right, grade, file);
+}
