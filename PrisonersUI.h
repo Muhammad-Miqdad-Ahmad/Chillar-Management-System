@@ -6,9 +6,11 @@ class PrisonersUi
 public:
     Hierarchial_tree* mainTree;
     Prisoners* prisoner;
-    string prisonerName, id, grade;
-    PrisonersUi(Hierarchial_tree* data);
+    abstract* find;
+    PrisonersUi(Hierarchial_tree* ht);
 
-    bool signIn();
+    void signIn();
     void turnIn();
+    void viewData();
+
 };
