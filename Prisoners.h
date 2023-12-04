@@ -163,6 +163,7 @@ public:
     // friend classes
     friend class Hierarchy;
     friend class Admin;
+    friend class PrisonersUi;
     // functions
     void give_space(string);
     void write(ofstream &out);
@@ -174,3 +175,4 @@ public:
     friend ofstream &operator<<(ofstream &out, Prisoners *data);
     // friend Prisoners *operator%(Prisoners *&chunk, string data); // this is the % operator overload that is basically the search function.
 };
+

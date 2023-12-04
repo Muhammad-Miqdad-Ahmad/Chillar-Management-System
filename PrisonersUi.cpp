@@ -1,25 +1,39 @@
-#pragma once
 #include "Addons.h"
 
-PrisonersUi::PrisonersUi(Hierarchial_tree* data){
-    this->mainTree = data;
-    prisonerName = id = grade = "";
+PrisonersUi::PrisonersUi(Hierarchial_tree* ht) {
+    this->mainTree = ht;
+    find = nullptr;
 }
 
-bool PrisonersUi::signIn(){
-    cout << "Enter your Name: ";
-    getline(cin, prisonerName);
-    cout << "\nEnter your ID: ";
-    cin >> id;
-    cout << endl;
-    grade = id[0];
+void PrisonersUi::signIn() {
+    find = new Person;
+    re:
+    find->input();
     
-    //!yaha searching ho gi k jo data input kiya hai wo theak hai ya galat hai,
-    //!agr galat hai to prisoner dubara input kare ga. 
-
-    
+    this->prisoner = this->mainTree->searchGrade(this->mainTree->root, find);
+    cout<<"damn nigga\n";
+    if (prisoner == nullptr)
+    {
+        cout<<"Prisoner not Found.\n Enter Again: \n";
+        goto re;
+    }
+    find = nullptr;
 }
 
-void PrisonersUi::turnIn(){
-    
+void PrisonersUi::turnIn() {
+    if (prisoner->workDone == true)
+    {
+        cout<< "Your today's work quota has been reached!!!\n";
+        return;
+    }
+    cout<<"Trun in Successful.\n";
+    prisoner->workDone = true;
+    prisoner->credits = prisoner->credits + 10;
+}
+
+void PrisonersUi::viewData() {
+    cout<<"Prisone Name: "<<prisoner->root->name<<endl;
+    cout<<"Prisoner ID: "<<prisoner->root->ID<<endl;
+    cout<<"Earned Credits: "<<prisoner->credits<<endl;
+    cout<<"Today's work status: "<<prisoner->workDone ? "Completed\n" : "Pending\n";
 }

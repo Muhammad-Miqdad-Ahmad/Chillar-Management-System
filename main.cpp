@@ -13,7 +13,14 @@
 
 int main()
 {
-    Admin admin;
-    admin.admin_UI();
+    Hierarchial_tree* wanker = new Hierarchial_tree;
+    cout<<wanker;
+    // exit(0);
+    PrisonersUi data(wanker);
+    data.signIn();
+    data.turnIn();
+    data.viewData();
+    data.turnIn();
+    data.viewData();
     return 0;
 }
