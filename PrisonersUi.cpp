@@ -31,7 +31,6 @@ void PrisonersUi::turnIn()
     }
     cout << "Trun in Successful.\n";
     prisoner->workDone = true;
-    prisoner->credits = prisoner->credits + 10;
 }
 
 void PrisonersUi::viewData()

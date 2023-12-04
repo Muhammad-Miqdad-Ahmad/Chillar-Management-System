@@ -14,6 +14,8 @@
 int main()
 {
     Hierarchial_tree *trial= new Hierarchial_tree;
+    Admin a(trial);
+    a.admin_UI();
     // cout << trial;
     abstract *tofind = new Person;
     tofind->input();
