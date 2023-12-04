@@ -15,15 +15,22 @@ Hierarchy::Hierarchy(char prisoner_class)
     this->root = nullptr;                  // also null the root
 
     Person *relative1_data = nullptr, *relative2_data = nullptr;
-    abstract *convict_data = new Person;
 
     int credits;
-    string file_name = "Prisoners Data\\", garbage; // create a string to read from the file.
-    file_name = file_name + this->prisoner_grade;   // storing the path in a string
+    string file_name = "Prisoners Data\\", temp;  // create a string to read from the file.
+    file_name = file_name + this->prisoner_grade; // storing the path in a string
 
     ifstream file(file_name + ".txt"); // open the file
 
-    getline(file, garbage); // every file has en empty line on the top. This will remove the empty line
+    if (is_it_empty(file))
+    {
+        cout << "file is empty\n";
+        return;
+    }
+
+    abstract *convict_data = new Person;
+
+    getline(file, temp); // every file has en empty line on the top. This will remove the empty line
     if (this->prisoner_grade != 'A' && this->prisoner_grade != 'B' && this->prisoner_grade != 'C')
     {
 
@@ -35,7 +42,8 @@ Hierarchy::Hierarchy(char prisoner_class)
             relative2_data = new Person; // to store data
             file >> relative1_data;
             file >> relative2_data;
-            file >> credits;
+            getline(file, temp);
+            credits = stoi(temp);
             add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
             delete relative1_data; // delete so that it can be used again
             delete relative2_data;
@@ -47,8 +55,10 @@ Hierarchy::Hierarchy(char prisoner_class)
         // there is no relatives in this case so we will not give new space to the relative pointers
         while (!file.eof())
         {
+            cout << "While loop";
             convict_data->read(file);
-            file >> credits;
+            getline(file, temp);
+            credits = stoi(temp);
             add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
         }
     }
@@ -71,7 +81,7 @@ Hierarchy::~Hierarchy()
         delete right;
     if (this->left)
         delete left;
-    
+
     left = right = nullptr;
 }
 
@@ -80,7 +90,7 @@ void Hierarchy::add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_
     if (chunk == nullptr)
     {
         chunk = new Prisoners(data, relative_1, relative_2, credits); // prisoners data
-        this->prisoner_count++;                              // increase the prisoner count
+        this->prisoner_count++;                                       // increase the prisoner count
     }
     else if (data->less_than(chunk->root))
         this->add_chunk(chunk->left, data, relative_1, relative_2, credits);
@@ -188,7 +198,8 @@ Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
 Prisoners *Hierarchy::get_smallest()
 {
     Prisoners *move = nullptr;
-    for (move = this->root; move->left != nullptr; move = move->left);
+    for (move = this->root; move->left != nullptr; move = move->left)
+        ;
 
     if (move->right == nullptr)
         return move;
@@ -231,26 +242,26 @@ void Hierarchial_tree::add_chunk(Hierarchy *&chunk, char data)
         add_chunk(chunk->left, data);
 }
 
-void Hierarchy::delete_empty_node(Prisoners* &to_del)
+void Hierarchy::delete_empty_node(Prisoners *&to_del)
 {
-    Prisoners* move=this->root;
+    Prisoners *move = this->root;
     while (true)
     {
-        if(move->left->root->equal(to_del->root))
+        if (move->left->root->equal(to_del->root))
         {
-            move->left=nullptr;
+            move->left = nullptr;
             break;
         }
-        else if(move->right->root->equal(to_del->root))
+        else if (move->right->root->equal(to_del->root))
         {
-            move->right=nullptr;
+            move->right = nullptr;
             break;
         }
         else
-            move=move->left;
+            move = move->left;
     }
     delete to_del;
-    to_del=nullptr;
+    to_del = nullptr;
 }
 
 Hierarchial_tree::~Hierarchial_tree()
@@ -264,6 +275,7 @@ Hierarchial_tree::Hierarchial_tree()
     this->root = nullptr;
     for (int i = 0; i < 7; i++)
     {
+        cout << "this: " << i << endl;
         add_chunk(this->root, Constants::hierarchial_classes[i]);
     }
 }
