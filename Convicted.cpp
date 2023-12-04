@@ -193,6 +193,7 @@ Convicted::Convicted()
     this->height_in = "";
     this->crime = "";
     this->height = "";
+    this->credit = 0;
 }
 
 // ofstream &operator<<(ofstream &out, Convicted &data)
@@ -412,13 +413,4 @@ void Convicted::write(ofstream &out)
     out << endl << this->captured_on;
     out << endl << this->expected_release;
     out << endl << this->crime;
-}
-
-void Convicted::give_space(string yaan)
-{
-    if (yaan == "A" || yaan == "B" || yaan == "C")
-    {
-        this->relative_1 = new Person;
-        this->relative_2 = new Person;
-    }
 }

@@ -81,8 +81,8 @@ class Convicted : public abstract
 {
 private:
     string age, height, weight, sentence, crime, height_ft, height_in;
+    int credit;
     Capture_date captured_on, expected_release;
-    Person *relative_1, *relative_2;
 
 public:
     Convicted();
@@ -90,7 +90,6 @@ public:
 
     // functions
     void display() override;
-    void give_space(string yada);
     void read(ifstream &file) override;
     void write(ofstream &file) override;
 
