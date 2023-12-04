@@ -280,6 +280,22 @@ bool Admin::modify_data()
     Person *input = new Person; // take input of the person whose data wants to be modified
     input->input();             // take input
 
+    //! yhan se modification start hoi he aag eyhan se sb krna modify
+    cout << (data->root->root->name == input->name) << endl;
+    cout << data->root->root->name << endl;
+    cout << input->name << endl
+         << endl;
+    cout << data->root->root->name.length() << endl;
+    cout << input->name.length() << endl
+         << endl;
+    cout << data->root->root->name[10] << endl;
+    cout << input->name[10] << endl
+         << endl;
+    system("cmd /C pause");
+    exit(-1);
+    //! yhan tk ka cod useless he debuging k liye bs
+
+
     Prisoners *to_modify = data->search(data->root, input); // function to search the data.
     to_modify->root->modify();                              // dunction to modify the data
 
@@ -291,6 +307,6 @@ bool Admin::modify_data()
     this->data = nullptr;
     delete input;
     input = nullptr;
-    
+
     return true;
 }
