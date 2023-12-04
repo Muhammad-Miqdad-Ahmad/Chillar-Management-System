@@ -9,15 +9,14 @@ PrisonersUi::PrisonersUi(Hierarchial_tree *ht)
 void PrisonersUi::signIn()
 {
     find = new Person;
-    cout<<"here2\n";
+    
 re:
     find->input();
 
     this->prisoner = this->mainTree->searchGrade(this->mainTree->root, find);
-    cout << "damn nigga\n";
     if (prisoner == nullptr)
     {
-        cout << "Prisoner not Found.\n Enter Again: \n";
+        cout << "Prisoner not Found. Enter Again: \n";
         goto re;
     }
     find = nullptr;

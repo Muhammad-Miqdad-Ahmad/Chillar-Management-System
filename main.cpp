@@ -14,13 +14,10 @@
 
 int main()
 {
-    cout<<"here\n";
     auto* wank = new Hierarchial_tree;
-    cout<<"here3\n";
-
+    Admin a(wank);
+    a.admin_UI();
     PrisonersUi ui(wank);
-    cout<<"here4\n";
-    
     ui.prisonerUi();
     return 0;
 }
