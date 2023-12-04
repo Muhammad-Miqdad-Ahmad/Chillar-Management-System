@@ -11,6 +11,7 @@
 #include <limits>
 #include <queue>
 #include <ctime>
+#include "PrisonersUi.h"
 //// template <typename datatype>
 //// ostream &operator<<(ostream &out, const datatype *&chunk);
 
