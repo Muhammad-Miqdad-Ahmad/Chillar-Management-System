@@ -18,8 +18,10 @@ int main()
     abstract *tofind = new Person;
     tofind->input();
     Prisoners* data=trial->searchGrade(trial->root,tofind);
+
     if (data==nullptr)
-        cout << "Ye nul he\n";
+        cout << "Ye null he\n";
+        
     cout << data;
     return 0;
 }
