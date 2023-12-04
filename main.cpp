@@ -14,7 +14,8 @@
 int main()
 {
     Hierarchial_tree *trial= new Hierarchial_tree;
-    // cout << trial;
+    Admin admin(trial);
+    admin.admin_UI();
     abstract *tofind = new Person;
     tofind->input();
     Prisoners* data=trial->searchGrade(trial->root,tofind);
