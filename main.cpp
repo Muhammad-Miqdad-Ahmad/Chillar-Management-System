@@ -33,66 +33,30 @@ int main(int argc, char const *argv[])
     // }
     // cout << check;
     string temp;
-    ifstream file("G.txt", ios::in);
-    if(!file.is_open())
+    ifstream file("Prisoners Data\\G.txt", ios::in);
+    if (!file.is_open())
         cout << "Shit happenned\n";
-    Person* data1=new Person;
-    Person* data2=new Person;
-    abstract *liq;
-    Hierarchy *root=new Hierarchy;
-    // while(!file.eof())
-    // {
-        string name,id,height,weight,age,sentence,crime,empty,suq,co,rd;
-        Capture_date captured_on,release;
-        getline(file,id);
-        getline(file,name);
-        getline(file,age);
-        getline(file,height);
-        getline(file,weight);
-        getline(file,sentence);
-        file >> captured_on;
-        file >> release;
-        // getline(file,co);
-        // getline(file,suq);
-        getline(file,crime);
-        cout<<crime<<endl<<"here\n";
-        file>>data1;
-        file>>data2;
-        getline(file,empty);
-    cout <<"Name: "<< name << endl <<"ID: "<< id << endl <<"Age: "<< age << endl <<"Height: "<< height << endl 
-    <<"Weight: "<< weight << endl <<"Sentence: "<< sentence << endl <<"CAPon: "<< captured_on << endl <<"Release: "<< release << endl 
-    <<"Crime: "<< crime << endl <<"Empty: "<< empty << endl <<"yhan tk\n" << endl <<"REL1:\n"<< data1 << endl
-    <<"REL2:\n"<< data2 << endl;
-
-        getline(file,id);
-        getline(file,name);
-        getline(file,age);
-        getline(file,height);
-        getline(file,weight);
-        getline(file,sentence);
-        file >> captured_on;
-        file >> release;
-        // getline(file,co);
-        // getline(file,suq);
-        getline(file,crime);
-        cout<<crime<<endl<<"here\n";
-        file>>data1;
-        file>>data2;
-        getline(file,empty);
-    cout <<"Name: "<< name << endl <<"ID: "<< id << endl <<"Age: "<< age << endl <<"Height: "<< height << endl 
-    <<"Weight: "<< weight << endl <<"Sentence: "<< sentence << endl <<"CAPon: "<< captured_on << endl <<"Release: "<< release << endl 
-    <<"Crime: "<< crime << endl <<"Empty: "<< empty << endl <<"yhan tk\n" << endl  <<"REL1:\n"<< data1 << endl
-    <<"REL2:\n"<< data2 << endl;
-
-        liq=new Convicted;
-        // liq->read(file);
-        // file>>data1;
-        // file>>data2;
-        // getline(file,temp);
-        // root->add_chunk(root->root,liq,data1,data2);
-        
-    // }
+    Person *data1 = nullptr;
+    Person *data2 = nullptr;
+    abstract *data;
+    Hierarchy *root = new Hierarchy;
+    getline(file, temp);
+    while (!file.eof())
+    {
+        data1 = new Person;
+        data2 = new Person;
+        data = new Convicted;
+        data->read(file);
+        file >> data1;
+        file >> data2;
+        root->add_chunk(root->root, data, data1, data2);
+        data = nullptr;
+        data1 = data2 = nullptr;
+    }
     file.close();
-    // cout << root;
-    
+    root->make_full_balanced();
+    cout << root;
+    ofstream file1("Prisoners Data\\G.txt", ios::out | ios::trunc);
+    root->write_file_in_BFS(root->root, file1);
+    file1.close();
 }

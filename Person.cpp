@@ -9,11 +9,27 @@ Person::Person()
 Person::~Person()
 {
 }
-// all the comparison operatos have been overloaded for the objects of the class
+
 bool Person::operator==(abstract &data)
 {
     if (this->ID == data.ID)
         if (this->name == data.name)
+            return true;
+    return false;
+}
+
+bool Person::equal(abstract &data)
+{
+    if (this->ID == data.ID)
+        if (this->name == data.name)
+            return true;
+    return false;
+}
+
+bool Person::equal(abstract* &data)
+{
+    if (this->ID == data->ID)
+        if (this->name == data->name)
             return true;
     return false;
 }
@@ -26,9 +42,39 @@ bool Person::operator!=(abstract &data)
     return false;
 }
 
+bool Person::not_equal(abstract &data)
+{
+    if (this->ID != data.ID)
+        if (this->name != data.name)
+            return true;
+    return false;
+}
+
+bool Person::not_equal(abstract* &data)
+{
+    if (this->ID != data->ID)
+        if (this->name != data->name)
+            return true;
+    return false;
+}
+
 bool Person::operator<(abstract &data)
 {
     if (this->ID < data.ID)
+        return true;
+    return false;
+}
+
+bool Person::less_than(abstract &data)
+{
+    if (this->ID < data.ID)
+        return true;
+    return false;
+}
+
+bool Person::less_than(abstract* &data)
+{
+    if (this->ID < data->ID)
         return true;
     return false;
 }
@@ -42,9 +88,37 @@ bool Person::operator<=(abstract &data)
     return false;
 }
 
+bool Person::less_than_equal(abstract &data)
+{
+    if (this->ID <= data.ID)
+        return true;
+    return false;
+}
+
+bool Person::less_than_equal(abstract* &data)
+{
+    if (this->ID <= data->ID)
+        return true;
+    return false;
+}
+
 bool Person::operator>(abstract &data)
 {
     if (this->ID > data.ID)
+        return true;
+    return false;
+}
+
+bool Person::greater_than(abstract &data)
+{
+    if (this->ID > data.ID)
+        return true;
+    return false;
+}
+
+bool Person::greater_than(abstract* &data)
+{
+    if (this->ID > data->ID)
         return true;
     return false;
 }
@@ -55,7 +129,21 @@ bool Person::operator>=(abstract &data)
         return true;
     return false;
 }
-// all the operators have been overloaded for the pointers of the class.
+
+bool Person::greater_than_equal(abstract &data)
+{
+    if (this->ID >= data.ID)
+        return true;
+    return false;
+}
+
+bool Person::greater_than_equal(abstract* &data)
+{
+    if (this->ID >= data->ID)
+        return true;
+    return false;
+}
+
 bool Person::operator==(abstract *&data)
 {
     if (this->ID == data->ID)
@@ -90,6 +178,7 @@ bool Person::operator<=(abstract *&data)
 
 bool Person::operator>(abstract *&data)
 {
+    cout << "is this called\n";
     if (this->ID > data->ID)
         return true;
     return false;
@@ -127,8 +216,8 @@ ofstream &operator<<(ofstream &out, Person &data)
 
 ofstream &operator<<(ofstream &out, Person *&data)
 {
-    out << data->name << endl;
-    out << data->ID << endl;
+    out << endl << data->name;
+    out << endl << data->ID;
     return out;
 }
 
@@ -180,7 +269,7 @@ Capture_date::Capture_date()
 
 ostream &operator<<(ostream &out, Capture_date &data)
 {
-    out << data.month << " " << data.date << " " << data.year;
+    out << data.month << " " << data.date  << data.year;
     return out;
 }
 
@@ -197,16 +286,14 @@ istream &operator>>(istream &in, Capture_date &data)
 
 ofstream &operator<<(ofstream &out, Capture_date &data)
 {
-    out << data.month << " " << data.date << ", " << data.year << endl;
+    out << data.month << " " << data.date << data.year;
     return out;
 }
 
 ifstream &operator>>(ifstream &in, Capture_date &data)
 {
-    string temp;
     in >> data.month;
     in >> data.date;
-    // in >> data.year;
     getline(in, data.year);
     return in;
 }
@@ -227,6 +314,12 @@ void Person::read(ifstream &file)
     getline(file, temp); // expected release
     getline(file, temp); // crime
     // getline(file, temp); // empty line
+}
+
+void Person::write(ofstream &file)
+{
+    file << this->ID << endl;
+    file << this->name << endl;
 }
 
 void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)

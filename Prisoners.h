@@ -1,7 +1,5 @@
 #pragma once
-#include <iostream>
-#include <vector>
-using namespace std;
+#include "Abstract.h"
 
 class Capture_date
 {
@@ -13,7 +11,7 @@ private:
 public:
     Capture_date(/* args */);
 
-    //functions
+    // functions
     void cal_expected_date(Capture_date cap_on, string sentence);
 
     // stream operators overload
@@ -21,27 +19,6 @@ public:
     friend ofstream &operator<<(ofstream &out, Capture_date &data);
     friend istream &operator>>(istream &in, Capture_date &data);
     friend ifstream &operator>>(ifstream &in, Capture_date &data);
-};
-
-class abstract
-{
-public:
-    string ID;
-    string name;
-    virtual void display() = 0;
-    virtual void read(ifstream &file) = 0;
-    virtual bool operator<(abstract &data) = 0;
-    virtual bool operator<(abstract *&data) = 0;
-    virtual bool operator<=(abstract &data) = 0;
-    virtual bool operator<=(abstract *&data) = 0;
-    virtual bool operator>(abstract &data) = 0;
-    virtual bool operator>(abstract *&data) = 0;
-    virtual bool operator>=(abstract &data) = 0;
-    virtual bool operator>=(abstract *&data) = 0;
-    virtual bool operator==(abstract &data) = 0;
-    virtual bool operator==(abstract *&data) = 0;
-    virtual bool operator!=(abstract &data) = 0;
-    virtual bool operator!=(abstract *&data) = 0;
 };
 
 class Person : public abstract
@@ -59,20 +36,33 @@ public:
     // functions
     void display() override;
     void read(ifstream &file) override;
+    void write(ofstream &file) override;
 
     // comparison operator overload
-    bool operator<(abstract &data) override;
-    bool operator<(abstract *&data) override;
-    bool operator<=(abstract &data) override;
-    bool operator<=(abstract *&data) override;
-    bool operator>(abstract &data) override;
-    bool operator>(abstract *&data) override;
-    bool operator>=(abstract &data) override;
-    bool operator>=(abstract *&data) override;
-    bool operator==(abstract &data) override;
-    bool operator==(abstract *&data) override;
-    bool operator!=(abstract &data) override;
-    bool operator!=(abstract *&data) override;
+    bool operator<(abstract &data);
+    bool operator<(abstract *&data);
+    bool operator<=(abstract &data);
+    bool operator<=(abstract *&data);
+    bool operator>(abstract &data);
+    bool operator>(abstract *&data);
+    bool operator>=(abstract &data);
+    bool operator>=(abstract *&data);
+    bool operator==(abstract &data);
+    bool operator==(abstract *&data);
+    bool operator!=(abstract &data);
+    bool operator!=(abstract *&data);
+    bool less_than(abstract &data) override;
+    bool less_than(abstract *&data) override;
+    bool less_than_equal(abstract &data) override;
+    bool less_than_equal(abstract *&data) override;
+    bool greater_than(abstract &data) override;
+    bool greater_than(abstract *&data) override;
+    bool greater_than_equal(abstract &data) override;
+    bool greater_than_equal(abstract *&data) override;
+    bool equal(abstract &data) override;
+    bool equal(abstract *&data) override;
+    bool not_equal(abstract &data) override;
+    bool not_equal(abstract *&data) override;
 
     // stream operators overload
     //  void display(Person* &data);
@@ -102,20 +92,33 @@ public:
     void display() override;
     void give_space(string yada);
     void read(ifstream &file) override;
+    void write(ofstream &file) override;
 
     // comparison operator overload
-    bool operator<(abstract &data) override;
-    bool operator<(abstract *&data) override;
-    bool operator<=(abstract &data) override;
-    bool operator<=(abstract *&data) override;
-    bool operator>(abstract &data) override;
-    bool operator>(abstract *&data) override;
-    bool operator>=(abstract &data) override;
-    bool operator>=(abstract *&data) override;
-    bool operator==(abstract &data) override;
-    bool operator==(abstract *&data) override;
-    bool operator!=(abstract &data) override;
-    bool operator!=(abstract *&data) override;
+    bool operator<(abstract &data);
+    bool operator<(abstract *&data);
+    bool operator<=(abstract &data);
+    bool operator<=(abstract *&data);
+    bool operator>(abstract &data);
+    bool operator>(abstract *&data);
+    bool operator>=(abstract &data);
+    bool operator>=(abstract *&data);
+    bool operator==(abstract &data);
+    bool operator==(abstract *&data);
+    bool operator!=(abstract &data);
+    bool operator!=(abstract *&data);
+    bool less_than(abstract &data) override;
+    bool less_than(abstract *&data) override;
+    bool less_than_equal(abstract &data) override;
+    bool less_than_equal(abstract *&data) override;
+    bool greater_than(abstract &data) override;
+    bool greater_than(abstract *&data) override;
+    bool greater_than_equal(abstract &data) override;
+    bool greater_than_equal(abstract *&data) override;
+    bool equal(abstract &data) override;
+    bool equal(abstract *&data) override;
+    bool not_equal(abstract &data) override;
+    bool not_equal(abstract *&data) override;
 
     // operators overloaded
     friend ostream &operator<<(ostream &out, Convicted &data);
@@ -150,12 +153,13 @@ public:
     // friend classes
     friend class Hierarchy;
 
-    //functions
-    void re_write(string file_name);
+    // functions
+    void write(ofstream &out);
 
     // friend functions
     friend int partition(vector<Prisoners *> &array, int first, int last);
     friend void quick_sort(vector<Prisoners *> &array, int first, int last);
     friend ostream &operator<<(ostream &out, Prisoners *data);
+    friend ofstream &operator<<(ofstream &out, Prisoners *data);
     // friend Prisoners *operator%(Prisoners *&chunk, string data); // this is the % operator overload that is basically the search function.
 };

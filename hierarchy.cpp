@@ -15,11 +15,13 @@ Hierarchy::Hierarchy(char prisoner_class)
     this->root = nullptr;                  // also null the root
 
     Person *relative1_data = nullptr, *relative2_data = nullptr;
-    abstract *convict_data=new Person;
+    abstract *convict_data = new Person;
 
     string file_name = "Prisoners Data\\";        // create a string to read from the file.
     file_name = file_name + this->prisoner_grade; // storing the path in a string
+    // Prisoners Data/G
     ifstream file(file_name + ".txt");
+    // Prisoners Data/G.txt
 
     if (this->prisoner_grade != 'A' && this->prisoner_grade != 'B' && this->prisoner_grade != 'C')
     {
@@ -80,17 +82,16 @@ Hierarchy::~Hierarchy()
     left = right = nullptr;
 }
 
-void Hierarchy::add_chunk(Prisoners *&chunk, abstract* &data, Person *&relative_1, Person *&relative_2) // function to add chunk to tree
+void Hierarchy::add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_1, Person *&relative_2) // function to add chunk to tree
 {
     if (chunk == nullptr)
     {
-        chunk = new Prisoners;
-        chunk->root = data;             // prisoners data
+        chunk = new Prisoners(data);            // prisoners data
         chunk->relative_1 = relative_1; // relative 1 data
         chunk->relative_2 = relative_2; // relative two data
         this->prisoner_count++;         // increase the prisoner count
     }
-    else if (data < chunk->root)
+    else if (data->less_than(chunk->root))
         this->add_chunk(chunk->left, data, relative_1, relative_2);
     else
         this->add_chunk(chunk->right, data, relative_1, relative_2);
@@ -105,8 +106,7 @@ void Hierarchy::make_full_balanced() // function to make the tree full balanced.
         i->left = i->right = nullptr;
 
     // cout << "quick sort call kr rha hoon\n";
-    //quick_sort(temporary_storage, 0, temporary_storage.size() - 1);             // BKL awi dalah hai
-
+    quick_sort(temporary_storage, 0, temporary_storage.size() - 1); // BKL awi dalah hai
     this->root = balancing(temporary_storage, 0, temporary_storage.size() - 1); // the root the balancing function returns is stored in the root of class
     temporary_storage.clear();
 }
@@ -137,6 +137,31 @@ Prisoners *Hierarchy::balancing(vector<Prisoners *> &array, int start, int last)
     new_root->left = balancing(array, start, mid - 1); // after that I sent the lower half towards the left
     new_root->right = balancing(array, mid + 1, last); // the upper half towards the right
     return new_root;                                   // we simply return the root
+}
+
+void Hierarchy::write_file_in_BFS(Prisoners *chunk, ofstream &file)
+{
+    if (chunk == nullptr)
+        return;
+    // Create a queue for BFS
+    queue<Prisoners *> que;
+    que.push(root);
+
+    while (!que.empty())
+    {
+        // Dequeue a node from the front of the queue and print its value
+        Prisoners *current = que.front();
+        current->write(file);
+        que.pop();
+
+        // Enqueue the left child if it exists
+        if (current->left != nullptr)
+            que.push(current->left);
+
+        // Enqueue the right child if it exists
+        if (current->right != nullptr)
+            que.push(current->right);
+    }
 }
 
 ostream &operator<<(ostream &out, Hierarchy *data)

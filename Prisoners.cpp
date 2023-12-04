@@ -6,12 +6,6 @@ Prisoners::Prisoners()
     this->relative_1 = this->relative_2 = nullptr;
 }
 
-// Prisoners::Prisoners(Person *data)
-// {
-//     left = right = nullptr;
-//     this->root = data;
-// }
-
 Prisoners::Prisoners(abstract *data)
 {
     left = right = nullptr;
@@ -26,16 +20,6 @@ Prisoners::~Prisoners()
         delete right;
     left = right = nullptr;
 }
-
-// Prisoners *Prisoners::search(Prisoners *chunk, string data)
-// {
-//     if (data < this->root.ID)
-//         return this->search(chunk->left, data);
-//     else if (data > this->root.ID)
-//         return this->search(chunk->right, data);
-//     else
-//         return chunk;
-// }
 
 Person::Person(string ID, string name)
 {
@@ -56,7 +40,19 @@ ostream &operator<<(ostream &out, Prisoners *data)
     return out;
 }
 
-void Prisoners::re_write(string file_name)
+ofstream &operator<<(ofstream &out, Prisoners *data)
 {
-    ifstream file(file_name+".txt", ios::in);
+    out << data->root;
+    out << data->relative_1;
+    out << data->relative_2 << endl;
+    return out;
+}
+
+void Prisoners::write(ofstream &out)
+{
+    this->root->write(out);
+    if(relative_1)
+    out << this->relative_1;
+    if(relative_2)
+    out << this->relative_2;
 }

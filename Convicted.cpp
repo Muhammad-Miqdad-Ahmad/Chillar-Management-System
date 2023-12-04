@@ -8,6 +8,22 @@ bool Convicted::operator==(abstract &data)
     return false;
 }
 
+bool Convicted::equal(abstract &data)
+{
+    if (this->ID == data.ID)
+        if (this->name == data.name)
+            return true;
+    return false;
+}
+
+bool Convicted::equal(abstract* &data)
+{
+    if (this->ID == data->ID)
+        if (this->name == data->name)
+            return true;
+    return false;
+}
+
 bool Convicted::operator!=(abstract &data)
 {
     if (this->ID != data.ID)
@@ -16,9 +32,39 @@ bool Convicted::operator!=(abstract &data)
     return false;
 }
 
+bool Convicted::not_equal(abstract &data)
+{
+    if (this->ID != data.ID)
+        if (this->name != data.name)
+            return true;
+    return false;
+}
+
+bool Convicted::not_equal(abstract* &data)
+{
+    if (this->ID != data->ID)
+        if (this->name != data->name)
+            return true;
+    return false;
+}
+
 bool Convicted::operator<(abstract &data)
 {
     if (this->ID < data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::less_than(abstract &data)
+{
+    if (this->ID < data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::less_than(abstract* &data)
+{
+    if (this->ID < data->ID)
         return true;
     return false;
 }
@@ -32,6 +78,20 @@ bool Convicted::operator<=(abstract &data)
     return false;
 }
 
+bool Convicted::less_than_equal(abstract &data)
+{
+    if (this->ID <= data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::less_than_equal(abstract* &data)
+{
+    if (this->ID <= data->ID)
+        return true;
+    return false;
+}
+
 bool Convicted::operator>(abstract &data)
 {
     if (this->ID > data.ID)
@@ -39,9 +99,37 @@ bool Convicted::operator>(abstract &data)
     return false;
 }
 
+bool Convicted::greater_than(abstract &data)
+{
+    if (this->ID > data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::greater_than(abstract* &data)
+{
+    if (this->ID > data->ID)
+        return true;
+    return false;
+}
+
 bool Convicted::operator>=(abstract &data)
 {
     if (this->ID >= data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::greater_than_equal(abstract &data)
+{
+    if (this->ID >= data.ID)
+        return true;
+    return false;
+}
+
+bool Convicted::greater_than_equal(abstract* &data)
+{
+    if (this->ID >= data->ID)
         return true;
     return false;
 }
@@ -80,6 +168,7 @@ bool Convicted::operator<=(abstract *&data)
 
 bool Convicted::operator>(abstract *&data)
 {
+    cout << "is this called\n";
     if (this->ID > data->ID)
         return true;
     return false;
@@ -312,6 +401,18 @@ void Convicted::read(ifstream &in)
     getline(in, this->crime);
 }
 
+void Convicted::write(ofstream &out)
+{
+    out << endl << this->ID;
+    out << endl << this->name;
+    out << endl << this->age;
+    out << endl << this->height;
+    out << endl << this->weight;
+    out << endl << this->sentence;
+    out << endl << this->captured_on;
+    out << endl << this->expected_release;
+    out << endl << this->crime;
+}
 
 void Convicted::give_space(string yaan)
 {
@@ -321,4 +422,3 @@ void Convicted::give_space(string yaan)
         this->relative_2 = new Person;
     }
 }
-

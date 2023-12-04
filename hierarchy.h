@@ -22,6 +22,7 @@ public:
 
     // function
     void make_full_balanced();
+    void write_file_in_BFS(Prisoners *chunk, ofstream &file);
     void store_del_tree(Prisoners *&chunk, vector<Prisoners *> &data);
     Prisoners *balancing(vector<Prisoners *> &array, int start, int last);
     void add_chunk(Prisoners *&chunk, abstract* &data, Person *&relative_1, Person *&relative_2);

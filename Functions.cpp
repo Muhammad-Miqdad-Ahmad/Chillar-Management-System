@@ -11,7 +11,7 @@ int partition(vector<Prisoners*> &array, int first, int last)
     for (int i = first; i < last; i++)
     {
         /*yaar main ni khelta yaar ye kya chawal he mujh se ni hora ye code theek kya L he ye sara 😭😭😭😭😭😭😭*/
-        if (array[i]->root < piviot->root)
+        if (array[i]->root->less_than(piviot->root))
         {
             j++;
             swap(array[j], array[i]);
