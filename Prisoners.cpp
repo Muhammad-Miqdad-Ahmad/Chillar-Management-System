@@ -28,7 +28,6 @@ Prisoners::Prisoners(abstract *data, Person *data1 ,Person *data2, int credits)
 
 Prisoners::~Prisoners()
 {
-    cout << "\t\t\tdistructor of Prisoners\n\n\n";
     if (this->left != nullptr)
         delete left;
     if (this->right != nullptr)

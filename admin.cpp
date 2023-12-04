@@ -11,17 +11,18 @@ Admin::Admin(Hierarchial_tree *&tree)
 
 bool Admin::admin_UI()
 {
-    // Person admin;
-    // string password;
-    char choice;
-    // cin >> admin;
-    // cout << "Enter the password: ";
-    // cin >> password;
-    // if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
-        // return false;
-
+    {
+        Person admin;
+        string password;
+        cin >> admin;
+        cout << "Enter the password: ";
+        cin >> password;
+        if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
+            return false;
+    }
     system("clear");
     cout << "Welcome Mr." << this->admin.name << endl;
+    char choice;
     while (true)
     {
         cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nPress 'e' to verify the credits\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
@@ -62,8 +63,8 @@ bool Admin::admin_UI()
 
         case 'x':
             delete this->origin;
-            this->origin=new Hierarchial_tree;
-            this->origin=nullptr;
+            this->origin = new Hierarchial_tree;
+            this->origin = nullptr;
             return true;
 
         default:
@@ -428,7 +429,7 @@ void Admin::search_to_del_and_rewrite(Hierarchy *&chunk, char grade, ifstream &f
             relative1_data = relative2_data = nullptr; // null the pointers
         }
     }
-    else if (grade<chunk->prisoner_grade)
+    else if (grade < chunk->prisoner_grade)
         search_to_del_and_rewrite(chunk->left, grade, file);
     else
         search_to_del_and_rewrite(chunk->right, grade, file);
