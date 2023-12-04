@@ -1,5 +1,4 @@
 #include "Addons.h"
-//! check the constrcuctor of the hirarchy class.
 // int c;
 // cout << "Enter input: ";
 //         cin >> h;
@@ -12,9 +11,47 @@
 //         else
 //             break;
 
-int main(int argc, char const *argv[])
+int main()
 {
-    Admin a;
-    a.admin_UI();
-    return 0;
+    Hierarchial_tree *Thana = new Hierarchial_tree;
+    char choice;
+    while (true)
+    {
+        cin >> choice;
+        if(cin)
+        {
+            cin.clear();
+            choice = '-1';
+        }
+        switch (choice)
+        {
+        case 'a':
+        {
+            Admin admin(Thana);
+            if(!admin.admin_UI())
+                cout << "there was some error\n";
+            delete Thana;
+            Thana = new Hierarchial_tree;
+            break;
+        }
+        case 'b':
+        {
+            // visitor UI
+            break;
+        }
+        case 'c':
+        {
+            // Prisoner UI
+            break;
+        }
+        case 'x':
+        {
+            return 0;
+            break;
+        }
+        default:
+            cout << "Invalid input" << endl;
+            break;
+        }
+    }
 }

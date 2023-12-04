@@ -26,7 +26,6 @@ bool Person::operator==(abstract &data)
 
 bool Person::equal(abstract &data)
 {
-    cout << "kitni bar call hota he bhosra\nPerson obj ka ka\n";
     if (this->ID == data.ID)
         if (this->name == data.name)
             return true;
@@ -35,7 +34,6 @@ bool Person::equal(abstract &data)
 
 bool Person::equal(abstract *&data)
 {
-    cout << "kitni bar call hota he bhosra\nPerson pointer ka\n";
     if (this->ID == data->ID)
         if (this->name == data->name)
             return true;
@@ -89,11 +87,7 @@ bool Person::less_than(abstract *&data)
 
 bool Person::operator<=(abstract &data)
 {
-    if (this->ID <= data.ID)
-    {
-        return true;
-    }
-    return false;
+    return (this->ID <= data.ID);
 }
 
 bool Person::less_than_equal(abstract &data)
@@ -273,8 +267,8 @@ void Person::display()
 void Person::read(ifstream &file)
 {
     string ID, name, temp;
-    getline(file, name); // Prisoner name
     getline(file, ID);   // prisoner ID
+    getline(file, name); // Prisoner name
     this->ID = ID;
     this->name = name;
     // now to ignore the rest of the file
@@ -285,7 +279,6 @@ void Person::read(ifstream &file)
     getline(file, temp); // captured on
     getline(file, temp); // expected release
     getline(file, temp); // crime
-    // getline(file, temp); // empty line
 }
 
 void Person::write(ofstream &file)
@@ -314,13 +307,8 @@ void Person::modify()
 bool Person::is_empty()
 {
     if(this->name==""||this->ID=="")
-        return false;
-    return true;
-}
-
-void Person::remove_spaces()
-{
-    remove(this->ID.begin(),this->ID.end(),' ');
+        return true;
+    return false;
 }
 
 Capture_date::Capture_date()
@@ -370,7 +358,7 @@ ifstream &operator>>(ifstream &in, Capture_date &data)
 
 void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
 {
-    if (sentence == "Life without parole"|| sentence == "forever"|| sentence == "Forever" || sentence == "N/A")
+    if (sentence == "Life without parole"|| sentence == "life without parole"|| sentence == "forever"|| sentence == "Forever" || sentence == "N/A")
     {
         this->date = "";
         this->month = "";

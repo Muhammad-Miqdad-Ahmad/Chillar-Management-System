@@ -28,7 +28,6 @@ Prisoners::Prisoners(abstract *data, Person *data1 ,Person *data2, int credits)
 
 Prisoners::~Prisoners()
 {
-    cout << "\t\t\tdistructor of Prisoners\n\n\n";
     if (this->left != nullptr)
         delete left;
     if (this->right != nullptr)
@@ -73,4 +72,13 @@ void Prisoners::give_space(string check)
         this->relative_1 = new Person;
         this->relative_2 = new Person;
     }
+}
+
+void Prisoners::give_take_credit()
+{
+    if(this->workDone)
+        this->credits=this->credits+10;
+    else
+        this->credits=this->credits-10;
+    this->workDone=false;
 }
