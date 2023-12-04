@@ -4,7 +4,9 @@
   "useNewFormat": true
 }]]></component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="Chillar_Management_System" targetName="Chillar_Management_System" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -71,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701690552468</updated>
-      <workItem from="1701690554113" duration="8764000" />
+      <workItem from="1701690554113" duration="9001000" />
     </task>
     <servers />
   </component>

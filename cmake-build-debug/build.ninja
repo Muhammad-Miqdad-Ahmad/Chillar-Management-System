@@ -103,6 +103,12 @@ build CMakeFiles/Chillar_Management_System.dir/Visitor.cpp.obj: CXX_COMPILER__Ch
   OBJECT_DIR = CMakeFiles\Chillar_Management_System.dir
   OBJECT_FILE_DIR = CMakeFiles\Chillar_Management_System.dir
 
+build CMakeFiles/Chillar_Management_System.dir/PrisonersUi.cpp.obj: CXX_COMPILER__Chillar_Management_System_Debug D$:/Waleed/uni/3rd$ sem/DSA/project/Chillar-Management-System/PrisonersUi.cpp || cmake_object_order_depends_target_Chillar_Management_System
+  DEP_FILE = CMakeFiles\Chillar_Management_System.dir\PrisonersUi.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Chillar_Management_System.dir
+  OBJECT_FILE_DIR = CMakeFiles\Chillar_Management_System.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Chillar_Management_System
@@ -111,7 +117,7 @@ build CMakeFiles/Chillar_Management_System.dir/Visitor.cpp.obj: CXX_COMPILER__Ch
 #############################################
 # Link the executable Chillar_Management_System.exe
 
-build Chillar_Management_System.exe: CXX_EXECUTABLE_LINKER__Chillar_Management_System_Debug CMakeFiles/Chillar_Management_System.dir/main.cpp.obj CMakeFiles/Chillar_Management_System.dir/admin.cpp.obj CMakeFiles/Chillar_Management_System.dir/Convicted.cpp.obj CMakeFiles/Chillar_Management_System.dir/Functions.cpp.obj CMakeFiles/Chillar_Management_System.dir/hierarchy.cpp.obj CMakeFiles/Chillar_Management_System.dir/Person.cpp.obj CMakeFiles/Chillar_Management_System.dir/Prisoners.cpp.obj CMakeFiles/Chillar_Management_System.dir/test.cpp.obj CMakeFiles/Chillar_Management_System.dir/Visitor.cpp.obj
+build Chillar_Management_System.exe: CXX_EXECUTABLE_LINKER__Chillar_Management_System_Debug CMakeFiles/Chillar_Management_System.dir/main.cpp.obj CMakeFiles/Chillar_Management_System.dir/admin.cpp.obj CMakeFiles/Chillar_Management_System.dir/Convicted.cpp.obj CMakeFiles/Chillar_Management_System.dir/Functions.cpp.obj CMakeFiles/Chillar_Management_System.dir/hierarchy.cpp.obj CMakeFiles/Chillar_Management_System.dir/Person.cpp.obj CMakeFiles/Chillar_Management_System.dir/Prisoners.cpp.obj CMakeFiles/Chillar_Management_System.dir/test.cpp.obj CMakeFiles/Chillar_Management_System.dir/Visitor.cpp.obj CMakeFiles/Chillar_Management_System.dir/PrisonersUi.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Chillar_Management_System.dir
