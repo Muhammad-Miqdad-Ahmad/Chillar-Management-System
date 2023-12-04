@@ -10,14 +10,14 @@ Admin::Admin()
 
 bool Admin::admin_UI()
 {
-    Person admin;
-    string password;
+    // Person admin;
+    // string password;
     char choice;
-    cin >> admin;
-    cout << "Enter the password: ";
-    cin >> password;
-    if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
-        return false;
+    // cin >> admin;
+    // cout << "Enter the password: ";
+    // cin >> password;
+    // if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
+    //     return false;
 
     system("clear");
     cout << "Welcome Mr." << this->admin.name << endl;
@@ -221,7 +221,7 @@ bool Admin::add_prisoner()
     }
 
     this->generate_ID(input, data->prisoner_count, prisoner_grade); // this function will generate the new ID of for the new prisoner
-    data->add_chunk(data->root, input, r1, r2, 0);                     // add the info of the new Prisoner in the tree
+    data->add_chunk(data->root, input, r1, r2, 0);                  // add the info of the new Prisoner in the tree
     data->make_full_balanced();                                     // balance the tree again
 
     ofstream file(file_name + ".txt", ios::out | ios::trunc);
@@ -247,16 +247,16 @@ bool Admin::add_prisoner()
 bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_grade)
 {
     // we open the file that contains all the removed IDs
+    bool check=true;
     ifstream file_1("Prisoners Data\\Removed_IDs.txt", ios::in);
     if (!file_1.is_open())
         return false;
 
     // this is a function that tells us if a file is empty or not.
-    if (!is_it_empty(file_1))
-    // returns false if the file is not empty
+    if (!is_it_empty(file_1)) // returns false if the file is not empty
     {
         string garbage;
-        queue<string> unused_IDs;
+        vector<string> unused_IDs;
 
         // loop to iterate through the entre file.
         getline(file_1, garbage);
@@ -264,22 +264,34 @@ bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_gra
         {
             string temp;
             getline(file_1, temp);
-            unused_IDs.push(temp);
+            unused_IDs.push_back(temp);
         }
-        new_prisoner->ID = unused_IDs.front();
-        unused_IDs.pop();
         file_1.close();
-        ofstream file("Prisoners Data\\Removed_IDs.txt", ios::out | ios::trunc);
-        while (!unused_IDs.empty())
+        for (int i = 0; i < unused_IDs.size(); i++)
         {
-            file << unused_IDs.front();
-            unused_IDs.pop();
+            if (unused_IDs[i][0] == prisoner_grade[0])
+            {
+                new_prisoner->ID = unused_IDs[i];
+                unused_IDs.erase(unused_IDs.begin()+i);
+                check=false;
+                break;
+            }
+        }
+        if(check)
+            goto jump;
+        ofstream file("Prisoners Data\\Removed_IDs.txt", ios::out | ios::trunc);
+        for (auto &&i : unused_IDs)
+        {
+            file << endl
+                 << i;
         }
         file.close();
+        unused_IDs.clear();
     }
     else
     {
         // returns true if the file is empty
+        jump:
         string new_id;
         new_id = to_string(number);
         new_prisoner->ID = prisoner_grade + new_id;
@@ -341,8 +353,8 @@ bool Admin::display_data()
     string grade, file_name;
     cout << "Enter the grade of the Prisoners whose data you want to see: ";
     cin >> grade;
-    file_name=grade;
-    this->data=new Hierarchy;
+    file_name = grade;
+    this->data = new Hierarchy;
 
     if (!this->store_from_file(data, file_name))
         return false;
@@ -350,4 +362,3 @@ bool Admin::display_data()
     cout << data;
     system("cmd/ C pause");
 }
-
