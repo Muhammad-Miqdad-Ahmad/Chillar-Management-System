@@ -157,15 +157,29 @@ void Hierarchy::write_file_in_BFS(ofstream &file)
 
 Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
 {
+    cout << "S1\n";
+    if (chunk == nullptr)
+    {
+        cout << "Inki pinki ponky, daddy bought a donkey, donkey die, daddy cry\n";
+    }
+
     if (chunk == nullptr || chunk->root->equal(to_find))
+    {
+        cout << "S4\n";
+
         return chunk;
+    }
     else if (to_find->less_than(chunk->root))
     {
+        cout << "S1\n";
+
         cout << "Left pe jata he\n";
         return this->search(chunk->left, to_find);
     }
     else
     {
+        cout << "S1\n";
+
         cout << "right pe ja rha he\n";
         return this->search(chunk->right, to_find);
     }
@@ -264,14 +278,17 @@ ostream &operator<<(ostream &out, Hierarchial_tree *data)
 Prisoners *Hierarchial_tree::searchGrade(Hierarchy *&chunk, abstract *tofind)
 {
     cout << "1" << endl;
-    if (chunk == nullptr || chunk->prisoner_grade == tofind->ID[0])
+    if (chunk == nullptr)
+    {
+        return nullptr;
+    }
+    if (chunk->prisoner_grade == tofind->ID[0])
     {
         cout << "2" << endl;
         if (chunk == nullptr)
         {
-            cout<<"Inki pinki ponky, daddy bought a donkey, donkey die, daddy cry\n";
+            cout << "Inki pinki ponky, daddy bought a donkey, donkey die, daddy cry\n";
         }
-        
 
         return chunk->search(chunk->root, tofind);
     }
