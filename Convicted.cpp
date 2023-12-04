@@ -7,7 +7,6 @@ bool Convicted::operator==(abstract &data)
 
 bool Convicted::equal(abstract &data)
 {
-    cout << "kitni bar call hota he bhosra\n";
     return (this->ID == data.ID && this->name == data.name);
 }
 

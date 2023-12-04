@@ -165,7 +165,7 @@ bool Admin::remove_user()
     if (!file.is_open())
         return false;
 
-    data->write_file_in_BFS(data->root, file); // we write the file using BFS
+    data->write_file_in_BFS(file); // we write the file using BFS
     file.close();
     return true;
 }
@@ -177,22 +177,18 @@ bool Admin::add_prisoner()
     cin >> prisoner_grade;
     file_name = prisoner_grade;
     this->data = new Hierarchy;
-    abstract *new_prisoner = new Convicted;
-    Person *r1, *r2;
 
     // ye function hmeen store kr k de deta he sb ik vector main.
     //  agar ye sahi ni chla to false return kr dega.
     if (!this->store_from_file(data, file_name))
         return false;
 
-    cout << data << endl
-         << endl
-         << endl;
-    system("cmd /C pause");
+    Person *r1=nullptr, *r2=nullptr;
+    abstract *new_prisoner = new Convicted;
 
     new_prisoner->input();
 
-    if (prisoner_grade != "A" || prisoner_grade != "B" || prisoner_grade != "C")
+    if (prisoner_grade != "A" && prisoner_grade != "B" && prisoner_grade != "C")
     {
         r1 = new Person;
         r2 = new Person;
@@ -211,11 +207,14 @@ bool Admin::add_prisoner()
     if (!file.is_open())
         return false;
 
-    data->write_file_in_BFS(data->root, file); // write the balanced tree in the file.
+    data->write_file_in_BFS(file); // write the balanced tree in the file.
     file.close();
 
-    delete r1;
-    delete r2;
+    if(r1!=nullptr)
+        delete r1;
+    if(r2!=nullptr)
+        delete r2;
+
     delete data;
     delete new_prisoner;
     data = nullptr;
@@ -281,26 +280,25 @@ bool Admin::modify_data()
     input->input();             // take input
 
     //! yhan se modification start hoi he aag eyhan se sb krna modify
-    cout << (data->root->root->name == input->name) << endl;
-    cout << data->root->root->name << endl;
-    cout << input->name << endl
-         << endl;
-    cout << data->root->root->name.length() << endl;
-    cout << input->name.length() << endl
-         << endl;
-    cout << data->root->root->name[10] << endl;
-    cout << input->name[10] << endl
-         << endl;
-    system("cmd /C pause");
-    exit(-1);
+    // cout << (data->root->left->root->ID == input->ID) << endl;
+    // cout << data->root->left->root->ID << endl;
+    // cout << input->ID << endl
+    //      << endl;
+    // cout << data->root->left->root->name.length() << endl;
+    // cout << input->name.length() << endl
+    //      << endl;
+    // system("cmd /C pause");
+    // exit(-1);
     //! yhan tk ka cod useless he debuging k liye bs
 
 
     Prisoners *to_modify = data->search(data->root, input); // function to search the data.
+
     to_modify->root->modify();                              // dunction to modify the data
 
+
     ofstream file(file_name + ".txt", ios::out | ios::trunc); // open the file to rewrite the file
-    data->write_file_in_BFS(data->root, file);                // write into the file
+    data->write_file_in_BFS(file);                // write into the file
     file.close();                                             // close the file
 
     delete this->data;

@@ -12,16 +12,17 @@ Prisoners::Prisoners(abstract *data)
     this->root = data;
 }
 
-Prisoners::Prisoners(abstract *data, Person *data1 ,Person *data2)
+Prisoners::Prisoners(abstract *data, Person *data1, Person *data2)
 {
-    left = right = nullptr;
+    this->left = this->right = nullptr;
     this->root = data;
-    this->relative_1=data1;
-    this->relative_2=data2;
+    this->relative_1 = data1;
+    this->relative_2 = data2;
 }
 
 Prisoners::~Prisoners()
 {
+    cout << "\t\t\tis this called\n\n\n";
     if (this->left != nullptr)
         delete left;
     if (this->right != nullptr)
@@ -52,10 +53,10 @@ ofstream &operator<<(ofstream &out, Prisoners *data)
 void Prisoners::write(ofstream &out)
 {
     this->root->write(out);
-    if(relative_1)
-    out << this->relative_1;
-    if(relative_2)
-    out << this->relative_2;
+    if (this->relative_1 != nullptr)
+        out << this->relative_1;
+    if (this->relative_2 != nullptr)
+        out << this->relative_2;
 }
 
 void Prisoners::give_space(string check)

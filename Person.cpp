@@ -26,6 +26,7 @@ bool Person::operator==(abstract &data)
 
 bool Person::equal(abstract &data)
 {
+    cout << "kitni bar call hota he bhosra\nPerson obj ka ka\n";
     if (this->ID == data.ID)
         if (this->name == data.name)
             return true;
@@ -34,7 +35,7 @@ bool Person::equal(abstract &data)
 
 bool Person::equal(abstract *&data)
 {
-    cout << "kitni bar call hota he bhosra\n";
+    cout << "kitni bar call hota he bhosra\nPerson pointer ka\n";
     if (this->ID == data->ID)
         if (this->name == data->name)
             return true;
@@ -331,7 +332,10 @@ Capture_date::Capture_date()
 
 ostream &operator<<(ostream &out, Capture_date &data)
 {
-    out << data.month << " " << data.date << data.year;
+    if (data.month == "" || data.year == "" || data.date == "")
+        out << "Life without parole";
+    else
+        out << data.month << " " << data.date << data.year;
     return out;
 }
 
@@ -349,7 +353,7 @@ istream &operator>>(istream &in, Capture_date &data)
 
 ofstream &operator<<(ofstream &out, Capture_date &data)
 {
-    if (data.month == "bob" || data.year == "bob" || data.date == "bob")
+    if (data.month == "" || data.year == "" || data.date == "")
         out << "Life without parole";
     else
         out << data.month << " " << data.date << data.year;
@@ -366,11 +370,11 @@ ifstream &operator>>(ifstream &in, Capture_date &data)
 
 void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
 {
-    if (sentence == "Life without parole"|| sentence == "forever")
+    if (sentence == "Life without parole"|| sentence == "forever"|| sentence == "Forever" || sentence == "N/A")
     {
-        this->date = "bob";
-        this->month = "bob";
-        this->year = "bob";
+        this->date = "";
+        this->month = "";
+        this->year = "";
         return;
     }
 
