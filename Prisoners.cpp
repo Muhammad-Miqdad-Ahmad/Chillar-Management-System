@@ -22,7 +22,7 @@ Prisoners::Prisoners(abstract *data, Person *data1, Person *data2)
 
 Prisoners::~Prisoners()
 {
-    cout << "\t\t\tis this called\n\n\n";
+    cout << "\t\t\tdistructor of Prisoners\n\n\n";
     if (this->left != nullptr)
         delete left;
     if (this->right != nullptr)

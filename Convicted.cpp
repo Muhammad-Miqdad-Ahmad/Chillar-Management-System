@@ -402,6 +402,7 @@ void Convicted::give_space(string yaan)
 
 void Convicted::input()
 {
+    system("clear");
     cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cout << "Enter the name of the convicted: ";
@@ -423,13 +424,14 @@ void Convicted::input()
     cin >> this->captured_on;
     this->expected_release.cal_expected_date(captured_on, sentence);
     cout << "What was the crime: ";
-    cin.ignore();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
     getline(cin, this->crime);
     return;
 }
 
 void Convicted::modify()
 {
+    system("clear");
     char choice;
 jump:
     cout << "Chose what you want to do\nPress 'a' to change name\nPress 'b' to change age\nPress 'c' to change weight\nPress 'd' to change height\nPress 'e' to change sentence\nPress 'f' to change crime\nPress 'g' to change capture date\nEnter your input: ";
@@ -439,30 +441,32 @@ jump:
     case 'a':
         cout << "The old name of the convicted is: " << this->name << endl;
         cout << "Enter the new name of the Convicted: ";
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         getline(cin, this->name);
         break;
     case 'b':
         cout << "The old age of the convicted is: " << this->age << endl;
         cout << "Enter the new age of the Convicted: ";
-        getline(cin, this->age);
+        cin >> this->age;
         break;
     case 'c':
         cout << "The old weight of the convicted is: " << this->weight << endl;
         cout << "Enter the new weight in pounds Convicted: ";
-        getline(cin, this->weight);
+        cin >> this->weight;
         this->weight = this->weight + " lbs";
         break;
     case 'd':
         cout << "The old height of the convicted is: " << this->height << endl;
         cout << "Enter the new height of the Convicted in feet: ";
-        getline(cin, this->height_ft);
+        cin >> this->height_ft;
         cout << "Enter the new height of the Convicted in inches: ";
-        getline(cin, this->height_in);
+        cin >> this->height_in;
         this->height = this->height_ft + "'" + this->height_in + "\"";
         break;
     case 'e':
         cout << "The old sentence of the convicted is: " << this->sentence << endl;
         cout << "Enter the new sentence of the Convicted: ";
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         getline(cin, this->sentence);
         this->expected_release.cal_expected_date(this->captured_on, this->sentence);
         cout << "Witch the change of the sentence the expected release date has also been modified\nThe new date is: " << this->expected_release;
@@ -470,6 +474,7 @@ jump:
     case 'f':
         cout << "The old crime of the convicted is: " << this->crime << endl;
         cout << "Enter the new crime in pounds Convicted: ";
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         getline(cin, this->crime);
         break;
     case 'g':

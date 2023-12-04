@@ -170,9 +170,12 @@ Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
 Prisoners *Hierarchy::get_smallest()
 {
     Prisoners *move = nullptr;
-    for (move = this->root; move->left != nullptr; move = move->left)
-        ;
-    return move;
+    for (move = this->root; move->left != nullptr; move = move->left);
+
+    if (move->right == nullptr)
+        return move;
+    else
+        return move->right;
 }
 
 ostream &operator<<(ostream &out, Hierarchy *data)
@@ -200,6 +203,38 @@ ofstream &operator<<(ofstream &out, Hierarchy *data)
     return out;
 }
 
+void Hierarchial_tree::add_chunk(Hierarchy *&chunk, char data)
+{
+    if (chunk == nullptr) // if chunk is null then make a new node
+        chunk = new Hierarchy(data);
+    else if (chunk->prisoner_grade > data) // else search
+        add_chunk(chunk->right, data);
+    else if (chunk->prisoner_grade < data)
+        add_chunk(chunk->left, data);
+}
+
+void Hierarchy::delete_empty_node(Prisoners* &to_del)
+{
+    Prisoners* move=this->root;
+    while (true)
+    {
+        if(move->left->root->equal(to_del->root))
+        {
+            move->left=nullptr;
+            break;
+        }
+        else if(move->right->root->equal(to_del->root))
+        {
+            move->right=nullptr;
+            break;
+        }
+        else
+            move=move->left;
+    }
+    delete to_del;
+    to_del=nullptr;
+}
+
 Hierarchial_tree::~Hierarchial_tree()
 {
     if (this->root)
@@ -213,16 +248,6 @@ Hierarchial_tree::Hierarchial_tree()
     {
         add_chunk(this->root, Constants::hierarchial_classes[i]);
     }
-}
-
-void Hierarchial_tree::add_chunk(Hierarchy *&chunk, char data)
-{
-    if (chunk == nullptr) // if chunk is null then make a new node
-        chunk = new Hierarchy(data);
-    else if (chunk->prisoner_grade > data) // else search
-        add_chunk(chunk->right, data);
-    else if (chunk->prisoner_grade < data)
-        add_chunk(chunk->left, data);
 }
 
 ostream &operator<<(ostream &out, Hierarchial_tree *data)

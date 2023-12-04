@@ -9,6 +9,7 @@ public:
     Prisoners *root;     // The root of the prisoner class. The tree formed will the one holding the data of the prisoners
     int prisoner_count;
     Hierarchy *left, *right; // directions to form a tree. The grade determining tree
+
     // constructors
     Hierarchy();
     Hierarchy(char prisoner_class);
@@ -23,6 +24,7 @@ public:
     // function
     Prisoners* get_smallest();
     void make_full_balanced();
+    void delete_empty_node(Prisoners* &data);
     Prisoners *search(Prisoners *&chunk, abstract* to_find);
     void write_file_in_BFS(ofstream &file);
     void store_del_tree(Prisoners *&chunk, vector<Prisoners *> &data);
