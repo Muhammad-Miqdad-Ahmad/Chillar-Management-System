@@ -38,6 +38,7 @@ public:
     void modify() override;
     void display() override;
     bool is_empty() override;
+    void remove_spaces() override;
     void read(ifstream &file) override;
     void write(ofstream &file) override;
 
@@ -91,11 +92,14 @@ public:
     // ~Convicted();
 
     // functions
+    void give_space(string yada);
+
+    // override functions
     void input() override;
     void modify() override;
     void display() override;
     bool is_empty() override;
-    void give_space(string yada);
+    void remove_spaces() override;
     void read(ifstream &file) override;
     void write(ofstream &file) override;
 
@@ -150,7 +154,7 @@ public:
     // constructors
     Prisoners();
     Prisoners(abstract *data);
-    Prisoners(abstract *data, Person *data1 ,Person *data2);
+    Prisoners(abstract *data, Person *data1, Person *data2);
     // Prisoners(Convicted *data);
 
     // destructors

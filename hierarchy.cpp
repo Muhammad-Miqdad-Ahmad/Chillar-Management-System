@@ -75,6 +75,7 @@ void Hierarchy::add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_
 {
     if (chunk == nullptr)
     {
+        data->remove_spaces();
         chunk = new Prisoners(data, relative_1, relative_2); // prisoners data
         this->prisoner_count++;                              // increase the prisoner count
     }

@@ -494,3 +494,9 @@ bool Convicted::is_empty()
         return true;
     return false;
 }
+
+void Convicted::remove_spaces()
+{
+    remove(this->ID.begin(),this->ID.end(),' ');
+}
+

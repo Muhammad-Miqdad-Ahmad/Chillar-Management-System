@@ -3,6 +3,7 @@
 #include "hierarchy.h"
 #include <windows.h>
 #include "Visitor.h"
+#include <algorithm>
 #include <typeinfo>
 #include <fstream>
 #include "admin.h"

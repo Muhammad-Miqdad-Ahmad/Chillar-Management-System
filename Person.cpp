@@ -317,6 +317,11 @@ bool Person::is_empty()
     return true;
 }
 
+void Person::remove_spaces()
+{
+    remove(this->ID.begin(),this->ID.end(),' ');
+}
+
 Capture_date::Capture_date()
 {
     this->date = "";
@@ -414,5 +419,4 @@ void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
     this->month = Constants::monthNames[monthCap - 1];
     this->year = to_string(yearCap);
 }
-
 
