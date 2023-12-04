@@ -7,6 +7,7 @@ class abstract
 public:
     string ID;
     string name;
+    
 
     // functions
     virtual void input() = 0;
