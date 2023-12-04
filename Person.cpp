@@ -26,7 +26,6 @@ bool Person::operator==(abstract &data)
 
 bool Person::equal(abstract &data)
 {
-    cout << "kitni bar call hota he bhosra\nPerson obj ka ka\n";
     if (this->ID == data.ID)
         if (this->name == data.name)
             return true;
@@ -35,7 +34,6 @@ bool Person::equal(abstract &data)
 
 bool Person::equal(abstract *&data)
 {
-    cout << "kitni bar call hota he bhosra\nPerson pointer ka\n";
     if (this->ID == data->ID)
         if (this->name == data->name)
             return true;

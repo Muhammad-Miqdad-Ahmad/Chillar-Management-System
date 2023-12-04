@@ -14,10 +14,12 @@
 int main()
 {
     Hierarchial_tree *trial= new Hierarchial_tree;
-    abstract *tofind=new Person;
+    // cout << trial;
+    abstract *tofind = new Person;
     tofind->input();
-    trial->searchGrade(trial->root,tofind);
-    // Admin admin(trial);
-    // admin.admin_UI();
+    Prisoners* data=trial->searchGrade(trial->root,tofind);
+    if (data==nullptr)
+        cout << "Ye nul he\n";
+    cout << data;
     return 0;
 }
