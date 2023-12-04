@@ -7,6 +7,7 @@ class Admin
 private:
     Person admin;
     string code;
+    abstract *input;
     Hierarchy *data;
     bool remove_user();
     bool add_prisoner();

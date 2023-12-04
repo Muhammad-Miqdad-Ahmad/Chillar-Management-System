@@ -113,8 +113,9 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
 // this is the function to simply remove some data from the system
 bool Admin::remove_user()
 {
+    system("clear");
     this->data = new Hierarchy;
-    abstract *input = new Person;
+    this->input = new Person;
     string prisoner_grade, prisoner_name, prisoner_ID;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
@@ -123,7 +124,6 @@ bool Admin::remove_user()
     if (!this->store_from_file(data, file_name)) // this will return a tree
         return false;
 
-    cout << data << endl;
     input->input(); // get the input in the person to find the person to delete
 
     Prisoners *to_del = data->search(data->root, input); // search and return a prisoner pointer
@@ -136,6 +136,12 @@ bool Admin::remove_user()
 
     Prisoners *smallest = data->get_smallest(); // we will locate the smallest node in the tree
     // then we swap the data of the smallest with the one to delete
+    if (smallest == nullptr)
+    {
+        cout << "Smallest was nul\n";
+        exit(-1);
+    }
+
     swap(to_del->root, smallest->root);
     swap(to_del->relative_1, smallest->relative_1);
     swap(to_del->relative_2, smallest->relative_2);
@@ -147,7 +153,6 @@ bool Admin::remove_user()
 
     smallest->write(file2);                       // we write the smallest value (That has been swapped by the one to delete so technically the value we want to delete is in the smallest) in the file
     file2 << "\nTime of release: " << get_time(); // we also write the time when the data was removed from our data base.
-
     file1 << endl
           << smallest->root->ID; // we write the ID of the prisoner in the removed IDs file so that it can be used again.
 
@@ -157,42 +162,45 @@ bool Admin::remove_user()
     if (file1.is_open() || file1.is_open())
         return false;
 
-    delete smallest;                                          // delete the data to be removed.
-    smallest = to_del = nullptr;                              // we null all the pointers
+    this->data->delete_empty_node(smallest); // delete the data to be removed.
+    smallest = to_del = nullptr;             // we null all the pointers
+
     data->make_full_balanced();                               // balance the tree again
     ofstream file(file_name + ".txt", ios::out | ios::trunc); // we open the file again to re write the file
 
     if (!file.is_open())
         return false;
 
-    data->write_file_in_BFS(data->root, file); // we write the file using BFS
+    data->write_file_in_BFS(file); // we write the file using BFS
     file.close();
+
+    delete this->data;
+    delete input;
+    input=nullptr;
+    this->data=nullptr;
     return true;
 }
 
 bool Admin::add_prisoner()
 {
+    system("clear");
     string prisoner_grade, file_name;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
     file_name = prisoner_grade;
     this->data = new Hierarchy;
-    abstract *new_prisoner = new Convicted;
-    Person *r1, *r2;
 
     // ye function hmeen store kr k de deta he sb ik vector main.
     //  agar ye sahi ni chla to false return kr dega.
     if (!this->store_from_file(data, file_name))
         return false;
 
-    cout << data << endl
-         << endl
-         << endl;
-    system("cmd /C pause");
+    Person *r1 = nullptr, *r2 = nullptr;
+    this->input = new Convicted;
 
-    new_prisoner->input();
+    input->input();
 
-    if (prisoner_grade != "A" || prisoner_grade != "B" || prisoner_grade != "C")
+    if (prisoner_grade != "A" && prisoner_grade != "B" && prisoner_grade != "C")
     {
         r1 = new Person;
         r2 = new Person;
@@ -203,24 +211,27 @@ bool Admin::add_prisoner()
         cin >> r2;
     }
 
-    this->generate_ID(new_prisoner, data->prisoner_count, prisoner_grade); // this function will generate the new ID of for the new prisoner
-    data->add_chunk(data->root, new_prisoner, r1, r2);                     // add the info of the new Prisoner in the tree
+    this->generate_ID(input, data->prisoner_count, prisoner_grade); // this function will generate the new ID of for the new prisoner
+    data->add_chunk(data->root, input, r1, r2);                     // add the info of the new Prisoner in the tree
     data->make_full_balanced();                                            // balance the tree again
 
     ofstream file(file_name + ".txt", ios::out | ios::trunc);
     if (!file.is_open())
         return false;
 
-    data->write_file_in_BFS(data->root, file); // write the balanced tree in the file.
+    data->write_file_in_BFS(file); // write the balanced tree in the file.
     file.close();
 
-    delete r1;
-    delete r2;
-    delete data;
-    delete new_prisoner;
-    data = nullptr;
+    if (r1 != nullptr)
+        delete r1;
+    if (r2 != nullptr)
+        delete r2;
+
+    delete this->data;
+    delete this->input;
     r1 = r2 = nullptr;
-    new_prisoner = nullptr;
+    this->data = nullptr;
+    this->input = nullptr;
     return true;
 }
 
@@ -233,10 +244,11 @@ bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_gra
 
     // this is a function that tells us if a file is empty or not.
     if (!is_it_empty(file_1))
-    {
         // returns false if the file is not empty
+    {   string garbage;
         queue<string> unused_IDs;
         // loop to iterate through the entre file.
+        getline(file_1,garbage);
         while (!file_1.eof())
         {
             string temp;
@@ -268,6 +280,7 @@ bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_gra
 
 bool Admin::modify_data()
 {
+    system("clear");
     this->data = new Hierarchy; // give space to the Hierarchy pointer in the class to make a tree
     string prisoner_grade, file_name;
     cout << "Enter the grade of the prisoner whose data you want to modify: ";
@@ -277,30 +290,30 @@ bool Admin::modify_data()
     if (!this->store_from_file(data, file_name)) // send the file name an dit will return a tree
         return false;                            // if something goes wrong the function will return false
 
-    Person *input = new Person; // take input of the person whose data wants to be modified
+    this->input = new Person; // take input of the person whose data wants to be modified
     input->input();             // take input
 
     //! yhan se modification start hoi he aag eyhan se sb krna modify
-    cout << (data->root->root->name == input->name) << endl;
-    cout << data->root->root->name << endl;
-    cout << input->name << endl
-         << endl;
-    cout << data->root->root->name.length() << endl;
-    cout << input->name.length() << endl
-         << endl;
-    cout << data->root->root->name[10] << endl;
-    cout << input->name[10] << endl
-         << endl;
-    system("cmd /C pause");
-    exit(-1);
+    // cout << (data->root->left->root->ID == input->ID) << endl;
+    // cout << data->root->left->root->ID << endl;
+    // cout << input->ID << endl
+    //      << endl;
+    // cout << data->root->left->root->name.length() << endl;
+    // cout << input->name.length() << endl
+    //      << endl;
+    // system("cmd /C pause");
+    // exit(-1);
     //! yhan tk ka cod useless he debuging k liye bs
 
-
     Prisoners *to_modify = data->search(data->root, input); // function to search the data.
-    to_modify->root->modify();                              // dunction to modify the data
+
+    if (to_modify == nullptr)
+        return false;
+
+    to_modify->root->modify(); // dunction to modify the data
 
     ofstream file(file_name + ".txt", ios::out | ios::trunc); // open the file to rewrite the file
-    data->write_file_in_BFS(data->root, file);                // write into the file
+    data->write_file_in_BFS(file);                            // write into the file
     file.close();                                             // close the file
 
     delete this->data;
