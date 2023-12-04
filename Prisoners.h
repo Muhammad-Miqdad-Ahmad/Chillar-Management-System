@@ -34,7 +34,10 @@ public:
     ~Person();
 
     // functions
+    void input() override;
+    void modify() override;
     void display() override;
+    bool is_empty() override;
     void read(ifstream &file) override;
     void write(ofstream &file) override;
 
@@ -81,7 +84,6 @@ class Convicted : public abstract
 {
 private:
     string age, height, weight, sentence, crime, height_ft, height_in;
-    int credit;
     Capture_date captured_on, expected_release;
 
 public:
@@ -89,7 +91,11 @@ public:
     // ~Convicted();
 
     // functions
+    void input() override;
+    void modify() override;
     void display() override;
+    bool is_empty() override;
+    void give_space(string yada);
     void read(ifstream &file) override;
     void write(ofstream &file) override;
 
@@ -144,6 +150,7 @@ public:
     // constructors
     Prisoners();
     Prisoners(abstract *data);
+    Prisoners(abstract *data, Person *data1 ,Person *data2);
     // Prisoners(Convicted *data);
 
     // destructors
@@ -151,8 +158,9 @@ public:
 
     // friend classes
     friend class Hierarchy;
-
+    friend class Admin;
     // functions
+    void give_space(string);
     void write(ofstream &out);
 
     // friend functions

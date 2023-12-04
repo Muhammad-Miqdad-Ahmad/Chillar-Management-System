@@ -34,14 +34,6 @@ void quick_sort(vector<Prisoners*> &array, int first, int last)
     }
 }
 
-//// template <typename datatype>
-//// void quick_swap(datatype &a, datatype &b)
-//// {
-////     datatype temp = a;
-////     b = a;
-////     a = temp;
-//// }
-
 //the peek function checks the next character in the file without extracting it.
 //if teh peek is equal to the end of file character then that means there are no more characters to read.
 //since we are checking the first character then that means there are no characters in the file at all. 

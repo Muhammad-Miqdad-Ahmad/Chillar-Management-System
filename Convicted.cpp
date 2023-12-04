@@ -2,26 +2,18 @@
 
 bool Convicted::operator==(abstract &data)
 {
-    if (this->ID == data.ID)
-        if (this->name == data.name)
-            return true;
-    return false;
+    return (this->ID == data.ID || this->name == data.name);
 }
 
 bool Convicted::equal(abstract &data)
 {
-    if (this->ID == data.ID)
-        if (this->name == data.name)
-            return true;
-    return false;
+    cout << "kitni bar call hota he bhosra\n";
+    return (this->ID == data.ID && this->name == data.name);
 }
 
-bool Convicted::equal(abstract* &data)
+bool Convicted::equal(abstract *&data)
 {
-    if (this->ID == data->ID)
-        if (this->name == data->name)
-            return true;
-    return false;
+    return (this->ID == data->ID && this->name == data->name);
 }
 
 bool Convicted::operator!=(abstract &data)
@@ -34,13 +26,10 @@ bool Convicted::operator!=(abstract &data)
 
 bool Convicted::not_equal(abstract &data)
 {
-    if (this->ID != data.ID)
-        if (this->name != data.name)
-            return true;
-    return false;
+    return (this->ID != data.ID || this->name != data.name);
 }
 
-bool Convicted::not_equal(abstract* &data)
+bool Convicted::not_equal(abstract *&data)
 {
     if (this->ID != data->ID)
         if (this->name != data->name)
@@ -57,16 +46,22 @@ bool Convicted::operator<(abstract &data)
 
 bool Convicted::less_than(abstract &data)
 {
-    if (this->ID < data.ID)
+    if (this->ID.size() < data.ID.size())
         return true;
-    return false;
+    else if (this->ID.size() == data.ID.size())
+        return (this->ID < data.ID);
+    else
+        return false;
 }
 
-bool Convicted::less_than(abstract* &data)
+bool Convicted::less_than(abstract *&data)
 {
-    if (this->ID < data->ID)
+    if (this->ID.size() < data->ID.size())
         return true;
-    return false;
+    else if (this->ID.size() == data->ID.size())
+        return (this->ID < data->ID);
+    else
+        return false;
 }
 
 bool Convicted::operator<=(abstract &data)
@@ -80,16 +75,22 @@ bool Convicted::operator<=(abstract &data)
 
 bool Convicted::less_than_equal(abstract &data)
 {
-    if (this->ID <= data.ID)
+    if (this->ID.size() <= data.ID.size())
         return true;
-    return false;
+    else if (this->ID.size() == data.ID.size())
+        return (this->ID <= data.ID);
+    else
+        return false;
 }
 
-bool Convicted::less_than_equal(abstract* &data)
+bool Convicted::less_than_equal(abstract *&data)
 {
-    if (this->ID <= data->ID)
+    if (this->ID.size() <= data->ID.size())
         return true;
-    return false;
+    else if (this->ID.size() == data->ID.size())
+        return (this->ID <= data->ID);
+    else
+        return false;
 }
 
 bool Convicted::operator>(abstract &data)
@@ -101,16 +102,22 @@ bool Convicted::operator>(abstract &data)
 
 bool Convicted::greater_than(abstract &data)
 {
-    if (this->ID > data.ID)
+    if (this->ID.size() > data.ID.size())
         return true;
-    return false;
+    else if (this->ID.size() == data.ID.size())
+        return (this->ID > data.ID);
+    else
+        return false;
 }
 
-bool Convicted::greater_than(abstract* &data)
+bool Convicted::greater_than(abstract *&data)
 {
-    if (this->ID > data->ID)
+    if (this->ID.size() > data->ID.size())
         return true;
-    return false;
+    else if (this->ID.size() == data->ID.size())
+        return (this->ID > data->ID);
+    else
+        return false;
 }
 
 bool Convicted::operator>=(abstract &data)
@@ -122,32 +129,32 @@ bool Convicted::operator>=(abstract &data)
 
 bool Convicted::greater_than_equal(abstract &data)
 {
-    if (this->ID >= data.ID)
+    if (this->ID.size() >= data.ID.size())
         return true;
-    return false;
+    else if (this->ID.size() == data.ID.size())
+        return (this->ID >= data.ID);
+    else
+        return false;
 }
 
-bool Convicted::greater_than_equal(abstract* &data)
+bool Convicted::greater_than_equal(abstract *&data)
 {
-    if (this->ID >= data->ID)
+    if (this->ID.size() >= data->ID.size())
         return true;
-    return false;
+    else if (this->ID.size() == data->ID.size())
+        return (this->ID >= data->ID);
+    else
+        return false;
 }
 
 bool Convicted::operator==(abstract *&data)
 {
-    if (this->ID == data->ID)
-        if (this->name == data->name)
-            return true;
-    return false;
+    return (this->ID == data->ID || this->name == data->name);
 }
 
 bool Convicted::operator!=(abstract *&data)
 {
-    if (this->ID != data->ID)
-        if (this->name != data->name)
-            return true;
-    return false;
+    return (this->ID != data->ID || this->name != data->name);
 }
 
 bool Convicted::operator<(abstract *&data)
@@ -183,8 +190,6 @@ bool Convicted::operator>=(abstract *&data)
 
 Convicted::Convicted()
 {
-    this->relative_1 = nullptr;
-    this->relative_2 = nullptr;
     this->ID = "";
     this->name = "";
     this->age = "";
@@ -193,7 +198,6 @@ Convicted::Convicted()
     this->height_in = "";
     this->crime = "";
     this->height = "";
-    this->credit = 0;
 }
 
 // ofstream &operator<<(ofstream &out, Convicted &data)
@@ -209,10 +213,6 @@ istream &operator>>(istream &in, Convicted &data)
     getline(in, data.name);
     cout << "Enter the age of the convicted: ";
     in >> data.age;
-    if (data.relative_1)
-        in >> *data.relative_1;
-    if (data.relative_2)
-        in >> *data.relative_2;
     cout << "Enter the height in feet of the convicted: ";
     in >> data.height_ft;
     cout << "Enter the height in inches of the convicted: ";
@@ -232,16 +232,12 @@ istream &operator>>(istream &in, Convicted &data)
     return in;
 }
 
-istream &operator>>(istream &in, Convicted* &data)
+istream &operator>>(istream &in, Convicted *&data)
 {
     cout << "Enter the name of the convicted: ";
     getline(in, data->name);
     cout << "Enter the age of the convicted: ";
     in >> data->age;
-    if (data->relative_1)
-        in >> *data->relative_1;
-    if (data->relative_2)
-        in >> *data->relative_2;
     cout << "Enter the height in feet of the convicted: ";
     in >> data->height_ft;
     cout << "Enter the height in inches of the convicted: ";
@@ -265,10 +261,6 @@ ifstream &operator>>(ifstream &in, Convicted &data)
 {
     getline(in, data.ID);
     getline(in, data.name);
-    if (data.relative_1)
-        in >> *data.relative_1;
-    if (data.relative_2)
-        in >> *data.relative_2;
     getline(in, data.age);
     getline(in, data.height);
     getline(in, data.weight);
@@ -279,14 +271,10 @@ ifstream &operator>>(ifstream &in, Convicted &data)
     return in;
 }
 
-ifstream &operator>>(ifstream &in, Convicted* &data)
+ifstream &operator>>(ifstream &in, Convicted *&data)
 {
     getline(in, data->ID);
     getline(in, data->name);
-    if (data->relative_1)
-        in >> *data->relative_1;
-    if (data->relative_2)
-        in >> *data->relative_2;
     getline(in, data->age);
     getline(in, data->height);
     getline(in, data->weight);
@@ -301,10 +289,6 @@ ostream &operator<<(ostream &out, Convicted &data)
 {
     out << "The name of the convicted is: " << data.name << endl;
     out << "The ID of the convicted is: " << data.ID << endl;
-    if (data.relative_1)
-        out << *data.relative_1;
-    if (data.relative_2)
-        out << *data.relative_2;
     out << "The age of the convicted is: " << data.age << endl;
     out << "The height of the convicted is: " << data.height << endl;
     out << "The weight of the convicted is: " << data.weight << endl;
@@ -316,14 +300,10 @@ ostream &operator<<(ostream &out, Convicted &data)
     return out;
 }
 
-ostream &operator<<(ostream &out, Convicted* &data)
+ostream &operator<<(ostream &out, Convicted *&data)
 {
     out << "The name of the convicted is: " << data->name << endl;
     out << "The ID of the convicted is: " << data->ID << endl;
-    if (data->relative_1)
-        out << *data->relative_1;
-    if (data->relative_2)
-        out << *data->relative_2;
     out << "The age of the convicted is: " << data->age << endl;
     out << "The height of the convicted is: " << data->height << endl;
     out << "The weight of the convicted is: " << data->weight << endl;
@@ -339,10 +319,6 @@ ofstream &operator<<(ofstream &out, Convicted &data)
 {
     out << data.name << endl;
     out << data.ID << endl;
-    if (data.relative_1)
-        out << *data.relative_1;
-    if (data.relative_2)
-        out << *data.relative_2;
     out << data.age << endl;
     out << data.height << endl;
     out << data.weight << endl;
@@ -353,14 +329,10 @@ ofstream &operator<<(ofstream &out, Convicted &data)
     return out;
 }
 
-ofstream &operator<<(ofstream &out, Convicted* &data)
+ofstream &operator<<(ofstream &out, Convicted *&data)
 {
     out << data->name << endl;
     out << data->ID << endl;
-    if (data->relative_1)
-        out << *data->relative_1;
-    if (data->relative_2)
-        out << *data->relative_2;
     out << data->age << endl;
     out << data->height << endl;
     out << data->weight << endl;
@@ -375,10 +347,6 @@ void Convicted::display()
 {
     cout << "The name of the convicted is: " << this->name << endl;
     cout << "The ID of the convicted is: " << this->ID << endl;
-    if (this->relative_1)
-        cout << *this->relative_1;
-    if (this->relative_2)
-        cout << *this->relative_2;
     cout << "The age of the convicted is: " << this->age << endl;
     cout << "The height of the convicted is: " << this->height << endl;
     cout << "The weight of the convicted is: " << this->weight << endl;
@@ -386,7 +354,7 @@ void Convicted::display()
     cout << "The convicted was captured on: " << this->captured_on << endl;
     cout << "The convicted is expected to be released on: " << this->expected_release << endl;
     cout << "The crime of the convicted is: " << this->crime << endl
-        << endl;
+         << endl;
 }
 
 void Convicted::read(ifstream &in)
@@ -404,13 +372,125 @@ void Convicted::read(ifstream &in)
 
 void Convicted::write(ofstream &out)
 {
-    out << endl << this->ID;
-    out << endl << this->name;
-    out << endl << this->age;
-    out << endl << this->height;
-    out << endl << this->weight;
-    out << endl << this->sentence;
-    out << endl << this->captured_on;
-    out << endl << this->expected_release;
-    out << endl << this->crime;
+    out << endl
+        << this->ID;
+    out << endl
+        << this->name;
+    out << endl
+        << this->age;
+    out << endl
+        << this->height;
+    out << endl
+        << this->weight;
+    out << endl
+        << this->sentence;
+    out << endl
+        << this->captured_on;
+    out << endl
+        << this->expected_release;
+    out << endl
+        << this->crime;
+}
+
+void Convicted::give_space(string yaan)
+{
+    // if (yaan == "A" || yaan == "B" || yaan == "C")
+    // {
+    //     this->relative_1 = new Person;
+    //     this->relative_2 = new Person;
+    // }
+}
+
+void Convicted::input()
+{
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cout << "Enter the name of the convicted: ";
+    getline(cin, this->name);
+    cout << "Enter the age of the convicted: ";
+    cin >> this->age;
+    cout << "Enter the height in feet of the convicted: ";
+    cin >> this->height_ft;
+    cout << "Enter the height in inches of the convicted: ";
+    cin >> this->height_in;
+    this->height = this->height_ft + "'" + this->height_in + "\"";
+    cout << "Enter the weight of the convicted in lbs: ";
+    cin >> this->weight;
+    this->weight = this->weight + " lbs";
+    cout << "Enter the sentence of the convicted: ";
+    cin.ignore();
+    getline(cin, this->sentence);
+    cout << "When was the convicted captured: ";
+    cin >> this->captured_on;
+    this->expected_release.cal_expected_date(captured_on, sentence);
+    cout << "What was the crime: ";
+    cin.ignore();
+    getline(cin, this->crime);
+    return;
+}
+
+void Convicted::modify()
+{
+    char choice;
+jump:
+    cout << "Chose what you want to do\nPress 'a' to change name\nPress 'b' to change age\nPress 'c' to change weight\nPress 'd' to change height\nPress 'e' to change sentence\nPress 'f' to change crime\nPress 'g' to change capture date\nEnter your input: ";
+    cin >> choice;
+    switch (choice)
+    {
+    case 'a':
+        cout << "The old name of the convicted is: " << this->name << endl;
+        cout << "Enter the new name of the Convicted: ";
+        getline(cin, this->name);
+        break;
+    case 'b':
+        cout << "The old age of the convicted is: " << this->age << endl;
+        cout << "Enter the new age of the Convicted: ";
+        getline(cin, this->age);
+        break;
+    case 'c':
+        cout << "The old weight of the convicted is: " << this->weight << endl;
+        cout << "Enter the new weight in pounds Convicted: ";
+        getline(cin, this->weight);
+        this->weight = this->weight + " lbs";
+        break;
+    case 'd':
+        cout << "The old height of the convicted is: " << this->height << endl;
+        cout << "Enter the new height of the Convicted in feet: ";
+        getline(cin, this->height_ft);
+        cout << "Enter the new height of the Convicted in inches: ";
+        getline(cin, this->height_in);
+        this->height = this->height_ft + "'" + this->height_in + "\"";
+        break;
+    case 'e':
+        cout << "The old sentence of the convicted is: " << this->sentence << endl;
+        cout << "Enter the new sentence of the Convicted: ";
+        getline(cin, this->sentence);
+        this->expected_release.cal_expected_date(this->captured_on, this->sentence);
+        cout << "Witch the change of the sentence the expected release date has also been modified\nThe new date is: " << this->expected_release;
+        break;
+    case 'f':
+        cout << "The old crime of the convicted is: " << this->crime << endl;
+        cout << "Enter the new crime in pounds Convicted: ";
+        getline(cin, this->crime);
+        break;
+    case 'g':
+        cout << "The old captured date of the convicted is: " << this->captured_on << endl;
+        cout << "Enter the new captured date of the Convicted: ";
+        cin >> this->captured_on;
+        this->expected_release.cal_expected_date(this->captured_on, this->sentence);
+        cout << "Witch the change of the captured date the expected release date has also been modified\nThe new date is: " << this->expected_release;
+        break;
+
+    default:
+        cout << "Invalid input\nEnter the input again\n";
+        goto jump;
+        break;
+    }
+}
+
+bool Convicted::is_empty()
+{
+    if (this->name == "")
+        return true;
+    return false;
 }

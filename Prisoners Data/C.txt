@@ -1,142 +1,3 @@
-C1
-Jacob "The Fixer" Rodriguez
-32
-6'0"
-180 lbs
-25 years
-September 8, 2013
-May 22, 2038
-Known for brokering deals and settling disputes among local criminal organizations.
-
-C2
-Emily Johnson
-28
-5'7"
-140 lbs
-20 years
-December 2, 2015
-February 5, 2035
-Convicted of embezzlement and financial fraud.
-
-C3
-Liam "The Forger" Sullivan
-30
-5'10"
-160 lbs
-30 years
-July 14, 2012
-November 27, 2042
-Skilled in creating convincing forged documents and passports.
-
-C4
-Sophie Anderson
-27
-5'5"
-130 lbs
-15 years
-April 5, 2015
-July 13, 2030
-Convicted of identy theft and cybercrimes.
-
-C5
-Benjamin "The Hacker" Carter
-31
-5'11"
-170 lbs
-35 years
-June 20, 2011
-October 15, 2046
-Skilled hacker responsible for multiple cyberattacks.
-
-C6
-Emma "The Chemist" White
-29
-5'8"
-150 lbs
-20 years
-October 18, 2015
-August 28, 2035
-Convicted of manufacturing illegal drugs.
-
-C7
-William "The Smuggler" Parker
-33
-6'1"
-185 lbs
-25 years
-February 3, 2011
-September 15, 2036
-Known for smuggling contraband and illegal goods.
-
-C8
-Ava "The Enigma" Foster
-26
-5'6"
-135 lbs
-15 years
-May 7, 2017
-November 3, 2032
-Convicted of orchestrating complex scams and identy theft.
-
-C9
-Samuel "The Stuntman" Murphy
-34
-6'0"
-170 lbs
-30 years
-August 20, 2012
-June 12, 2032
-Involved in high-speed chases and reckless driving resulting in injuries.
-
-C10
-Isabelle "The Whisperer" Wright
-29
-5'7"
-140 lbs
-20 years
-December 10, 2015
-March 14, 2035
-Convicted of eavesdropping and selling sensitive information.
-
-C11
-Henry "The Mechanic" Collins
-32
-5'9"
-160 lbs
-25 years
-March 25, 2013
-September 8, 2038
-Skilled in car theft and vehicle modification.
-
-C12
-Olivia Bennett
-28
-5'6"
-135 lbs
-20 years
-September 2, 2014
-October 1, 2034
-Convicted of computer hacking and cybercrimes.
-
-C13
-Ethan "The Chemist" Mitchell
-30
-5'11"
-170 lbs
-30 years
-November 10, 2010
-December 25, 2040
-Known for manufacturing illegal drugs and narcotics.
-
-C14
-Chloe Johnson
-27
-5'7"
-140 lbs
-15 years
-June 7, 2013
-August 10, 2038
-Convicted of identy theft and fraud.
 
 C15
 Felix "The Broker" Rivera
@@ -147,77 +8,15 @@ Felix "The Broker" Rivera
 January 14, 2011
 May 29, 2046
 Known for facilitating criminal deals and illicit transactions.
-
-C16
-Lily "The Forger" Adams
-29
-5'6"
-135 lbs
-20 years
-March 9, 2014
-May 16, 2034
-Known for creating convincing forged documents and counterfeit money.
-
-C17
-Nathan Wright
+C7
+William "The Smuggler" Parker
 33
-6'0"
-170 lbs
+6'1"
+185 lbs
 25 years
-July 22, 2010
-October 6, 2035
-Convicted of organized shoplifting and theft.
-
-C18
-Isabella "The Smuggler" Ramirez
-28
-5'8"
-150 lbs
-30 years
-October 5, 2017
-December 20, 2037
-Known for smuggling contraband and illegal goods across borders.
-
-C19
-Jack "The Mechanic" Price
-31
-5'9"
-160 lbs
-25 years
-February 15, 2013
-May 1, 2038
-Skilled in vehicle theft and alteration.
-
-C20
-Emily Stevens
-27
-5'7"
-140 lbs
-20 years
-August 30, 2015
-July 21, 2035
-Convicted of credit card fraud and embezzlement.
-
-C21
-Daniel "The Broker" Carter
-30
-5'10"
-170 lbs
-35 years
-June 18, 2011
-January 1, 2046
-Known for facilitating criminal deals and underground transactions.
-
-C22
-Emma Smith
-29
-5'6"
-135 lbs
-25 years
-October 25, 2014
-February 3, 2039
-Convicted of online fraud and identy theft.
-
+February 3, 2011
+September 15, 2036
+Known for smuggling contraband and illegal goods.
 C23
 Benjamin "The Saboteur" Davis
 32
@@ -227,37 +26,33 @@ Benjamin "The Saboteur" Davis
 April 10, 2012
 August 23, 2037
 Known for tampering with corporate systems and causing economic disruption.
-
-C24
-Ava Turner
-28
-5'7"
-140 lbs
-20 years
-July 7, 2014
-September 10, 2034
-Convicted of bank fraud and embezzlement.
-
-C25
-William "The Hacker" Walker
-33
-6'1"
-185 lbs
-25 years
-December 18, 2010
-May 2, 2035
-Skilled hacker responsible for multiple cybercrimes.
-
-C26
-Olivia "The Whisperer" Hughes
-31
-5'8"
-150 lbs
+C3
+Liam "The Forger" Sullivan
+30
+5'10"
+160 lbs
 30 years
-March 5, 2012
-April 18, 2037
-Convicted of eavesdropping and selling sensitive information.
-
+July 14, 2012
+November 27, 2042
+Skilled in creating convincing forged documents and passports.
+C11
+Henry "The Mechanic" Collins
+32
+5'9"
+160 lbs
+25 years
+March 25, 2013
+September 8, 2038
+Skilled in car theft and vehicle modification.
+C19
+Jack "The Mechanic" Price
+31
+5'9"
+160 lbs
+25 years
+February 15, 2013
+May 1, 2038
+Skilled in vehicle theft and alteration.
 C27
 Liam Johnson
 29
@@ -267,17 +62,69 @@ Liam Johnson
 September 15, 2015
 July 3, 2035
 Convicted of computer hacking and cybercrimes.
-
-C28
-Chloe "The Chemist" Martin
+C1
+Jacob "The Fixer" Rodriguez
 32
-5'6"
-135 lbs
+6'0"
+180 lbs
+25 years
+September 8, 2013
+May 22, 2038
+Known for brokering deals and settling disputes among local criminal organizations.
+C5
+Benjamin "The Hacker" Carter
+31
+5'11"
+170 lbs
+35 years
+June 20, 2011
+October 15, 2046
+Skilled hacker responsible for multiple cyberattacks.
+C9
+Samuel "The Stuntman" Murphy
+34
+6'0"
+170 lbs
 30 years
-November 20, 2012
-January 14, 2038
-Known for manufacturing illegal drugs.
-
+August 20, 2012
+June 12, 2032
+Involved in high-speed chases and reckless driving resulting in injuries.
+C13
+Ethan "The Chemist" Mitchell
+30
+5'11"
+170 lbs
+30 years
+November 10, 2010
+December 25, 2040
+Known for manufacturing illegal drugs and narcotics.
+C17
+Nathan Wright
+33
+6'0"
+170 lbs
+25 years
+July 22, 2010
+October 6, 2035
+Convicted of organized shoplifting and theft.
+C21
+Daniel "The Broker" Carter
+30
+5'10"
+170 lbs
+35 years
+June 18, 2011
+January 1, 2046
+Known for facilitating criminal deals and underground transactions.
+C25
+William "The Hacker" Walker
+33
+6'1"
+185 lbs
+25 years
+December 18, 2010
+May 2, 2035
+Skilled hacker responsible for multiple cybercrimes.
 C29
 Henry Davis
 28
@@ -287,7 +134,132 @@ Henry Davis
 April 8, 2015
 May 21, 2035
 Convicted of credit card fraud and embezzlement.
-
+C2
+Emily Johnson
+28
+5'7"
+140 lbs
+20 years
+December 2, 2015
+February 5, 2035
+Convicted of embezzlement and financial fraud.
+C4
+Sophie Anderson
+27
+5'5"
+130 lbs
+15 years
+April 5, 2015
+July 13, 2030
+Convicted of identy theft and cybercrimes.
+C6
+Emma "The Chemist" White
+29
+5'8"
+150 lbs
+20 years
+October 18, 2015
+August 28, 2035
+Convicted of manufacturing illegal drugs.
+C8
+Ava "The Enigma" Foster
+26
+5'6"
+135 lbs
+15 years
+May 7, 2017
+November 3, 2032
+Convicted of orchestrating complex scams and identy theft.
+C10
+Isabelle "The Whisperer" Wright
+29
+5'7"
+140 lbs
+20 years
+December 10, 2015
+March 14, 2035
+Convicted of eavesdropping and selling sensitive information.
+C12
+Olivia Bennett
+28
+5'6"
+135 lbs
+20 years
+September 2, 2014
+October 1, 2034
+Convicted of computer hacking and cybercrimes.
+C14
+Chloe Johnson
+27
+5'7"
+140 lbs
+15 years
+June 7, 2013
+August 10, 2038
+Convicted of identy theft and fraud.
+C16
+Lily "The Forger" Adams
+29
+5'6"
+135 lbs
+20 years
+March 9, 2014
+May 16, 2034
+Known for creating convincing forged documents and counterfeit money.
+C18
+Isabella "The Smuggler" Ramirez
+28
+5'8"
+150 lbs
+30 years
+October 5, 2017
+December 20, 2037
+Known for smuggling contraband and illegal goods across borders.
+C20
+Emily Stevens
+27
+5'7"
+140 lbs
+20 years
+August 30, 2015
+July 21, 2035
+Convicted of credit card fraud and embezzlement.
+C22
+Emma Smith
+29
+5'6"
+135 lbs
+25 years
+October 25, 2014
+February 3, 2039
+Convicted of online fraud and identy theft.
+C24
+Ava Turner
+28
+5'7"
+140 lbs
+20 years
+July 7, 2014
+September 10, 2034
+Convicted of bank fraud and embezzlement.
+C26
+Olivia "The Whisperer" Hughes
+31
+5'8"
+150 lbs
+30 years
+March 5, 2012
+April 18, 2037
+Convicted of eavesdropping and selling sensitive information.
+C28
+Chloe "The Chemist" Martin
+32
+5'6"
+135 lbs
+30 years
+November 20, 2012
+January 14, 2038
+Known for manufacturing illegal drugs.
 C30
 Isabella "The Forger" Wright
 31
@@ -296,4 +268,4 @@ Isabella "The Forger" Wright
 25 years
 June 30, 2013
 September 4, 2038
-Skilled in creating convincing forged documents and counterfeit money.
+Skilled in creating convincing forged documents and counterfeit money.

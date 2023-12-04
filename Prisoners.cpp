@@ -12,6 +12,14 @@ Prisoners::Prisoners(abstract *data)
     this->root = data;
 }
 
+Prisoners::Prisoners(abstract *data, Person *data1 ,Person *data2)
+{
+    left = right = nullptr;
+    this->root = data;
+    this->relative_1=data1;
+    this->relative_2=data2;
+}
+
 Prisoners::~Prisoners()
 {
     if (this->left != nullptr)
@@ -20,13 +28,6 @@ Prisoners::~Prisoners()
         delete right;
     left = right = nullptr;
 }
-
-Person::Person(string ID, string name)
-{
-    this->ID = ID;
-    this->name = name;
-}
-
 /*what thw shit is wrong with the shit is the fish cake
 kyaa msla hee tre ko bhens ki dum tera error ni kht m ho k de rha he wtdqjnedjneljnejbw*/
 ostream &operator<<(ostream &out, Prisoners *data)
@@ -55,4 +56,13 @@ void Prisoners::write(ofstream &out)
     out << this->relative_1;
     if(relative_2)
     out << this->relative_2;
+}
+
+void Prisoners::give_space(string check)
+{
+    if (check == "A" || check == "B" || check == "C")
+    {
+        this->relative_1 = new Person;
+        this->relative_2 = new Person;
+    }
 }
