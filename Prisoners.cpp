@@ -4,20 +4,26 @@ Prisoners::Prisoners()
 {
     left = right = nullptr;
     this->relative_1 = this->relative_2 = nullptr;
+    this->credits = 0;
+    this->workDone = false;
 }
 
 Prisoners::Prisoners(abstract *data)
 {
     left = right = nullptr;
     this->root = data;
+    this->credits = 0;
+    this->workDone = false;
 }
 
-Prisoners::Prisoners(abstract *data, Person *data1, Person *data2)
+Prisoners::Prisoners(abstract *data, Person *data1 ,Person *data2, int credits)
 {
     this->left = this->right = nullptr;
     this->root = data;
-    this->relative_1 = data1;
-    this->relative_2 = data2;
+    this->relative_1=data1;
+    this->relative_2=data2;
+    this->credits = credits;
+    this->workDone = false;
 }
 
 Prisoners::~Prisoners()
@@ -53,10 +59,11 @@ ofstream &operator<<(ofstream &out, Prisoners *data)
 void Prisoners::write(ofstream &out)
 {
     this->root->write(out);
-    if (this->relative_1 != nullptr)
-        out << this->relative_1;
-    if (this->relative_2 != nullptr)
-        out << this->relative_2;
+    if(relative_1)
+    out << this->relative_1;
+    if(relative_2)
+    out << this->relative_2;
+    out << endl << this->credits;
 }
 
 void Prisoners::give_space(string check)
