@@ -11,14 +11,14 @@ Admin::Admin(Hierarchial_tree *&tree)
 
 bool Admin::admin_UI()
 {
-    Person admin;
-    string password;
+    // Person admin;
+    // string password;
     char choice;
-    cin >> admin;
-    cout << "Enter the password: ";
-    cin >> password;
-    if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
-        return false;
+    // cin >> admin;
+    // cout << "Enter the password: ";
+    // cin >> password;
+    // if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
+        // return false;
 
     system("clear");
     cout << "Welcome Mr." << this->admin.name << endl;
@@ -61,7 +61,9 @@ bool Admin::admin_UI()
             break;
 
         case 'x':
-            this->origin = nullptr;
+            delete this->origin;
+            this->origin=new Hierarchial_tree;
+            this->origin=nullptr;
             return true;
 
         default:
@@ -195,11 +197,6 @@ bool Admin::remove_user()
     input = nullptr;
     this->data = nullptr;
 
-    //THis part of code will re write the HIrerichal tree for that specific grade so that the added prisoner is also included
-    ifstream file_to_del(prisoner_grade + ".txt", ios::in);
-    this->search_to_del_and_rewrite(this->origin->root, prisoner_grade[0], file_to_del);
-    file_to_del.close();
-
     return true;
 }
 
@@ -254,11 +251,6 @@ bool Admin::add_prisoner()
     r1 = r2 = nullptr;
     this->data = nullptr;
     this->input = nullptr;
-
-    //THis part of code will re write the HIrerichal tree for that specific grade so that the added prisoner is also included
-    ifstream file_to_del(prisoner_grade + ".txt", ios::in);
-    this->search_to_del_and_rewrite(this->origin->root, prisoner_grade[0], file_to_del);
-    file_to_del.close();
 
     return true;
 }
@@ -351,11 +343,6 @@ bool Admin::modify_data()
     delete input;
     input = nullptr;
 
-    //THis part of code will re write the HIrerichal tree for that specific grade so that the modified prisoner is also included
-    ifstream file_to_del(prisoner_grade + ".txt", ios::in);
-    this->search_to_del_and_rewrite(this->origin->root, prisoner_grade[0], file_to_del);
-    file_to_del.close();
-
     return true;
 }
 
@@ -411,10 +398,6 @@ void Admin::credit_check()
             }
             delete data;
             data = nullptr;
-
-            ifstream file(grade + ".txt", ios::in);
-            this->search_to_del_and_rewrite(this->origin->root, Constants::hierarchial_classes[i], file);
-            file.close();
         }
     }
 }

@@ -34,12 +34,11 @@ bool Person::equal(abstract &data)
 
 bool Person::equal(abstract *&data)
 {
-    cout<<this->ID<<" "<<data->ID<<endl;
-    cout<<this->name<<" "<<data->name<<endl;
+    cout << this->name << data->name << endl;
+    cout << (this->name == data->name) << endl;
     if (this->ID == data->ID)
-        if (this->name == data->name){
-            cout<<"hmm\n";
-            return true;}
+        if (this->name == data->name)
+            return true;
     return false;
 }
 
@@ -365,7 +364,6 @@ ifstream &operator>>(ifstream &in, Capture_date &data)
 
 void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
 {
-    cap_on.month[0] = toupper(cap_on.month[0]);
     if (sentence == "Life without parole"|| sentence == "life without parole"|| sentence == "forever"|| sentence == "Forever" || sentence == "N/A")
     {
         this->date = "";

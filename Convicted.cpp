@@ -12,6 +12,8 @@ bool Convicted::equal(abstract &data)
 
 bool Convicted::equal(abstract *&data)
 {
+    cout << this->name << data->name << endl;
+    cout << (this->name == data->name) << endl;
     return (this->ID == data->ID && this->name == data->name);
 }
 
