@@ -248,8 +248,10 @@ bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_gra
         // returns false if the file is not empty
     {   string garbage;
         queue<string> unused_IDs;
+
         // loop to iterate through the entre file.
         getline(file_1,garbage);
+
         while (!file_1.eof())
         {
             string temp;
@@ -259,7 +261,7 @@ bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_gra
         new_prisoner->ID = unused_IDs.front();
         unused_IDs.pop();
         file_1.close();
-        ofstream file("Removed_IDs.txt", ios::out | ios::trunc);
+        ofstream file("Prisoners Data\\Removed_IDs.txt", ios::out | ios::trunc);
         while (!unused_IDs.empty())
         {
             file << unused_IDs.front();

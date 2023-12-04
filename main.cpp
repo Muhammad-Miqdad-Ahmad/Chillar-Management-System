@@ -14,14 +14,7 @@
 
 int main(int argc, char const *argv[])
 {
-    Hierarchial_tree* wanker = new Hierarchial_tree;
-    cout<<wanker;
-    // exit(0);
-    PrisonersUi data(wanker);
-    data.signIn();
-    data.turnIn();
-    data.viewData();
-    data.turnIn();
-    data.viewData();
+    Admin a;
+    a.admin_UI();
     return 0;
 }
