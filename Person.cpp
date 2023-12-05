@@ -228,6 +228,7 @@ ofstream &operator<<(ofstream &out, Person *&data)
 istream &operator>>(istream &in, Person &data)
 {
     cout << "Enter the name of the person: ";
+    cin.ignore();
     getline(in, data.name);
     cout << "Enter the Id of the person: ";
     in >> data.ID;

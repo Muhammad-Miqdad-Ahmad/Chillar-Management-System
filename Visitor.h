@@ -2,12 +2,14 @@
 #include "hierarchy.h"
 
 class Visitor{
-    abstract* apnaData;
-    abstract* relData;
-    Hierarchial_tree* allData;
+    abstract* apnaData;             //to store information of visitor
+    abstract* relData;              //to store information of prisoner to visit
+    Hierarchial_tree* allData;      //to point to the main tree that contains all the prisoners data
 
-    Visitor(Hierarchial_tree*);
     void getPrisoner();
+
+public:
+    Visitor(Hierarchial_tree*);         //parametrized constructor
     void visitor_UI();
 };
 

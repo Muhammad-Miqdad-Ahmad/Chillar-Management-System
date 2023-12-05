@@ -18,7 +18,7 @@ int main()
     while (true)
     {
         cin >> choice;
-        if(cin)
+        if(cin.fail())
         {
             cin.clear();
             choice = '-1';
@@ -36,7 +36,8 @@ int main()
         }
         case 'b':
         {
-            // visitor UI
+            Visitor visitor(Thana);
+            visitor.visitor_UI();
             break;
         }
         case 'c':

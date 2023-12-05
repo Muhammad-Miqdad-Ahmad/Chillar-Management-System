@@ -62,8 +62,6 @@ bool Admin::admin_UI()
             break;
 
         case 'x':
-            delete this->origin;
-            this->origin = new Hierarchial_tree;
             this->origin = nullptr;
             return true;
 
@@ -360,7 +358,7 @@ bool Admin::display_data()
         return false;
 
     cout << data;
-    system("cmd/ C pause");
+    system("cmd /C pause");
 }
 
 void Admin::credit_check()
