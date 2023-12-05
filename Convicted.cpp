@@ -199,13 +199,6 @@ Convicted::Convicted()
     this->height = "";
 }
 
-// ofstream &operator<<(ofstream &out, Convicted &data)
-// {
-//     out << data.ID << endl;
-//     out << data.name << endl;
-//     return out;
-// }
-
 istream &operator>>(istream &in, Convicted &data)
 {
     cout << "Enter the name of the convicted: ";
