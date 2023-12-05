@@ -34,14 +34,8 @@ bool Person::equal(abstract &data)
 
 bool Person::equal(abstract *&data)
 {
-    cout << this->name << endl << data->name << endl;
-    cout << this->ID << endl << data->ID << endl;
-    cout << (this->ID == data->ID) << endl;
-    cout << (this->name == data->name) << endl;
-    if (this->ID == data->ID)
-        if (this->name == data->name)
+        if (this->name == data->name && this->name == data->name)
             return true;
-    cout << "return false krta hoon\n";
     return false;
 }
 
@@ -92,11 +86,7 @@ bool Person::less_than(abstract *&data)
 
 bool Person::operator<=(abstract &data)
 {
-    if (this->ID <= data.ID)
-    {
-        return true;
-    }
-    return false;
+    return (this->ID <= data.ID);
 }
 
 bool Person::less_than_equal(abstract &data)
@@ -237,6 +227,7 @@ ofstream &operator<<(ofstream &out, Person *&data)
 istream &operator>>(istream &in, Person &data)
 {
     cout << "Enter the name of the person: ";
+    cin.ignore();
     getline(in, data.name);
     cout << "Enter the Id of the person: ";
     in >> data.ID;
@@ -374,9 +365,9 @@ void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
         this->year = "";
         return;
     }
-
+    cap_on.month[0] = toupper(cap_on.month[0]);
     double num = stod(sentence); // ye string s double m number change kar k de ga
-    int size = sentence.size();  // ye string ka size hai;
+    int size = sentence.length();  // ye string ka size hai;
     string yearOrmonth;
 
     for (int i = 0; i < size; i++)

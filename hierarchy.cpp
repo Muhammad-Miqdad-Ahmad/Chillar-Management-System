@@ -22,10 +22,7 @@ Hierarchy::Hierarchy(char prisoner_class)
     ifstream file(file_name + ".txt"); // open the file
 
     if (is_it_empty(file))
-    {
-        cout << "file is empty\n";
         return;
-    }
 
     abstract *convict_data;
 
@@ -36,7 +33,7 @@ Hierarchy::Hierarchy(char prisoner_class)
         while (!file.eof())
         {
             // Convicted temp2;
-            convict_data = new Person;
+            convict_data=new Person;
             convict_data->read(file);
             relative1_data = new Person; // create a new person object
             relative2_data = new Person; // to store data
@@ -46,7 +43,7 @@ Hierarchy::Hierarchy(char prisoner_class)
             credits = stoi(temp);
             this->add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
             relative1_data = relative2_data = nullptr; // null the pointers
-            convict_data = nullptr;
+            convict_data=nullptr;
         }
     }
     else
@@ -54,12 +51,12 @@ Hierarchy::Hierarchy(char prisoner_class)
         // there is no relatives in this case so we will not give new space to the relative pointers
         while (!file.eof())
         {
-            convict_data = new Person;
+            convict_data=new Person;
             convict_data->read(file);
             getline(file, temp);
             credits = stoi(temp);
             add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
-            convict_data = nullptr;
+            convict_data=nullptr;
         }
     }
     file.close();
@@ -166,19 +163,13 @@ void Hierarchy::write_file_in_BFS(ofstream &file)
 }
 
 Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
-{
+{   
     if (chunk == nullptr || chunk->root->equal(to_find))
         return chunk;
     else if (to_find->less_than(chunk->root))
-    {
-        cout << "left\n";
         return this->search(chunk->left, to_find);
-    }
     else
-    {
-        cout << "left\n";
         return this->search(chunk->right, to_find);
-    }
 }
 
 Prisoners *Hierarchy::get_smallest()
@@ -260,10 +251,7 @@ Hierarchial_tree::Hierarchial_tree()
 {
     this->root = nullptr;
     for (int i = 0; i < 7; i++)
-    {
-        cout << "this: " << i << endl;
         add_chunk(this->root, Constants::hierarchial_classes[i]);
-    }
 }
 
 ostream &operator<<(ostream &out, Hierarchial_tree *data)

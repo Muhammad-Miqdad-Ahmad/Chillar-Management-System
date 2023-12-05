@@ -182,7 +182,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "PrisonersUi.h",
+			"path" : "PrisonersUI.h",
 			"sourceGroupIndex" : 1
 		}
 	],
