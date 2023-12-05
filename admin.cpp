@@ -11,21 +11,20 @@ Admin::Admin(Hierarchial_tree *&tree)
 
 bool Admin::admin_UI()
 {
-    {
-        Person admin;
-        string password;
-        cin >> admin;
-        cout << "Enter the password: ";
-        cin >> password;
-        if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
-            return false;
-    }
+    // Person admin;
+    // string password;
+    char choice;
+    // cin >> admin;
+    // cout << "Enter the password: ";
+    // cin >> password;
+    // if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
+        // return false;
+
     system("clear");
     cout << "Welcome Mr." << this->admin.name << endl;
-    char choice;
     while (true)
     {
-        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nPress 'e' to verify the credits\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
+        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
         cin >> choice;
         switch (choice)
         {
@@ -57,12 +56,14 @@ bool Admin::admin_UI()
                 return false;
             }
             break;
-        case 'e':
-            this->credit_check();
-            break;
+        // case 'e':
+        //     this->credit_check();
+        //     break;
 
         case 'x':
-            this->origin = nullptr;
+            // delete this->origin;
+            // this->origin=new Hierarchial_tree;
+            this->origin=nullptr;
             return true;
 
         default:
@@ -358,48 +359,67 @@ bool Admin::display_data()
         return false;
 
     cout << data;
-    system("cmd /C pause");
+    system("cmd/ C pause");
 }
 
-void Admin::credit_check()
-{
-    for (int i = 0; i < 7; i++)
-    {
-        if (Constants::hierarchial_classes[i] == 'A' || Constants::hierarchial_classes[i] == 'B' || Constants::hierarchial_classes[i] == 'C')
-        {
-            continue;
-        }
-        else
-        {
-            string grade = "" + Constants::hierarchial_classes[i];
-            this->store_from_file(this->data, grade);
+// void Admin::credit_check()
+// {
+//     for (int i = 0; i < 7; i++)
+//     {
+//         if (Constants::hierarchial_classes[i] == 'A' || Constants::hierarchial_classes[i] == 'B' || Constants::hierarchial_classes[i] == 'C')
+//         {
+//             continue;
+//         }
+//         else
+//         {
+//             // char temp = Constants::hierarchial_classes[i];
+//             char gradeTemp = Constants::hierarchial_classes[i];
+//             string grade(1,gradeTemp);
+//             cout<<Constants::hierarchial_classes[i]<<endl;
+//             cout<<"niggar wtf\n"<<grade<<endl;
+//             this->store_from_file(this->data, grade);
 
-            queue<Prisoners *> temp;
-            temp.push(this->data->root);
+//             queue<Prisoners *> temp;
+//             cout<<"here1\n";
+//             if (this->data->root == nullptr)
+//             {
+//                 cout<<"inki pinki ponky\n";
+//                 return;
+//             }
+//             cout<<this->data->root<<endl;
+//             system("cmd /C pause");
+//             temp.push(this->data->root);
+//             cout<<"here2\n";
 
-            while (!temp.empty())
-            {
-                Prisoners *current = temp.front();
-                current->give_take_credit();
-                temp.pop();
+//             while (!temp.empty())
+//             {
+//             cout<<"here3\n";
 
-                if (current->left != nullptr)
-                    temp.push(current->left);
+//                 Prisoners *current = temp.front();
+//             cout<<"here4\n";
+                
+//                 current->give_take_credit();
+//             cout<<"here5\n";
+                
+//                 temp.pop();
 
-                if (current->right != nullptr)
-                    temp.push(current->right);
-            }
+//                 if (current->left != nullptr)
+//                     temp.push(current->left);
 
-            {
-                ofstream file(grade + ".txt", ios::out | ios::trunc);
-                data->write_file_in_BFS(file);
-                file.close();
-            }
-            delete data;
-            data = nullptr;
-        }
-    }
-}
+//                 if (current->right != nullptr)
+//                     temp.push(current->right);
+//             }
+
+//             {
+//                 ofstream file(grade + ".txt", ios::out | ios::trunc);
+//                 data->write_file_in_BFS(file);
+//                 file.close();
+//             }
+//             delete data;
+//             data = nullptr;
+//         }
+//     }
+// }
 
 void Admin::search_to_del_and_rewrite(Hierarchy *&chunk, char grade, ifstream &file)
 {
@@ -427,7 +447,7 @@ void Admin::search_to_del_and_rewrite(Hierarchy *&chunk, char grade, ifstream &f
             relative1_data = relative2_data = nullptr; // null the pointers
         }
     }
-    else if (grade < chunk->prisoner_grade)
+    else if (grade<chunk->prisoner_grade)
         search_to_del_and_rewrite(chunk->left, grade, file);
     else
         search_to_del_and_rewrite(chunk->right, grade, file);

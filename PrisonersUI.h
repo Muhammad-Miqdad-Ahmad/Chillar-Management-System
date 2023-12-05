@@ -12,5 +12,5 @@ public:
     void signIn();
     void turnIn();
     void viewData();
-
+    void prisonerUi();
 }; 
