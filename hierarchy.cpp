@@ -102,8 +102,7 @@ void Hierarchy::make_full_balanced() // function to make the tree full balanced.
     for (auto &&i : temporary_storage)
         i->left = i->right = nullptr;
 
-    // cout << "quick sort call kr rha hoon\n";
-    quick_sort(temporary_storage, 0, temporary_storage.size() - 1);             // BKL awi dalah hai
+    quick_sort(temporary_storage, 0, temporary_storage.size() - 1);
     this->root = balancing(temporary_storage, 0, temporary_storage.size() - 1); // the root the balancing function returns is stored in the root of class
     temporary_storage.clear();
 }
@@ -175,10 +174,8 @@ Prisoners *Hierarchy::get_smallest(Prisoners *move)
 
 ostream &operator<<(ostream &out, Hierarchy *data)
 {
-    // out << "Is this called????\n";
     if (data != nullptr)
     {
-        // out << "Wtf is this shitty fish\n";
         out << data->left;
         out << data->root;
         out << data->right;
@@ -190,7 +187,6 @@ ofstream &operator<<(ofstream &out, Hierarchy *data)
 {
     if (data != nullptr)
     {
-        // out << "Wtf is this shitty fish\n";
         out << data->left;
         data->root->write(out);
         out << data->right;

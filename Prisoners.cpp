@@ -34,8 +34,7 @@ Prisoners::~Prisoners()
         delete right;
     left = right = nullptr;
 }
-/*what thw shit is wrong with the shit is the fish cake
-kyaa msla hee tre ko bhens ki dum tera error ni kht m ho k de rha he wtdqjnedjneljnejbw*/
+
 ostream &operator<<(ostream &out, Prisoners *data)
 {
     if (data != nullptr)
