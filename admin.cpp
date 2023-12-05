@@ -3,9 +3,9 @@
 Admin::Admin(Hierarchial_tree *&tree)
 {
     this->origin = tree;
-    this->admin.ID = "BSCE010307";
-    this->admin.name = "Muhammad Waleed Tahir";
-    this->code = "grandu";
+    this->admin.ID = "bob";
+    this->admin.name = "bob";
+    this->code = "bob";
     this->data = nullptr;
 }
 
@@ -25,7 +25,7 @@ bool Admin::admin_UI()
     char choice;
     while (true)
     {
-        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nPress 'e' to verify the credits\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
+        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
         cin >> choice;
         switch (choice)
         {
@@ -56,9 +56,6 @@ bool Admin::admin_UI()
                 cout << "There was some error while Reading the file\n";
                 return false;
             }
-            break;
-        case 'e':
-            this->credit_check();
             break;
 
         case 'x':
@@ -425,76 +422,4 @@ bool Admin::display_data()
 
     cout << data;
     system("cmd/ C pause");
-}
-
-void Admin::credit_check()
-{
-    for (int i = 0; i < 7; i++)
-    {
-        if (Constants::hierarchial_classes[i] == 'A' || Constants::hierarchial_classes[i] == 'B' || Constants::hierarchial_classes[i] == 'C')
-        {
-            continue;
-        }
-        else
-        {
-            string grade = "" + Constants::hierarchial_classes[i];
-            this->store_from_file(this->data, grade);
-
-            queue<Prisoners *> temp;
-            temp.push(this->data->root);
-
-            while (!temp.empty())
-            {
-                Prisoners *current = temp.front();
-                current->give_take_credit();
-                temp.pop();
-
-                if (current->left != nullptr)
-                    temp.push(current->left);
-
-                if (current->right != nullptr)
-                    temp.push(current->right);
-            }
-
-            {
-                ofstream file(grade + ".txt", ios::out | ios::trunc);
-                data->write_file_in_BFS(file);
-                file.close();
-            }
-            delete data;
-            data = nullptr;
-        }
-    }
-}
-
-void Admin::search_to_del_and_rewrite(Hierarchy *&chunk, char grade, ifstream &file)
-{
-    if (chunk == nullptr)
-        return;
-    else if (chunk->prisoner_grade == grade)
-    {
-        delete chunk->root;
-        chunk->root = nullptr;
-        this->input = new Person;
-        Person *relative1_data = nullptr, *relative2_data = nullptr;
-        string temp;
-        int credits;
-        while (!file.eof())
-        {
-            // Convicted temp2;
-            input->read(file);
-            relative1_data = new Person; // create a new person object
-            relative2_data = new Person; // to store data
-            file >> relative1_data;
-            file >> relative2_data;
-            getline(file, temp);
-            credits = stoi(temp);
-            this->data->add_chunk(this->data->root, input, relative1_data, relative2_data, credits);
-            relative1_data = relative2_data = nullptr; // null the pointers
-        }
-    }
-    else if (grade < chunk->prisoner_grade)
-        search_to_del_and_rewrite(chunk->left, grade, file);
-    else
-        search_to_del_and_rewrite(chunk->right, grade, file);
 }

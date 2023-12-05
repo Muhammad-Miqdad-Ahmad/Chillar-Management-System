@@ -50,6 +50,7 @@ void PrisonersUi::prisonerUi()
     if (this->prisoner->root->ID[0] == 'A' || this->prisoner->root->ID[0] == 'B' || this->prisoner->root->ID[0] == 'C')
     {
         cout << "You don't have access. Signing out, Security has been Alerted\n";
+        system("cmd /C pause");
         return;
     }
     char choice; // variable to control menu
@@ -67,6 +68,7 @@ re:              // goto label
         if (this->prisoner->root->ID[0] == 'A' || this->prisoner->root->ID[0] == 'B' || this->prisoner->root->ID[0] == 'C')
         {
             cout << "You don't have access. Signing out, Security has been Alerted\n";
+            system("cmd /C pause");
             return;
         }
         break;

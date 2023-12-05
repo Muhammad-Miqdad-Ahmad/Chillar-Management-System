@@ -1,12 +1,16 @@
 
-B1
-Arham
+D2
+name1
 23
-3'2"
-123 lbs
-forever
-may 232, 2020
-Life without parole
-qweas
+6'1"
+200 lbs
+3 years
+March 2021, 2022
+March 2021, 2025
+hit and run
+rel
+22
+rel2
+23
 0
-Time of release: Tue Dec  5 09:07:41 2023
+Time of release: Tue Dec  5 11:46:34 2023
