@@ -18,7 +18,7 @@ int main()
     while (true)
     {
         cin >> choice;
-        if(cin)
+        if(cin.fail())
         {
             cin.clear();
             choice = '-1';
