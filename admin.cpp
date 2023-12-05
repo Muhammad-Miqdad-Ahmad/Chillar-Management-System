@@ -24,7 +24,7 @@ bool Admin::admin_UI()
     cout << "Welcome Mr." << this->admin.name << endl;
     while (true)
     {
-        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nPress 'e' to verify the credits\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
+        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
         cin >> choice;
         switch (choice)
         {
@@ -56,9 +56,9 @@ bool Admin::admin_UI()
                 return false;
             }
             break;
-        case 'e':
-            this->credit_check();
-            break;
+        // case 'e':
+        //     this->credit_check();
+        //     break;
 
         case 'x':
             // delete this->origin;
@@ -362,64 +362,64 @@ bool Admin::display_data()
     system("cmd/ C pause");
 }
 
-void Admin::credit_check()
-{
-    for (int i = 0; i < 7; i++)
-    {
-        if (Constants::hierarchial_classes[i] == 'A' || Constants::hierarchial_classes[i] == 'B' || Constants::hierarchial_classes[i] == 'C')
-        {
-            continue;
-        }
-        else
-        {
-            // char temp = Constants::hierarchial_classes[i];
-            char gradeTemp = Constants::hierarchial_classes[i];
-            string grade(1,gradeTemp);
-            cout<<Constants::hierarchial_classes[i]<<endl;
-            cout<<"niggar wtf\n"<<grade<<endl;
-            this->store_from_file(this->data, grade);
+// void Admin::credit_check()
+// {
+//     for (int i = 0; i < 7; i++)
+//     {
+//         if (Constants::hierarchial_classes[i] == 'A' || Constants::hierarchial_classes[i] == 'B' || Constants::hierarchial_classes[i] == 'C')
+//         {
+//             continue;
+//         }
+//         else
+//         {
+//             // char temp = Constants::hierarchial_classes[i];
+//             char gradeTemp = Constants::hierarchial_classes[i];
+//             string grade(1,gradeTemp);
+//             cout<<Constants::hierarchial_classes[i]<<endl;
+//             cout<<"niggar wtf\n"<<grade<<endl;
+//             this->store_from_file(this->data, grade);
 
-            queue<Prisoners *> temp;
-            cout<<"here1\n";
-            if (this->data->root == nullptr)
-            {
-                cout<<"inki pinki ponky\n";
-                return;
-            }
-            cout<<this->data->root<<endl;
-            system("cmd /C pause");
-            temp.push(this->data->root);
-            cout<<"here2\n";
+//             queue<Prisoners *> temp;
+//             cout<<"here1\n";
+//             if (this->data->root == nullptr)
+//             {
+//                 cout<<"inki pinki ponky\n";
+//                 return;
+//             }
+//             cout<<this->data->root<<endl;
+//             system("cmd /C pause");
+//             temp.push(this->data->root);
+//             cout<<"here2\n";
 
-            while (!temp.empty())
-            {
-            cout<<"here3\n";
+//             while (!temp.empty())
+//             {
+//             cout<<"here3\n";
 
-                Prisoners *current = temp.front();
-            cout<<"here4\n";
+//                 Prisoners *current = temp.front();
+//             cout<<"here4\n";
                 
-                current->give_take_credit();
-            cout<<"here5\n";
+//                 current->give_take_credit();
+//             cout<<"here5\n";
                 
-                temp.pop();
+//                 temp.pop();
 
-                if (current->left != nullptr)
-                    temp.push(current->left);
+//                 if (current->left != nullptr)
+//                     temp.push(current->left);
 
-                if (current->right != nullptr)
-                    temp.push(current->right);
-            }
+//                 if (current->right != nullptr)
+//                     temp.push(current->right);
+//             }
 
-            {
-                ofstream file(grade + ".txt", ios::out | ios::trunc);
-                data->write_file_in_BFS(file);
-                file.close();
-            }
-            delete data;
-            data = nullptr;
-        }
-    }
-}
+//             {
+//                 ofstream file(grade + ".txt", ios::out | ios::trunc);
+//                 data->write_file_in_BFS(file);
+//                 file.close();
+//             }
+//             delete data;
+//             data = nullptr;
+//         }
+//     }
+// }
 
 void Admin::search_to_del_and_rewrite(Hierarchy *&chunk, char grade, ifstream &file)
 {
