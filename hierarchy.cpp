@@ -33,7 +33,7 @@ Hierarchy::Hierarchy(char prisoner_class)
         while (!file.eof())
         {
             // Convicted temp2;
-            convict_data=new Person;
+            convict_data = new Person;
             convict_data->read(file);
             relative1_data = new Person; // create a new person object
             relative2_data = new Person; // to store data
@@ -43,7 +43,7 @@ Hierarchy::Hierarchy(char prisoner_class)
             credits = stoi(temp);
             this->add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
             relative1_data = relative2_data = nullptr; // null the pointers
-            convict_data=nullptr;
+            convict_data = nullptr;
         }
     }
     else
@@ -51,12 +51,12 @@ Hierarchy::Hierarchy(char prisoner_class)
         // there is no relatives in this case so we will not give new space to the relative pointers
         while (!file.eof())
         {
-            convict_data=new Person;
+            convict_data = new Person;
             convict_data->read(file);
             getline(file, temp);
             credits = stoi(temp);
             add_chunk(this->root, convict_data, relative1_data, relative2_data, credits);
-            convict_data=nullptr;
+            convict_data = nullptr;
         }
     }
     file.close();
@@ -172,16 +172,12 @@ Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
         return this->search(chunk->right, to_find);
 }
 
-Prisoners *Hierarchy::get_smallest()
+Prisoners *Hierarchy::get_smallest(Prisoners *move)
 {
-    Prisoners *move = nullptr;
-    for (move = this->root; move->left != nullptr; move = move->left)
-        ;
-
-    if (move->right == nullptr)
-        return move;
-    else
-        return move->right;
+    while (move->left != nullptr) {
+        move = move->left;
+    }
+    return move;
 }
 
 ostream &operator<<(ostream &out, Hierarchy *data)
@@ -219,26 +215,42 @@ void Hierarchial_tree::add_chunk(Hierarchy *&chunk, char data)
         add_chunk(chunk->left, data);
 }
 
-void Hierarchy::delete_empty_node(Prisoners *&to_del)
+Prisoners* Hierarchy::delete_empty_node(Prisoners* data,Prisoners *&to_del)
 {
-    Prisoners *move = this->root;
-    while (true)
-    {
-        if (move->left->root->equal(to_del->root))
-        {
-            move->left = nullptr;
-            break;
-        }
-        else if (move->right->root->equal(to_del->root))
-        {
-            move->right = nullptr;
-            break;
-        }
-        else
-            move = move->left;
+   if (root == nullptr) {
+        return data;
     }
-    delete to_del;
-    to_del = nullptr;
+
+    if (to_del->root->less_than(data->root)) {
+        root->left = delete_empty_node(root->left, to_del);
+    }
+    // If the key to be deleted is larger than the root's key, then it lies in the right subtree
+    else if (to_del->root->greater_than(data->root)) {
+        root->right = delete_empty_node(root->right, to_del);
+    }
+       else {
+        // Node with only one child or no child
+        if (root->left == nullptr) {
+            Prisoners* temp = root->right;
+            delete root;
+            return temp;
+        } else if (root->right == nullptr) {
+            Prisoners* temp = root->left;
+            delete root;
+            return temp;
+        }
+
+        // Node with two children: Get the inorder successor (smallest in the right subtree)
+        Prisoners* temp = this->get_smallest(root->right);
+
+        // Copy the inorder successor's content to this node
+        root->root = temp->root;
+
+        // Delete the inorder successor
+        root->right = delete_empty_node(root->right, temp);
+    }
+
+    return root;
 }
 
 Hierarchial_tree::~Hierarchial_tree()

@@ -22,9 +22,9 @@ public:
     friend class Hierarchial_tree;
 
     // function
-    Prisoners* get_smallest();
+    Prisoners* get_smallest(Prisoners *move);
     void make_full_balanced();
-    void delete_empty_node(Prisoners* &data);
+    Prisoners* delete_empty_node(Prisoners* root,Prisoners *&to_del);
     Prisoners *search(Prisoners *&chunk, abstract* to_find);
     void write_file_in_BFS(ofstream &file);
     void store_del_tree(Prisoners *&chunk, vector<Prisoners *> &data);
