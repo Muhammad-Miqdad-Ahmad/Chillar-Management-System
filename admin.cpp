@@ -3,23 +3,23 @@
 Admin::Admin(Hierarchial_tree *&tree)
 {
     this->origin = tree;
-    this->admin.ID = "BSCE010307";
-    this->admin.name = "Muhammad Waleed Tahir";
-    this->code = "grandu";
+    this->admin.ID = "bob";
+    this->admin.name = "bob";
+    this->code = "bob";
     this->data = nullptr;
 }
 
 bool Admin::admin_UI()
 {
-    // Person admin;
-    // string password;
-    char choice;
-    // cin >> admin;
-    // cout << "Enter the password: ";
-    // cin >> password;
-    // if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
-        // return false;
+    Person admin;
+    string password;
+    cin >> admin;
+    cout << "Enter the password: ";
+    cin >> password;
+    if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)     //if admin credentials do not match
+        return false;
 
+    char choice;
     system("clear");
     cout << "Welcome Mr." << this->admin.name << endl;
     while (true)

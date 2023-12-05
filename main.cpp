@@ -14,9 +14,12 @@
 int main()
 {
     Hierarchial_tree *Thana = new Hierarchial_tree;
-    char choice;
-    while (true)
+    char choice, end;
+    do
     {
+        cout<<"\nEnter A to access admin"
+              "\nV to get time slot to meet a prisoner"
+              "\nP if you are a prisoner and wish to see your information: ";
         cin >> choice;
         if(cin.fail())
         {
@@ -25,7 +28,7 @@ int main()
         }
         switch (choice)
         {
-        case 'a':
+        case 'A':
         {
             Admin admin(Thana);
             if(!admin.admin_UI())
@@ -34,25 +37,23 @@ int main()
             Thana = new Hierarchial_tree;
             break;
         }
-        case 'b':
+        case 'V':
         {
             Visitor visitor(Thana);
             visitor.visitor_UI();
             break;
         }
-        case 'c':
+        case 'P':
         {
-            // Prisoner UI
-            break;
-        }
-        case 'x':
-        {
-            return 0;
+            PrisonersUi prisoner(Thana);
+            prisoner.prisonerUi();
             break;
         }
         default:
             cout << "Invalid input" << endl;
             break;
         }
-    }
+        cout<<"\nEnter F if you want to end program otherwise enter any other key: ";
+        cin>>end;
+    }while(end != 'F');
 }
