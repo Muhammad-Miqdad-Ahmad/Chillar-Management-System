@@ -34,8 +34,7 @@ bool Person::equal(abstract &data)
 
 bool Person::equal(abstract *&data)
 {
-    if (this->ID == data->ID)
-        if (this->name == data->name)
+        if (this->name == data->name && this->name == data->name)
             return true;
     return false;
 }

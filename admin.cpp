@@ -372,7 +372,11 @@ void Admin::credit_check()
         }
         else
         {
-            string grade = "" + Constants::hierarchial_classes[i];
+            // char temp = Constants::hierarchial_classes[i];
+            char gradeTemp = Constants::hierarchial_classes[i];
+            string grade(1,gradeTemp);
+            cout<<Constants::hierarchial_classes[i]<<endl;
+            cout<<"niggar wtf\n"<<grade<<endl;
             this->store_from_file(this->data, grade);
 
             queue<Prisoners *> temp;
