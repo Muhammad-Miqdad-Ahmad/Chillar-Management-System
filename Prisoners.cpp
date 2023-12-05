@@ -58,9 +58,9 @@ ofstream &operator<<(ofstream &out, Prisoners *data)
 void Prisoners::write(ofstream &out)
 {
     this->root->write(out);
-    if(relative_1)
+    if(this->relative_1)
     out << this->relative_1;
-    if(relative_2)
+    if(this->relative_2)
     out << this->relative_2;
     out << endl << this->credits;
 }

@@ -26,15 +26,14 @@ bool Person::operator==(abstract &data)
 
 bool Person::equal(abstract &data)
 {
-    if (this->ID == data.ID)
-        if (this->name == data.name)
+    if (this->ID == data.ID && this->name == data.name)
             return true;
     return false;
 }
 
 bool Person::equal(abstract *&data)
 {
-        if (this->name == data->name && this->name == data->name)
+    if (this->ID == data->ID && this->name == data->name)
             return true;
     return false;
 }
@@ -226,6 +225,7 @@ ofstream &operator<<(ofstream &out, Person *&data)
 
 istream &operator>>(istream &in, Person &data)
 {
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cout << "Enter the name of the person: ";
     cin.ignore();
     getline(in, data.name);

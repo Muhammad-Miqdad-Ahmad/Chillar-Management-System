@@ -17,6 +17,7 @@
 
 // global functions
 char *get_time();
+bool check_grade(string &grade);
 bool is_it_empty(ifstream &pFile);
 int partition(vector<Prisoners *> &array, int first, int last);
 void quick_sort(vector<Prisoners *> &array, int first, int last);
