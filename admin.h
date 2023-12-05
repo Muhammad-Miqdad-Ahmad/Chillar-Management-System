@@ -18,8 +18,8 @@ private:
     // functions
     bool remove_user();                                                         // function to remove the information of a user
     bool modify_data();                                                         // function to modify the data of any prisoner
-    bool add_prisoner();                                                        // function to add a new prisoner in the data base
-    bool display_data();                                                        // function to display the enterity of the data
+    bool add_prisoner();                                                        // function to add a new prisoner in the database
+    bool display_data();                                                        // function to display the entirety of the data
     bool store_from_file(Hierarchy *&data, string &prisoner_grade);             // ths function reads data from a specific file and stores it in the form of a binary tree
     bool generate_ID(abstract *&new_prisoner, int data, string prisoner_grade); // this function generates a new ID for newly added prisoners
 

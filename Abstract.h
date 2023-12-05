@@ -2,12 +2,12 @@
 #include <vector>
 using namespace std;
 
-// this is a abstract class.
-// This class is inherited in the convicted and the person class.
-// this is a pure virtual class.
-/*this class was made so that we could take in data for both the admin and the
-other classes. After ineriting it we can make a pointer for abstract class and then
-we can assign it a space for either Convict or Person*/
+/*this is an abstract class.
+ This class is inherited in the convicted and the person class.
+ this is a pure virtual class.
+ this class was made so that we could take in data for both the admin and the
+ other classes. After inheriting it we can make a pointer for abstract class, and then
+ we can assign it a space for either Convict or Person*/
 class abstract
 {
 public:

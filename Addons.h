@@ -14,7 +14,7 @@
 #include "PrisonersUi.h"
 
 // global functions
-char *get_time();                                                 // this function returns the current time of from the computer
+char *get_time();                                                 // this function returns the current time from the computer
 bool is_it_empty(ifstream &pFile);                                // this checks the file. if the file is empty it returns true
 int partition(vector<Prisoners *> &array, int first, int last);   // this function parts the array and is used in quick sort function
 void quick_sort(vector<Prisoners *> &array, int first, int last); // function to quick sort the vector

@@ -1,18 +1,4 @@
 
-D2
-tahir
-24
-6'1"
-234 lbs
-5 years
-July 24, 2020
-July 24, 2025
-theft
-rel1
-1
-rel2
-2
-0
 D1
 bob
 23
@@ -25,6 +11,34 @@ theft
 relative 1
 1
 relative 2
+2
+0
+D4
+tutu
+22
+5'4"
+325 lbs
+4 years
+May 22, 2020
+May 22, 2024
+efvgrrt
+rel1
+2
+rel2
+3
+0
+D2
+tahir
+24
+6'1"
+234 lbs
+5 years
+July 24, 2020
+July 24, 2025
+theft
+rel1
+1
+rel2
 2
 0
 D3

@@ -10,16 +10,16 @@ Hierarchy::Hierarchy()
 Hierarchy::Hierarchy(char prisoner_class)
 {
     this->prisoner_count = 0;              // the number of nodes in the tree
-    this->prisoner_grade = prisoner_class; // we assign the class
-    this->left = this->right = nullptr;    // we null the left and right pointers
-    this->root = nullptr;                  // also null the root
+    this->prisoner_grade = prisoner_class;
+    this->left = this->right = nullptr;
+    this->root = nullptr;
     Person *relative1_data = nullptr, *relative2_data = nullptr;
 
     int credits;
     string file_name = "Prisoners Data\\", temp;  // create a string to read from the file.
     file_name = file_name + this->prisoner_grade; // storing the path in a string
 
-    ifstream file(file_name + ".txt"); // open the file
+    ifstream file(file_name + ".txt");  //open the file to read
 
     if (is_it_empty(file))
         return;
@@ -32,7 +32,6 @@ Hierarchy::Hierarchy(char prisoner_class)
 
         while (!file.eof())
         {
-            // Convicted temp2;
             convict_data = new Person;
             convict_data->read(file);
             relative1_data = new Person; // create a new person object
@@ -48,7 +47,7 @@ Hierarchy::Hierarchy(char prisoner_class)
     }
     else
     {
-        // there is no relatives in this case so we will not give new space to the relative pointers
+        // there are no relatives in this case, so we will not give new space to the relative pointers
         while (!file.eof())
         {
             convict_data = new Person;
@@ -66,7 +65,7 @@ Hierarchy::Hierarchy(char prisoner_class)
 Hierarchy::~Hierarchy()
 {
     /*  first we delete the root of the prisoners tree.
-    With this the tree inside each node that depiicts a grade
+    With this the tree inside each node that depicts a grade
     will be destroyed   */
     if (this->prisoner_grade)
         delete root;
@@ -86,8 +85,8 @@ void Hierarchy::add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_
 {
     if (chunk == nullptr)
     {
-        chunk = new Prisoners(data, relative_1, relative_2, credits); // prisoners data
-        this->prisoner_count++;                                       // increase the prisoner count
+        chunk = new Prisoners(data, relative_1, relative_2, credits);   //new prisoners data stored in tree
+        this->prisoner_count++;                                          // increase the prisoner count
     }
     else if (data->less_than(chunk->root))
         this->add_chunk(chunk->left, data, relative_1, relative_2, credits);
@@ -124,14 +123,8 @@ Prisoners *Hierarchy::balancing(vector<Prisoners *> &array, int start, int last)
     if (start > last)
         return nullptr;
 
-    int mid = (start + last) / 2;     // we find the mid point of the rray
+    int mid = (start + last) / 2;     // we find the midpoint of the array
     Prisoners *new_root = array[mid]; // then we make it the root of the tree
-    /* if(start<last)  AAAAAAhHHHHHHHHH FUCK THIS WAS THE ERROR. THt was why it was not working because it was not returning any nulll pointer
-    This shitty thing it destroyed my weakend. I am sooo done with coding and DSA. Main ni khel ra */
-    // {
-    // new_root->left = balancing(array, start, mid - 1); // after that I sent the lower half towards the left
-    // new_root->right = balancing(array, mid + 1, last); // the upper half towards the right
-    // }
     new_root->left = balancing(array, start, mid - 1); // after that I sent the lower half towards the left
     new_root->right = balancing(array, mid + 1, last); // the upper half towards the right
     return new_root;                                   // we simply return the root
