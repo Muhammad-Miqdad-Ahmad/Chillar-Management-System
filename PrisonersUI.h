@@ -3,14 +3,16 @@
 
 class PrisonersUi
 {
-public:
-    Hierarchial_tree* mainTree;
-    Prisoners* prisoner;
-    abstract* find;
-    PrisonersUi(Hierarchial_tree* ht);
+private:
+    Hierarchial_tree *mainTree;
+    Prisoners *prisoner;
+    abstract *find;
 
     void signIn();
     void turnIn();
     void viewData();
+
+public:
+    PrisonersUi(Hierarchial_tree *ht);
     void prisonerUi();
-}; 
+};
