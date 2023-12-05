@@ -380,12 +380,27 @@ void Admin::credit_check()
             this->store_from_file(this->data, grade);
 
             queue<Prisoners *> temp;
+            cout<<"here1\n";
+            if (this->data->root == nullptr)
+            {
+                cout<<"inki pinki ponky\n";
+                return;
+            }
+            cout<<this->data->root<<endl;
+            system("cmd /C pause");
             temp.push(this->data->root);
+            cout<<"here2\n";
 
             while (!temp.empty())
             {
+            cout<<"here3\n";
+
                 Prisoners *current = temp.front();
+            cout<<"here4\n";
+                
                 current->give_take_credit();
+            cout<<"here5\n";
+                
                 temp.pop();
 
                 if (current->left != nullptr)

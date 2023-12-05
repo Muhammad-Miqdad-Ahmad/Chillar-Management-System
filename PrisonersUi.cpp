@@ -9,11 +9,12 @@ PrisonersUi::PrisonersUi(Hierarchial_tree *ht)
 void PrisonersUi::signIn()
 {
     find = new Person;
-    
+
 re:
     find->input();
 
     this->prisoner = this->mainTree->searchGrade(this->mainTree->root, find);
+
     if (prisoner == nullptr)
     {
         cout << "Prisoner not Found. Enter Again: \n";
@@ -39,12 +40,17 @@ void PrisonersUi::viewData()
     cout << "Prisoner ID: " << prisoner->root->ID << endl;
     cout << "Earned Credits: " << prisoner->credits << endl;
     cout << "Today's work status: ";
-    prisoner->workDone ? cout<<"Completed\n" : cout<<"Pending\n";
+    prisoner->workDone ? cout << "Completed\n" : cout << "Pending\n";
 }
 
 void PrisonersUi::prisonerUi()
 {
     this->signIn();
+    if (this->prisoner->root->ID[0] == 'A' || this->prisoner->root->ID[0] == 'B' || this->prisoner->root->ID[0] == 'C')
+    {
+        cout << "You don't have access. Signing out, Security has been Alerted\n";
+        return;
+    }
     char choice; // variable to control menu
 re:              // goto label
     cout << "Enter 1 to change Prisoner:\n"
@@ -57,6 +63,11 @@ re:              // goto label
     case '1':
     {
         this->signIn();
+        if (this->prisoner->root->ID[0] == 'A' || this->prisoner->root->ID[0] == 'B' || this->prisoner->root->ID[0] == 'C')
+        {
+            cout << "You don't have access. Signing out, Security has been Alerted\n";
+            return;
+        }
         break;
     }
     case '2':
