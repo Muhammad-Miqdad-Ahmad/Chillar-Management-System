@@ -365,9 +365,9 @@ void Capture_date::cal_expected_date(Capture_date cap_on, string sentence)
         this->year = "";
         return;
     }
-
+    cap_on.month[0] = toupper(cap_on.month[0]);
     double num = stod(sentence); // ye string s double m number change kar k de ga
-    int size = sentence.size();  // ye string ka size hai;
+    int size = sentence.length();  // ye string ka size hai;
     string yearOrmonth;
 
     for (int i = 0; i < size; i++)
