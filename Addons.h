@@ -1,5 +1,5 @@
 #pragma once
-
+// This file includes all the
 #include "hierarchy.h"
 #include <windows.h>
 #include "Visitor.h"
@@ -12,22 +12,19 @@
 #include <queue>
 #include <ctime>
 #include "PrisonersUi.h"
-//// template <typename datatype>
-//// ostream &operator<<(ostream &out, const datatype *&chunk);
 
 // global functions
-char *get_time();
-bool check_grade(string &grade);
-bool is_it_empty(ifstream &pFile);
-int partition(vector<Prisoners *> &array, int first, int last);
-void quick_sort(vector<Prisoners *> &array, int first, int last);
+char *get_time();                                                 // this function returns the current time of from the computer
+bool is_it_empty(ifstream &pFile);                                // this checks the file. if the file is empty it returns true
+int partition(vector<Prisoners *> &array, int first, int last);   // this function parts the array and is used in quick sort function
+void quick_sort(vector<Prisoners *> &array, int first, int last); // function to quick sort the vector
 
 // The namespace that will contain all constants
 namespace Constants
 {
-    static const char hierarchial_classes[] = "DBFACEG";
-    
-    static const string monthNames[12] = {"January",
+    static const char hierarchial_classes[] = "DBFACEG"; // this is the array that stores the prisoner grades in an array
+
+    static const string monthNames[12] = {"January", // array of all the months
                                           "February",
                                           "March",
                                           "April",

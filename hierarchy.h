@@ -1,6 +1,8 @@
 #pragma once
 #include "Prisoners.h"
 
+// This is a class that creates a tree of the prisoner grades
+// it also contains the root of the Prisoners class that creates the tree of the different prisoners.
 class Hierarchy
 {
 private:
@@ -22,10 +24,10 @@ public:
     friend class Hierarchial_tree;
 
     // function
-    Prisoners* get_smallest(Prisoners *move);
+    Prisoners *get_smallest(Prisoners *move);
     void make_full_balanced();
-    Prisoners* delete_empty_node(Prisoners* root,Prisoners *&to_del);
-    Prisoners *search(Prisoners *&chunk, abstract* to_find);
+    Prisoners *delete_empty_node(Prisoners *root, Prisoners *&to_del);
+    Prisoners *search(Prisoners *&chunk, abstract *to_find);
     void write_file_in_BFS(ofstream &file);
     void store_del_tree(Prisoners *&chunk, vector<Prisoners *> &data);
     Prisoners *balancing(vector<Prisoners *> &array, int start, int last);
@@ -39,11 +41,13 @@ public:
     // Prisoners *operator%(string data);
 };
 
+// This is the class that containes the root of the hierarchy
 class Hierarchial_tree
 {
 private:
 public:
     Hierarchy *root;
+
     // constructors
     Hierarchial_tree();
 
@@ -52,15 +56,13 @@ public:
 
     // friend classes
     friend class Prisoners;
-    void add_chunk(Hierarchy *&chunk, char data);
-    Prisoners *searchGrade(Hierarchy *&chunk, abstract* tofind);
+    void add_chunk(Hierarchy *&chunk, char data);                // this is the function that adds a node to the tree It adds node to tree of the class hierarchy
+    Prisoners *searchGrade(Hierarchy *&chunk, abstract *tofind); // this is the function that searchs through the tree in the hierarchy class that containes the tree of Prisoners
+                                                                 // it traverses through the tree and then when the grade of the ID sent matches with the grade in the tree
+                                                                 // then another search function is called
 
     // friend functions
-    // template<typename datatype>
-    // friend void display(Hierarchial_tree* &data);
     friend ostream &operator<<(ostream &out, Hierarchial_tree *data);
-
-    // // void add_chunk(Hierarchy* &chunk, int index); // dont un comment it. I am just eaving it here for research purposes ( ;
 
     // operator overloads
 };

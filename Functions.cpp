@@ -53,20 +53,3 @@ char *get_time()
     // convert now to string form
     return ctime(&now);
 }
-
-bool check_grade(string &grade)
-{
-    char check = grade[0];
-    toupper(check);
-    if (!isalpha(check))
-        return false;
-    for (int i = 0; i < 7; i++)
-    {
-        if (check == Constants::hierarchial_classes[i])
-        {
-            grade=check+"";
-            return true;
-        }
-    }
-    return false;
-}

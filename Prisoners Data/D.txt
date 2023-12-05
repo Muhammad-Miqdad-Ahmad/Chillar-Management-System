@@ -1,29 +1,43 @@
 
 D2
-chotu
-23
-3'2"
-14 lbs
-1.5 years
-may 21, 2004
-June 21, 357869
-
-bob
-11
-tob
-12
+tahir
+24
+6'1"
+234 lbs
+5 years
+July 24, 2020
+July 24, 2025
+theft
+rel1
+1
+rel2
+2
 0
 D1
-wanker chotu
-22
-6'1"
-205 lbs
-2 years
-may 22, 2003
-April 22, 358210
-wanking
-bob1
-11
-bob2
-12
+bob
+23
+5'4"
+203 lbs
+2.5 years
+May 21, 2020
+November 21, 2022
+theft
+relative 1
+1
+relative 2
+2
+0
+D3
+name2
+24
+5'11"
+202 lbs
+4 years
+June 23, 2022
+June 23, 2026
+murder
+p1
+3
+p2
+4
 0

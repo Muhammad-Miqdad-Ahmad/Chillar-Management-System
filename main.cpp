@@ -17,6 +17,7 @@ int main()
     char choice, end;
     do
     {
+        system("clear");
         cout<<"\nEnter A to access admin"
               "\nV to get time slot to meet a prisoner"
               "\nP if you are a prisoner and wish to see your information: ";
