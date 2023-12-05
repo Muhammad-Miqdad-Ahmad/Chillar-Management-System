@@ -87,11 +87,7 @@ bool Person::less_than(abstract *&data)
 
 bool Person::operator<=(abstract &data)
 {
-    if (this->ID <= data.ID)
-    {
-        return true;
-    }
-    return false;
+    return (this->ID <= data.ID);
 }
 
 bool Person::less_than_equal(abstract &data)
