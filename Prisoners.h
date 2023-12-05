@@ -164,6 +164,7 @@ public:
     friend class Hierarchy;
     friend class Admin;
     friend class PrisonersUi;
+    friend class Visitor;
     // functions
     void give_take_credit();
     void give_space(string);

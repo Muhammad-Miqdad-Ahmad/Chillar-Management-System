@@ -1,18 +1,15 @@
-// #pragma once
+#pragma once
+#include "hierarchy.h"
 
-// class Visitor
-// {
-// private:
-//     /* data */
-// public:
-//     Visitor(/* args */);
-//     ~Visitor();
-// };
+class Visitor{
+    abstract* apnaData;             //to store information of visitor
+    abstract* relData;              //to store information of prisoner to visit
+    Hierarchial_tree* allData;      //to point to the main tree that contains all the prisoners data
 
-// Visitor::Visitor(/* args */)
-// {
-// }
+    void getPrisoner();
 
-// Visitor::~Visitor()
-// {
-// }
+public:
+    Visitor(Hierarchial_tree*);         //parametrized constructor
+    void visitor_UI();
+};
+
