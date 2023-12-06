@@ -401,9 +401,9 @@ void Convicted::input()
     cout << "Enter the weight of the convicted in lbs: ";
     cin >> this->weight;
     this->weight = this->weight + " lbs";
+    cin.ignore();
     re:
     cout << "Enter the sentence of the convicted (e.g: 2 years or 3.5 months): ";
-    cin.ignore();
     getline(cin, this->sentence);
     if(fine_sentence(this->sentence))
     {
@@ -411,7 +411,7 @@ void Convicted::input()
         goto re;
     }
     cout << "When was the convicted captured: ";
-    cin >> this->captured_on;
+    cout << this->sentence << endl;
     this->expected_release.cal_expected_date(captured_on, sentence);
     cout << "What was the crime: ";
     cin.ignore(numeric_limits<streamsize>::max(), '\n');

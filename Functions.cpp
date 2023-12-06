@@ -75,13 +75,21 @@ vector<string> customSplit(string str, char separator)
 bool fine_sentence(string data)
 {
     vector<string> split;
+    if (data[0] == ' ')
+        return true;
     {
         char seperator = ' ';
         split = customSplit(data, seperator);
     }
+    if (split.size() <= 1 || split.size() > 2)
+        return true;
+        
     for (auto &&i : split[0])
-        if (!isdigit(i))
+    {
+        if (!isdigit(i) && i != '.')
             return true;
+    }
+
     if (split[1] != "month" && split[1] != "Month" && split[1] != "months" && split[1] != "Months" && split[1] != "year" && split[1] != "Year" && split[1] != "years" && split[1] != "Years")
         return true;
     return false;

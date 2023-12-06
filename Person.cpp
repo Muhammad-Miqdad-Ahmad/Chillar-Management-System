@@ -350,7 +350,7 @@ istream &operator>>(istream &in, Capture_date &data)
     re2:
     cout << "Enter the date of the capture: ";
     in >> data.date;
-    int temp=stoi(data.date);
+    double temp=stoi(data.date);
     if(temp>31||temp<1)
     {
         cout << "invalid date\n";
