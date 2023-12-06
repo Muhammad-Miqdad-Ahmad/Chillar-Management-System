@@ -21,9 +21,7 @@ int partition(vector<Prisoners *> &array, int first, int last)
     piviot = nullptr;
     return j + 1;
 }
-/*AB YE BHEEN KI TKKI SORTING GND KR RI HEEE IS KIII L PE MERE
-LORA MERA. FUCK THIS SHIT FUCK THIS CODE. ITS 10 in THE NIGHT AND I HAVE BEEN ATIT SINCE
-8 IN THE FUCKING MORNING*/
+
 void quick_sort(vector<Prisoners *> &array, int first, int last)
 {
     if (first < last)

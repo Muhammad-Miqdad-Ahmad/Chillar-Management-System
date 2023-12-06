@@ -227,7 +227,6 @@ istream &operator>>(istream &in, Person &data)
 {
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cout << "Enter the name of the person: ";
-    cin.ignore();
     getline(in, data.name);
     cout << "Enter the Id of the person: ";
     in >> data.ID;

@@ -16,14 +16,14 @@ public:
     Hierarchy();
     Hierarchy(char prisoner_class);
 
-    // destructors
+    // destructor
     ~Hierarchy();
 
     // friend classes
     friend class Prisoners;
     friend class Hierarchial_tree;
 
-    // function
+    // functions
     Prisoners *get_smallest(Prisoners *move);
     void make_full_balanced();
     Prisoners *delete_empty_node(Prisoners *root, Prisoners *&to_del);
@@ -33,15 +33,12 @@ public:
     Prisoners *balancing(vector<Prisoners *> &array, int start, int last);
     void add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_1, Person *&relative_2, int credits);
 
-    // friend function
-    // template<typename datatype>
-    // fri  end void display(Hierarchy* &data);
+    // friend functions
     friend ostream &operator<<(ostream &out, Hierarchy *data);
     friend ofstream &operator<<(ofstream &out, Hierarchy *data);
-    // Prisoners *operator%(string data);
 };
 
-// This is the class that containes the root of the hierarchy
+// This is the class that contains the root of the hierarchy
 class Hierarchial_tree
 {
 private:

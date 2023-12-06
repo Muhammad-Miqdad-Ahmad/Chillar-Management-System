@@ -34,8 +34,7 @@ Prisoners::~Prisoners()
         delete right;
     left = right = nullptr;
 }
-/*what thw shit is wrong with the shit is the fish cake
-kyaa msla hee tre ko bhens ki dum tera error ni kht m ho k de rha he wtdqjnedjneljnejbw*/
+
 ostream &operator<<(ostream &out, Prisoners *data)
 {
     if (data != nullptr)
@@ -63,15 +62,6 @@ void Prisoners::write(ofstream &out)
     if(this->relative_2)
     out << this->relative_2;
     out << endl << this->credits;
-}
-
-void Prisoners::give_space(string check)
-{
-    if (check == "A" || check == "B" || check == "C")
-    {
-        this->relative_1 = new Person;
-        this->relative_2 = new Person;
-    }
 }
 
 void Prisoners::give_take_credit()

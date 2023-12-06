@@ -11,26 +11,32 @@ Admin::Admin(Hierarchial_tree *&tree)
 
 bool Admin::admin_UI()
 {
-    {
-        // Person admin;
-        // string password;
-        // cin >> admin;
-        // cout << "Enter the password: ";
-        // cin >> password;
-        // if (admin.name != this->admin.name || admin.ID != this->admin.ID || password != this->code)
-        //     return false;
-    }
+    Person user;
+    string password;
+    system("clear");
+    cout << "\n\t\t\tInput Admin Credentials\n\n";
+    cin >> user; // calls overloaded person istream operator
+    cout << "Enter the password: ";
+    cin >> password;
+    if (user.name != this->admin.name || user.ID != this->admin.ID || password != this->code) // if name, ID or password entered by user do not match
+        return false;
     system("clear");
     cout << "Welcome Mr." << this->admin.name << endl;
+    system("cmd /C pause");
     char choice;
     while (true)
     {
-        cout << "Enter the thing u want\nEnter 'a' to add a prisoner\nEnter 'b' to remove a prisoner\nEnter 'c' to modify some data\nEnter 'd' to display all the data of a certain grade prisoners\nEnter 'x' to exit from the admin UI\nEnter your input here: ";
+        system("clear");
+        cout << "\nEnter 'a' to add a prisoner"
+                "\nEnter 'b' to remove a prisoner"
+                "\nEnter 'c' to modify some data"
+                "\nEnter 'd' to display all the data of a certain grade prisoners"
+                "\nEnter 'x' to exit from the admin UI: ";
         cin >> choice;
         switch (choice)
         {
         case 'a':
-            if (!this->add_prisoner())
+            if (!this->add_prisoner()) // add_prisoner returns false if there is an issue in filing
             {
                 cout << "There was some error while adding. PLease recheck\n";
                 return false;
@@ -59,9 +65,9 @@ bool Admin::admin_UI()
             break;
 
         case 'x':
-            delete this->origin;
-            this->origin = new Hierarchial_tree;
-            this->origin = nullptr;
+            //            delete this->origin;
+            //            this->origin = new Hierarchial_tree;
+            //            this->origin = nullptr;
             return true;
 
         default:
@@ -70,22 +76,25 @@ bool Admin::admin_UI()
         }
     }
 }
-// ye function hmeen bs file se sb utha k ik vector main store kr k de deta he
+// this function stores all the data from specified file
 bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
 {
-    string garbage, file_name = "Prisoners Data\\" + prisoner_grade; // yhan pe main file ka naam grade k hisab se string main store kr deta hoon
-    ifstream file(file_name + ".txt", ios::in);                      // file open krta hoon
-    if (!file.is_open())                                             // agar file open nhi hoi to function false return kr dega
+    string garbage, file_name = "Prisoners Data\\" + prisoner_grade; // file name is set according to the grade
+    ifstream file(file_name + ".txt", ios::in);                      // opening file to read
+    if (!file.is_open())
+    {
+        cout << "The file " << file_name << ".txt did not open\n";
         return false;
+    }
 
     Person *relative_1 = nullptr, *relative_2 = nullptr;
-    abstract *temp; // ik convicted ka temp var bnao
+    abstract *temp;
     int credit;
-    getline(file, garbage);
+    getline(file, garbage); // first line in file is empty
 
-    if (prisoner_grade != "A" && prisoner_grade != "B" && prisoner_grade != "C")
+    if (prisoner_grade != "A" && prisoner_grade != "B" && prisoner_grade != "C") // excluding A, B and C grades as their filing is a bit different
     {
-        while (!file.eof()) // agar file open ho gai he to end of file tk loop chle ga.
+        while (!file.eof()) // loop runs till end of file, reads data and stores in respective members of the object
         {
             temp = new Convicted;
             temp->read(file);
@@ -98,12 +107,12 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
             if (temp->is_empty())
                 delete temp;
             else
-                data->add_chunk(data->root, temp, relative_1, relative_2, credit);
+                data->add_chunk(data->root, temp, relative_1, relative_2, credit); // adding data read from file to the tree of prisoners
             relative_1 = relative_2 = nullptr;
             temp = nullptr;
         }
     }
-    else
+    else // For A, B and C grade files
     {
         while (!file.eof())
         {
@@ -119,25 +128,28 @@ bool Admin::store_from_file(Hierarchy *&data, string &prisoner_grade)
             temp = nullptr;
         }
     }
-    file.close(); // file close kr de and prisonewr garde ko file name k equal kr de ta k asal code main bhi file ka name chala jae and bar bar bnana na pre.
+    file.close();
     prisoner_grade = file_name;
-    if (file.is_open()) // agar close krne k bad file open he to false
+    if (file.is_open())
+    {
+        cout << "The file " << file_name << ".txt did not close\n";
         return false;
-    else // ni to sb sahi hoa he true
+    }
+    else
         return true;
 }
 // this is the function to simply remove some data from the system
 bool Admin::remove_user()
 {
     system("clear");
-    vector<Prisoners*> list;
+    vector<Prisoners *> list;
     this->data = new Hierarchy;
     this->input = new Person;
     string prisoner_grade;
     abstract *temp;
     int credit;
-    Person *relative_1=nullptr;
-    Person *relative_2=nullptr;
+    Person *relative_1 = nullptr;
+    Person *relative_2 = nullptr;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
     // if(!check_grade(prisoner_grade))
@@ -148,10 +160,14 @@ bool Admin::remove_user()
     string file_names = prisoner_grade;
     Prisoners *chunk = nullptr;
     string garbage, file_name = "Prisoners Data\\" + prisoner_grade; // yhan pe main file ka naam grade k hisab se string main store kr deta hoon
-    ifstream file_1(file_name + ".txt", ios::in);                      // file open krta hoon
-    if (!file_1.is_open())                                             // agar file open nhi hoi to function false return kr dega
+    ifstream file_1(file_name + ".txt", ios::in);                    // file open krta hoon
+    if (!file_1.is_open())                                           // agar file open nhi hoi to function false return kr dega
+    {
+        cout << "The file " << file_name << ".txt did not open\n";
         return false;
+    }
     getline(file_1, garbage);
+
     if (prisoner_grade != "A" && prisoner_grade != "B" && prisoner_grade != "C")
     {
         while (!file_1.eof()) // agar file open ho gai he to end of file tk loop chle ga.
@@ -170,10 +186,10 @@ bool Admin::remove_user()
             {
                 chunk = new Prisoners(temp, relative_1, relative_2, credit);
                 list.push_back(chunk);
-            } // prisoners data
+            }
             relative_1 = relative_2 = nullptr;
             temp = nullptr;
-            chunk=nullptr;
+            chunk = nullptr;
         }
     }
     else
@@ -192,31 +208,39 @@ bool Admin::remove_user()
                 list.push_back(chunk);
             } // prisoners data
             temp = nullptr;
-            chunk=nullptr;
+            chunk = nullptr;
             temp = nullptr;
         }
     }
-    
+
+    file_1.close();
+
     this->input->input(); // get the input in the person to find the person to delete
-    Prisoners* to_del;
-    bool check=true;
+    Prisoners *to_del;
+    bool check = true;
     for (size_t i = 0; i < list.size(); i++)
     {
-        if(this->input->equal(list[i]->root))
+        if (this->input->equal(list[i]->root))
         {
-            to_del=list[i];
-            check=false;
-            list.erase(list.begin()+i);
+            to_del = list[i];
+            check = false;
+            list.erase(list.begin() + i);
             break;
         }
     }
-    if(check)
+    if (check)
+    {
+        cout << "The said prisoner was not found in the data base\n";
         return false;
+    }
     // we open the file to store the removed IDs and the data of the removed prisoners.
     ofstream file1("Prisoners Data\\Removed_IDs.txt", ios::out | ios::app), file2("Prisoners Data\\Removed_Prisoners.txt", ios::out | ios::app);
 
     if (!file1.is_open() || !file1.is_open())
+    {
+        cout << "The file Removed_IDs.txt and Removed_Prisoners.txt did not open\n";
         return false;
+    }
 
     to_del->write(file2);                         // we write the smallest value (That has been swapped by the one to delete so technically the value we want to delete is in the smallest) in the file
     file2 << "\nTime of release: " << get_time(); // we also write the time when the data was removed from our data base.cout
@@ -225,57 +249,46 @@ bool Admin::remove_user()
 
     file1.close(); // close the files
     file2.close();
+    file_1.close();
     if (file1.is_open() || file1.is_open())
         return false;
 
-    ofstream file(file_name + ".txt", ios::out | ios::trunc); // we open the file again to re write the file
+    ofstream file3(file_name + ".txt", ios::out | ios::trunc); // we open the file again to re write the file
+    if (!file3.is_open())
+        return false;
     for (auto &&i : list)
-        i->write(file);
-    file.close();
+        i->write(file3);
+    file3.close();
 
     if (!this->store_from_file(data, file_names)) // this will return a tree
         return false;
 
     data->make_full_balanced();                               // balance the tree again
-
-    if (!file.is_open())
-        return false;
-
-    data->write_file_in_BFS(file); // we write the file using BFS
+    ofstream file(file_name + ".txt", ios::out | ios::trunc); // we open the file again to re write the file
+    data->write_file_in_BFS(file);                            // we write the file using BFS
     file.close();
 
     delete this->data;
     delete input;
     input = nullptr;
     this->data = nullptr;
-    
+
     return true;
 }
-
+// function to add prisoners
 bool Admin::add_prisoner()
 {
     system("clear");
     string prisoner_grade, file_name;
     cout << "Enter the grade of the prisoner: ";
     cin >> prisoner_grade;
-    // if(!check_grade(prisoner_grade))
-    // {
-    //     cout << "The grade was invalid\nGive the input again\n";
-    //     return this->add_prisoner();
-    // }
     file_name = prisoner_grade;
-    this->data = new Hierarchy;
-
-    // ye function hmeen store kr k de deta he sb ik vector main.
-    //  agar ye sahi ni chla to false return kr dega.
+    this->data = new Hierarchy; // allocating space to Hierarchy pointer
     if (!this->store_from_file(data, file_name))
         return false;
-
     Person *r1 = nullptr, *r2 = nullptr;
     this->input = new Convicted;
-
     input->input();
-
     if (prisoner_grade != "A" && prisoner_grade != "B" && prisoner_grade != "C")
     {
         r1 = new Person;
@@ -291,7 +304,7 @@ bool Admin::add_prisoner()
     data->add_chunk(data->root, input, r1, r2, 0);                  // add the info of the new Prisoner in the tree
     data->make_full_balanced();                                     // balance the tree again
 
-    ofstream file(file_name + ".txt", ios::out | ios::trunc);
+    ofstream file(file_name + ".txt", ios::out | ios::trunc); // opening file to write
     if (!file.is_open())
         return false;
 
@@ -311,7 +324,7 @@ bool Admin::add_prisoner()
 
     return true;
 }
-
+// function to generate ID
 bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_grade)
 {
     // we open the file that contains all the removed IDs
@@ -325,10 +338,8 @@ bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_gra
     {
         string garbage;
         vector<string> unused_IDs;
-
-        // loop to iterate through the entre file.
         getline(file_1, garbage);
-        while (!file_1.eof())
+        while (!file_1.eof()) // loop to iterate through the entre file.
         {
             string temp;
             getline(file_1, temp);
@@ -368,19 +379,14 @@ bool Admin::generate_ID(abstract *&new_prisoner, int number, string prisoner_gra
     }
     return true;
 }
-
+// function to modify data
 bool Admin::modify_data()
 {
     system("clear");
     this->data = new Hierarchy; // give space to the Hierarchy pointer in the class to make a tree
     string prisoner_grade, file_name;
     cout << "Enter the grade of the prisoner whose data you want to modify: ";
-    cin >> prisoner_grade; // input the garde of the prisoner you want to odify.
-    // if(!check_grade(prisoner_grade))
-    // {
-    //     cout << "The grade was invalid\nGive the input again\n";
-    //     return this->modify_data();
-    // }
+    cin >> prisoner_grade;      // input the garde of the prisoner you want to odify.
     file_name = prisoner_grade; // we make the file name
 
     if (!this->store_from_file(data, file_name)) // send the file name an dit will return a tree
@@ -407,7 +413,7 @@ bool Admin::modify_data()
 
     return true;
 }
-
+// function to display all the data
 bool Admin::display_data()
 {
     system("clear");
@@ -419,7 +425,7 @@ bool Admin::display_data()
 
     if (!this->store_from_file(data, file_name))
         return false;
-
     cout << data;
-    system("cmd/ C pause");
+    system("cmd /C pause");
+    return true;
 }
