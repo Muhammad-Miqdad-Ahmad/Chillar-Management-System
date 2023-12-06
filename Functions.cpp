@@ -51,3 +51,38 @@ char *get_time()
     // convert now to string form
     return ctime(&now);
 }
+
+vector<string> customSplit(string str, char separator)
+{
+    vector<string> strings;
+    int startIndex = 0, endIndex = 0;
+    for (int i = 0; i <= str.size(); i++)
+    {
+
+        // If we reached the end of the word or the end of the input.
+        if (str[i] == separator || i == str.size())
+        {
+            endIndex = i;
+            string temp;
+            temp.append(str, startIndex, endIndex - startIndex);
+            strings.push_back(temp);
+            startIndex = endIndex + 1;
+        }
+    }
+    return strings;
+}
+
+bool fine_sentence(string data)
+{
+    vector<string> split;
+    {
+        char seperator = ' ';
+        split = customSplit(data, seperator);
+    }
+    for (auto &&i : split[0])
+        if (!isdigit(i))
+            return true;
+    if (split[1] != "month" && split[1] != "Month" && split[1] != "months" && split[1] != "Months" && split[1] != "year" && split[1] != "Year" && split[1] != "years" && split[1] != "Years")
+        return true;
+    return false;
+}

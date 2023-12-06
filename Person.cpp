@@ -328,10 +328,34 @@ ostream &operator<<(ostream &out, Capture_date &data)
 
 istream &operator>>(istream &in, Capture_date &data)
 {
+    bool check=true;
+    re:
     cout << "Enter the month of capture: ";
     in >> data.month;
+    data.month[0] = toupper(data.month[0]);
+    for (int i = 0; i < 12; i++)
+    {
+        if(data.month==Constants::monthNames[i])
+        {
+            check=false;
+            break;
+        }
+    }
+    if(check)
+    {
+        cout << "Invalid month\n";
+        check=true;
+        goto re;
+    }
+    re2:
     cout << "Enter the date of the capture: ";
     in >> data.date;
+    int temp=stoi(data.date);
+    if(temp>31||temp<1)
+    {
+        cout << "invalid date\n";
+        goto re2;
+    }
     data.date=data.date+", ";
     cout << "Enter the year of the capture: ";
     in >> data.year;
