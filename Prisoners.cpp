@@ -64,15 +64,6 @@ void Prisoners::write(ofstream &out)
     out << endl << this->credits;
 }
 
-void Prisoners::give_space(string check)
-{
-    if (check == "A" || check == "B" || check == "C")
-    {
-        this->relative_1 = new Person;
-        this->relative_2 = new Person;
-    }
-}
-
 void Prisoners::give_take_credit()
 {
     if(this->workDone)
