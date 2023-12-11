@@ -18,6 +18,8 @@ char *get_time();                                                 // this functi
 bool is_it_empty(ifstream &pFile);                                // this checks the file. if the file is empty it returns true
 int partition(vector<Prisoners *> &array, int first, int last);   // this function parts the array and is used in quick sort function
 void quick_sort(vector<Prisoners *> &array, int first, int last); // function to quick sort the vector
+vector<string> customSplit(string str, char separator);           // The functio to seperate a string
+bool fine_sentence(string data);                                  // checks the sentence if it is in correct format or not
 
 // The namespace that will contain all constants
 namespace Constants

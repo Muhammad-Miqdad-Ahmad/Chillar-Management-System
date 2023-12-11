@@ -1,12 +1,27 @@
 
-// #include <limits>
-// #include <cmath>
+#include <limits>
+#include <cmath>
+#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+using namespace std;
 
-// #include <iostream>
-// #include <algorithm>
-// using namespace std;
 
+// Create custom split() function.  
 
+// int main() {
+//     vector < string > strings;
+//     string str = "I love to read articles on Favtutor.";
+//     // Space is used as a separator.
+//     char separator = ' '; 
+//     strings = customSplit(str, separator);
+//     cout << "The split string is: " << endl;
+//     // for (auto it: strings) {
+//     //     cout << it << endl;
+//     // }
+//     cout << strings[1];
+//     return 0;
+// } 
 
 // main()
 // {
