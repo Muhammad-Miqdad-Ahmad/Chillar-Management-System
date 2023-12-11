@@ -5,7 +5,6 @@ And then it sorts the array such that the smaller ones are on the left of the pi
 the bigger ones are on the right side of the piviot and then it returns the piviot */
 int partition(vector<Prisoners *> &array, int first, int last)
 {
-    // cout << "yhaan partition honi he\n";
     Prisoners *piviot = array[last];
     int j = first - 1;
     for (int i = first; i < last; i++)
@@ -21,9 +20,7 @@ int partition(vector<Prisoners *> &array, int first, int last)
     piviot = nullptr;
     return j + 1;
 }
-/*AB YE BHEEN KI TKKI SORTING GND KR RI HEEE IS KIII L PE MERE
-LORA MERA. FUCK THIS SHIT FUCK THIS CODE. ITS 10 in THE NIGHT AND I HAVE BEEN ATIT SINCE
-8 IN THE FUCKING MORNING*/
+
 void quick_sort(vector<Prisoners *> &array, int first, int last)
 {
     if (first < last)
@@ -46,10 +43,5 @@ char *get_time()
 {
     // current date and time on the current system
     time_t now = time(0);
-    // gives the time in the form of some integer.
-    //  idk what that shit is. you wann a see it.
-    //  cout << now << endl; // here is a cout statement. see for yourself.
-
-    // convert now to string form
     return ctime(&now);
 }

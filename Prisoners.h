@@ -114,6 +114,7 @@ public:
     bool operator==(abstract *&data);
     bool operator!=(abstract &data);
     bool operator!=(abstract *&data);
+
     bool less_than(abstract &data) override;
     bool less_than(abstract *&data) override;
     bool less_than_equal(abstract &data) override;
