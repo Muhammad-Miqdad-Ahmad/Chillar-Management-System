@@ -9,7 +9,7 @@ Hierarchy::Hierarchy()
 
 Hierarchy::Hierarchy(char prisoner_class)
 {
-    this->prisoner_count = 0;              // the number of nodes in the tree
+    this->prisoner_count = 0; // the number of nodes in the tree
     this->prisoner_grade = prisoner_class;
     this->left = this->right = nullptr;
     this->root = nullptr;
@@ -19,7 +19,7 @@ Hierarchy::Hierarchy(char prisoner_class)
     string file_name = "Prisoners Data\\", temp;  // create a string to read from the file.
     file_name = file_name + this->prisoner_grade; // storing the path in a string
 
-    ifstream file(file_name + ".txt");  //open the file to read
+    ifstream file(file_name + ".txt"); // open the file to read
 
     if (is_it_empty(file))
         return;
@@ -85,8 +85,8 @@ void Hierarchy::add_chunk(Prisoners *&chunk, abstract *&data, Person *&relative_
 {
     if (chunk == nullptr)
     {
-        chunk = new Prisoners(data, relative_1, relative_2, credits);   //new prisoners data stored in tree
-        this->prisoner_count++;                                          // increase the prisoner count
+        chunk = new Prisoners(data, relative_1, relative_2, credits); // new prisoners data stored in tree
+        this->prisoner_count++;                                       // increase the prisoner count
     }
     else if (data->less_than(chunk->root))
         this->add_chunk(chunk->left, data, relative_1, relative_2, credits);
@@ -122,8 +122,8 @@ Prisoners *Hierarchy::balancing(vector<Prisoners *> &array, int start, int last)
     if (start > last)
         return nullptr;
 
-    int mid = (start + last) / 2;     // we find the midpoint of the array
-    Prisoners *new_root = array[mid]; // then we make it the root of the tree
+    int mid = (start + last) / 2;                      // we find the midpoint of the array
+    Prisoners *new_root = array[mid];                  // then we make it the root of the tree
     new_root->left = balancing(array, start, mid - 1); // after that I sent the lower half towards the left
     new_root->right = balancing(array, mid + 1, last); // the upper half towards the right
     return new_root;                                   // we simply return the root
@@ -155,7 +155,7 @@ void Hierarchy::write_file_in_BFS(ofstream &file)
 }
 
 Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
-{   
+{
     if (chunk == nullptr || chunk->root->equal(to_find))
         return chunk;
     else if (to_find->less_than(chunk->root))
@@ -166,7 +166,8 @@ Prisoners *Hierarchy::search(Prisoners *&chunk, abstract *to_find)
 
 Prisoners *Hierarchy::get_smallest(Prisoners *move)
 {
-    while (move->left != nullptr) {
+    while (move->left != nullptr)
+    {
         move = move->left;
     }
     return move;
@@ -204,33 +205,40 @@ void Hierarchial_tree::add_chunk(Hierarchy *&chunk, char data)
         add_chunk(chunk->left, data);
 }
 
-Prisoners* Hierarchy::delete_empty_node(Prisoners* data,Prisoners *&to_del)
+Prisoners *Hierarchy::delete_empty_node(Prisoners *data, Prisoners *&to_del)
 {
-   if (root == nullptr) {
+    if (root == nullptr)
+    {
         return data;
     }
 
-    if (to_del->root->less_than(data->root)) {
+    if (to_del->root->less_than(data->root))
+    {
         root->left = delete_empty_node(root->left, to_del);
     }
     // If the key to be deleted is larger than the root's key, then it lies in the right subtree
-    else if (to_del->root->greater_than(data->root)) {
+    else if (to_del->root->greater_than(data->root))
+    {
         root->right = delete_empty_node(root->right, to_del);
     }
-       else {
+    else
+    {
         // Node with only one child or no child
-        if (root->left == nullptr) {
-            Prisoners* temp = root->right;
+        if (root->left == nullptr)
+        {
+            Prisoners *temp = root->right;
             delete root;
             return temp;
-        } else if (root->right == nullptr) {
-            Prisoners* temp = root->left;
+        }
+        else if (root->right == nullptr)
+        {
+            Prisoners *temp = root->left;
             delete root;
             return temp;
         }
 
         // Node with two children: Get the inorder successor (smallest in the right subtree)
-        Prisoners* temp = this->get_smallest(root->right);
+        Prisoners *temp = this->get_smallest(root->right);
 
         // Copy the inorder successor's content to this node
         root->root = temp->root;

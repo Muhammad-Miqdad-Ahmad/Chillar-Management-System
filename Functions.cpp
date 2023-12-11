@@ -74,6 +74,10 @@ vector<string> customSplit(string str, char separator)
 
 bool fine_sentence(string data)
 {
+    if (data == "Life without parole"|| data == "life without parole"|| data == "forever"|| data == "Forever" || data == "N/A")
+    {
+        return false;
+    }
     vector<string> split;
     if (data[0] == ' ')
         return true;

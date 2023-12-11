@@ -411,7 +411,7 @@ void Convicted::input()
         goto re;
     }
     cout << "When was the convicted captured: ";
-    cout << this->sentence << endl;
+    cin >> this->captured_on;
     this->expected_release.cal_expected_date(captured_on, sentence);
     cout << "What was the crime: ";
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
